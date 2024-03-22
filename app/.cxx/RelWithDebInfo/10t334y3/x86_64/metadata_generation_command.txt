@@ -1,0 +1,23 @@
+                    Executable : C:\Users\ADMIN\AppData\Local\Android\Sdk\cmake\3.22.1\bin\cmake.exe
+arguments : 
+-HC:\Users\Admin\AndroidStudioProjects\Dooo\app\src\main\jni
+-DCMAKE_SYSTEM_NAME=Android
+-DCMAKE_EXPORT_COMPILE_COMMANDS=ON
+-DCMAKE_SYSTEM_VERSION=23
+-DANDROID_PLATFORM=android-23
+-DANDROID_ABI=x86_64
+-DCMAKE_ANDROID_ARCH_ABI=x86_64
+-DANDROID_NDK=C:\Users\ADMIN\AppData\Local\Android\Sdk\ndk\22.1.7171670
+-DCMAKE_ANDROID_NDK=C:\Users\ADMIN\AppData\Local\Android\Sdk\ndk\22.1.7171670
+-DCMAKE_TOOLCHAIN_FILE=C:\Users\ADMIN\AppData\Local\Android\Sdk\ndk\22.1.7171670\build\cmake\android.toolchain.cmake
+-DCMAKE_MAKE_PROGRAM=C:\Users\ADMIN\AppData\Local\Android\Sdk\cmake\3.22.1\bin\ninja.exe
+-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=C:\Users\Admin\AndroidStudioProjects\Dooo\app\build\intermediates\cxx\RelWithDebInfo\10t334y3\obj\x86_64
+-DCMAKE_RUNTIME_OUTPUT_DIRECTORY=C:\Users\Admin\AndroidStudioProjects\Dooo\app\build\intermediates\cxx\RelWithDebInfo\10t334y3\obj\x86_64
+-DCMAKE_BUILD_TYPE=RelWithDebInfo
+-BC:\Users\Admin\AndroidStudioProjects\Dooo\app\.cxx\RelWithDebInfo\10t334y3\x86_64
+-GNinja
+jvmArgs : 
+
+
+                    Build command args: []
+                    Version: 2

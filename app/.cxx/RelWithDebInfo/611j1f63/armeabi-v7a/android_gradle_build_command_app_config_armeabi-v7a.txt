@@ -1,0 +1,7 @@
+Executable : C:\Users\ADMIN\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe
+arguments : 
+-C
+C:\Users\Admin\AndroidStudioProjects\Dooo\app\.cxx\RelWithDebInfo\611j1f63\armeabi-v7a
+app_config
+jvmArgs : 
+

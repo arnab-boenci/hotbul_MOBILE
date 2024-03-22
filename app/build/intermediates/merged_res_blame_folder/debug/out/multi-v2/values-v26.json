@@ -1,0 +1,39 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.dooo.android.app-mergeDebugResources-111:/values-v26/values-v26.xml",
+            "map": [
+                {
+                    "source": "/Users/arnabmandal/.gradle/caches/transforms-3/3764de626fae0d4db295bb7e2158cc13/transformed/appcompat-1.6.1/res/values-v26/values-v26.xml",
+                    "from": {
+                        "startLines": "2,3,4,8,12,16",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "55,130,217,381,557,796",
+                        "endLines": "2,3,7,11,15,16",
+                        "endColumns": "74,86,12,12,12,92",
+                        "endOffsets": "125,212,376,552,791,884"
+                    }
+                },
+                {
+                    "source": "/Users/arnabmandal/.gradle/caches/transforms-3/9fe41e11b8718c96b0a8c74ab2ffe057/transformed/jetified-android-sdk-1.1.0/res/values-v26/values-v26.xml",
+                    "from": {
+                        "startLines": "2,12",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,680",
+                        "endLines": "11,22",
+                        "endColumns": "12,12",
+                        "endOffsets": "675,1375"
+                    },
+                    "to": {
+                        "startLines": "17,27",
+                        "startColumns": "4,4",
+                        "startOffsets": "889,1514",
+                        "endLines": "26,37",
+                        "endColumns": "12,12",
+                        "endOffsets": "1509,2209"
+                    }
+                }
+            ]
+        }
+    ]
+}

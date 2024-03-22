@@ -1,0 +1,3 @@
+ninja: Entering directory `C:\Users\Admin\AndroidStudioProjects\Dooo\app\.cxx\Debug\2x3u204w\x86'
+[1/2] Building CXX object CMakeFiles/app_config.dir/app_config.cpp.o
+[2/2] Linking CXX shared library C:\Users\Admin\AndroidStudioProjects\Dooo\app\build\intermediates\cxx\Debug\2x3u204w\obj\x86\libapp_config.so

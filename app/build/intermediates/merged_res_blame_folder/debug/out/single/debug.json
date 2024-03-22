@@ -1,0 +1,1162 @@
+[
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_subscription_bg.jpg.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/subscription_bg.jpg"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_upi.jpg.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/upi.jpg"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_copy.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/copy.xml"
+    },
+    {
+        "merged": "com.dooo.android.app-merged_res-113:/layout_fragment_home.xml.flat",
+        "source": "com.dooo.android.app-main-115:/layout/fragment_home.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_download_dialog.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/download_dialog.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_live.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/live.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/mipmap-mdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable-xxxhdpi_tick.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-pngs-108:/drawable-xxxhdpi/tick.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_no_7.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/no_7.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_img_1.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/img_1.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_track_selection_dialog.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/track_selection_dialog.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_profile_rectangle.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/profile_rectangle.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_slider_item_container.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/slider_item_container.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_reset_pass_dialog_bg.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/reset_pass_dialog_bg.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_report_item_bg.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/report_item_bg.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_ic_baseline_watch.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/ic_baseline_watch.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_rounded_edittext.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/rounded_edittext.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_episode_item.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/episode_item.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_paypal.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/paypal.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable-ldpi_ic_razorpay.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-pngs-108:/drawable-ldpi/ic_razorpay.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_activity_web_view.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/activity_web_view.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_no_6.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/no_6.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_img_2.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/img_2.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_schedule.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/schedule.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_shuffle.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/shuffle.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_liquidpager_3.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/liquidpager_3.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable-v24_ic_play_arrow_white.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable-v24/ic_play_arrow_white.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_play_movie.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/play_movie.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_restricted_location.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/restricted_location.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_rounded_bottom_sheet_dialog.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/rounded_bottom_sheet_dialog.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_black_cursor.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/black_cursor.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_downloads.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/downloads.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/raw_message_in_a_bottle.json.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/raw/message_in_a_bottle.json"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_logout_bw.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/logout_bw.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_download_settings_dialog.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/download_settings_dialog.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_discount_voucher.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/discount_voucher.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_liquid_pager_fragment_page_number.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/liquid_pager_fragment_page_number.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_genre.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/genre.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/mipmap-xhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_fragment_search.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/fragment_search.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable-xhdpi_ic_razorpay.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-pngs-108:/drawable-xhdpi/ic_razorpay.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_signup.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/signup.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_liquidpager_2.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/liquidpager_2.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable-hdpi_tick.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-pngs-108:/drawable-hdpi/tick.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_more.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/more.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_blocked_country_dialog.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/blocked_country_dialog.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_third_on_boarding_page.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/third_on_boarding_page.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_payment_dialog.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/payment_dialog.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_crown.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/crown.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_play_button_icon.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/play_button_icon.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/color_bnv_tab_item_foreground.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/color/bnv_tab_item_foreground.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable-xxhdpi_tick.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-pngs-108:/drawable-xxhdpi/tick.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_no_8.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/no_8.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_subscription.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/subscription.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_ic_message.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/ic_message.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_report.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/report.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_forgot_password.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/forgot_password.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_activity_live_tvsearch.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/activity_live_tvsearch.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_activity_live_tv_genre_details.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/activity_live_tv_genre_details.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_ic_baseline_exit.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/ic_baseline_exit.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_comment_dialog_bg.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/comment_dialog_bg.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_dooo_logo_no_bg_1.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/dooo_logo_no_bg_1.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_fragment_more.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/fragment_more.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_no_5.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/no_5.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/mipmap-hdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable-xxxhdpi_ic_razorpay.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-pngs-108:/drawable-xxxhdpi/ic_razorpay.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_back.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/back.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_player_bg.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/player_bg.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_crown_yellow.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/crown_yellow.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/raw_empty.json.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/raw/empty.json"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_flutterwave.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/flutterwave.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_reset_password.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/reset_password.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_snowflake.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/snowflake.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_ic_send.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/ic_send.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_progress_bar.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/progress_bar.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_activity_subscription_details.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/activity_subscription_details.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_activity_flutterwave_payment_gatway.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/activity_flutterwave_payment_gatway.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_activity_all_movies.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/activity_all_movies.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_activity_downloads.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/activity_downloads.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/raw_network_activity_icon.json.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/raw/network_activity_icon.json"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_thunder.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/thunder.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_credit_card.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/credit_card.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_profile_favorite.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/profile_favorite.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/raw_small_search.json.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/raw/small_search.json"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_cancel_outline.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/cancel_outline.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_filter_dialog.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/filter_dialog.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_top_rounded_bg.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/top_rounded_bg.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_second_on_boarding_page.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/second_on_boarding_page.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_fragment_home.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/fragment_home.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_coupan_bg.jpg.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/coupan_bg.jpg"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_show_all_live_tv_channels.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/show_all_live_tv_channels.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_activity_splash.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/raw_rocket_telescope.json.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/raw/rocket_telescope.json"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_fragment_all_movies.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/fragment_all_movies.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_comment_tab.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/comment_tab.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_activity_favorites.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/activity_favorites.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/raw_adblockserverlist.txt.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/raw/adblockserverlist.txt"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_user.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/user.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_activity_subscription_list.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/activity_subscription_list.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_activity_all_web_series.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/activity_all_web_series.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_ic_star.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/ic_star.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_dooo_logo_no_bg.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/dooo_logo_no_bg.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_loading_dialog.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/loading_dialog.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable-v24_rounded_black_transparent.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable-v24/rounded_black_transparent.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_first_on_boarding_page.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/first_on_boarding_page.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_bottom_nav_movie_icon.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/bottom_nav_movie_icon.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/menu_menu.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/menu/menu.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable-anydpi-v24_tick.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-pngs-108:/drawable-anydpi-v24/tick.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_refresh.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/refresh.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_comment_tag_bg.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/comment_tag_bg.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_activity_custom_payment.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/activity_custom_payment.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_circled_right.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/circled_right.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_logout.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/logout.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/raw_logout.json.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/raw/logout.json"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_movie_play_item.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/movie_play_item.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_activity_youtube_live_player.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/activity_youtube_live_player.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable-v24_ic_fiber_manual_record_red.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable-v24/ic_fiber_manual_record_red.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_traier_player_controlls.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/traier_player_controlls.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_img.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/img.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_comment_item.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/comment_item.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/mipmap-hdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_show_all_genre.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/show_all_genre.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_activity_web_series_details.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/activity_web_series_details.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_ic_baseline_fullscreen_exit_24.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/ic_baseline_fullscreen_exit_24.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/mipmap-anydpi-v26_ic_launcher_round_1.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/mipmap-anydpi-v26/ic_launcher_round_1.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_white_cursor.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/white_cursor.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_tab_indicator.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/tab_indicator.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_ic_baseline_volume_up_24.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/ic_baseline_volume_up_24.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/font_baloo2_extrabold.ttf.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/font/baloo2_extrabold.ttf"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_activity_movie_details.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/activity_movie_details.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_activity_embed_player.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/activity_embed_player.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_send_otp_btn_ripple.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/send_otp_btn_ripple.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_show_all.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/show_all.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_my_comment_item.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/my_comment_item.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_no_1.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/no_1.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable-v24_ic_forward_10_white.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable-v24/ic_forward_10_white.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_ic_arrow_drop_down_24.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/ic_arrow_drop_down_24.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_language_dialog_bg.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/language_dialog_bg.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_bottom_nav_search_icon.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/bottom_nav_search_icon.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_activity_home.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/activity_home.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_premium_tag_bg.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/premium_tag_bg.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_terms_and_conditions.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/terms_and_conditions.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/mipmap-mdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_update_list_item.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/update_list_item.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_activity_all_genre.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/activity_all_genre.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_send_otp_btn.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/send_otp_btn.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_ic_baseline_settings.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/ic_baseline_settings.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_bottom_nav_account_icon.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/bottom_nav_account_icon.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_baseline_mic.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/baseline_mic.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_button_address_more_details_ripple_effect.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/button_address_more_details_ripple_effect.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable-ldpi_tick.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-pngs-108:/drawable-ldpi/tick.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_heart_favorite.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/heart_favorite.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_activity_upi.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/activity_upi.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/raw_search.json.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/raw/search.json"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_shimmer_gird_list.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/shimmer_gird_list.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_privecy_policy.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/privecy_policy.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_search.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/search.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/font_baloo2_regular.ttf.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/font/baloo2_regular.ttf"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_cupan_dialog.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/cupan_dialog.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_advance_arrow.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/advance_arrow.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_upgrade_to_premium_btn.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/upgrade_to_premium_btn.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_movie_item.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/movie_item.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_activity_terms_and_conditions.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/activity_terms_and_conditions.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_dooo_no_bg_red_smooth.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/dooo_no_bg_red_smooth.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_activity_paytm_payment_gatway.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/activity_paytm_payment_gatway.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_grediant_link_item_bg.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/grediant_link_item_bg.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_ic_baseline_fullscreen_24.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/ic_baseline_fullscreen_24.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_download_icon.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/download_icon.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_report_dialog.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/report_dialog.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_ic_filter.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/ic_filter.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_small_live_tv_channel_item.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/small_live_tv_channel_item.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_premiumtag_rounded_bg.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/premiumtag_rounded_bg.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_activity_subscription.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/activity_subscription.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_close.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/close.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_activity_razorpay_payment_gatway.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/activity_razorpay_payment_gatway.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_server_not_responding_dialog.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/server_not_responding_dialog.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_banner_gradiant.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/banner_gradiant.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_circle_cross.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/circle_cross.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/raw_google.json.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/raw/google.json"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_search_item.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/search_item.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable-hdpi_ic_razorpay.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-pngs-108:/drawable-hdpi/ic_razorpay.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_ic_launcher_background.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_poster_placeholder.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/poster_placeholder.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_fragment_all_webseries.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/fragment_all_webseries.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_profile_user.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/profile_user.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_activity_live_tv.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/activity_live_tv.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_upcoming_item.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/upcoming_item.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_download.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/download.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_login.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/login.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_dot_circle.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/dot_circle.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable-xhdpi_tick.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-pngs-108:/drawable-xhdpi/tick.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_no_2.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/no_2.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/font_baloo2_semibold.ttf.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/font/baloo2_semibold.ttf"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_no_10.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/no_10.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_activity_paypal_payment_gatway.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/activity_paypal_payment_gatway.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_activity_login_signup.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/activity_login_signup.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_activity_privecy_policy.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/activity_privecy_policy.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_ic_baseline_delete_sweep_24.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/ic_baseline_delete_sweep_24.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_bottom_nav_tv_icon.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/bottom_nav_tv_icon.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable-v24_ic_pause_white.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable-v24/ic_pause_white.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_profile_circle.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/profile_circle.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable-mdpi_tick.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-pngs-108:/drawable-mdpi/tick.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_trailer_icon.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/trailer_icon.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_live_tv_channel_item_v2.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/live_tv_channel_item_v2.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable-mdpi_ic_razorpay.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-pngs-108:/drawable-mdpi/ic_razorpay.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_red_heart_favorite.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/red_heart_favorite.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_rounded_ligin_bg.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/rounded_ligin_bg.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_upcomming_btn_bg.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/upcomming_btn_bg.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_custom_report_dialog.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/custom_report_dialog.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/raw_premium_gold.json.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/raw/premium_gold.json"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_social_media.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/social_media.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_telegram.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/telegram.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_slider_item_bottom_bg.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/slider_item_bottom_bg.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable-anydpi-v24_ic_razorpay.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-pngs-108:/drawable-anydpi-v24/ic_razorpay.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_ic_languages.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/ic_languages.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_language_change_dialog.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/language_change_dialog.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/raw_sequre.json.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/raw/sequre.json"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_trailer_blocked_icon.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/trailer_blocked_icon.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_paytm.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/paytm.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_ic_profile_user.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/ic_profile_user.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/mipmap-anydpi-v26_ic_launcher_1.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/mipmap-anydpi-v26/ic_launcher_1.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/mipmap-xxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_bottom_dialog_bg.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/bottom_dialog_bg.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_movie_details_line_bg.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/movie_details_line_bg.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_download_item.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/download_item.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_request_dialog.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/request_dialog.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_list_text.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/list_text.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_selected_dot.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/selected_dot.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable-v24_ic_replay_10_white.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable-v24/ic_replay_10_white.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_episode_item_v2.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/episode_item_v2.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/mipmap-xxxhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable-xxhdpi_ic_razorpay.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-pngs-108:/drawable-xxhdpi/ic_razorpay.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_coupon.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/coupon.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_no_4.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/no_4.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_ic_baseline_wb_sunny_24.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/ic_baseline_wb_sunny_24.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_info.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/info.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/font_baloo2_bold.ttf.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/font/baloo2_bold.ttf"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_razorpay.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/razorpay.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_small_download.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/small_download.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/font_baloo2_medium.ttf.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/font/baloo2_medium.ttf"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_no_3.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/no_3.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_subscription_item.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/subscription_item.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_live_tv_genre_item.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/live_tv_genre_item.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_small_live_tv_channel_item_v2.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/small_live_tv_channel_item_v2.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_settings_dialog.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/settings_dialog.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_slider_item_top_bg.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/slider_item_top_bg.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/mipmap-xxhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_request.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/request.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_cast_item_layout.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/cast_item_layout.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_dooo_logo_no_bg_red.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/dooo_logo_no_bg_red.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_ic_tick.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/ic_tick.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_thumbnail_placeholder.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/thumbnail_placeholder.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_activity_player.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/activity_player.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_default_dot.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/default_dot.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_account_dialog.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/account_dialog.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_movie_item_v2.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/movie_item_v2.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_reset_password_otp.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/reset_password_otp.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/raw_delete.json.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/raw/delete.json"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/mipmap-xhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_continue_playing_item.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/continue_playing_item.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_activity_trailer_player.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/activity_trailer_player.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_loading_more.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/loading_more.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_activity_upcoming.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/activity_upcoming.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_activity_in__app__update.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/activity_in__app__update.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/raw_under_maintenance.json.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/raw/under_maintenance.json"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_no_9.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/no_9.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-pngs-108:/drawable-anydpi-v24/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/xml_provider_paths.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/xml/provider_paths.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_genre_item.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/genre_item.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_season_spinner_bg.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/season_spinner_bg.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/mipmap-xxxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_premium_tag.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/premium_tag.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_player_controlls.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/player_controlls.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_upgrade_to_premium_btn_ripple.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/upgrade_to_premium_btn_ripple.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_liquidpager_1.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/liquidpager_1.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_initial_msg_dialog.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/initial_msg_dialog.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_trending_item.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/trending_item.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_download_blocked_icon.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/download_blocked_icon.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_share_arrow.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/share_arrow.png"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_activity_genre_details.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/activity_genre_details.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_activity_maintenance.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/activity_maintenance.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_download_link_item.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/download_link_item.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/layout_live_tv_channel_item.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/layout/live_tv_channel_item.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_cast.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/cast.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-merged_res-113:/drawable_bottom_nav_home_icon.png.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.0/com.dooo.android.app-main-115:/drawable/bottom_nav_home_icon.png"
+    }
+]

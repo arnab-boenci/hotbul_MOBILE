@@ -1,0 +1,9 @@
+# ninja log v5
+1	2348	6868175065647009	CMakeFiles/app_config.dir/app_config.cpp.o	2a5f8d8f697400f3
+2350	2465	6868175066719426	C:/Users/Admin/AndroidStudioProjects/Dooo/app/build/intermediates/cxx/Debug/5c15k1ze/obj/arm64-v8a/libapp_config.so	50290d2e9bc86b08
+5	941	6868176569749616	CMakeFiles/app_config.dir/app_config.cpp.o	2a5f8d8f697400f3
+942	1076	6868176571125930	C:/Users/Admin/AndroidStudioProjects/Dooo/app/build/intermediates/cxx/Debug/5c15k1ze/obj/arm64-v8a/libapp_config.so	50290d2e9bc86b08
+4	741	6883233697618625	CMakeFiles/app_config.dir/app_config.cpp.o	2a5f8d8f697400f3
+742	1026	6883233700375032	C:/Users/Admin/AndroidStudioProjects/Dooo/app/build/intermediates/cxx/Debug/5c15k1ze/obj/arm64-v8a/libapp_config.so	50290d2e9bc86b08
+3	892	6885494239050386	CMakeFiles/app_config.dir/app_config.cpp.o	2a5f8d8f697400f3
+892	1119	6885494240994092	C:/Users/Admin/AndroidStudioProjects/Dooo/app/build/intermediates/cxx/Debug/5c15k1ze/obj/arm64-v8a/libapp_config.so	50290d2e9bc86b08

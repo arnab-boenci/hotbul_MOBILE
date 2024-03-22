@@ -1,0 +1,7 @@
+[
+{
+  "directory": "C:/Users/Admin/AndroidStudioProjects/Dooo/app/.cxx/RelWithDebInfo/611j1f63/x86_64",
+  "command": "C:\\Users\\Admin\\AppData\\Local\\Android\\Sdk\\ndk\\22.1.7171670\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=x86_64-none-linux-android23 --gcc-toolchain=C:/Users/Admin/AppData/Local/Android/Sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Admin/AppData/Local/Android/Sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -Dapp_config_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O2 -g -DNDEBUG -fPIC   -o CMakeFiles\\app_config.dir\\app_config.cpp.o -c C:\\Users\\Admin\\AndroidStudioProjects\\Dooo\\app\\src\\main\\jni\\app_config.cpp",
+  "file": "C:\\Users\\Admin\\AndroidStudioProjects\\Dooo\\app\\src\\main\\jni\\app_config.cpp"
+}
+]
