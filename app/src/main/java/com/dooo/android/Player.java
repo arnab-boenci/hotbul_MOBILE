@@ -189,6 +189,7 @@ public class Player extends AppCompatActivity {
 
     String DrmUuid = "";
     String DrmLicenseUri = "";
+    long currentPlayPostion = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -295,6 +296,7 @@ public class Player extends AppCompatActivity {
         source = intent.getExtras().getString("source");
         String url = intent.getExtras().getString("url");
         cpUrl = url;
+        currentPlayPostion = intent.getExtras().getLong("current_position");
 
 
         if (intent.getExtras().getString("Content_Type") != null) {
@@ -1193,11 +1195,11 @@ public class Player extends AppCompatActivity {
                 .setSeekForwardIncrementMs(10000)
                 .setSeekBackIncrementMs(10000)
                 .build();
+        simpleExoPlayer.seekTo(currentPlayPostion);
+        youtube_overlay.player(simpleExoPlayer);
 
-            youtube_overlay.player(simpleExoPlayer);
-
-            playerView.setPlayer(simpleExoPlayer);
-            playerView.setKeepScreenOn(true);
+        playerView.setPlayer(simpleExoPlayer);
+        playerView.setKeepScreenOn(true);
 
             //Player Speed
 
@@ -1512,10 +1514,6 @@ public class Player extends AppCompatActivity {
         }
 
 
-
-
-
-
         simpleExoPlayer.addListener(new com.google.android.exoplayer2.Player.Listener() {
 
             @Override
@@ -1579,6 +1577,7 @@ public class Player extends AppCompatActivity {
         if(simpleExoPlayer != null) {
             simpleExoPlayer.setPlayWhenReady(tinyDB.getBoolean(AUTOPLAY));
             simpleExoPlayer.getPlaybackState();
+            simpleExoPlayer.seekTo(currentPlayPostion);
         }
     }
 
@@ -1614,7 +1613,7 @@ public class Player extends AppCompatActivity {
         if (sharedPreferences.getString("UserData", null) != null) {
             userData = sharedPreferences.getString("UserData", null);
             JsonObject jsonObject = new Gson().fromJson(userData, JsonObject.class);
-            userId = jsonObject.get("ID").getAsInt();
+            userId = jsonObject.get("userdetailsid").getAsInt();
         }
     }
 
@@ -1623,7 +1622,7 @@ public class Player extends AppCompatActivity {
         String config = sharedPreferences.getString("Config", null);
 
         JsonObject jsonObject = new Gson().fromJson(config, JsonObject.class);
-        bGljZW5zZV9jb2Rl = jsonObject.get("license_code").getAsString();
+       // bGljZW5zZV9jb2Rl = jsonObject.get("license_code").getAsString();
     }
 
     private void finishPlayer() {

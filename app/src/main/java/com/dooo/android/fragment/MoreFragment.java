@@ -245,9 +245,9 @@ public class MoreFragment extends Fragment {
                 close.setOnClickListener(view -> dialog.dismiss());
 
                 JsonObject jsonObject = new Gson().fromJson(userData, JsonObject.class);
-                int userID = jsonObject.get("ID").getAsInt();
-                String name = jsonObject.get("Name").getAsString();
-                String email = jsonObject.get("Email").getAsString();
+                int userID = jsonObject.get("userdetailsid").getAsInt();
+                String name = jsonObject.get("username").getAsString();
+                String email = jsonObject.get("useremail").getAsString();
 
                 TextView profileName = dialog.findViewById(R.id.profileName);
                 profileName.setTextColor(Color.parseColor(AppConfig.primeryThemeColor));
@@ -932,10 +932,10 @@ public class MoreFragment extends Fragment {
 
             Logout_btn.setVisibility(View.GONE);
         } else {
-            String name = jsonObject.get("Name").getAsString();
-            String email = jsonObject.get("Email").getAsString();
-            int subscriptionType = jsonObject.get("subscription_type").getAsInt();
-            String subscriptionExp = jsonObject.get("subscription_exp").getAsString();
+            String name = jsonObject.get("username").getAsString();
+            String email = jsonObject.get("useremail").getAsString();
+            int subscriptionType = jsonObject.get("ottsubscriptionid").getAsInt();
+            String subscriptionExp = jsonObject.getAsJsonObject("ottSubscription").get("timeindays").getAsString();
 
             profileName.setText(name);
             profileEmail.setText(email);

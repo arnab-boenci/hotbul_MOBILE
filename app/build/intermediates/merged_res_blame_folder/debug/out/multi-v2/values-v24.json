@@ -1,10 +1,29 @@
 {
     "logs": [
         {
-            "outputFile": "com.dooo.android.app-mergeDebugResources-111:/values-v24/values-v24.xml",
+            "outputFile": "com.dooo.android.app-mergeDebugResources-116:/values-v24/values-v24.xml",
             "map": [
                 {
-                    "source": "/Users/arnabmandal/.gradle/caches/transforms-3/f7fa01ec5c32d36b35b7c3d1c5c6c478/transformed/media-1.6.0/res/values-v24/values-v24.xml",
+                    "source": "/Users/arnabmandal/.gradle/caches/transforms-3/454ddb08be019be5d45284462739d2fa/transformed/material-1.9.0/res/values-v24/values-v24.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,9,12,15",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,140,239,326,427,626,839,1040",
+                        "endLines": "2,3,4,5,8,11,14,17",
+                        "endColumns": "84,98,86,100,10,10,10,10",
+                        "endOffsets": "135,234,321,422,621,834,1035,1250"
+                    },
+                    "to": {
+                        "startLines": "4,5,6,7,8,11,14,17",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "347,432,531,618,719,918,1131,1332",
+                        "endLines": "4,5,6,7,10,13,16,19",
+                        "endColumns": "84,98,86,100,10,10,10,10",
+                        "endOffsets": "427,526,613,714,913,1126,1327,1542"
+                    }
+                },
+                {
+                    "source": "/Users/arnabmandal/.gradle/caches/transforms-3/d519077c3e4441d533c66144132e988b/transformed/media-1.6.0/res/values-v24/values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -21,32 +40,13 @@
                     }
                 },
                 {
-                    "source": "/Users/arnabmandal/.gradle/caches/transforms-3/3764de626fae0d4db295bb7e2158cc13/transformed/appcompat-1.6.1/res/values-v24/values-v24.xml",
+                    "source": "/Users/arnabmandal/.gradle/caches/transforms-3/85479d1fe98042a4b765e4f2e1f5987f/transformed/appcompat-1.6.1/res/values-v24/values-v24.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
                         "startOffsets": "55,212",
                         "endColumns": "156,134",
                         "endOffsets": "207,342"
-                    }
-                },
-                {
-                    "source": "/Users/arnabmandal/.gradle/caches/transforms-3/7b6a678ece1680733fb6b5e784bb45b4/transformed/material-1.9.0/res/values-v24/values-v24.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,9,12,15",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,140,239,326,427,626,839,1040",
-                        "endLines": "2,3,4,5,8,11,14,17",
-                        "endColumns": "84,98,86,100,10,10,10,10",
-                        "endOffsets": "135,234,321,422,621,834,1035,1250"
-                    },
-                    "to": {
-                        "startLines": "4,5,6,7,8,11,14,17",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "347,432,531,618,719,918,1131,1332",
-                        "endLines": "4,5,6,7,10,13,16,19",
-                        "endColumns": "84,98,86,100,10,10,10,10",
-                        "endOffsets": "427,526,613,714,913,1126,1327,1542"
                     }
                 }
             ]

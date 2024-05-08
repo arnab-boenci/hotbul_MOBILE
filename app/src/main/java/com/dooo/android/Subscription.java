@@ -193,18 +193,19 @@ public class Subscription extends AppCompatActivity {
         TextView Expire_Date = findViewById(R.id.Expire_Date);
 
         if(UserData != null) {
-            userID = jsonObject.get("ID").getAsInt();
 
-            String Name = jsonObject.get("Name").getAsString();
+            userID = jsonObject.get("userdetailsid").getAsInt();
+
+            String Name = jsonObject.get("username").getAsString();
             User_Name.setText(Name);
 
-            String Email = jsonObject.get("Email").getAsString();
+            String Email = jsonObject.get("useremail").getAsString();
             User_Email.setText(Email);
 
-            String active_subscription = jsonObject.get("active_subscription").getAsString();
+            String active_subscription = jsonObject.getAsJsonObject("ottSubscription").get("planname").getAsString();
             Active_Plan.setText(active_subscription);
 
-            String subscription_exp = jsonObject.get("subscription_exp").getAsString();
+            String subscription_exp = jsonObject.getAsJsonObject("ottSubscription").get("timeindays").getAsString();
             Expire_Date.setText(subscription_exp);
         }
     }

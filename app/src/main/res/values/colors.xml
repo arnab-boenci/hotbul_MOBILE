@@ -37,6 +37,8 @@
     <color name="Red_Smooth">#DF4674</color>
     <color name="Black_Smooth">#10101e</color>
 
+    <color name="Black_Smooth_Shimmer">#272735</color>
+
     <color name="Deep_Red">#EE2E47</color>
 
     <color name="Orange_Smooth">#ee727e</color>
@@ -47,4 +49,9 @@
     <color name="Grediant_Red_2">#E24E5A</color>
 
     <color name="grayBG">#191919</color>
+
+    <color name="transfarent_alll">#74151515</color>
+    <color name="overlay_dark_20">#33000000</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="bottomifyActiveColorDark">#F9FAFE</color>
 </resources>

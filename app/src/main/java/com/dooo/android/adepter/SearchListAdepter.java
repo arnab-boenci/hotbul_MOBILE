@@ -54,7 +54,7 @@ public class SearchListAdepter extends RecyclerView.Adapter<SearchListAdepter.My
         holder.Movie_Item.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(mData.get(position).getContent_Type().equalsIgnoreCase("Movies")) {
+                if(mData.get(position).getContent_Type().equalsIgnoreCase("Movie")) {
                     Intent intent = new Intent(mContext, MovieDetails.class);
                     intent.putExtra("ID", mData.get(position).getID());
                     mContext.startActivity(intent);

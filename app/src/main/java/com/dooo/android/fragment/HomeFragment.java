@@ -60,8 +60,12 @@ import com.dooo.android.AllWebSeriesActivity;
 import com.dooo.android.AppConfig;
 import com.dooo.android.Home;
 import com.dooo.android.LiveTv;
+import com.dooo.android.MoviesActivity;
+import com.dooo.android.MusicActivity;
 import com.dooo.android.R;
+import com.dooo.android.ShortFilmActivity;
 import com.dooo.android.Splash;
+import com.dooo.android.WebSeriesActivity;
 import com.dooo.android.WebView;
 import com.dooo.android.adepter.ContinuePlayingListAdepter;
 import com.dooo.android.adepter.GenreListAdepter;
@@ -92,6 +96,7 @@ import com.dooo.android.sharedpreferencesmanager.UserManager;
 import com.dooo.android.utils.Constants;
 import com.dooo.android.utils.HelperUtils;
 import com.facebook.ads.AudienceNetworkAds;
+import com.facebook.shimmer.ShimmerFrameLayout;
 import com.google.android.ads.nativetemplates.TemplateView;
 import com.google.android.exoplayer2.ExoPlayer;
 import com.google.android.exoplayer2.MediaItem;
@@ -200,9 +205,12 @@ public class HomeFragment extends Fragment {
     RecyclerView home_top_searched_list_Recycler_View;
     PlayerView custom_banner_video_ad, custom_footer_banner_video_ad;
     CardView bottom_floting_menu;
-    TextView bottom_floting_menu_movies, bottom_floting_menu_web_series, bottom_floting_menu_live_tv;
+    TextView bottom_floting_menu_movies, bottom_floting_menu_web_series, bottom_floting_menu_music;
     TextView appName;
     ImageView appLogo;
+    NestedScrollView nestedScrollView;
+
+    ShimmerFrameLayout shimmer_view_container;
 
     public HomeFragment() {
         // Required empty public constructor
@@ -236,7 +244,7 @@ public class HomeFragment extends Fragment {
         bindViews(layoutInflater);
 
 
-        NestedScrollView nestedScrollView = layoutInflater.findViewById(R.id.nestedScrollView);
+        nestedScrollView = layoutInflater.findViewById(R.id.nestedScrollView);
         LinearLayout appBar = layoutInflater.findViewById(R.id.appBar);
         appBar.setBackgroundColor(Color.parseColor("#"+HelperUtils.getAlphaColor(0)+"090911"));
         bottom_floting_menu.animate()
@@ -373,22 +381,22 @@ public class HomeFragment extends Fragment {
 
         imageSliderItems = new ArrayList<>();
         imageSliderType = "0";
-        switch (imageSliderType) {
-            case "0":
-                topMoviesImageSlider();
-                break;
-            case "1":
-                topWebSeriesImageSlider();
-                break;
-            case "2":
-                customImageSlider();
-                break;
-            case "3":
-                viewPager2.setVisibility(View.GONE);
-                break;
-            default:
-                Log.d("Dooo", "Visiable");
-        }
+//        switch (imageSliderType) {
+//            case "0":
+//                topMoviesImageSlider();
+//                break;
+//            case "1":
+//                topWebSeriesImageSlider();
+//                break;
+//            case "2":
+//                customImageSlider();
+//                break;
+//            case "3":
+//                viewPager2.setVisibility(View.GONE);
+//                break;
+//            default:
+//                Log.d("Dooo", "Visiable");
+//        }
 
         viewPager2.setClipToPadding(true);
         viewPager2.setClipChildren(true);
@@ -439,10 +447,15 @@ public class HomeFragment extends Fragment {
         } else  {
             liveTvLayout.setVisibility(View.VISIBLE);
         }
-
+        nestedScrollView.setVisibility(View.GONE);
+        shimmer_view_container.startShimmer();
+        shimmer_view_container.setVisibility(View.VISIBLE);
         loadhomecontentlist();
 
         homeSwipeRefreshLayout.setOnRefreshListener(() -> {
+            shimmer_view_container.startShimmer();
+            nestedScrollView.setVisibility(View.GONE);
+            shimmer_view_container.setVisibility(View.VISIBLE);
             loadhomecontentlist();
         });
 
@@ -502,13 +515,13 @@ public class HomeFragment extends Fragment {
         });
 
         bottom_floting_menu_movies.setOnClickListener(view->{
-            startActivity(new Intent(getActivity(), AllMoviesActivity.class));
+            startActivity(new Intent(getActivity(), MoviesActivity.class));
         });
         bottom_floting_menu_web_series.setOnClickListener(view->{
-            startActivity(new Intent(getActivity(), AllWebSeriesActivity.class));
+            startActivity(new Intent(getActivity(), ShortFilmActivity.class));
         });
-        bottom_floting_menu_live_tv.setOnClickListener(view->{
-            startActivity(new Intent(getActivity(), LiveTv.class));
+        bottom_floting_menu_music.setOnClickListener(view->{
+            startActivity(new Intent(getActivity(), MusicActivity.class));
         });
 
         setColorTheme(Color.parseColor(AppConfig.primeryThemeColor), layoutInflater);
@@ -574,7 +587,8 @@ public class HomeFragment extends Fragment {
         bottom_floting_menu = layoutInflater.findViewById(R.id.bottom_floting_menu);
         bottom_floting_menu_movies = layoutInflater.findViewById(R.id.bottom_floting_menu_movies);
         bottom_floting_menu_web_series = layoutInflater.findViewById(R.id.bottom_floting_menu_web_series);
-        bottom_floting_menu_live_tv = layoutInflater.findViewById(R.id.bottom_floting_menu_live_tv);
+        bottom_floting_menu_music = layoutInflater.findViewById(R.id.bottom_floting_menu_music);
+        shimmer_view_container = layoutInflater.findViewById(R.id.shimmer_view_container);
         appName = layoutInflater.findViewById(R.id.appName);
         appLogo = layoutInflater.findViewById(R.id.appLogo);
     }
@@ -702,14 +716,30 @@ public class HomeFragment extends Fragment {
                             for (JsonElement r : jsonArray) {
                                 // if (i < maxVisible) {
                                 JsonObject rootObject = r.getAsJsonObject();
-                                int id = rootObject.get("contentid").getAsInt();
-                                String name = rootObject.get("title").getAsString();
-                                String banner = rootObject.get("sliderimageurl").getAsString();
-                                String status = rootObject.get("status").getAsString();
+                                int id = 0; // Default value in case "contentid" is not present
+                                if (rootObject.has("contentid")) {
+                                    id = rootObject.get("contentid").getAsInt();
+                                }
+
+                                String name = ""; // Default value in case "title" is not present
+                                if (rootObject.has("title")) {
+                                    name = rootObject.get("title").getAsString();
+                                }
+
+                                String banner = ""; // Default value in case "sliderimageurl" is not present
+                                if (rootObject.has("sliderimageurl")) {
+                                    banner = rootObject.get("sliderimageurl").getAsString();
+                                }
+
+                                String status = ""; // Default value in case "status" is not present
+                                if (rootObject.has("status")) {
+                                    status = rootObject.get("status").getAsString();
+                                }
                                 imageSliderItems.add(new ImageSliderItem(banner, name, 0, id, ""));
                             }
                             viewPager2.setVisibility(View.VISIBLE);
                             viewPager2.setAdapter(new ImageSliderAdepter(imageSliderItems, viewPager2));
+
                         }else{
                             viewPager2.setVisibility(View.GONE);
                         }
@@ -791,6 +821,9 @@ public class HomeFragment extends Fragment {
     };
 
     void loadhomecontentlist() {
+
+        topMoviesImageSlider();
+
         RequestQueue queue = Volley.newRequestQueue(getActivity());
 
 
@@ -1394,6 +1427,9 @@ public class HomeFragment extends Fragment {
                         home_popularMovies_list_Recycler_View.setAdapter(myadepter);
 
                         homeSwipeRefreshLayout.setRefreshing(false);
+                        shimmer_view_container.stopShimmer();
+                        shimmer_view_container.setVisibility(View.GONE);
+                        nestedScrollView.setVisibility(View.VISIBLE);
                     }else {
                         popularMoviesLayout.setVisibility(View.GONE);
                         homeSwipeRefreshLayout.setRefreshing(false);
@@ -1447,7 +1483,9 @@ public class HomeFragment extends Fragment {
                         home_popularWebSeries_list_Recycler_View.setAdapter(myadepter);
 
                         homeSwipeRefreshLayout.setRefreshing(false);
-
+                        shimmer_view_container.stopShimmer();
+                        shimmer_view_container.setVisibility(View.GONE);
+                        nestedScrollView.setVisibility(View.VISIBLE);
                     } else {
                         popularMoviesLayout.setVisibility(View.GONE);
                         homeSwipeRefreshLayout.setRefreshing(false);
@@ -1499,6 +1537,9 @@ public class HomeFragment extends Fragment {
                         house_of_horror_list_Recycler_View.setAdapter(myadepter);
 
                         homeSwipeRefreshLayout.setRefreshing(false);
+                        shimmer_view_container.stopShimmer();
+                        shimmer_view_container.setVisibility(View.GONE);
+                        nestedScrollView.setVisibility(View.VISIBLE);
 
                     } else {
                         houseOfHorrorLayout.setVisibility(View.GONE);
@@ -1551,6 +1592,9 @@ public class HomeFragment extends Fragment {
                         old_is_gold_list_Recycler_View.setAdapter(myadepter);
 
                         homeSwipeRefreshLayout.setRefreshing(false);
+                        shimmer_view_container.stopShimmer();
+                        shimmer_view_container.setVisibility(View.GONE);
+                        nestedScrollView.setVisibility(View.VISIBLE);
 
                     } else {
                         oldisgoldLayout.setVisibility(View.GONE);
@@ -1609,6 +1653,9 @@ public class HomeFragment extends Fragment {
                         music_list_Recycler_View.setAdapter(myadepter);
 
                         //homeSwipeRefreshLayout.setRefreshing(false);
+                        shimmer_view_container.stopShimmer();
+                        shimmer_view_container.setVisibility(View.GONE);
+                        nestedScrollView.setVisibility(View.VISIBLE);
                     }else {
                         musicLayout.setVisibility(View.GONE);
                         homeSwipeRefreshLayout.setRefreshing(false);
@@ -1666,8 +1713,10 @@ public class HomeFragment extends Fragment {
                         WebSeriesListAdepter myadepter = new WebSeriesListAdepter(context, webSeriesList);
                         adult_list_Recycler_View.setLayoutManager(new GridLayoutManager(context, 1, RecyclerView.HORIZONTAL, false));
                         adult_list_Recycler_View.setAdapter(myadepter);
-
-                        //homeSwipeRefreshLayout.setRefreshing(false);
+                        shimmer_view_container.stopShimmer();
+                        shimmer_view_container.setVisibility(View.GONE);
+                        nestedScrollView.setVisibility(View.VISIBLE);
+                        homeSwipeRefreshLayout.setRefreshing(false);
                     }else {
                         adultLayout.setVisibility(View.GONE);
                         homeSwipeRefreshLayout.setRefreshing(false);
@@ -1719,8 +1768,10 @@ public class HomeFragment extends Fragment {
                         MovieListAdepter myadepter = new MovieListAdepter(context, recentlyAddedMovieList);
                         home_Recent_Movies_list_Recycler_View.setLayoutManager(new GridLayoutManager(context, 1, RecyclerView.HORIZONTAL, false));
                         home_Recent_Movies_list_Recycler_View.setAdapter(myadepter);
-
-                       // homeSwipeRefreshLayout.setRefreshing(false);
+                        shimmer_view_container.stopShimmer();
+                        shimmer_view_container.setVisibility(View.GONE);
+                        nestedScrollView.setVisibility(View.VISIBLE);
+                        homeSwipeRefreshLayout.setRefreshing(false);
 
                     } else {
                         recentMoviesLayout.setVisibility(View.GONE);
@@ -1771,8 +1822,10 @@ public class HomeFragment extends Fragment {
                         WebSeriesListAdepter myadepter = new WebSeriesListAdepter(context, recentlyAddedWebSeriesList);
                         home_Recent_Series_list_Recycler_View.setLayoutManager(new GridLayoutManager(context, 1, RecyclerView.HORIZONTAL, false));
                         home_Recent_Series_list_Recycler_View.setAdapter(myadepter);
-
-                         homeSwipeRefreshLayout.setRefreshing(false);
+                        shimmer_view_container.stopShimmer();
+                        shimmer_view_container.setVisibility(View.GONE);
+                        nestedScrollView.setVisibility(View.VISIBLE);
+                        homeSwipeRefreshLayout.setRefreshing(false);
 
                     } else {
                         recentWebSeriesLayout.setVisibility(View.GONE);

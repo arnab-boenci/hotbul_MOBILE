@@ -1,27 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.dooo.android.app-mergeDebugResources-111:/values-sw720dp-v13/values-sw720dp-v13.xml",
+            "outputFile": "com.dooo.android.app-mergeDebugResources-116:/values-sw720dp-v13/values-sw720dp-v13.xml",
             "map": [
                 {
-                    "source": "/Users/arnabmandal/.gradle/caches/transforms-3/2571254f04fd1b116af2f481dd393cfb/transformed/mediarouter-1.3.1/res/values-sw720dp-v13/values-sw720dp-v13.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,124",
-                        "endColumns": "68,68",
-                        "endOffsets": "119,188"
-                    },
-                    "to": {
-                        "startLines": "4,5",
-                        "startColumns": "4,4",
-                        "startOffsets": "147,216",
-                        "endColumns": "68,68",
-                        "endOffsets": "211,280"
-                    }
-                },
-                {
-                    "source": "/Users/arnabmandal/.gradle/caches/transforms-3/f4457d3b4e0a791d5a6c5fbe9f60b5f4/transformed/jetified-cardinalmobilesdk-2.2.7-2/res/values-sw720dp-v13/values-sw720dp-v13.xml",
+                    "source": "/Users/arnabmandal/.gradle/caches/transforms-3/901fdb3a4fa99eb4904d892d2238ff04/transformed/jetified-cardinalmobilesdk-2.2.7-2/res/values-sw720dp-v13/values-sw720dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7",
                         "startColumns": "4,4,4,4,4,4",
@@ -35,6 +18,23 @@
                         "startOffsets": "55,98,285,336,386,442",
                         "endColumns": "42,48,50,49,55,57",
                         "endOffsets": "93,142,331,381,437,495"
+                    }
+                },
+                {
+                    "source": "/Users/arnabmandal/.gradle/caches/transforms-3/2c3c7e5c9c12ef7d2f164edaf85988c8/transformed/mediarouter-1.3.1/res/values-sw720dp-v13/values-sw720dp-v13.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,124",
+                        "endColumns": "68,68",
+                        "endOffsets": "119,188"
+                    },
+                    "to": {
+                        "startLines": "4,5",
+                        "startColumns": "4,4",
+                        "startOffsets": "147,216",
+                        "endColumns": "68,68",
+                        "endOffsets": "211,280"
                     }
                 }
             ]

@@ -53,7 +53,8 @@ public class AppConfig {
 
     public static int selected_actor;
 
-   // public static String baseurl = "http://172.232.104.79:8091"; //"http://192.168.0.210:8091";
+   // public static String baseurl = "https://adminapi.hotbul.in"; //"http://192.168.0.210:8091";
     public static String baseurl = "http://192.168.0.194:8091";
+    //public static String baseurl = "http://172.235.26.126:8091";
     //<!------------------------------------------------------------------->//
 }

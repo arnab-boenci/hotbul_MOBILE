@@ -3,15 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/episode_item"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="210dp"
+    android:layout_width="200dp"
     android:layout_height="160dp"
-    android:backgroundTint="@color/Black_Smooth"
+    android:backgroundTint="#1E1E21"
     app:cardCornerRadius="10dp"
     app:cardElevation="0dp"
-    android:layout_marginLeft="5dp"
-    android:layout_marginRight="5dp"
-    android:layout_marginTop="5dp"
-    android:layout_marginBottom="5dp"
     android:clickable="true"
     android:foreground="?attr/selectableItemBackground">
 
@@ -22,7 +18,7 @@
         <ImageView
             android:id="@+id/Episode_image"
             android:layout_width="match_parent"
-            android:layout_height="110dp"
+            android:layout_height="120dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"

@@ -6,10 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="80dp"
     android:backgroundTint="@color/Screen_Background"
-    android:layout_marginTop="10dp"
-    android:layout_marginBottom="5dp"
-    android:layout_marginStart="10dp"
     android:layout_marginEnd="5dp"
+    android:layout_marginTop="10dp"
     android:clickable="true"
     android:focusable="true">
 
@@ -24,7 +22,7 @@
                 android:id="@+id/Episode_image"
                 android:layout_width="100dp"
                 android:layout_height="match_parent"
-                android:scaleType="fitXY"
+                android:scaleType="centerCrop"
                 android:src="@mipmap/ic_launcher"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -94,7 +92,8 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/linearLayout"
-                app:layout_constraintTop_toTopOf="parent">
+                app:layout_constraintTop_toTopOf="parent"
+                android:visibility="gone">
                 <ImageView
                     android:id="@+id/Download_btn_image"
                     android:layout_width="32dp"

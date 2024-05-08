@@ -48,8 +48,23 @@
             android:name=".AllWebSeriesActivity"
             android:exported="false" />
         <activity
+            android:name=".MoviesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WebSeriesActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".ShortFilmActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".MusicActivity"
+            android:exported="false" />
+        <activity
             android:name=".AllMoviesActivity"
             android:exported="false" />
+        <activity
+            android:exported="false" android:name=".ContentInCategory"
+            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation" />
         <activity
             android:name=".AllMoviesWithActorActivity"
             android:exported="false" />
@@ -104,13 +119,21 @@
         <activity android:name=".SubscriptionList" />
         <activity android:name=".Subscription" />
         <activity android:name=".Favorites" />
-        <activity android:name=".WebSeriesDetails" />
+        <activity android:name=".WebSeriesDetails"
+            android:exported="false"
+            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
+            android:launchMode="singleTask"
+            android:supportsPictureInPicture="true"/>
         <activity android:name=".Maintenance" />
         <activity android:name=".WebView" />
         <activity
             android:name=".TrailerPlayer"
             android:configChanges="keyboardHidden|orientation|screenSize" />
-        <activity android:name=".MovieDetails" />
+        <activity android:name=".MovieDetails"
+            android:exported="false"
+            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
+            android:launchMode="singleTask"
+            android:supportsPictureInPicture="true"/>
         <activity android:name=".LoginSignup" />
         <activity android:name=".Home" />
         <activity

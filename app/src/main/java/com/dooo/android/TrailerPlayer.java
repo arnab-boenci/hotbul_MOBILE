@@ -113,17 +113,18 @@ public class TrailerPlayer extends AppCompatActivity {
         String trailerUrl = intent.getExtras().getString("Trailer_URL");
 
         progressDialog.show();
-        Yts.getlinks(this, trailerUrl, new Yts.VolleyCallback(){
-            @Override
-            public void onSuccess(List<YTStreamList> result) {
-                ytMultipleQualityDialog(TrailerPlayer.this, result);
-            }
-
-            @Override
-            public void onError(VolleyError error) {
-
-            }
-        });
+        initializePlayer(trailerUrl);
+//        Yts.getlinks(this, trailerUrl, new Yts.VolleyCallback(){
+//            @Override
+//            public void onSuccess(List<YTStreamList> result) {
+//                ytMultipleQualityDialog(TrailerPlayer.this, result);
+//            }
+//
+//            @Override
+//            public void onError(VolleyError error) {
+//
+//            }
+//        });
 
         ImageView imgFullScr = playerView.findViewById(R.id.img_full_scr);
         imgFullScr.setOnClickListener(new View.OnClickListener() {
@@ -248,6 +249,7 @@ public class TrailerPlayer extends AppCompatActivity {
     }
 
     void initializePlayer(String URL) {
+        progressDialog.dismiss();
         simpleExoPlayer=new SimpleExoPlayer.Builder(this)
                 .setSeekForwardIncrementMs(10000)
                 .setSeekBackIncrementMs(10000)

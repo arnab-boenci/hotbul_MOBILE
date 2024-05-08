@@ -29,13 +29,17 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 import androidx.core.content.ContextCompat;
+import androidx.recyclerview.widget.GridLayoutManager;
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.DefaultRetryPolicy;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
+import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.dooo.android.adepter.SearchListAdepter;
+import com.dooo.android.list.SearchList;
 import com.dooo.android.utils.GenericKeyEvent;
 import com.dooo.android.utils.GenericTextWatcher;
 import com.dooo.android.utils.HelperUtils;
@@ -50,16 +54,22 @@ import com.google.android.gms.tasks.Task;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.android.material.tabs.TabLayout;
 import com.google.gson.Gson;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.jetradarmobile.snowfall.SnowfallView;
 
 import org.imaginativeworld.oopsnointernet.dialogs.signal.DialogPropertiesSignal;
 import org.imaginativeworld.oopsnointernet.dialogs.signal.NoInternetDialogSignal;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.math.BigInteger;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import es.dmoral.toasty.Toasty;
@@ -78,6 +88,11 @@ public class LoginSignup extends AppCompatActivity {
 
     private GoogleSignInClient mGoogleSignInClient;
     private static final int RC_SIGN_IN = 001;
+    String signupName = "";
+    String signupEmail = "";
+    String signupPassword = "";
+    String email = "";
+    String pass = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -148,8 +163,8 @@ public class LoginSignup extends AppCompatActivity {
                 loadingAnimation.animate(false);
                 Toasty.warning(context, "Please Enter Your Email.", Toast.LENGTH_SHORT, true).show();
             }else {
-                String email = loginEditTextEmailAddress.getText().toString().trim();
-                String pass = loginEditTextPassword.getText().toString();
+                email = loginEditTextEmailAddress.getText().toString().trim();
+                pass = loginEditTextPassword.getText().toString();
                 String originalInput = "login:"+email+":" + getMd5(pass);
                 String encoded = Utils.toBase64(originalInput);
 
@@ -291,9 +306,9 @@ public class LoginSignup extends AppCompatActivity {
                     loadingAnimation.animate(false);
                     Toasty.warning(context, "Password and Confirm Password Not Matching.", Toast.LENGTH_SHORT, true).show();
                 } else {
-                    String signupName = signupFullnameEdittext.getText().toString();
-                    String signupEmail = signupEditTextTextEmailAddress.getText().toString().trim();
-                    String signupPassword = signupPasswordEdittext.getText().toString();
+                     signupName = signupFullnameEdittext.getText().toString();
+                     signupEmail = signupEditTextTextEmailAddress.getText().toString().trim();
+                     signupPassword = signupPasswordEdittext.getText().toString();
 
 
                     if(HelperUtils.isValidEmail(signupEmail)) {
@@ -842,103 +857,110 @@ public class LoginSignup extends AppCompatActivity {
 
     private void Login(String encoded) {
         RequestQueue queue = Volley.newRequestQueue(context);
-        StringRequest sr = new StringRequest(Request.Method.POST, AppConfig.url + "authentication", response -> {
-            if (!response.equals("") || response != null) {
-                JsonObject jsonObject = new Gson().fromJson(response, JsonObject.class);
-                String status = jsonObject.get("Status").toString();
-                status = status.substring(1, status.length() - 1);
+        JSONObject jsonObject = new JSONObject();
+        try {
+            // Populate JSON object with provided data
+            jsonObject.put("email", email);
+            jsonObject.put("password", pass);
+            jsonObject.put("usermode", "visitor");
+            jsonObject.put("caller", "webadmin");
 
-                if (response.equals("invalid")) {
-                    Toasty.error(context, "Invalid Request.", Toast.LENGTH_SHORT, true).show();
-                } else if (status.equals("Successful")) {
-                    Toasty.success(context, "Logged in Successfully.", Toast.LENGTH_SHORT, true).show();
-                    saveData(response);
-                    Intent intent = new Intent(LoginSignup.this, Splash.class);
-                    startActivity(intent);
-                    finish();
-                } else if (status.equals("Invalid Credential")) {
-                    Toasty.error(context, "Invalid Credential.", Toast.LENGTH_SHORT, true).show();
+            JsonObjectRequest loginRequest = new JsonObjectRequest(Request.Method.POST, AppConfig.baseurl +"/userdetails/userlogin",
+                    jsonObject, response -> {
+
+                if(!response.equals("No Data Avaliable")) {
+                    JsonObject jsonObjectResponse = new Gson().fromJson(response.toString(), JsonObject.class);
+                    if(jsonObjectResponse.get("status").getAsString().equalsIgnoreCase("Success")) {
+                        String userData = jsonObjectResponse.get("jsonBody").getAsString() ;
+                        saveData(userData);
+                        Toasty.success(context, "Logged in Successfully.", Toast.LENGTH_SHORT, true).show();
+                        Intent intent = new Intent(LoginSignup.this, Splash.class);
+                        startActivity(intent);
+
+                    }else{
+                        Toasty.error(context, "Invalid Credential.", Toast.LENGTH_SHORT, true).show();
+                        loadingAnimation.animate(false);
+                    }
+
                 } else {
                     Toasty.error(context, "Something Went Wrong!", Toast.LENGTH_SHORT, true).show();
+                    loadingAnimation.animate(false);
+                }
+            }, error -> {
+                // Do nothing because There is No Error if error It will return 0
+            }) {
+                @Override
+                public Map<String, String> getHeaders() throws AuthFailureError {
+                    Map<String,String> params = new HashMap<>();
+                    // params.put("x-api-key", AppConfig.apiKey);
+                    return params;
                 }
 
-            } else {
-                Toasty.error(context, "Something Went Wrong!", Toast.LENGTH_SHORT, true).show();
-            }
-
-            loadingAnimation.animate(false);
-
-        }, error -> {
-            loadingAnimation.animate(false);
-            Toasty.error(context, "Something Went Wrong!", Toast.LENGTH_SHORT, true).show();
-        }) {
-            @Override
-            public Map<String, String> getHeaders() throws AuthFailureError {
-                Map<String, String> params = new HashMap<>();
-                params.put("x-api-key", AppConfig.apiKey);
-                return params;
-            }
-
-            @Override
-            protected Map<String, String> getParams() {
-                Map<String, String> params = new HashMap<>();
-                params.put("encoded", encoded);
-                params.put("device", Settings.Secure.getString(getContentResolver(), Settings.Secure.ANDROID_ID));
-                return params;
-            }
-        };
-        queue.add(sr);
+            };
+            queue.add(loginRequest);
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
     }
 
     private void SignUp(String encodedSignupData) {
         RequestQueue queue = Volley.newRequestQueue(context);
-        StringRequest sr = new StringRequest(Request.Method.POST, AppConfig.url + "authentication", response -> {
-            JsonObject jsonObject = new Gson().fromJson(response, JsonObject.class);
-            String status = jsonObject.get("Status").toString();
-            status = status.substring(1, status.length() - 1);
 
-            switch (status) {
-                case "Successful":
-                    Toasty.success(context, "Registered Successfully.", Toast.LENGTH_SHORT, true).show();
-                    saveData(response);
-                    Intent intent = new Intent(LoginSignup.this, Splash.class);
-                    startActivity(intent);
-                    finish();
-                    break;
-                case "Email Already Regestered":
-                    Toasty.error(context, "Email Already Regestered", Toast.LENGTH_SHORT, true).show();
-                    break;
-                case "Disposable Emails are not allowed":
-                    Toasty.error(context, "Disposable Emails are not allowed!", Toast.LENGTH_SHORT, true).show();
-                    break;
-                case "Something Went Wrong!":
+        JSONObject jsonObject = new JSONObject();
+        JSONObject userDetailsjsonObject = new JSONObject();
+        try {
+            // Populate JSON object with provided data
+            jsonObject.put("email", "admin@gmail.com");
+            jsonObject.put("password", "123456");
+            jsonObject.put("usermode", "admin");
+            jsonObject.put("caller", "webadmin");
+            userDetailsjsonObject.put("username",signupName);
+            userDetailsjsonObject.put("password",signupPassword);
+            userDetailsjsonObject.put("useremail",signupEmail);
+            userDetailsjsonObject.put("phonenumber","9563991239");
+            userDetailsjsonObject.put("usermode", "visitor");
+            userDetailsjsonObject.put("action","save");
+            jsonObject.put("userdetails",userDetailsjsonObject);
+
+
+            JsonObjectRequest searchRequest = new JsonObjectRequest(Request.Method.POST, AppConfig.baseurl +"/userdetails/cuduserdetails",
+                    jsonObject, response -> {
+
+                if(!response.equals("No Data Avaliable")) {
+                    JsonObject jsonObjectResponse = new Gson().fromJson(response.toString(), JsonObject.class);
+                    if(jsonObjectResponse.get("status").getAsString().equalsIgnoreCase("Success")) {
+                        String userData = jsonObjectResponse.get("jsonBody").getAsString() ;
+                        Toasty.success(context, "Registered Successfully.", Toast.LENGTH_SHORT, true).show();
+                        saveData(userData);
+                        Intent intent = new Intent(LoginSignup.this, Splash.class);
+                        startActivity(intent);
+                        finish();
+
+                    }else{
+                        Toasty.error(context, "Email Already Regestered", Toast.LENGTH_SHORT, true).show();
+                        loadingAnimation.animate(false);
+                    }
+
+                } else {
                     Toasty.error(context, "Something Went Wrong!", Toast.LENGTH_SHORT, true).show();
-                    break;
-                default:
-                    break;
-            }
+                    loadingAnimation.animate(false);
+                }
+            }, error -> {
+                // Do nothing because There is No Error if error It will return 0
+            }) {
+                @Override
+                public Map<String, String> getHeaders() throws AuthFailureError {
+                    Map<String,String> params = new HashMap<>();
+                    // params.put("x-api-key", AppConfig.apiKey);
+                    return params;
+                }
 
-            loadingAnimation.animate(false);
+            };
+            queue.add(searchRequest);
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
 
-        }, error -> {
-            loadingAnimation.animate(false);
-        }) {
-            @Override
-            public Map<String, String> getHeaders() throws AuthFailureError {
-                Map<String, String> params = new HashMap<>();
-                params.put("x-api-key", AppConfig.apiKey);
-                return params;
-            }
-
-            @Override
-            protected Map<String, String> getParams() {
-                Map<String, String> params = new HashMap<>();
-                params.put("encoded", encodedSignupData);
-                params.put("device", Settings.Secure.getString(getContentResolver(), Settings.Secure.ANDROID_ID));
-                return params;
-            }
-        };
-        queue.add(sr);
     }
 
     @Override
@@ -979,12 +1001,12 @@ public class LoginSignup extends AppCompatActivity {
         String config = sharedPreferences.getString("Config", null);
 
         JsonObject jsonObject = new Gson().fromJson(config, JsonObject.class);
-        google_login = jsonObject.get("google_login").getAsInt();
+        google_login = 1;//jsonObject.get("google_login").getAsInt();
 
-        loginOtpStatus = jsonObject.get("login_otp_status").getAsInt();;
-        signupOtpStatus = jsonObject.get("signup_otp_status").getAsInt();;
+        loginOtpStatus = 0;// jsonObject.get("login_otp_status").getAsInt();;
+        signupOtpStatus = 0;//jsonObject.get("signup_otp_status").getAsInt();;
 
-        int onScreenEffect = jsonObject.get("onscreen_effect").getAsInt();
+        int onScreenEffect = 0;//jsonObject.get("onscreen_effect").getAsInt();
         SnowfallView SnowfallView = findViewById(R.id.SnowfallView);
         switch (onScreenEffect) {
             case 0:

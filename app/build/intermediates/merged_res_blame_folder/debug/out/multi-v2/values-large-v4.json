@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.dooo.android.app-mergeDebugResources-111:/values-large-v4/values-large-v4.xml",
+            "outputFile": "com.dooo.android.app-mergeDebugResources-116:/values-large-v4/values-large-v4.xml",
             "map": [
                 {
-                    "source": "/Users/arnabmandal/.gradle/caches/transforms-3/7b6a678ece1680733fb6b5e784bb45b4/transformed/material-1.9.0/res/values-large-v4/values-large-v4.xml",
+                    "source": "/Users/arnabmandal/.gradle/caches/transforms-3/454ddb08be019be5d45284462739d2fa/transformed/material-1.9.0/res/values-large-v4/values-large-v4.xml",
                     "from": {
                         "startLines": "2,3,4,10",
                         "startColumns": "4,4,4,4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "/Users/arnabmandal/.gradle/caches/transforms-3/3764de626fae0d4db295bb7e2158cc13/transformed/appcompat-1.6.1/res/values-large-v4/values-large-v4.xml",
+                    "source": "/Users/arnabmandal/.gradle/caches/transforms-3/85479d1fe98042a4b765e4f2e1f5987f/transformed/appcompat-1.6.1/res/values-large-v4/values-large-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4",

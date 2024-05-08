@@ -102,6 +102,9 @@ array al_exo_speed_multiplied_by_100
 array assume_strong_biometrics_models
 array cast_expanded_controller_default_control_buttons
 array cast_mini_controller_default_control_buttons
+array com_google_android_gms_fonts_certs
+array com_google_android_gms_fonts_certs_dev
+array com_google_android_gms_fonts_certs_prod
 array crypto_fingerprint_fallback_prefixes
 array crypto_fingerprint_fallback_vendors
 array delay_showing_prompt_models
@@ -246,9 +249,11 @@ attr arcMode
 attr argType
 attr arrowHeadLength
 attr arrowShaftLength
+attr artwork_display_mode
 attr attributeName
 attr autoCompleteMode
 attr autoCompleteTextViewStyle
+attr autoPlay
 attr autoShowKeyboard
 attr autoSizeMaxTextSize
 attr autoSizeMinTextSize
@@ -710,7 +715,10 @@ attr elevationOverlayAccentColor
 attr elevationOverlayColor
 attr elevationOverlayEnabled
 attr emojiCompatEnabled
+attr enableAudioFocus
+attr enableAutomaticInitialization
 attr enableEdgeToEdge
+attr enableLiveVideoUi
 attr enabled
 attr endIconCheckable
 attr endIconContentDescription
@@ -827,6 +835,7 @@ attr fontProviderFetchTimeout
 attr fontProviderPackage
 attr fontProviderQuery
 attr fontProviderSystemFontFamily
+attr fontSize
 attr fontStyle
 attr fontType
 attr fontVariationSettings
@@ -845,6 +854,7 @@ attr graph
 attr guidelineUseRtl
 attr haloColor
 attr haloRadius
+attr handleNetworkEvents
 attr headerLayout
 attr header_background_color
 attr header_gravity
@@ -1079,6 +1089,7 @@ attr logo
 attr logoAdjustViewBounds
 attr logoDescription
 attr logoScaleType
+attr looping
 attr lottieAnimationViewStyle
 attr lottie_asyncUpdates
 attr lottie_autoPlay
@@ -1100,6 +1111,13 @@ attr lottie_repeatMode
 attr lottie_speed
 attr lottie_url
 attr lottie_useCompositionFrameRate
+attr lpv_halo_color
+attr lpv_halo_height
+attr lpv_halo_width
+attr lpv_magicnum
+attr lpv_moon_color
+attr lpv_num_of_halo
+attr main_text_color
 attr mapType
 attr marginHorizontal
 attr marginLeftSystemWindowInsets
@@ -1364,8 +1382,11 @@ attr placeholderText
 attr placeholderTextAppearance
 attr placeholderTextColor
 attr placeholder_emptyVisibility
+attr placement_bg
+attr placement_icon
 attr played_ad_marker_color
 attr played_color
+attr playerBackgroundColor
 attr player_layout_id
 attr points
 attr polarRelativeTo
@@ -1439,6 +1460,7 @@ attr row_vertical_padding
 attr saturation
 attr scaleFromTextSize
 attr scopeUris
+attr screenScaleType
 attr scrimAnimationDuration
 attr scrimBackground
 attr scrimVisibleHeightTrigger
@@ -1511,10 +1533,15 @@ attr showDivider
 attr showDividerHorizontal
 attr showDividerVertical
 attr showDividers
+attr showFullScreenButton
 attr showMotionSpec
 attr showPaths
+attr showSeekBar
 attr showText
 attr showTitle
+attr showVideoCurrentTime
+attr showVideoDuration
+attr showYouTubeButton
 attr show_buffering
 attr show_fastforward_button
 attr show_favorite_state
@@ -1854,11 +1881,13 @@ attr useCompatPadding
 attr useDrawerArrowDrawable
 attr useMaterialThemeColors
 attr useViewLifecycle
+attr useWebUi
 attr use_artwork
 attr use_controller
 attr values
 attr verticalOffset
 attr verticalOffsetWithText
+attr videoId
 attr viewInflaterClass
 attr viewTransitionMode
 attr viewTransitionOnCross
@@ -1866,6 +1895,13 @@ attr viewTransitionOnNegativeCross
 attr viewTransitionOnPositiveCross
 attr visibilityMode
 attr voiceIcon
+attr vpv_halo_color
+attr vpv_halo_height
+attr vpv_halo_width
+attr vpv_num_of_halo
+attr vpv_volume_high
+attr vpv_volume_low
+attr vpv_volume_medium
 attr warmth
 attr waveDecay
 attr waveOffset
@@ -1907,6 +1943,7 @@ bool is_tablet
 bool mtrl_btn_textappearance_all_caps
 bool workmanager_test_configuration
 color Black_Smooth
+color Black_Smooth_Shimmer
 color Blue
 color Deep_Red
 color Deep_Yellow
@@ -1994,6 +2031,11 @@ color applovin_sdk_textColorPrimaryDark
 color applovin_sdk_textColorSecondaryDark
 color applovin_sdk_warningColor
 color applovin_sdk_xmarkColor
+color ayp_drop_shadow
+color ayp_item_selected
+color ayp_menu_icons
+color ayp_menu_text
+color ayp_red
 color back_net_banking
 color background_floating_material_dark
 color background_floating_material_light
@@ -2020,6 +2062,7 @@ color blue_00ade6
 color blue_100
 color blue_200
 color bnv_tab_item_foreground
+color bottomifyActiveColorDark
 color bright_foreground_disabled_material_dark
 color bright_foreground_disabled_material_light
 color bright_foreground_inverse_material_dark
@@ -2141,6 +2184,9 @@ color dim_foreground_disabled_material_dark
 color dim_foreground_disabled_material_light
 color dim_foreground_material_dark
 color dim_foreground_material_light
+color dkplayer_background_color
+color dkplayer_theme_color
+color dkplayer_theme_color_translucent
 color dtpv_yt_background_circle_color
 color dtpv_yt_tap_circle_color
 color dummy
@@ -2858,6 +2904,7 @@ color normalColor
 color notification_action_color_filter
 color notification_icon_bg_color
 color notification_material_background_media_default_color
+color overlay_dark_20
 color paypal_auth_edit_text_focus
 color paypal_auth_edit_text_hint
 color paypal_auth_error
@@ -2973,6 +3020,8 @@ color teal_700
 color theme_color_dark
 color tooltip_background_dark
 color tooltip_background_light
+color transfarent_alll
+color transparent
 color ui_button_primary_background
 color ui_button_secondary_background
 color w_Dark
@@ -3125,6 +3174,11 @@ dimen applovin_sdk_mediationDebuggerSectionTextSize
 dimen applovin_sdk_mrec_height
 dimen applovin_sdk_mrec_width
 dimen attribution_text_size
+dimen ayp_12sp
+dimen ayp_8dp
+dimen ayp_menu_dialog_container_margin
+dimen ayp_menu_item_padding
+dimen ayp_menu_item_text_size
 dimen browser_actions_context_menu_max_width
 dimen browser_actions_context_menu_min_padding
 dimen cardview_compat_inset_shadow
@@ -3285,6 +3339,15 @@ dimen dimen_96dp
 dimen dimen_neg_16dp
 dimen disabled_alpha_material_dark
 dimen disabled_alpha_material_light
+dimen dkplayer_controller_height
+dimen dkplayer_controller_icon_padding
+dimen dkplayer_controller_seekbar_max_size
+dimen dkplayer_controller_seekbar_size_n
+dimen dkplayer_controller_seekbar_size_s
+dimen dkplayer_controller_text_size
+dimen dkplayer_controller_time_text_size
+dimen dkplayer_default_spacing
+dimen dkplayer_play_btn_size
 dimen dtpv_yt_arc_size
 dimen dummy
 dimen edit_text_border_padding
@@ -4170,6 +4233,7 @@ dimen paypal_checkout_touch_target_min_width
 dimen paypal_checkout_user_profile_circle_layout_elevation
 dimen paypal_checkout_user_profile_nested_scroll_view_peak_hight
 dimen paypal_checkout_width_0
+dimen player_height
 dimen progressbar_height
 dimen progressbar_width
 dimen radiusTop
@@ -4379,7 +4443,7 @@ drawable applovin_ic_mediation_admob
 drawable applovin_ic_mediation_amazon_marketplace
 drawable applovin_ic_mediation_applovin
 drawable applovin_ic_mediation_bidmachine
-drawable applovin_ic_mediation_bigoads
+drawable applovin_ic_mediation_bigo
 drawable applovin_ic_mediation_chartboost
 drawable applovin_ic_mediation_facebook
 drawable applovin_ic_mediation_fyber
@@ -4393,7 +4457,6 @@ drawable applovin_ic_mediation_mintegral
 drawable applovin_ic_mediation_mobilefuse
 drawable applovin_ic_mediation_moloco
 drawable applovin_ic_mediation_mytarget
-drawable applovin_ic_mediation_nend
 drawable applovin_ic_mediation_ogury_presage
 drawable applovin_ic_mediation_pangle
 drawable applovin_ic_mediation_placeholder
@@ -4420,14 +4483,27 @@ drawable applovin_rounded_black_background
 drawable applovin_rounded_button
 drawable applovin_rounded_text_view_border
 drawable assist_background
+drawable attrs
 drawable avd_hide_password
 drawable avd_show_password
+drawable ayp_background_item_selected
+drawable ayp_drop_shadow_bottom
+drawable ayp_drop_shadow_top
+drawable ayp_ic_fullscreen_24dp
+drawable ayp_ic_fullscreen_exit_24dp
+drawable ayp_ic_menu_24dp
+drawable ayp_ic_pause_36dp
+drawable ayp_ic_play_36dp
+drawable ayp_ic_youtube_24dp
+drawable ayp_shape_rounded_corners
 drawable back
 drawable banner_gradiant
 drawable baseline_mic
 drawable baseline_remove_red_eye_black_18dp
 drawable bg_btn_blue
 drawable bg_btn_saved_id
+drawable bg_center_window
+drawable bg_overlay1
 drawable black_background_curved
 drawable black_cursor
 drawable black_pin_bg
@@ -4516,6 +4592,8 @@ drawable cell_line_divider
 drawable checked
 drawable checkmark_selected
 drawable circle_cross
+drawable circle_transparent_back
+drawable circle_transparent_back_one
 drawable circled_right
 drawable close
 drawable collapsed
@@ -4573,6 +4651,7 @@ drawable crown
 drawable crown_yellow
 drawable cursor_blue
 drawable custom_checkbox
+drawable dbug_image
 drawable default_dot
 drawable design_fab_background
 drawable design_ic_visibility
@@ -4580,6 +4659,45 @@ drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable discount_voucher
+drawable dkplayer_battery_level
+drawable dkplayer_ic_action_arrow_back
+drawable dkplayer_ic_action_autorenew
+drawable dkplayer_ic_action_battery
+drawable dkplayer_ic_action_battery_10
+drawable dkplayer_ic_action_battery_20
+drawable dkplayer_ic_action_battery_30
+drawable dkplayer_ic_action_battery_40
+drawable dkplayer_ic_action_battery_50
+drawable dkplayer_ic_action_battery_60
+drawable dkplayer_ic_action_battery_70
+drawable dkplayer_ic_action_battery_80
+drawable dkplayer_ic_action_battery_90
+drawable dkplayer_ic_action_brightness
+drawable dkplayer_ic_action_close
+drawable dkplayer_ic_action_fast_forward
+drawable dkplayer_ic_action_fast_rewind
+drawable dkplayer_ic_action_fullscreen
+drawable dkplayer_ic_action_fullscreen_exit
+drawable dkplayer_ic_action_lock_close
+drawable dkplayer_ic_action_lock_open
+drawable dkplayer_ic_action_pause
+drawable dkplayer_ic_action_play_arrow
+drawable dkplayer_ic_action_replay
+drawable dkplayer_ic_action_volume_off
+drawable dkplayer_ic_action_volume_up
+drawable dkplayer_layer_progress_bar
+drawable dkplayer_progress_loading
+drawable dkplayer_seekbar_thumb
+drawable dkplayer_seekbar_thumb_normal
+drawable dkplayer_seekbar_thumb_pressed
+drawable dkplayer_selector_full_screen_button
+drawable dkplayer_selector_lock_button
+drawable dkplayer_selector_play_button
+drawable dkplayer_shape_back_bg
+drawable dkplayer_shape_play_bg
+drawable dkplayer_shape_standard_controller_top_bg
+drawable dkplayer_shape_stardard_controller_bottom_bg
+drawable dkplayer_shape_status_view_btn
 drawable dooo_logo_no_bg
 drawable dooo_logo_no_bg_1
 drawable dooo_logo_no_bg_red
@@ -4689,6 +4807,8 @@ drawable googleg_standard_color_18
 drawable grediant_link_item_bg
 drawable green_btn_curved
 drawable heart_favorite
+drawable ic_action_back_arrow
+drawable ic_action_back_arrow_white
 drawable ic_airplane
 drawable ic_airplanemode_inactive
 drawable ic_alert
@@ -4702,11 +4822,25 @@ drawable ic_assist_banner
 drawable ic_audiotrack_dark
 drawable ic_audiotrack_light
 drawable ic_backspace
+drawable ic_baseline_arrow_back_wh
+drawable ic_baseline_cancel
 drawable ic_baseline_delete_sweep_24
 drawable ic_baseline_exit
+drawable ic_baseline_fast_forward_24
+drawable ic_baseline_fast_rewind_24
 drawable ic_baseline_fullscreen_24
 drawable ic_baseline_fullscreen_exit_24
+drawable ic_baseline_lock
+drawable ic_baseline_lock_open
+drawable ic_baseline_more_vert
+drawable ic_baseline_picture_in_picture_alt
+drawable ic_baseline_repeat_24
 drawable ic_baseline_settings
+drawable ic_baseline_stay_current_landscape
+drawable ic_baseline_stay_primary_portrait
+drawable ic_baseline_view_list
+drawable ic_baseline_volume_off
+drawable ic_baseline_volume_up
 drawable ic_baseline_volume_up_24
 drawable ic_baseline_watch
 drawable ic_baseline_wb_sunny_24
@@ -4938,13 +5072,16 @@ drawable ic_no_internet_no_bg
 drawable ic_no_wifi_1
 drawable ic_no_wifi_2
 drawable ic_os_notification_fallback_white_24dp
+drawable ic_outline_play_circle_filled_24px
 drawable ic_pause_black_24dp
+drawable ic_pause_circle_transparent
 drawable ic_pause_white
 drawable ic_paypal_color
 drawable ic_paypal_mark_color
 drawable ic_paytm_assist_revamp
 drawable ic_paytm_logo
 drawable ic_play_arrow_white
+drawable ic_play_circle_tranparent
 drawable ic_play_triangle
 drawable ic_profile_user
 drawable ic_radio_button_unchecked
@@ -4957,6 +5094,7 @@ drawable ic_show_passcode
 drawable ic_slide_down_copy
 drawable ic_slide_up_copy
 drawable ic_star
+drawable ic_subtitle
 drawable ic_swap_vert
 drawable ic_tick
 drawable ic_tick_mark
@@ -5104,6 +5242,7 @@ drawable no_6
 drawable no_7
 drawable no_8
 drawable no_9
+drawable no_item
 drawable notification_action_background
 drawable notification_bg
 drawable notification_bg_low
@@ -5522,6 +5661,11 @@ drawable rzp_poweredby
 drawable rzp_secured_by_bg
 drawable rzp_white_border_black_bg
 drawable schedule
+drawable screen_0
+drawable screen_2
+drawable screen_3
+drawable screen_4
+drawable screen_5
 drawable search
 drawable season_spinner_bg
 drawable selected_dot
@@ -5529,6 +5673,7 @@ drawable send_otp_btn
 drawable send_otp_btn_ripple
 drawable share_arrow
 drawable shuffle
+drawable slider_home_play_button
 drawable slider_item_bottom_bg
 drawable slider_item_top_bg
 drawable small_download
@@ -5537,7 +5682,11 @@ drawable snowflake
 drawable social_media
 drawable subscription
 drawable subscription_bg
+drawable tab_color_selector
+drawable tab_color_unselector
+drawable tab_color_unselector_dark
 drawable tab_indicator
+drawable tab_layout_background
 drawable telegram
 drawable terms_and_conditions
 drawable test_level_drawable
@@ -5562,6 +5711,9 @@ drawable upi
 drawable user
 drawable verve
 drawable visa_logo_new
+drawable volume_high
+drawable volume_low
+drawable volume_medium
 drawable warning
 drawable white_cursor
 font baloo2_bold
@@ -5569,7 +5721,15 @@ font baloo2_extrabold
 font baloo2_medium
 font baloo2_regular
 font baloo2_semibold
+font gilroy_bold
+font gilroy_heavy
+font gilroy_light
+font gilroy_medium
+font gilroy_regular
 font montserrat
+font open_sans
+font open_sans_light
+font open_sans_semibold
 font roboto_medium_numbers
 id ALT
 id Account_Subscription_Date
@@ -5643,7 +5803,9 @@ id More_Recent_Movies
 id More_Recent_Series
 id More_WebSeries
 id Movie_Details_Back
+id Movie_Details_Back_1
 id Movie_Details_Banner
+id Movie_Details_Banner_1
 id Movie_Details_Poster
 id Movie_Item
 id Movie_Item_thumbnail
@@ -5722,6 +5884,7 @@ id User_Title
 id ViewPagerImageSlider
 id WPC
 id WanderingCubes
+id Watchlist_Icon
 id Wave
 id Web_Series_Swipe_Refresh_Layout
 id Whats_New_Recycleview
@@ -5793,6 +5956,7 @@ id action_share
 id action_text
 id actions
 id activity_chooser_view_content
+id adView
 id ad_View_Layout
 id ad_background_image_view
 id ad_container
@@ -5898,6 +6062,7 @@ id all
 id allFilterBtn
 id allGenreRecylerView
 id allStates
+id allStreamItInCategory
 id always
 id amount
 id amountName
@@ -5942,6 +6107,9 @@ id applovin_native_title_text_view
 id arc
 id arrowIv2
 id asConfigured
+id aspect_ratio_iv
+id aspect_ratio_pip
+id aspect_repeate
 id async
 id audio_list_view
 id auth_fragment_host
@@ -5955,6 +6123,9 @@ id autoCompleteToStart
 id autoPlay
 id automatic
 id ba_terms_text
+id back
+id backArowPlayer
+id backArrow
 id backArrowImageView
 id backButtonWidthOffsetSpace
 id back_arrow
@@ -5987,17 +6158,23 @@ id body
 id body_container
 id book_now
 id bottom
+id bottom1
+id bottom2
+id bottom3
+id bottom4
 id bottomNavigationView
 id bottomScrollView
 id bottomSheetLayout
 id bottom_break
+id bottom_container
 id bottom_floting_menu
-id bottom_floting_menu_live_tv
 id bottom_floting_menu_movies
+id bottom_floting_menu_music
 id bottom_floting_menu_web_series
 id bottom_layout
 id bottom_left
 id bottom_padding
+id bottom_progress
 id bottom_right
 id bottom_sheet_container
 id bottom_to_top
@@ -6008,6 +6185,8 @@ id bounceStart
 id box_count
 id brightness
 id brightnessLayout
+id brightnessRelayout
+id broken_hart_layout
 id browser_actions_header_text
 id browser_actions_menu_item_icon
 id browser_actions_menu_item_text
@@ -6100,6 +6279,7 @@ id cast_button_type_play_pause_toggle
 id cast_button_type_rewind_30_seconds
 id cast_button_type_skip_next
 id cast_button_type_skip_previous
+id cast_control_view
 id cast_device_chooser_learn_more
 id cast_device_chooser_list
 id cast_device_chooser_progress_bar
@@ -6116,12 +6296,14 @@ id cast_featurehighlight_view
 id cast_notification_id
 id cast_seek_bar
 id catagory_list_recycleview
+id categoryID
 id cb_do_not_send_otp
 id cb_nb_userId
 id cb_send_otp
 id center
 id centerCrop
 id centerInside
+id center_container
 id center_horizontal
 id center_vertical
 id chain
@@ -6140,6 +6322,7 @@ id checkout_button_view
 id checkout_pb
 id choose_another_bank_tv
 id choose_another_payment_method_tv
+id chrome_cast_tv
 id chronometer
 id circle_center
 id circle_clip_tap_view
@@ -6186,6 +6369,7 @@ id commonButtonLayout
 id common_button_layout
 id common_layout
 id community_text
+id complete_container
 id compound_header_parent_container
 id compress
 id confirm_button
@@ -6197,6 +6381,8 @@ id constraintLayout3
 id constraintLayout4
 id constraint_layout
 id constraint_layout_card_info_container
+id contain_price
+id contain_price_layout
 id container
 id container_all
 id container_current
@@ -6217,6 +6403,7 @@ id continuePlayingSmallCardPalate
 id continuePlaying_list_Recycler_View
 id continuousVelocity
 id controllers
+id controls_container
 id conversionBackArrowImageView
 id conversionBottomSheetLayout
 id conversionCircleImageView
@@ -6267,6 +6454,7 @@ id crypto_selling_amount_tv
 id crypto_terms_scroll_view
 id crypto_wrapper_72hour
 id cta
+id curr_time
 id currency_conversion_layout
 id currentState
 id custom
@@ -6274,6 +6462,8 @@ id customIntertial_ad
 id customIntertial_close_btn
 id customIntertial_layout
 id customPanel
+id custom_action_left_button
+id custom_action_right_button
 id custom_balance_toggle_switch_view
 id custom_banner_ad
 id custom_banner_video_ad
@@ -6303,6 +6493,7 @@ id design_menu_item_action_area_stub
 id design_menu_item_text
 id design_navigation_view
 id detailImageView
+id detailsEpisod
 id detective
 id deviceIdTextView
 id dialogClose
@@ -6346,6 +6537,8 @@ id dragRight
 id dragStart
 id dragUp
 id drama
+id drop_shadow_bottom
+id drop_shadow_top
 id dropdown_menu
 id dummy_anchor_view
 id easeIn
@@ -6384,6 +6577,7 @@ id end_text
 id end_text_container
 id enterAlways
 id enterAlwaysCollapsed
+id episodListRecyclerview
 id episodeLayout
 id episode_item
 id episode_list_RecyclerView
@@ -6455,7 +6649,9 @@ id expand_activities_button
 id expanded_controller_layout
 id expanded_error_tv
 id expanded_menu
+id extra_views_container
 id fade
+id fav_layout
 id favorite_list_Recycler_View
 id favorite_swipe_refresh_layout
 id favouriteListLayout
@@ -6507,6 +6703,9 @@ id freeTextView
 id fromBottom
 id frost
 id full_loading_view
+id fullscreen
+id fullscreen_button
+id fullscreen_custom_content
 id fullscreen_header
 id genreCardBar
 id genreContentsRecylerView
@@ -6580,6 +6779,7 @@ id home_bywm_list_Recycler_View
 id home_bywws_list_Recycler_View
 id home_popularMovies_list_Recycler_View
 id home_popularWebSeries_list_Recycler_View
+id home_relativeLayout
 id home_top_searched_list_Recycler_View
 id home_trending_list_Recycler_View
 id honorRequest
@@ -6624,16 +6824,19 @@ id imageView40
 id imageView5
 id imageView6
 id imageView7
+id imageViewActros
 id imageViewBackButton
 id imageView_card_error
 id imageView_payment_source_border
 id imageView_zip_error
+id image_thumby
 id image_view
 id image_wrapper
 id img
 id img_Brightness
 id img_Volume
 id img_airplane
+id img_back
 id img_cloud_one
 id img_cloud_three
 id img_cloud_two
@@ -6644,6 +6847,7 @@ id img_paytm_assist_banner
 id img_pwd_show
 id img_settings
 id img_show_assist
+id img_subtitle
 id immediateStop
 id includePremiumSwitch
 id included
@@ -6663,6 +6867,7 @@ id invalid_shipping_method_tv
 id invalid_shipping_tv
 id invisible
 id inward
+id is_pooling_container_tag
 id issuerImageView
 id italic
 id item_description_tv
@@ -6672,9 +6877,14 @@ id item_price_tv
 id item_total_amount_textview
 id item_touch_helper_previous_elevation
 id iv_back
+id iv_battery
 id iv_check_mark
 id iv_close
+id iv_icon
 id iv_logo
+id iv_play
+id iv_refresh
+id iv_replay
 id jumpToEnd
 id jumpToStart
 id kids
@@ -6733,11 +6943,13 @@ id live_indicators
 id live_tv
 id live_tv_channel_Item
 id live_tv_genre_list_Recycler_View
+id live_video_indicator
 id livetvGenres
 id ll_loader
 id ll_nb_login
 id ll_nb_root_container
 id ll_nb_user_id_Selector
+id loading
 id loadingHeaderView
 id loadingMsgSent
 id loadingView
@@ -6747,6 +6959,11 @@ id loading_message_tv
 id loading_progress_iv
 id loading_spinner_parent_container
 id loading_spinner_view
+id lock
+id lockOriLandscape
+id lockOriPortrait
+id lockRelativeLayout
+id lockScreenButton
 id lockView
 id loginBtnLayout
 id login_editTextPassword
@@ -6757,11 +6974,17 @@ id logoutText
 id logout_progress_spinner
 id lottieAnimationView
 id lottie_layer_name
+id lpv
 id ltr
 id m3_side_sheet
 id mainButton
 id mainFragment
+id mainPlayButton
 id main_container
+id main_content
+id main_layout_home
+id main_layout_strem_it_n_view
+id main_mayout_strem_it_n_in_categoty
 id marquee
 id masked
 id masked_pan_tv
@@ -6799,6 +7022,8 @@ id media_actions
 id media_controller_compat_view_tag
 id media_view
 id medium
+id menu_button
+id menu_root
 id message
 id messenger_send_button
 id middle
@@ -6921,6 +7146,7 @@ id musicTextView
 id music_list_Recycler_View
 id myListLayout
 id name
+id nameAc
 id nameEditText
 id native_ad_view
 id native_ad_view_container
@@ -6942,6 +7168,7 @@ id nb_image_bt_next
 id nb_image_bt_previous
 id nestedScrollView
 id nested_scroll_view
+id net_warning_layout
 id networkSwitch
 id never
 id neverCompleteToEnd
@@ -7005,6 +7232,7 @@ id packed
 id padding_view
 id page
 id pager
+id panel
 id parallax
 id parent
 id parentPanel
@@ -7079,10 +7307,18 @@ id picker
 id pill
 id pin
 id pin_lock_view
+id play
+id playAndPuss
 id playLayout
+id playPauseViewButtonCenter
+id play_pause_button
 id player
+id player1
 id playerSpeed
+id player_layout
 id player_view
+id playpusLayout
+id pooling_container_listener_holder_tag
 id popIn
 id popularMoviesLayout
 id popularMoviesTextView
@@ -7115,6 +7351,7 @@ id primary_split_balance_info_img
 id primary_split_balance_toggle
 id privecyPolicy
 id privecyPolicyCardBar
+id pro_percent
 id production
 id profileName
 id profilePicCircleImageView
@@ -7122,6 +7359,7 @@ id profilePicLayout
 id profileTitleText
 id profile_image
 id profile_name
+id progress
 id progressBar
 id progressBar_save_address
 id progressTextView
@@ -7145,8 +7383,12 @@ id pypl_addcard_expirity
 id pypl_addcard_last_name
 id pypl_addcard_name
 id pypl_addcard_state
+id qualityButton
+id qualityImageView
+id qualityRelativeLayout
 id radial
 id radio
+id radioPlayImage
 id rateProtectionBackArrowImageView
 id rateProtectionBottomSheetLayout
 id rateProtectionTitleTextView
@@ -7228,10 +7470,12 @@ id recentlyAddedMoviesSmallCardPalate
 id recentlyAddedWebSeriesSmallCardPalate
 id rectangle
 id rectangles
+id recycler_view
 id reference
 id referenceName
 id reference_code_layout
 id reference_code_tv
+id relatedVideoButton
 id relative_layout_dialog
 id release_date
 id reletedContentLayout
@@ -7299,6 +7543,8 @@ id saved_card_overall_lay
 id sawtooth
 id scale
 id screen
+id screen_lock
+id screen_unlock
 id scroll
 id scrollIndicatorDown
 id scrollIndicatorUp
@@ -7333,6 +7579,7 @@ id search_view_status_bar_spacer
 id search_view_toolbar
 id search_view_toolbar_container
 id search_voice_btn
+id seckBarInPlayer
 id secondary
 id secondary_split_balance_amount_tv
 id secondary_split_balance_container
@@ -7342,6 +7589,7 @@ id secondary_split_balance_toggle
 id seconds_view
 id secured_by_flutterwave_layout
 id secured_by_flutterwave_tv
+id seekBar
 id seek_bar
 id seek_bar_indicators
 id seekbar_layout
@@ -7451,6 +7699,7 @@ id startHorizontal
 id startToEnd
 id startVertical
 id start_horizontal_guide
+id start_play
 id start_text
 id start_text_container
 id stateEditText
@@ -7459,9 +7708,11 @@ id staticLayout
 id staticPostLayout
 id status
 id status_bar_latest_event_content
+id status_btn
 id status_text
 id status_textview
 id stop
+id stop_fullscreen
 id storageIndicator
 id stretch
 id strict_sandbox
@@ -7472,6 +7723,7 @@ id submitBtn1
 id submit_area
 id subscriptionCardBar
 id subscription_details
+id subtitle
 id subtitle_view
 id subtotal_label
 id suffixText
@@ -7479,8 +7731,11 @@ id sufflePlay
 id supportScrollUp
 id surface_view
 id swipeRefreshLayout
+id swiperefresh
 id switch_bottom_padding
 id switch_checkout_text
+id sys_time
+id tabLayout
 id tabMode
 id tab_host
 id tag10
@@ -7603,12 +7858,15 @@ id three_ds_header_container
 id three_ds_progress_iv
 id three_ds_title_txt
 id three_ds_web_view
+id thumb
 id til_card_number
 id til_csc
 id til_exp_date
 id til_zip_code
 id time
 id title
+id titleBarinPlayer
+id titleBartwo
 id titleDividerNoCustom
 id titleEditText
 id titleText
@@ -7641,6 +7899,7 @@ id top_left
 id top_right
 id top_to_bottom
 id totalTextView
+id total_time
 id touch_outside
 id track_selection_dialog_cancel_button
 id track_selection_dialog_ok_button
@@ -7681,6 +7940,7 @@ id tv_message
 id tv_mid
 id tv_orderId
 id tv_otp
+id tv_percent
 id tv_please_turn_off
 id tv_please_turn_on
 id tv_radio_label
@@ -7699,6 +7959,12 @@ id typeAddress
 id typeEditText
 id typeSpinner
 id typeTextView
+id type_16_9
+id type_4_3
+id type_center_crop
+id type_default
+id type_match_parent
+id type_original
 id ukPaymentButton
 id unchecked
 id uniform
@@ -7736,12 +8002,19 @@ id vertical_guide
 id vertical_only
 id vertical_slide
 id vertical_window
+id videoListButton
+id videoReletetItemRecyclerViewLand
+id videoReletetItemRecyclerViewLayoutLand
+id videoTileIdController
 id video_decoder_gl_surface_view
+id video_title
+id video_view
 id view
 id view2
 id view3
 id viewDarkBlue
 id viewEnd
+id viewPager
 id viewSkyBlue
 id viewStart
 id view_offset_helper
@@ -7754,17 +8027,29 @@ id visible
 id visible_removing_fragment_view_tag
 id volume
 id volumeLayout
+id volumeRelativeLayout
 id volume_item_container
+id volume_mute
+id volume_unmute
 id volumn_layout
 id volumn_seekbar
 id volumn_tv
+id vpv
+id vvvRelayout
 id warningIndicator
+id watchListLayout
+id webControlLayout
 id webSeriesFilterTag
 id webSeriesSmallCardPalate
 id webSeries_details
+id webViewEm
 id web_series_list_recycleview
 id web_view
 id web_view_loading_progress
+id webbacArow
+id weblockOriLandscape
+id weblockOriPortrait
+id webplay
 id webseriesOnlyForYouSmallCardPalate
 id webview
 id webviewUi
@@ -7786,6 +8071,9 @@ id wrap_reverse
 id wrapper_72hour
 id x_left
 id x_right
+id youtube_button
+id youtube_player_seekbar
+id youtube_player_view
 id ytOverlay
 id zipEditText
 id zoom
@@ -7943,6 +8231,7 @@ layout activity_live_tvsearch
 layout activity_login_signup
 layout activity_maintenance
 layout activity_movie_details
+layout activity_movie_details_1
 layout activity_multi_select_challenge_view
 layout activity_oob_challenge_view
 layout activity_otp_challenge_view
@@ -7958,9 +8247,11 @@ layout activity_subscription_details
 layout activity_subscription_list
 layout activity_terms_and_conditions
 layout activity_trailer_player
+layout activity_tv_in_category
 layout activity_upcoming
 layout activity_upi
 layout activity_web_series_details
+layout activity_web_series_details_1
 layout activity_web_view
 layout activity_youtube_live_player
 layout address_book_footer_item_view
@@ -7982,6 +8273,10 @@ layout applovin_exo_styled_sub_settings_list_item
 layout applovin_exo_track_selection_dialog
 layout applovin_native_ad_media_view
 layout available_paypal_balance_view
+layout ayp_default_player_ui
+layout ayp_empty_layout
+layout ayp_menu_item
+layout ayp_player_menu
 layout blocked_country_dialog
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
@@ -8013,8 +8308,10 @@ layout continue_playing_item
 layout creative_debugger_displayed_ad_detail_activity
 layout cupan_dialog
 layout custom_dialog
+layout custom_exo_layout
 layout custom_progress_dialog_view
 layout custom_report_dialog
+layout custom_tab
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
 layout design_layout_snackbar
@@ -8033,6 +8330,14 @@ layout design_text_input_start_icon
 layout dialog_maker_layout
 layout dialog_no_internet_pendulum
 layout dialog_no_internet_signal
+layout dkplayer_layout_complete_view
+layout dkplayer_layout_error_view
+layout dkplayer_layout_gesture_control_view
+layout dkplayer_layout_live_control_view
+layout dkplayer_layout_prepare_view
+layout dkplayer_layout_standard_controller
+layout dkplayer_layout_title_view
+layout dkplayer_layout_vod_control_view
 layout download_dialog
 layout download_item
 layout download_link_item
@@ -8042,6 +8347,7 @@ layout easy_pay_toolbar
 layout easypay_browser_frag_revamp
 layout episode_item
 layout episode_item_v2
+layout episods_item
 layout exo_list_divider
 layout exo_player_control_view
 layout exo_player_view
@@ -8060,16 +8366,21 @@ layout forgot_password
 layout fragment_all_movies
 layout fragment_all_webseries
 layout fragment_bank_transfer_demo
+layout fragment_dynamic
 layout fragment_home
 layout fragment_incontext_bottom_sheet
 layout fragment_more
+layout fragment_movies
+layout fragment_music
 layout fragment_otp_error
 layout fragment_otp_login
 layout fragment_otp_phone
 layout fragment_pypl_transaction_details
 layout fragment_search
+layout fragment_shortfilm
 layout fragment_split_login
 layout fragment_web_view
+layout fragment_webseries
 layout genre_item
 layout gnt_medium_template_view
 layout gnt_small_template_view
@@ -8366,6 +8677,7 @@ layout update_list_item
 layout user_profile_bottom_sheet_layout
 layout venmo_sample_loading
 layout view_progress_spinner
+layout vimeo_custom_screen
 layout wallet_test_layout
 layout yt_overlay
 layout yt_seconds_view
@@ -8387,6 +8699,7 @@ raw adblockserverlist
 raw applovin_consent_flow_privacy_policy
 raw applovin_consent_flow_terms_of_service_and_privacy_policy
 raw applovin_consent_flow_unified_cmp
+raw ayp_youtube_player
 raw consumer_onesignal_keep
 raw delete
 raw empty
@@ -8544,6 +8857,13 @@ string applovin_terms_of_use_text
 string askToContinue
 string assist
 string assist_logo
+string ayp_custom_action_left
+string ayp_custom_action_right
+string ayp_full_screen_button
+string ayp_live
+string ayp_null_time
+string ayp_open_video_in_youtube
+string ayp_play_button
 string back_to_app
 string bank
 string bank_name
@@ -8696,6 +9016,14 @@ string default_title
 string default_web_client_id
 string define_roundedimageview
 string delete_title
+string dkplayer_continue_play
+string dkplayer_error_message
+string dkplayer_lock_tip
+string dkplayer_locked
+string dkplayer_replay
+string dkplayer_retry
+string dkplayer_unlocked
+string dkplayer_wifi_tip
 string do_not_send_otp
 string download_eta_hrs
 string download_eta_min
@@ -11087,6 +11415,7 @@ styleable AppLovinStyledPlayerView al_ad_marker_color al_ad_marker_width al_anim
 styleable AspectRatioFrameLayout resize_mode
 styleable Badge backgroundColor badgeGravity badgeHeight badgeRadius badgeShapeAppearance badgeShapeAppearanceOverlay badgeTextAppearance badgeTextColor badgeWidePadding badgeWidth badgeWithTextHeight badgeWithTextRadius badgeWithTextShapeAppearance badgeWithTextShapeAppearanceOverlay badgeWithTextWidth horizontalOffset horizontalOffsetWithText maxCharacterCount number offsetAlignmentMode verticalOffset verticalOffsetWithText
 styleable BaseProgressIndicator android_indeterminate hideAnimationBehavior indicatorColor minHideDelay showAnimationBehavior showDelay trackColor trackCornerRadius trackThickness
+styleable BaseVideoView enableAudioFocus looping playerBackgroundColor screenScaleType
 styleable BottomAppBar addElevationShadow backgroundTint elevation fabAlignmentMode fabAlignmentModeEndMargin fabAnchorMode fabAnimationMode fabCradleMargin fabCradleRoundedCornerRadius fabCradleVerticalOffset hideOnScroll menuAlignmentMode navigationIconTint paddingBottomSystemWindowInsets paddingLeftSystemWindowInsets paddingRightSystemWindowInsets removeEmbeddedFabElevation
 styleable BottomNavigationView android_minHeight compatShadowEnabled itemHorizontalTranslationEnabled
 styleable BottomSheetBehavior_Layout android_maxWidth android_maxHeight android_elevation backgroundTint behavior_draggable behavior_expandedOffset behavior_fitToContents behavior_halfExpandedRatio behavior_hideable behavior_peekHeight behavior_saveFlags behavior_significantVelocityThreshold behavior_skipCollapsed gestureInsetBottomIgnored marginLeftSystemWindowInsets marginRightSystemWindowInsets marginTopSystemWindowInsets paddingBottomSystemWindowInsets paddingLeftSystemWindowInsets paddingRightSystemWindowInsets paddingTopSystemWindowInsets shapeAppearance shapeAppearanceOverlay shouldRemoveExpandedCorners
@@ -11154,6 +11483,7 @@ styleable KeyPosition curveFit drawPath framePosition keyPositionType motionTarg
 styleable KeyTimeCycle android_alpha android_translationX android_translationY android_scaleX android_scaleY android_rotation android_rotationX android_rotationY android_translationZ android_elevation curveFit framePosition motionProgress motionTarget transitionEasing transitionPathRotate waveDecay waveOffset wavePeriod wavePhase waveShape
 styleable KeyTrigger framePosition motionTarget motion_postLayoutCollision motion_triggerOnCollision onCross onNegativeCross onPositiveCross triggerId triggerReceiver triggerSlack viewTransitionOnCross viewTransitionOnNegativeCross viewTransitionOnPositiveCross
 styleable Layout android_orientation android_layout_width android_layout_height android_layout_marginLeft android_layout_marginTop android_layout_marginRight android_layout_marginBottom android_layout_marginStart android_layout_marginEnd barrierAllowsGoneWidgets barrierDirection barrierMargin chainUseRtl constraint_referenced_ids constraint_referenced_tags guidelineUseRtl layout_constrainedHeight layout_constrainedWidth layout_constraintBaseline_creator layout_constraintBaseline_toBaselineOf layout_constraintBaseline_toBottomOf layout_constraintBaseline_toTopOf layout_constraintBottom_creator layout_constraintBottom_toBottomOf layout_constraintBottom_toTopOf layout_constraintCircle layout_constraintCircleAngle layout_constraintCircleRadius layout_constraintDimensionRatio layout_constraintEnd_toEndOf layout_constraintEnd_toStartOf layout_constraintGuide_begin layout_constraintGuide_end layout_constraintGuide_percent layout_constraintHeight layout_constraintHeight_default layout_constraintHeight_max layout_constraintHeight_min layout_constraintHeight_percent layout_constraintHorizontal_bias layout_constraintHorizontal_chainStyle layout_constraintHorizontal_weight layout_constraintLeft_creator layout_constraintLeft_toLeftOf layout_constraintLeft_toRightOf layout_constraintRight_creator layout_constraintRight_toLeftOf layout_constraintRight_toRightOf layout_constraintStart_toEndOf layout_constraintStart_toStartOf layout_constraintTop_creator layout_constraintTop_toBottomOf layout_constraintTop_toTopOf layout_constraintVertical_bias layout_constraintVertical_chainStyle layout_constraintVertical_weight layout_constraintWidth layout_constraintWidth_default layout_constraintWidth_max layout_constraintWidth_min layout_constraintWidth_percent layout_editor_absoluteX layout_editor_absoluteY layout_goneMarginBaseline layout_goneMarginBottom layout_goneMarginEnd layout_goneMarginLeft layout_goneMarginRight layout_goneMarginStart layout_goneMarginTop layout_marginBaseline layout_wrapBehaviorInParent maxHeight maxWidth minHeight minWidth
+styleable LightProgressView lpv_halo_color lpv_halo_height lpv_halo_width lpv_magicnum lpv_moon_color lpv_num_of_halo
 styleable LinearLayoutCompat android_gravity android_orientation android_baselineAligned android_baselineAlignedChildIndex android_weightSum divider dividerPadding measureWithLargestChild showDividers
 styleable LinearLayoutCompat_Layout android_layout_gravity android_layout_width android_layout_height android_layout_weight
 styleable LinearProgressIndicator indeterminateAnimationType indicatorDirectionLinear
@@ -11249,7 +11579,7 @@ styleable StateListDrawable android_dither android_visible android_variablePaddi
 styleable StateListDrawableItem android_drawable
 styleable StateSet defaultState
 styleable StyledPlayerControlView ad_marker_color ad_marker_width animation_enabled bar_gravity bar_height buffered_color controller_layout_id played_ad_marker_color played_color repeat_toggle_modes scrubber_color scrubber_disabled_size scrubber_dragged_size scrubber_drawable scrubber_enabled_size show_fastforward_button show_next_button show_previous_button show_rewind_button show_shuffle_button show_subtitle_button show_timeout show_vr_button time_bar_min_update_interval touch_target_height unplayed_color
-styleable StyledPlayerView ad_marker_color ad_marker_width animation_enabled auto_show bar_gravity bar_height buffered_color controller_layout_id default_artwork hide_during_ads hide_on_touch keep_content_on_player_reset played_ad_marker_color played_color player_layout_id repeat_toggle_modes resize_mode scrubber_color scrubber_disabled_size scrubber_dragged_size scrubber_drawable scrubber_enabled_size show_buffering show_shuffle_button show_subtitle_button show_timeout show_vr_button shutter_background_color surface_type time_bar_min_update_interval touch_target_height unplayed_color use_artwork use_controller
+styleable StyledPlayerView ad_marker_color ad_marker_width animation_enabled artwork_display_mode auto_show bar_gravity bar_height buffered_color controller_layout_id default_artwork hide_during_ads hide_on_touch keep_content_on_player_reset played_ad_marker_color played_color player_layout_id repeat_toggle_modes resize_mode scrubber_color scrubber_disabled_size scrubber_dragged_size scrubber_drawable scrubber_enabled_size show_buffering show_shuffle_button show_subtitle_button show_timeout show_vr_button shutter_background_color surface_type time_bar_min_update_interval touch_target_height unplayed_color use_artwork use_controller
 styleable SwitchCompat android_textOn android_textOff android_thumb showText splitTrack switchMinWidth switchPadding switchTextAppearance thumbTextPadding thumbTint thumbTintMode track trackTint trackTintMode
 styleable SwitchMaterial useMaterialThemeColors
 styleable TabItem android_icon android_layout android_text
@@ -11273,9 +11603,12 @@ styleable ViewBackgroundHelper android_background backgroundTint backgroundTintM
 styleable ViewPager2 android_orientation
 styleable ViewStubCompat android_id android_layout android_inflatedId
 styleable ViewTransition android_id SharedValue SharedValueId clearsTag duration ifTagNotSet ifTagSet motionInterpolator motionTarget onStateTransition pathMotionArc setsTag transitionDisable upDuration viewTransitionMode
+styleable VolumeProgressView vpv_halo_color vpv_halo_height vpv_halo_width vpv_num_of_halo vpv_volume_high vpv_volume_low vpv_volume_medium
 styleable WalletFragmentOptions appTheme environment fragmentMode fragmentStyle
 styleable WalletFragmentStyle buyButtonAppearance buyButtonHeight buyButtonText buyButtonWidth maskedWalletDetailsBackground maskedWalletDetailsButtonBackground maskedWalletDetailsButtonTextAppearance maskedWalletDetailsHeaderTextAppearance maskedWalletDetailsLogoImageType maskedWalletDetailsLogoTextColor maskedWalletDetailsTextAppearance
 styleable YouTubeOverlay yt_animationDuration yt_arcSize yt_backgroundCircleColor yt_icon yt_iconAnimationDuration yt_playerView yt_seekSeconds yt_tapCircleColor yt_textAppearance
+styleable YouTubePlayerSeekBar color fontSize
+styleable YouTubePlayerView autoPlay enableAutomaticInitialization enableLiveVideoUi handleNetworkEvents showFullScreenButton showSeekBar showVideoCurrentTime showVideoDuration showYouTubeButton useWebUi videoId
 styleable available_balance_view_attrs is_error_shown
 styleable balance_error_view_attrs label_expanded
 styleable com_facebook_like_view com_facebook_auxiliary_view_position com_facebook_foreground_color com_facebook_horizontal_alignment com_facebook_object_id com_facebook_object_type com_facebook_style

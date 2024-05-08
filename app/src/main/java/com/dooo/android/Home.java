@@ -30,7 +30,9 @@ import com.dooo.android.fragment.AllMoviesFragment;
 import com.dooo.android.fragment.AllWebseriesFragment;
 import com.dooo.android.fragment.HomeFragment;
 import com.dooo.android.fragment.MoreFragment;
+import com.dooo.android.fragment.MoviesFragment;
 import com.dooo.android.fragment.SearchFragment;
+import com.dooo.android.fragment.WebSeriesFragment;
 import com.dooo.android.sharedpreferencesmanager.ConfigManager;
 import com.dooo.android.utils.HelperUtils;
 import com.dooo.android.utils.LoadingDialog;
@@ -236,13 +238,13 @@ public class Home extends AppCompatActivity implements NavigationBarView.OnItemS
         } else if(item.getItemId() == R.id.movies) {
             getSupportFragmentManager()
                     .beginTransaction()
-                    .replace(R.id.mainFragment, new AllMoviesFragment())
+                    .replace(R.id.mainFragment, new MoviesFragment())
                     .commit();
             return true;
         } else if(item.getItemId() == R.id.series) {
             getSupportFragmentManager()
                     .beginTransaction()
-                    .replace(R.id.mainFragment, new AllWebseriesFragment())
+                    .replace(R.id.mainFragment, new WebSeriesFragment())
                     .commit();
             return true;
         } else if(item.getItemId() == R.id.account) {

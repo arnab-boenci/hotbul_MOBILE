@@ -34,6 +34,7 @@ import com.android.volley.toolbox.Volley;
 import com.dooo.android.AllMoviesActivity;
 import com.dooo.android.AllWebSeriesActivity;
 import com.dooo.android.AppConfig;
+import com.dooo.android.ContentInCategory;
 import com.dooo.android.R;
 import com.dooo.android.adepter.ImageSliderAdepter;
 import com.dooo.android.adepter.PopularSearchListAdepter;
@@ -176,57 +177,93 @@ public class SearchFragment extends Fragment {
         upcoming = layoutInflater.findViewById(R.id.upcoming);
 
         latest.setOnClickListener(view -> {
-            Intent intent = new Intent(context, AllMoviesActivity.class);
+            Intent intent = new Intent(context, ContentInCategory.class);
+            intent.putExtra("cSearchType","recentlyadded");
+            intent.putExtra("cName","Latest");
+            intent.putExtra("cType","Movie");
             startActivity(intent);
         });
 
         action.setOnClickListener(view -> {
-            Intent intent = new Intent(context, AllWebSeriesActivity.class);
+            Intent intent = new Intent(context, ContentInCategory.class);
+            intent.putExtra("cSearchType","categorytype");
+            intent.putExtra("cName","Action");
+            intent.putExtra("cType","Action");
             startActivity(intent);
         });
         comedy.setOnClickListener(view -> {
-            Intent intent = new Intent(context, AllMoviesActivity.class);
+            Intent intent = new Intent(context, ContentInCategory.class);
+            intent.putExtra("cSearchType","categorytype");
+            intent.putExtra("cName","Comedy");
+            intent.putExtra("cType","Comedy");
             startActivity(intent);
         });
 
         horror.setOnClickListener(view -> {
-            Intent intent = new Intent(context, AllWebSeriesActivity.class);
+            Intent intent = new Intent(context, ContentInCategory.class);
+            intent.putExtra("cSearchType","categorytype");
+            intent.putExtra("cName","Horror");
+            intent.putExtra("cType","Horror");
             startActivity(intent);
         });
         detective.setOnClickListener(view -> {
-            Intent intent = new Intent(context, AllMoviesActivity.class);
+            Intent intent = new Intent(context, ContentInCategory.class);
+            intent.putExtra("cSearchType","categorytype");
+            intent.putExtra("cName","Detective");
+            intent.putExtra("cType","Detective");
             startActivity(intent);
         });
 
         drama.setOnClickListener(view -> {
-            Intent intent = new Intent(context, AllWebSeriesActivity.class);
+            Intent intent = new Intent(context, ContentInCategory.class);
+            intent.putExtra("cSearchType","categorytype");
+            intent.putExtra("cName","Drama");
+            intent.putExtra("cType","Drama");
             startActivity(intent);
         });
         romance.setOnClickListener(view -> {
-            Intent intent = new Intent(context, AllMoviesActivity.class);
+            Intent intent = new Intent(context, ContentInCategory.class);
+            intent.putExtra("cSearchType","categorytype");
+            intent.putExtra("cName","Romance");
+            intent.putExtra("cType","Romance");
             startActivity(intent);
         });
 
         adult.setOnClickListener(view -> {
-            Intent intent = new Intent(context, AllWebSeriesActivity.class);
+            Intent intent = new Intent(context, ContentInCategory.class);
+            intent.putExtra("cSearchType","contenttype");
+            intent.putExtra("cName","Adult");
+            intent.putExtra("cType","18+");
             startActivity(intent);
         });
         kids.setOnClickListener(view -> {
-            Intent intent = new Intent(context, AllMoviesActivity.class);
+            Intent intent = new Intent(context, ContentInCategory.class);
+            intent.putExtra("cSearchType","contenttype");
+            intent.putExtra("cName","Kids");
+            intent.putExtra("cType","Kids");
             startActivity(intent);
         });
 
         music.setOnClickListener(view -> {
-            Intent intent = new Intent(context, AllWebSeriesActivity.class);
+            Intent intent = new Intent(context, ContentInCategory.class);
+            intent.putExtra("cSearchType","contenttype");
+            intent.putExtra("cName","Music");
+            intent.putExtra("cType","Music");
             startActivity(intent);
         });
         old.setOnClickListener(view -> {
-            Intent intent = new Intent(context, AllMoviesActivity.class);
+            Intent intent = new Intent(context, ContentInCategory.class);
+            intent.putExtra("cSearchType","categorytype");
+            intent.putExtra("cName","Old");
+            intent.putExtra("cType","Old is Gold");
             startActivity(intent);
         });
 
         upcoming.setOnClickListener(view -> {
-            Intent intent = new Intent(context, AllWebSeriesActivity.class);
+            Intent intent = new Intent(context, ContentInCategory.class);
+            intent.putExtra("cSearchType","contenttype");
+            intent.putExtra("cName","Upcoming");
+            intent.putExtra("cType","Upcoming");
             startActivity(intent);
         });
 
@@ -303,9 +340,9 @@ public class SearchFragment extends Fragment {
                             searchList.add(new SearchList(id, type, name, year, banner, content_type));
                         }
 
-                    SearchListAdepter myadepter = new SearchListAdepter(context, searchList);
-                    searchLayoutRecyclerView.setLayoutManager(new GridLayoutManager(context, 2));
-                    searchLayoutRecyclerView.setAdapter(myadepter);
+                        SearchListAdepter myadepter = new SearchListAdepter(context, searchList);
+                        searchLayoutRecyclerView.setLayoutManager(new GridLayoutManager(context, 2));
+                        searchLayoutRecyclerView.setAdapter(myadepter);
                     }else{
                        // bigSearchLottieAnimation.setVisibility(View.VISIBLE);
                         searchLayoutRecyclerView.setVisibility(View.GONE);

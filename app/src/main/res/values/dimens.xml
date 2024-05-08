@@ -7,6 +7,8 @@
 <!--    <dimen name="listGrievanceSize">23dp</dimen>-->
 <!--    <dimen name="grievanceTxtheight">40dp</dimen>-->
     <dimen name="home_text_size" >20sp</dimen>
+    <dimen name="player_height" >220dp</dimen>
+
     
 
 </resources>

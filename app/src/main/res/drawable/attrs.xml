@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="placement_bg" format="color"/>
+    <attr name="placement_icon" format="color"/>
+    <attr name="main_text_color" format="color"/>
+</resources>

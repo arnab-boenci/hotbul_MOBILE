@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.dooo.android.app-mergeDebugResources-111:/values-xxxhdpi-v4/values-xxxhdpi-v4.xml",
+            "outputFile": "com.dooo.android.app-mergeDebugResources-116:/values-xxxhdpi-v4/values-xxxhdpi-v4.xml",
             "map": [
                 {
-                    "source": "/Users/arnabmandal/.gradle/caches/transforms-3/9fe41e11b8718c96b0a8c74ab2ffe057/transformed/jetified-android-sdk-1.1.0/res/values-xxxhdpi-v4/values-xxxhdpi-v4.xml",
+                    "source": "/Users/arnabmandal/.gradle/caches/transforms-3/7d19acfc36b320190ad6edb98869f9b9/transformed/jetified-android-sdk-1.1.0/res/values-xxxhdpi-v4/values-xxxhdpi-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",

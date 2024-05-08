@@ -123,7 +123,7 @@ import java.util.concurrent.TimeUnit;
 import es.dmoral.toasty.Toasty;
 import jp.wasabeef.glide.transformations.BlurTransformation;
 
-public class HouseofHorrorDetails extends AppCompatActivity {
+public class HouseofHorrorDetails extends AppCompatActivity implements EpisodeListAdepter.OnItemClickListener {
     Context context = this;
 
     int mainId;
@@ -1122,7 +1122,7 @@ public class HouseofHorrorDetails extends AppCompatActivity {
                     findViewById(R.id.episodeLayout).setVisibility(View.VISIBLE);
                 }
 
-                myadepter = new EpisodeListAdepter(webSeriesId, context, rootView, AppConfig.url, AppConfig.apiKey, episodeList);
+                myadepter = new EpisodeListAdepter(webSeriesId, context, rootView, AppConfig.url, AppConfig.apiKey, episodeList, this);
                 switch (webSeriesEpisodeitemType) {
                     case 0:
                         episodeListRecyclerView.setLayoutManager(new GridLayoutManager(context, 1));
@@ -1456,5 +1456,10 @@ public class HouseofHorrorDetails extends AppCompatActivity {
                 helperUtils.showWarningDialog(HouseofHorrorDetails.this, "VPN!", "You are Not Allowed To Use VPN Here!", R.raw.network_activity_icon);
             }
         }
+    }
+
+    @Override
+    public void onItemClick(EpisodeList newEpisode) {
+
     }
 }

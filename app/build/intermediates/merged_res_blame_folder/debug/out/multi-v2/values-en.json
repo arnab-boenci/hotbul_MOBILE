@@ -1,10 +1,27 @@
 {
     "logs": [
         {
-            "outputFile": "com.dooo.android.app-mergeDebugResources-111:/values-en/values-en.xml",
+            "outputFile": "com.dooo.android.app-mergeDebugResources-116:/values-en/values-en.xml",
             "map": [
                 {
-                    "source": "/Users/arnabmandal/.gradle/caches/transforms-3/eafce2d6c749780abc80e1de41ba8eb3/transformed/jetified-applovin-sdk-12.3.1/res/values-en/values-en.xml",
+                    "source": "/Users/arnabmandal/.gradle/caches/transforms-3/a2a18b358b42fd3ff124878064afcd05/transformed/jetified-dkplayer-ui-3.3.7/res/values-en/values-en.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,123,219,297,348,399,452,507",
+                        "endColumns": "67,95,77,50,50,52,54,133",
+                        "endOffsets": "118,214,292,343,394,447,502,636"
+                    },
+                    "to": {
+                        "startLines": "10,11,12,13,14,15,16,17",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "804,872,968,1046,1097,1148,1201,1256",
+                        "endColumns": "67,95,77,50,50,52,54,133",
+                        "endOffsets": "867,963,1041,1092,1143,1196,1251,1385"
+                    }
+                },
+                {
+                    "source": "/Users/arnabmandal/.gradle/caches/transforms-3/8ab366b5557e6289321ef53564058ae0/transformed/jetified-applovin-sdk-12.4.3/res/values-en/values-en.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",

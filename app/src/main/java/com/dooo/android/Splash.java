@@ -51,6 +51,7 @@ import com.android.volley.AuthFailureError;
 import com.android.volley.DefaultRetryPolicy;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
+import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.auth0.jwt.JWT;
@@ -100,6 +101,7 @@ import com.startapp.sdk.adsbase.StartAppSDK;
 
 import org.imaginativeworld.oopsnointernet.dialogs.signal.DialogPropertiesSignal;
 import org.imaginativeworld.oopsnointernet.dialogs.signal.NoInternetDialogSignal;
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.HashMap;
@@ -464,7 +466,7 @@ public class Splash extends AppCompatActivity {
 
                 int content_item_type = 0; //jsonObject.get("content_item_type").getAsInt();
                 int live_tv_content_item_type = 1; // jsonObject.get("live_tv_content_item_type").getAsInt();
-                int webSeriesEpisodeitemType = 1; //jsonObject.get("webSeriesEpisodeitemType").getAsInt();
+                int webSeriesEpisodeitemType = 0; //jsonObject.get("webSeriesEpisodeitemType").getAsInt();
 
                 switch (content_item_type) {
                     case 0:
@@ -1041,86 +1043,129 @@ public class Splash extends AppCompatActivity {
 
     void verifyUser() {
         JsonObject jsonObject = new Gson().fromJson(userData, JsonObject.class);
-        String email = jsonObject.get("Email").getAsString();
-        String password = jsonObject.get("Password").getAsString();
+        String email = jsonObject.get("useremail").getAsString();
+        String password = jsonObject.get("password").getAsString();
 
         String originalInput = "login:"+email+":" + password;
         String encoded = Utils.toBase64(originalInput);
 
         RequestQueue queue = Volley.newRequestQueue(context);
-        StringRequest sr = new StringRequest(Request.Method.POST, AppConfig.url +"authentication", response -> {
-            if(!response.equals("")) {
-                JsonObject jsonObject1 = new Gson().fromJson(response, JsonObject.class);
-                String status = jsonObject1.get("Status").toString();
-                status = status.substring(1, status.length() - 1);
+        JSONObject jsonObjectuser = new JSONObject();
+        try {
+            // Populate JSON object with provided data
+            jsonObjectuser.put("email", email);
+            jsonObjectuser.put("password", password);
+            jsonObjectuser.put("usermode", "visitor");
+            jsonObjectuser.put("caller", "webadmin");
 
-                if (status.equals("Successful")) {
-                    saveData(response);
+            JsonObjectRequest loginRequest = new JsonObjectRequest(Request.Method.POST, AppConfig.baseurl +"/userdetails/userlogin",
+                    jsonObjectuser, response -> {
 
-                    JsonObject subObj = new Gson().fromJson(response, JsonObject.class);
-                    int subscriptionType = subObj.get("subscription_type").getAsInt();
-                    saveUserSubscriptionDetails(subscriptionType);
-                    setOneSignalExternalID(String.valueOf(subObj.get("ID").getAsInt()));
-                    saveNotification();
-                    Intent intent = new Intent(Splash.this, Home.class);
-                    intent.putExtra("Notification_Data", notificationData);
-                    startActivity(intent);
-                    notificationData = "";
-                    finish();
-                } else if (status.equals("Invalid Credential")) {
-                    deleteData();
-                    if (loginMandatory == 0) {
-                        saveNotification();
+                if(!response.equals("")) {
+                    JsonObject jsonObjectResponse = new Gson().fromJson(response.toString(), JsonObject.class);
+                    if(jsonObjectResponse.get("status").getAsString().equalsIgnoreCase("Success")) {
+                        String userData = jsonObjectResponse.get("jsonBody").getAsString() ;
+                        saveData(userData);
+                        JsonObject userOBJ = new Gson().fromJson(userData, JsonObject.class);
+                        int subscriptionType = userOBJ.get("ottsubscriptionid").getAsInt();
+// saveUserSubscriptionDetails(subscriptionType);
+                        setOneSignalExternalID(String.valueOf(userOBJ.get("userdetailsid").getAsInt()));
+                        //saveNotification();
                         Intent intent = new Intent(Splash.this, Home.class);
                         intent.putExtra("Notification_Data", notificationData);
                         startActivity(intent);
                         notificationData = "";
                         finish();
-                    } else {
-                        Intent intent = new Intent(Splash.this, LoginSignup.class);
-                        startActivity(intent);
-                        finish();
+
+
+                    }else{
+                        Toasty.error(context, "Invalid Credential.", Toast.LENGTH_SHORT, true).show();
+                        //loadingAnimation.animate(false);
                     }
-                }
-            } else {
-                deleteData();
-                if (loginMandatory == 0) {
-                    saveNotification();
-                    Intent intent = new Intent(Splash.this, Home.class);
-                    intent.putExtra("Notification_Data", notificationData);
-                    startActivity(intent);
-                    notificationData = "";
-                    finish();
+
                 } else {
-                    Intent intent = new Intent(Splash.this, LoginSignup.class);
-                    startActivity(intent);
-                    finish();
+                    Toasty.error(context, "Something Went Wrong!", Toast.LENGTH_SHORT, true).show();
+                    //loadingAnimation.animate(false);
                 }
-            }
+            }, error -> {
+                // Do nothing because There is No Error if error It will return 0
+            }) {
+                @Override
+                public Map<String, String> getHeaders() throws AuthFailureError {
+                    Map<String,String> params = new HashMap<>();
+                    // params.put("x-api-key", AppConfig.apiKey);
+                    return params;
+                }
 
-        }, error -> {
-            // Do nothing because
-        }) {
-            @Override
-            public Map<String, String> getHeaders() throws AuthFailureError {
-                Map<String,String> params = new HashMap<>();
-                params.put("x-api-key", AppConfig.apiKey);
-                return params;
-            }
-            @Override
-            protected Map<String,String> getParams(){
-                Map<String,String> params = new HashMap<>();
-                params.put("encoded",encoded);
-                params.put("device", Settings.Secure.getString(getContentResolver(), Settings.Secure.ANDROID_ID));
-                return params;
-            }
-        };
+            };
+            queue.add(loginRequest);
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
 
-        sr.setRetryPolicy(new DefaultRetryPolicy(5000,
-                DefaultRetryPolicy.DEFAULT_MAX_RETRIES,
-                DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
-
-        queue.add(sr);
+//        RequestQueue queue = Volley.newRequestQueue(context);
+//        StringRequest sr = new StringRequest(Request.Method.POST, AppConfig.url +"authentication", response -> {
+//            if(!response.equals("")) {
+//                JsonObject jsonObject1 = new Gson().fromJson(response, JsonObject.class);
+//                String status = jsonObject1.get("Status").toString();
+//                status = status.substring(1, status.length() - 1);
+//
+//                if (status.equals("Successful")) {
+//
+//                } else if (status.equals("Invalid Credential")) {
+//                    deleteData();
+//                    if (loginMandatory == 0) {
+//                        saveNotification();
+//                        Intent intent = new Intent(Splash.this, Home.class);
+//                        intent.putExtra("Notification_Data", notificationData);
+//                        startActivity(intent);
+//                        notificationData = "";
+//                        finish();
+//                    } else {
+//                        Intent intent = new Intent(Splash.this, LoginSignup.class);
+//                        startActivity(intent);
+//                        finish();
+//                    }
+//                }
+//            } else {
+//                deleteData();
+//                if (loginMandatory == 0) {
+//                    saveNotification();
+//                    Intent intent = new Intent(Splash.this, Home.class);
+//                    intent.putExtra("Notification_Data", notificationData);
+//                    startActivity(intent);
+//                    notificationData = "";
+//                    finish();
+//                } else {
+//                    Intent intent = new Intent(Splash.this, LoginSignup.class);
+//                    startActivity(intent);
+//                    finish();
+//                }
+//            }
+//
+//        }, error -> {
+//            // Do nothing because
+//        }) {
+//            @Override
+//            public Map<String, String> getHeaders() throws AuthFailureError {
+//                Map<String,String> params = new HashMap<>();
+//                params.put("x-api-key", AppConfig.apiKey);
+//                return params;
+//            }
+//            @Override
+//            protected Map<String,String> getParams(){
+//                Map<String,String> params = new HashMap<>();
+//                params.put("encoded",encoded);
+//                params.put("device", Settings.Secure.getString(getContentResolver(), Settings.Secure.ANDROID_ID));
+//                return params;
+//            }
+//        };
+//
+//        sr.setRetryPolicy(new DefaultRetryPolicy(5000,
+//                DefaultRetryPolicy.DEFAULT_MAX_RETRIES,
+//                DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
+//
+//        queue.add(sr);
     }
 
     private void setOneSignalExternalID(String externalID) {

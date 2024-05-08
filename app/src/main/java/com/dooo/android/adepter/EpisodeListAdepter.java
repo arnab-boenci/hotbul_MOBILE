@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
+import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -56,14 +57,20 @@ public class EpisodeListAdepter extends RecyclerView.Adapter<EpisodeListAdepter.
     private int contentID;
 
     Context context;
+    private OnItemClickListener listener;
 
-    public EpisodeListAdepter(int contentID, Context mContext, View mView, String rootUrl, String apiKey, List<EpisodeList> mData) {
+    public EpisodeListAdepter(int contentID, Context mContext, View mView, String rootUrl, String apiKey, List<EpisodeList> mData, OnItemClickListener listener) {
         this.contentID = contentID;
         this.mContext = mContext;
         this.rootView = mView;
         this.rootUrl = rootUrl;
         this.apiKey = apiKey;
         this.mData = mData;
+        this.listener = listener;
+    }
+
+    public interface OnItemClickListener {
+        void onItemClick(EpisodeList newEpisode);
     }
 
 
@@ -79,6 +86,7 @@ public class EpisodeListAdepter extends RecyclerView.Adapter<EpisodeListAdepter.
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
+        EpisodeList newEpisode = mData.get(position);
         holder.setEpisode_image(mData.get(position));
         holder.setTitle(mData.get(position));
         holder.setDescription(mData.get(position));
@@ -88,153 +96,156 @@ public class EpisodeListAdepter extends RecyclerView.Adapter<EpisodeListAdepter.
         holder.episode_item.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(AppConfig.all_series_type == 0) {
-                    if(mData.get(position).getType()== 1) {
-
-                        if (mData.get(position).isPlay_Premium()) {
-                            if(mData.get(position).getSource().equals("Embed")){
-                                Intent intent = new Intent(mContext, EmbedPlayer.class);
-                                intent.putExtra("url", mData.get(position).getUrl());
-                                mContext.startActivity(intent);
-                            } else {
-                                Intent intent = new Intent(mContext, Player.class);
-                                intent.putExtra("contentID", contentID);
-                                intent.putExtra("SourceID", mData.get(position).getId());
-                                intent.putExtra("name", mData.get(position).getEpisoade_Name());
-                                intent.putExtra("source", mData.get(position).getSource());
-                                intent.putExtra("url", mData.get(position).getUrl());
-
-                                intent.putExtra("DrmUuid", mData.get(position).getDrmUuid());
-                                intent.putExtra("DrmLicenseUri", mData.get(position).getDrmLicenseUri());
-
-                                intent.putExtra("skip_available", mData.get(position).getSkip_available());
-                                intent.putExtra("intro_start", mData.get(position).getIntro_start());
-                                intent.putExtra("intro_end", mData.get(position).getIntro_end());
-
-                                intent.putExtra("Content_Type", "WebSeries");
-                                intent.putExtra("Current_List_Position", position);
-
-                                int r_pos = position+1;
-                                if(r_pos < mData.size()) {
-                                    intent.putExtra("Next_Ep_Avilable", "Yes");
-                                } else {
-                                    intent.putExtra("Next_Ep_Avilable", "No");
-                                }
-
-                                //mContext.startActivity(intent);
-                                ((WebSeriesDetails) mContext).startActivityForResult(intent, 1);
-                            }
-                        } else {
-                            HelperUtils helperUtils = new HelperUtils((WebSeriesDetails) mContext);
-                            helperUtils.Buy_Premium_Dialog((WebSeriesDetails) mContext, "Buy Premium!", "Buy Premium Subscription To Watch Premium Content", R.raw.rocket_telescope);
-                        }
-
-                    } else {
-                        if(mData.get(position).getSource().equals("Embed")){
-                            Intent intent = new Intent(mContext, EmbedPlayer.class);
-                            intent.putExtra("url", mData.get(position).getUrl());
-                            mContext.startActivity(intent);
-                        } else {
-                            Intent intent = new Intent(mContext, Player.class);
-                            intent.putExtra("contentID", contentID);
-                            intent.putExtra("SourceID", mData.get(position).getId());
-                            intent.putExtra("name", mData.get(position).getEpisoade_Name());
-                            intent.putExtra("source", mData.get(position).getSource());
-                            intent.putExtra("url", mData.get(position).getUrl());
-
-                            intent.putExtra("DrmUuid", mData.get(position).getDrmUuid());
-                            intent.putExtra("DrmLicenseUri", mData.get(position).getDrmLicenseUri());
-
-                            intent.putExtra("skip_available", mData.get(position).getSkip_available());
-                            intent.putExtra("intro_start", mData.get(position).getIntro_start());
-                            intent.putExtra("intro_end", mData.get(position).getIntro_end());
-
-                            intent.putExtra("Content_Type", "WebSeries");
-                            intent.putExtra("Current_List_Position", position);
-
-                            int r_pos = position+1;
-                            if(r_pos < mData.size()) {
-                                intent.putExtra("Next_Ep_Avilable", "Yes");
-                            } else {
-                                intent.putExtra("Next_Ep_Avilable", "No");
-                            }
-
-                            //mContext.startActivity(intent);
-                            ((WebSeriesDetails) mContext).startActivityForResult(intent, 1);
-                        }
-                    }
-                } else if(AppConfig.all_series_type == 1) {
-                    if(mData.get(position).getSource().equals("Embed")){
-                        Intent intent = new Intent(mContext, EmbedPlayer.class);
-                        intent.putExtra("url", mData.get(position).getUrl());
-                        mContext.startActivity(intent);
-                    } else {
-                        Intent intent = new Intent(mContext, Player.class);
-                        intent.putExtra("contentID", contentID);
-                        intent.putExtra("SourceID", mData.get(position).getId());
-                        intent.putExtra("name", mData.get(position).getEpisoade_Name());
-                        intent.putExtra("source", mData.get(position).getSource());
-                        intent.putExtra("url", mData.get(position).getUrl());
-
-                        intent.putExtra("DrmUuid", mData.get(position).getDrmUuid());
-                        intent.putExtra("DrmLicenseUri", mData.get(position).getDrmLicenseUri());
-
-                        intent.putExtra("skip_available", mData.get(position).getSkip_available());
-                        intent.putExtra("intro_start", mData.get(position).getIntro_start());
-                        intent.putExtra("intro_end", mData.get(position).getIntro_end());
-
-                        intent.putExtra("Content_Type", "WebSeries");
-                        intent.putExtra("Current_List_Position", position);
-
-                        int r_pos = position+1;
-                        if(r_pos < mData.size()) {
-                            intent.putExtra("Next_Ep_Avilable", "Yes");
-                        } else {
-                            intent.putExtra("Next_Ep_Avilable", "No");
-                        }
-
-                        //mContext.startActivity(intent);
-                        ((WebSeriesDetails) mContext).startActivityForResult(intent, 1);
-                    }
-                } else if(AppConfig.all_series_type == 2) {
-                    if (mData.get(position).isPlay_Premium()) {
-                        if(mData.get(position).getSource().equals("Embed")){
-                            Intent intent = new Intent(mContext, EmbedPlayer.class);
-                            intent.putExtra("url", mData.get(position).getUrl());
-                            mContext.startActivity(intent);
-                        } else {
-                            Intent intent = new Intent(mContext, Player.class);
-                            intent.putExtra("contentID", contentID);
-                            intent.putExtra("SourceID", mData.get(position).getId());
-                            intent.putExtra("name", mData.get(position).getEpisoade_Name());
-                            intent.putExtra("source", mData.get(position).getSource());
-                            intent.putExtra("url", mData.get(position).getUrl());
-
-                            intent.putExtra("DrmUuid", mData.get(position).getDrmUuid());
-                            intent.putExtra("DrmLicenseUri", mData.get(position).getDrmLicenseUri());
-
-                            intent.putExtra("skip_available", mData.get(position).getSkip_available());
-                            intent.putExtra("intro_start", mData.get(position).getIntro_start());
-                            intent.putExtra("intro_end", mData.get(position).getIntro_end());
-
-                            intent.putExtra("Content_Type", "WebSeries");
-                            intent.putExtra("Current_List_Position", position);
-
-                            int r_pos = position+1;
-                            if(r_pos < mData.size()) {
-                                intent.putExtra("Next_Ep_Avilable", "Yes");
-                            } else {
-                                intent.putExtra("Next_Ep_Avilable", "No");
-                            }
-
-                            //mContext.startActivity(intent);
-                            ((WebSeriesDetails) mContext).startActivityForResult(intent, 1);
-                        }
-                    } else {
-                        HelperUtils helperUtils = new HelperUtils((WebSeriesDetails) mContext);
-                        helperUtils.Buy_Premium_Dialog((WebSeriesDetails) mContext, "Buy Premium!", "Buy Premium Subscription To Watch Premium Content", R.raw.rocket_telescope);
-                    }
-                }
+               listener.onItemClick(newEpisode);
+//                Intent intent = new Intent(mContext, WebSeriesDetails.class);
+//                intent.putExtra("ID", mData.get(position).getEpisoade_Name() + "");
+//                if(AppConfig.all_series_type == 0) {
+//                    if(mData.get(position).getType()== 1) {
+//
+//                        if (mData.get(position).isPlay_Premium()) {
+//                            if(mData.get(position).getSource().equals("Embed")){
+//                                Intent intent = new Intent(mContext, EmbedPlayer.class);
+//                                intent.putExtra("url", mData.get(position).getUrl());
+//                                mContext.startActivity(intent);
+//                            } else {
+//                                Intent intent = new Intent(mContext, Player.class);
+//                                intent.putExtra("contentID", contentID);
+//                                intent.putExtra("SourceID", mData.get(position).getId());
+//                                intent.putExtra("name", mData.get(position).getEpisoade_Name());
+//                                intent.putExtra("source", mData.get(position).getSource());
+//                                intent.putExtra("url", mData.get(position).getUrl());
+//
+//                                intent.putExtra("DrmUuid", mData.get(position).getDrmUuid());
+//                                intent.putExtra("DrmLicenseUri", mData.get(position).getDrmLicenseUri());
+//
+//                                intent.putExtra("skip_available", mData.get(position).getSkip_available());
+//                                intent.putExtra("intro_start", mData.get(position).getIntro_start());
+//                                intent.putExtra("intro_end", mData.get(position).getIntro_end());
+//
+//                                intent.putExtra("Content_Type", "WebSeries");
+//                                intent.putExtra("Current_List_Position", position);
+//
+//                                int r_pos = position+1;
+//                                if(r_pos < mData.size()) {
+//                                    intent.putExtra("Next_Ep_Avilable", "Yes");
+//                                } else {
+//                                    intent.putExtra("Next_Ep_Avilable", "No");
+//                                }
+//
+//                                //mContext.startActivity(intent);
+//                                ((WebSeriesDetails) mContext).startActivityForResult(intent, 1);
+//                            }
+//                        } else {
+//                            HelperUtils helperUtils = new HelperUtils((WebSeriesDetails) mContext);
+//                            helperUtils.Buy_Premium_Dialog((WebSeriesDetails) mContext, "Buy Premium!", "Buy Premium Subscription To Watch Premium Content", R.raw.rocket_telescope);
+//                        }
+//
+//                    } else {
+//                        if(mData.get(position).getSource().equals("Embed")){
+//                            Intent intent = new Intent(mContext, EmbedPlayer.class);
+//                            intent.putExtra("url", mData.get(position).getUrl());
+//                            mContext.startActivity(intent);
+//                        } else {
+//                            Intent intent = new Intent(mContext, Player.class);
+//                            intent.putExtra("contentID", contentID);
+//                            intent.putExtra("SourceID", mData.get(position).getId());
+//                            intent.putExtra("name", mData.get(position).getEpisoade_Name());
+//                            intent.putExtra("source", mData.get(position).getSource());
+//                            intent.putExtra("url", mData.get(position).getUrl());
+//
+//                            intent.putExtra("DrmUuid", mData.get(position).getDrmUuid());
+//                            intent.putExtra("DrmLicenseUri", mData.get(position).getDrmLicenseUri());
+//
+//                            intent.putExtra("skip_available", mData.get(position).getSkip_available());
+//                            intent.putExtra("intro_start", mData.get(position).getIntro_start());
+//                            intent.putExtra("intro_end", mData.get(position).getIntro_end());
+//
+//                            intent.putExtra("Content_Type", "WebSeries");
+//                            intent.putExtra("Current_List_Position", position);
+//
+//                            int r_pos = position+1;
+//                            if(r_pos < mData.size()) {
+//                                intent.putExtra("Next_Ep_Avilable", "Yes");
+//                            } else {
+//                                intent.putExtra("Next_Ep_Avilable", "No");
+//                            }
+//
+//                            //mContext.startActivity(intent);
+//                            ((WebSeriesDetails) mContext).startActivityForResult(intent, 1);
+//                        }
+//                    }
+//                } else if(AppConfig.all_series_type == 1) {
+//                    if(mData.get(position).getSource().equals("Embed")){
+//                        Intent intent = new Intent(mContext, EmbedPlayer.class);
+//                        intent.putExtra("url", mData.get(position).getUrl());
+//                        mContext.startActivity(intent);
+//                    } else {
+//                        Intent intent = new Intent(mContext, Player.class);
+//                        intent.putExtra("contentID", contentID);
+//                        intent.putExtra("SourceID", mData.get(position).getId());
+//                        intent.putExtra("name", mData.get(position).getEpisoade_Name());
+//                        intent.putExtra("source", mData.get(position).getSource());
+//                        intent.putExtra("url", mData.get(position).getUrl());
+//
+//                        intent.putExtra("DrmUuid", mData.get(position).getDrmUuid());
+//                        intent.putExtra("DrmLicenseUri", mData.get(position).getDrmLicenseUri());
+//
+//                        intent.putExtra("skip_available", mData.get(position).getSkip_available());
+//                        intent.putExtra("intro_start", mData.get(position).getIntro_start());
+//                        intent.putExtra("intro_end", mData.get(position).getIntro_end());
+//
+//                        intent.putExtra("Content_Type", "WebSeries");
+//                        intent.putExtra("Current_List_Position", position);
+//
+//                        int r_pos = position+1;
+//                        if(r_pos < mData.size()) {
+//                            intent.putExtra("Next_Ep_Avilable", "Yes");
+//                        } else {
+//                            intent.putExtra("Next_Ep_Avilable", "No");
+//                        }
+//
+//                        //mContext.startActivity(intent);
+//                        ((WebSeriesDetails) mContext).startActivityForResult(intent, 1);
+//                    }
+//                } else if(AppConfig.all_series_type == 2) {
+//                    if (mData.get(position).isPlay_Premium()) {
+//                        if(mData.get(position).getSource().equals("Embed")){
+//                            Intent intent = new Intent(mContext, EmbedPlayer.class);
+//                            intent.putExtra("url", mData.get(position).getUrl());
+//                            mContext.startActivity(intent);
+//                        } else {
+//                            Intent intent = new Intent(mContext, Player.class);
+//                            intent.putExtra("contentID", contentID);
+//                            intent.putExtra("SourceID", mData.get(position).getId());
+//                            intent.putExtra("name", mData.get(position).getEpisoade_Name());
+//                            intent.putExtra("source", mData.get(position).getSource());
+//                            intent.putExtra("url", mData.get(position).getUrl());
+//
+//                            intent.putExtra("DrmUuid", mData.get(position).getDrmUuid());
+//                            intent.putExtra("DrmLicenseUri", mData.get(position).getDrmLicenseUri());
+//
+//                            intent.putExtra("skip_available", mData.get(position).getSkip_available());
+//                            intent.putExtra("intro_start", mData.get(position).getIntro_start());
+//                            intent.putExtra("intro_end", mData.get(position).getIntro_end());
+//
+//                            intent.putExtra("Content_Type", "WebSeries");
+//                            intent.putExtra("Current_List_Position", position);
+//
+//                            int r_pos = position+1;
+//                            if(r_pos < mData.size()) {
+//                                intent.putExtra("Next_Ep_Avilable", "Yes");
+//                            } else {
+//                                intent.putExtra("Next_Ep_Avilable", "No");
+//                            }
+//
+//                            //mContext.startActivity(intent);
+//                            ((WebSeriesDetails) mContext).startActivityForResult(intent, 1);
+//                        }
+//                    } else {
+//                        HelperUtils helperUtils = new HelperUtils((WebSeriesDetails) mContext);
+//                        helperUtils.Buy_Premium_Dialog((WebSeriesDetails) mContext, "Buy Premium!", "Buy Premium Subscription To Watch Premium Content", R.raw.rocket_telescope);
+//                    }
+//                }
             }
         });
 
