@@ -1,0 +1,36 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.dooo.android.app-mergeReleaseResources-116:/values-en/values-en.xml",
+            "map": [
+                {
+                    "source": "/Users/arnabmandal/.gradle/caches/transforms-3/b187faf407b30ea3fdc94ef3ac190418/transformed/jetified-applovin-sdk-12.4.3/res/values-en/values-en.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,170,224,291,449,581,653,736",
+                        "endColumns": "114,53,66,157,131,71,82,67",
+                        "endOffsets": "165,219,286,444,576,648,731,799"
+                    }
+                },
+                {
+                    "source": "/Users/arnabmandal/.gradle/caches/transforms-3/bd1f78db834f1bea63dc46a302ed5512/transformed/jetified-dkplayer-ui-3.3.7/res/values-en/values-en.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,123,219,297,348,399,452,507",
+                        "endColumns": "67,95,77,50,50,52,54,133",
+                        "endOffsets": "118,214,292,343,394,447,502,636"
+                    },
+                    "to": {
+                        "startLines": "10,11,12,13,14,15,16,17",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "804,872,968,1046,1097,1148,1201,1256",
+                        "endColumns": "67,95,77,50,50,52,54,133",
+                        "endOffsets": "867,963,1041,1092,1143,1196,1251,1385"
+                    }
+                }
+            ]
+        }
+    ]
+}

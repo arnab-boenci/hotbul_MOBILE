@@ -5073,6 +5073,7 @@ drawable ic_no_wifi_1
 drawable ic_no_wifi_2
 drawable ic_os_notification_fallback_white_24dp
 drawable ic_outline_play_circle_filled_24px
+drawable ic_outline_settings
 drawable ic_pause_black_24dp
 drawable ic_pause_circle_transparent
 drawable ic_pause_white
@@ -7386,6 +7387,7 @@ id pypl_addcard_state
 id qualityButton
 id qualityImageView
 id qualityRelativeLayout
+id qualtyLinearLayout
 id radial
 id radio
 id radioPlayImage
@@ -8240,6 +8242,7 @@ layout activity_paytm_payment_gatway
 layout activity_player
 layout activity_privecy_policy
 layout activity_razorpay_payment_gatway
+layout activity_short_film_details
 layout activity_single_select_challenge_view
 layout activity_splash
 layout activity_subscription
@@ -8377,13 +8380,15 @@ layout fragment_otp_login
 layout fragment_otp_phone
 layout fragment_pypl_transaction_details
 layout fragment_search
-layout fragment_shortfilm
+layout fragment_short_film
+layout fragment_shortfilm_1
 layout fragment_split_login
 layout fragment_web_view
 layout fragment_webseries
 layout genre_item
 layout gnt_medium_template_view
 layout gnt_small_template_view
+layout hls_test
 layout home_bottom_sheet_layout
 layout initial_msg_dialog
 layout language_change_dialog
@@ -8594,6 +8599,7 @@ layout pypl_new_shipping_address_review_fragment_layout
 layout pypl_rate_protection_fragment
 layout pypl_three_ds_fragment
 layout pypl_user_profile_fragment
+layout quality_bottom_sheet_dialog
 layout radio_selector
 layout rate_protection_bottom_sheet_layout
 layout rave_sdk_activity_futher_verification

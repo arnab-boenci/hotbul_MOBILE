@@ -20,6 +20,7 @@ import com.bumptech.glide.Glide;
 import com.dooo.android.AppConfig;
 import com.dooo.android.MovieDetails;
 import com.dooo.android.R;
+import com.dooo.android.ShortFilmDetails;
 import com.dooo.android.WebSeriesDetails;
 import com.dooo.android.list.MovieList;
 import com.dooo.android.list.TrendingList;
@@ -55,6 +56,10 @@ public class TrendingListAdepter extends RecyclerView.Adapter<TrendingListAdepte
                 mContext.startActivity(intent);
             } else if(mData.get(position).getContentType().equalsIgnoreCase("Web Series")) {
                 Intent intent = new Intent(mContext, WebSeriesDetails.class);
+                intent.putExtra("ID", mData.get(position).getID());
+                mContext.startActivity(intent);
+            }else  {
+                Intent intent = new Intent(mContext, ShortFilmDetails.class);
                 intent.putExtra("ID", mData.get(position).getID());
                 mContext.startActivity(intent);
             }

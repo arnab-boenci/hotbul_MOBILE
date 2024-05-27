@@ -24,6 +24,8 @@ import android.widget.TextView;
 import androidx.cardview.widget.CardView;
 import androidx.core.widget.NestedScrollView;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
@@ -481,13 +483,35 @@ public class MusicFragment extends Fragment {
         });
 
         bottom_floting_menu_movies.setOnClickListener(view->{
-            startActivity(new Intent(getActivity(), MoviesActivity.class));
+            //startActivity(new Intent(getActivity(), MoviesActivity.class));
+            MoviesFragment moviesFragment = new MoviesFragment();
+            FragmentManager fragmentManager = getParentFragmentManager();
+            FragmentTransaction transaction = fragmentManager.beginTransaction();
+            transaction.replace(R.id.mainFragment, moviesFragment);
+            transaction.addToBackStack(null);
+            transaction.commit();
         });
         bottom_floting_menu_web_series.setOnClickListener(view->{
-            startActivity(new Intent(getActivity(), WebSeriesActivity.class));
+            ShortFilmFragment shortFilmFragment = new ShortFilmFragment();
+            FragmentManager fragmentManager = getParentFragmentManager();
+            FragmentTransaction transaction = fragmentManager.beginTransaction();
+            transaction.replace(R.id.mainFragment, shortFilmFragment);
+            transaction.addToBackStack(null);
+            transaction.commit();
+//            getSupportFragmentManager()
+//                    .beginTransaction()
+//                    .replace(R.id.mainFragment, new HomeFragment())
+//                    .commit();
+            //startActivity(new Intent(getActivity(), ShortFilmActivity.class));
         });
         bottom_floting_menu_music.setOnClickListener(view->{
-            startActivity(new Intent(getActivity(), MusicActivity       .class));
+            MusicFragment musicFragment = new MusicFragment();
+            FragmentManager fragmentManager = getParentFragmentManager();
+            FragmentTransaction transaction = fragmentManager.beginTransaction();
+            transaction.replace(R.id.mainFragment, musicFragment);
+            transaction.addToBackStack(null);
+            transaction.commit();
+            //startActivity(new Intent(getActivity(), MusicActivity.class));
         });
 
         setColorTheme(Color.parseColor(AppConfig.primeryThemeColor), layoutInflater);
@@ -665,7 +689,7 @@ public class MusicFragment extends Fragment {
                 jsonObject.put("password", "123456");
                 jsonObject.put("usermode", "admin");
                 jsonObject.put("caller", "webadmin");
-                jsonObject.put("searchtype", "Movie");
+                jsonObject.put("searchtype", "Music");
                 jsonObject.put("searchcontent", "");
 
 
@@ -1168,6 +1192,7 @@ public class MusicFragment extends Fragment {
             jsonObject.put("caller", "mobile");
             jsonObject.put("searchtype", "others");
             jsonObject.put("searchcontent", "trending");
+            jsonObject.put("typename", "Music");
 
 
             JsonObjectRequest trendingRequest = new JsonObjectRequest(Request.Method.POST, AppConfig.baseurl +"/videocontent/fetchvideocontent",
@@ -1221,9 +1246,63 @@ public class MusicFragment extends Fragment {
             };
             queue.add(trendingRequest);
 
+            jsonObject.put("searchtype", "recentlyadded");
+            jsonObject.put("searchcontent", "Music");
+            JsonObjectRequest recentlyContent = new JsonObjectRequest(Request.Method.POST, AppConfig.baseurl +"/videocontent/fetchvideocontent",
+                    jsonObject, response -> {
+                if (!response.equals("No Data Avaliable")) {
+                    recentMoviesLayout.setVisibility(View.VISIBLE);
+                    JsonObject jsonObjectResponse = new Gson().fromJson(response.toString(), JsonObject.class);
+                    if(jsonObjectResponse.get("status").getAsString().equalsIgnoreCase("Success")){
+                        JsonArray jsonArray = jsonObjectResponse.getAsJsonArray("resultList");
+                        List<MovieList> recentlyAddedMovieList = new ArrayList<>();
+                        for (JsonElement r : jsonArray) {
+                            JsonObject rootObject = r.getAsJsonObject();
+                            int id = rootObject.get("videocontentid").getAsInt();
+                            String name = rootObject.get("title").getAsString();
+                            String year = "";
+                            if (!rootObject.get("releasedate").getAsString().equals("")) {
+                                year = helperUtils.getYearFromDate(rootObject.get("releasedate").getAsString());
+                            }
+
+                            String banner = rootObject.get("posterimageurl").getAsString();
+                            int type = 2;
+                            recentlyAddedMovieList.add(new MovieList(id, type, name, year, banner));
+                        }
+
+                        Collections.shuffle(recentlyAddedMovieList);
+
+                        MovieListAdepter myadepter = new MovieListAdepter(context, recentlyAddedMovieList);
+                        home_Recent_Movies_list_Recycler_View.setLayoutManager(new GridLayoutManager(context, 1, RecyclerView.HORIZONTAL, false));
+                        home_Recent_Movies_list_Recycler_View.setAdapter(myadepter);
+
+                        homeSwipeRefreshLayout.setRefreshing(false);
+                        shimmer_view_container.stopShimmer();
+                        shimmer_view_container.setVisibility(View.GONE);
+                        nestedScrollView.setVisibility(View.VISIBLE);
+                    } else {
+                        recentMoviesLayout.setVisibility(View.GONE);
+                        homeSwipeRefreshLayout.setRefreshing(false);
+                    }
+                } else {
+                    recentMoviesLayout.setVisibility(View.GONE);
+                    homeSwipeRefreshLayout.setRefreshing(false);
+                }
+            }, error -> {
+                // Do nothing because There is No Error if error It will return 0
+            }) {
+                @Override
+                public Map<String, String> getHeaders() throws AuthFailureError {
+                    Map<String, String> params = new HashMap<>();
+                    //params.put("x-api-key", AppConfig.apiKey);
+                    return params;
+                }
+            };
+            queue.add(recentlyContent);
+
 
             jsonObject.put("searchtype", "contenttype");
-            jsonObject.put("searchcontent", "Movie");
+            jsonObject.put("searchcontent", "Music");
             JsonObjectRequest movieRequest = new JsonObjectRequest(Request.Method.POST, AppConfig.baseurl +"/videocontent/fetchvideocontent",
                     jsonObject, response -> {
                 if (!response.equals("No Data Avaliable")) {
@@ -1247,7 +1326,7 @@ public class MusicFragment extends Fragment {
 //                        int type = rootObject.get("type").getAsInt();
 //                        int status = rootObject.get("status").getAsInt();
                             String banner = rootObject.get("posterimageurl").getAsString();
-                            int type = 0;
+                            int type = 2;
                             // String content_type = rootObject.getAsJsonObject("contentType").get("contenttypename").getAsString();
 
                             //if (status == 1) {
@@ -1344,7 +1423,7 @@ public class MusicFragment extends Fragment {
 //            queue.add(loveRequest);
 
             jsonObject.put("searchtype", "viewcount");
-            jsonObject.put("searchcontent", "Movie");
+            jsonObject.put("searchcontent", "Music");
             JsonObjectRequest popularMovies = new JsonObjectRequest(Request.Method.POST, AppConfig.baseurl +"/videocontent/fetchvideocontent",
                     jsonObject, response -> {
                 if (!response.equals("No Data Avaliable")) {
@@ -1363,7 +1442,7 @@ public class MusicFragment extends Fragment {
                             }
 
                             String banner = rootObject.get("posterimageurl").getAsString();
-                            int type = 0;
+                            int type = 2;
                             movieList.add(new MovieList(id, type, name, year, banner));
                         }
 
@@ -1468,7 +1547,7 @@ public class MusicFragment extends Fragment {
                             }
 
                             String banner = rootObject.get("posterimageurl").getAsString();
-                            int type = 0;
+                            int type = 2;
                             houseofHorrorList.add(new HouseofHorrorList(id, type, name, year, banner));
                         }
 
@@ -1523,7 +1602,7 @@ public class MusicFragment extends Fragment {
                             }
 
                             String banner = rootObject.get("posterimageurl").getAsString();
-                            int type = 0;
+                            int type = 2;
                             houseofHorrorList.add(new HouseofHorrorList(id, type, name, year, banner));
                         }
 
@@ -1627,7 +1706,7 @@ public class MusicFragment extends Fragment {
                     JsonObject jsonObjectResponse = new Gson().fromJson(response.toString(), JsonObject.class);
                     if(jsonObjectResponse.get("status").getAsString().equalsIgnoreCase("Success")){
                         JsonArray jsonArray = jsonObjectResponse.getAsJsonArray("resultList");
-                        List<WebSeriesList> webSeriesList = new ArrayList<>();
+                        List<HouseofHorrorList> houseofHorrorList = new ArrayList<>();
                         for (JsonElement r : jsonArray) {
                             JsonObject rootObject = r.getAsJsonObject();
                             int id = rootObject.get("videocontentid").getAsInt();
@@ -1642,14 +1721,14 @@ public class MusicFragment extends Fragment {
                             //String content_type = rootObject.getAsJsonObject("contentType").get("contenttypename").getAsString();
 
                             // if (status == 1) {
-                            webSeriesList.add(new WebSeriesList(id, type, name, year, banner));
+                            houseofHorrorList.add(new HouseofHorrorList(id, type, name, year, banner));
                             //  }
                         }
                         // if (shuffleContents == 1) {
                         ///     Collections.shuffle(webSeriesList);
                         // }
 
-                        WebSeriesListAdepter myadepter = new WebSeriesListAdepter(context, webSeriesList);
+                        HouseOfHorrorListAdepter myadepter = new HouseOfHorrorListAdepter(context, houseofHorrorList);
                         adult_list_Recycler_View.setLayoutManager(new GridLayoutManager(context, 1, RecyclerView.HORIZONTAL, false));
                         adult_list_Recycler_View.setAdapter(myadepter);
                         shimmer_view_container.stopShimmer();
@@ -1678,59 +1757,7 @@ public class MusicFragment extends Fragment {
             };
             queue.add(adultRequest);
 
-            jsonObject.put("searchtype", "recentlyadded");
-            jsonObject.put("searchcontent", "Movie");
-            JsonObjectRequest recentlyContent = new JsonObjectRequest(Request.Method.POST, AppConfig.baseurl +"/videocontent/fetchvideocontent",
-                    jsonObject, response -> {
-                if (!response.equals("No Data Avaliable")) {
-                    recentMoviesLayout.setVisibility(View.VISIBLE);
-                    JsonObject jsonObjectResponse = new Gson().fromJson(response.toString(), JsonObject.class);
-                    if(jsonObjectResponse.get("status").getAsString().equalsIgnoreCase("Success")){
-                        JsonArray jsonArray = jsonObjectResponse.getAsJsonArray("resultList");
-                        List<MovieList> recentlyAddedMovieList = new ArrayList<>();
-                        for (JsonElement r : jsonArray) {
-                            JsonObject rootObject = r.getAsJsonObject();
-                            int id = rootObject.get("videocontentid").getAsInt();
-                            String name = rootObject.get("title").getAsString();
-                            String year = "";
-                            if (!rootObject.get("releasedate").getAsString().equals("")) {
-                                year = helperUtils.getYearFromDate(rootObject.get("releasedate").getAsString());
-                            }
 
-                            String banner = rootObject.get("posterimageurl").getAsString();
-                            int type = 0;
-                            recentlyAddedMovieList.add(new MovieList(id, type, name, year, banner));
-                        }
-
-                        Collections.shuffle(recentlyAddedMovieList);
-
-                        MovieListAdepter myadepter = new MovieListAdepter(context, recentlyAddedMovieList);
-                        home_Recent_Movies_list_Recycler_View.setLayoutManager(new GridLayoutManager(context, 1, RecyclerView.HORIZONTAL, false));
-                        home_Recent_Movies_list_Recycler_View.setAdapter(myadepter);
-
-                        homeSwipeRefreshLayout.setRefreshing(false);
-                        shimmer_view_container.stopShimmer();
-                        shimmer_view_container.setVisibility(View.GONE);
-                        nestedScrollView.setVisibility(View.VISIBLE);
-                    } else {
-                        recentMoviesLayout.setVisibility(View.GONE);
-                        homeSwipeRefreshLayout.setRefreshing(false);
-                    }
-                } else {
-                    recentMoviesLayout.setVisibility(View.GONE);
-                    homeSwipeRefreshLayout.setRefreshing(false);
-                }
-            }, error -> {
-                // Do nothing because There is No Error if error It will return 0
-            }) {
-                @Override
-                public Map<String, String> getHeaders() throws AuthFailureError {
-                    Map<String, String> params = new HashMap<>();
-                    //params.put("x-api-key", AppConfig.apiKey);
-                    return params;
-                }
-            };
-            queue.add(recentlyContent);
 
 //            jsonObject.put("searchtype", "recentlyadded");
 //            jsonObject.put("searchcontent", "Web Series");

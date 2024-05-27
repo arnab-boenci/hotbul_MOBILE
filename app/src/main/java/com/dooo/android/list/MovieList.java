@@ -2,7 +2,7 @@ package com.dooo.android.list;
 
 public class MovieList {
     private int ID;
-    private int Type;
+    private int Type; //0 - movie , 1 - Web Series , 2 - Short Film, 3 - Music, 4 - 18+
     private String Title;
     private String Year;
     private String Thumbnail;

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/Screen_Background">
+
+    <RelativeLayout
+        android:id="@+id/main_mayout_strem_it_n_in_categoty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.MainActivity">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+                <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                    android:id="@+id/swiperefresh"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+                    <androidx.core.widget.NestedScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <RelativeLayout
+                                android:id="@+id/toolbar"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <ImageView
+                                    android:scaleType="centerCrop"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="?actionBarSize"/>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="?actionBarSize"
+                                    android:gravity="center_vertical"
+                                    android:paddingStart="20dp">
+                                    <ImageView
+                                        android:id="@+id/backArrow"
+                                        android:rotation="180"
+                                        app:srcCompat="@drawable/advance_arrow"
+                                        android:layout_width="50dp"
+                                        android:layout_height="30dp"
+                                        android:tint="@color/white"
+                                        tools:ignore="UseAppTint" />
+
+                                    <TextView
+                                        android:id="@+id/categoryID"
+                                        android:textSize="20sp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="20sp"
+                                        android:fontFamily="@font/gilroy_bold"
+                                        android:text="Categories"
+                                        android:textColor="#fff"
+                                        />
+                                </LinearLayout>
+                            </RelativeLayout>
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:layout_marginStart="15dp"
+                                android:layout_marginEnd="8dp"
+                                android:id="@+id/allStreamItInCategory"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"/>
+                        </LinearLayout>
+                    </androidx.core.widget.NestedScrollView>
+                </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+                <LinearLayout
+                    android:id="@+id/broken_hart_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    app:layout_anchor="@+id/swiperefresh"
+                    app:layout_anchorGravity="center">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/no_item" />
+                </LinearLayout>
+
+
+            <FrameLayout
+                android:id="@+id/adView"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+            </FrameLayout>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -48,7 +48,7 @@
                 android:id="@+id/bottom_floting_menu_web_series"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="Web Series"
+                android:text="Short Film"
                 android:textColor="@color/white"
                 android:textStyle="bold"
                 android:textSize="13sp"
@@ -318,7 +318,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="@string/Recently_Added_Movies"
+                                android:text="Recently Added Music"
                                 android:textColor="@color/white"
                                 android:textStyle="bold"
                                 android:textAlignment="viewStart"
@@ -337,47 +337,6 @@
                             android:layout_height="match_parent">
                             <androidx.recyclerview.widget.RecyclerView
                                 android:id="@+id/home_Recent_Movies_list_Recycler_View"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"/>
-
-                        </LinearLayout>
-
-                    </LinearLayout>
-                    <LinearLayout
-                        android:id="@+id/houseOfHorrorLayout"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:layout_marginBottom="8dp">
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            android:gravity="center_vertical">
-
-                            <androidx.cardview.widget.CardView
-                                android:id="@+id/houseOfHorrorSmallCardPalate"
-                                android:layout_width="5dp"
-                                android:layout_height="35dp"
-                                android:backgroundTint="@color/Red_Smooth"
-                                app:cardCornerRadius="10dp"
-                                app:cardElevation="10dp"/>
-                            <TextView
-                                android:id="@+id/houseOfHorrorTextView"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="House Of Horror"
-                                android:textColor="@color/white"
-                                android:textStyle="bold"
-                                android:textAlignment="viewStart"
-                                android:textSize="20sp"
-                                android:layout_marginStart="5dp"/>
-                        </LinearLayout>
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-                            <androidx.recyclerview.widget.RecyclerView
-                                android:id="@+id/house_of_horror_list_Recycler_View"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"/>
 
@@ -425,6 +384,48 @@
                         </LinearLayout>
 
                     </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/houseOfHorrorLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginBottom="8dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/houseOfHorrorSmallCardPalate"
+                                android:layout_width="5dp"
+                                android:layout_height="35dp"
+                                android:backgroundTint="@color/Red_Smooth"
+                                app:cardCornerRadius="10dp"
+                                app:cardElevation="10dp"/>
+                            <TextView
+                                android:id="@+id/houseOfHorrorTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="House Of Horror"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"
+                                android:textAlignment="viewStart"
+                                android:textSize="20sp"
+                                android:layout_marginStart="5dp"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/house_of_horror_list_Recycler_View"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
 
 
                     <LinearLayout
@@ -450,7 +451,7 @@
                                 android:id="@+id/popularMoviesTextView"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="@string/Most_Popular_Movies"
+                                android:text="Most Popular Music"
                                 android:textColor="@color/white"
                                 android:textStyle="bold"
                                 android:textAlignment="viewStart"
@@ -802,7 +803,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="@string/Movies"
+                                android:text="Music"
                                 android:textColor="@color/white"
                                 android:textStyle="bold"
                                 android:textAlignment="viewStart"

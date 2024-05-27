@@ -16,6 +16,7 @@ import com.bumptech.glide.Glide;
 import com.dooo.android.AppConfig;
 import com.dooo.android.MovieDetails;
 import com.dooo.android.R;
+import com.dooo.android.ShortFilmDetails;
 import com.dooo.android.list.MovieList;
 
 import java.util.List;
@@ -49,9 +50,15 @@ public class moviesOnlyForYouListAdepter extends RecyclerView.Adapter<moviesOnly
         holder.IsPremium(mData.get(position));
 
         holder.Movie_Item.setOnClickListener(view -> {
-            Intent intent = new Intent(mContext, MovieDetails.class);
-            intent.putExtra("ID", mData.get(position).getID());
-            mContext.startActivity(intent);
+            if(mData.get(position).getType() == 2) {
+                Intent intent = new Intent(mContext, ShortFilmDetails.class);
+                intent.putExtra("ID", mData.get(position).getID());
+                mContext.startActivity(intent);
+            } else  {
+                Intent intent = new Intent(mContext, MovieDetails.class);
+                intent.putExtra("ID", mData.get(position).getID());
+                mContext.startActivity(intent);
+            }
         });
     }
 

@@ -2,7 +2,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:layout_gravity="bottom"
     android:layoutDirection="ltr"
     android:orientation="vertical"
@@ -73,8 +73,9 @@
                     android:layout_marginEnd="15dp"
                     android:layout_marginRight="8dp"
                     android:padding="5dp"
-                    android:visibility="visible"
-                    app:srcCompat="@drawable/ic_baseline_view_list" />
+                    android:visibility="gone"
+                    app:srcCompat="@drawable/ic_baseline_view_list"
+                    />
 
                 <LinearLayout
                     android:layout_width="match_parent"

@@ -18,6 +18,7 @@ import com.dooo.android.HouseofHorrorDetails;
 import com.dooo.android.MovieDetails;
 import com.dooo.android.R;
 import com.dooo.android.HouseofHorrorDetails;
+import com.dooo.android.ShortFilmDetails;
 import com.dooo.android.list.HouseofHorrorList;
 
 import java.util.List;
@@ -51,9 +52,15 @@ public class HouseOfHorrorListAdepter extends RecyclerView.Adapter<HouseOfHorror
         holder.IsPremium(mdata.get(position));
 
         holder.Movie_Item.setOnClickListener(view -> {
-            Intent intent = new Intent(mContext, MovieDetails.class);
-            intent.putExtra("ID", mdata.get(position).getID());
-            mContext.startActivity(intent);
+            if(mdata.get(position).getType() == 2) {
+                Intent intent = new Intent(mContext, ShortFilmDetails.class);
+                intent.putExtra("ID", mdata.get(position).getID());
+                mContext.startActivity(intent);
+            } else  {
+                Intent intent = new Intent(mContext, MovieDetails.class);
+                intent.putExtra("ID", mdata.get(position).getID());
+                mContext.startActivity(intent);
+            }
 
         });
     }

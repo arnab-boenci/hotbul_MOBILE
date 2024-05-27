@@ -48,7 +48,7 @@
                 android:id="@+id/bottom_floting_menu_web_series"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="Web Series"
+                android:text="Short Film"
                 android:textColor="@color/white"
                 android:textStyle="bold"
                 android:textSize="13sp"

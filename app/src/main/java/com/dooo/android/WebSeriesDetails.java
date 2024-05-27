@@ -45,6 +45,8 @@ import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.FrameLayout;
@@ -52,6 +54,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -129,6 +132,7 @@ import com.google.android.gms.ads.LoadAdError;
 import com.google.android.gms.ads.MobileAds;
 import com.google.android.gms.ads.interstitial.InterstitialAd;
 import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback;
+import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.tabs.TabLayout;
 import com.google.gson.Gson;
@@ -301,10 +305,41 @@ public class WebSeriesDetails extends AppCompatActivity implements EpisodeListAd
     ViewPager viewPager;
     List<AllSeason.Datum> allSeasonsEp11;
     TextView titleTextView ;
+    RelativeLayout qualityRelativeLayout;
+    String strQuality = "480";
+
+//    @Override
+//    public void onDestroy() {
+//        super.onDestroy();
+//        if(customIntertialHandler != null) {
+//            customIntertialHandler.removeCallbacksAndMessages(null);
+//        }
+//    }
+@Override
+protected void onStop() {
+    super.onStop();
+//    if (isPlaying) {
+//        finish();
+//    }
+    if(isPlaying){
+        player.pause();
+        exoPause.setVisibility(GONE);
+        exoPlay.setVisibility(VISIBLE);
+    }
+
+}
 
     @Override
-    public void onDestroy() {
+    protected void onDestroy() {
         super.onDestroy();
+        if (youTubePlayerView != null) {
+            youTubePlayerView.release();
+        }
+        player1.release();
+        if (player != null) {
+            player.stop();
+            player.setPlayWhenReady(false);
+        }
         if(customIntertialHandler != null) {
             customIntertialHandler.removeCallbacksAndMessages(null);
         }
@@ -363,6 +398,7 @@ public class WebSeriesDetails extends AppCompatActivity implements EpisodeListAd
         videoTileIdController = findViewById(R.id.videoTileIdController);
         titleTextView = findViewById(R.id.Title_TextView);
         getLifecycle().addObserver(youTubePlayerView);
+        qualityRelativeLayout = findViewById(R.id.qualityRelativeLayout);
 
         viewPager =  findViewById(R.id.viewPager);
         tab = findViewById(R.id.tabLayout);
@@ -443,7 +479,12 @@ public class WebSeriesDetails extends AppCompatActivity implements EpisodeListAd
 
             }
         });
-
+        qualityRelativeLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showBottomSheetDialog();
+            }
+        });
         View trailerLayout = findViewById(R.id.Trailer_Layout);
         trailerLayout.setOnClickListener(view -> {
             if(!trailerUrl.equals("")) {
@@ -605,7 +646,7 @@ public class WebSeriesDetails extends AppCompatActivity implements EpisodeListAd
                 if(type== 1) {
 
                     if (playPremium) {
-                        loadStreamLinks(id);
+                        loadStreamLinks(id,strQuality);
                         //playMovieTab(true);
                     } else {
                         HelperUtils helperUtils = new HelperUtils(WebSeriesDetails.this);
@@ -613,15 +654,15 @@ public class WebSeriesDetails extends AppCompatActivity implements EpisodeListAd
                     }
 
                 } else {
-                    loadStreamLinks(id);
+                    loadStreamLinks(id,strQuality);
                     //playMovieTab(true);
                 }
             } else if(AppConfig.all_movies_type == 1) {
-                loadStreamLinks(id);
+                loadStreamLinks(id,strQuality);
                 //playMovieTab(true);
             } else if(AppConfig.all_movies_type == 2) {
                 if (playPremium) {
-                    loadStreamLinks(id);
+                    loadStreamLinks(id,strQuality);
                     //playMovieTab(true);
                 } else {
                     HelperUtils helperUtils = new HelperUtils(WebSeriesDetails.this);
@@ -741,6 +782,63 @@ public class WebSeriesDetails extends AppCompatActivity implements EpisodeListAd
 
         setColorTheme(Color.parseColor(AppConfig.primeryThemeColor));
     }
+
+    private void showBottomSheetDialog() {
+
+        List<String> qualityNameList = new ArrayList<>();
+        List<String> qualityUrlList = new ArrayList<>();
+
+        if(!qualityNameList.isEmpty()){
+            qualityNameList.clear();
+        }
+        if (qualityUrlList.isEmpty()){
+            qualityUrlList.clear();
+        }
+        qualityNameList.add("Select Quality");
+        qualityNameList.add("480");
+        qualityNameList.add("720");
+        qualityNameList.add("1080");
+        qualityUrlList.add("720");
+        qualityUrlList.add("1080");
+        BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(this);
+        bottomSheetDialog.setContentView(R.layout.quality_bottom_sheet_dialog);
+        Spinner spin = bottomSheetDialog.findViewById(R.id.spinner);
+        ArrayAdapter aa = new ArrayAdapter(this,android.R.layout.simple_spinner_item,qualityNameList);
+        aa.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        //Setting the ArrayAdapter data on the Spinner
+        spin.setAdapter(aa);
+
+        spin.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id1) {
+
+                if(position != 0){
+                    currentPlayPostion = player.getCurrentPosition();
+                    Log.d("fsjgfssj", "onExtractionComplete: 1 "+currentPlayPostion);
+
+                    if (player.isPlaying()){
+                        player.release();
+                    }
+                    String quality = parent.getItemAtPosition(position).toString();
+                    strQuality = quality;
+                    loadStreamLinks(id,strQuality);
+                }
+
+                Log.d("clickQuality: ", "onItemSelected: "+qualityNameList.get(position));
+                Log.d("clickQuality: ", " player.getCurrentPosition(): "+ player.getCurrentPosition());
+                Log.d("clickQuality: ", " player.getCurrentTimeline(): "+ player.getCurrentTimeline());
+
+            }
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
+
+        bottomSheetDialog.show();
+    }
+
 
     public void showDescriptionLayout() {
         lPlay.setVisibility(GONE);
@@ -2305,7 +2403,6 @@ public class WebSeriesDetails extends AppCompatActivity implements EpisodeListAd
                         } else {
                             Glide.with(WebSeriesDetails.this)
                                     .load(banner)
-                                    .apply(RequestOptions.bitmapTransform(new BlurTransformation(5, 3)))
                                     .placeholder(R.drawable.poster_placeholder)
                                     .into(movieDetailsBanner);
 
@@ -2366,7 +2463,7 @@ public class WebSeriesDetails extends AppCompatActivity implements EpisodeListAd
 
     }
 
-    void loadStreamLinks(int id) {
+    void loadStreamLinks(int id, String strQuality) {
         //loadingDialog.animate(true);
 
         RequestQueue queue = Volley.newRequestQueue(this);
@@ -2379,7 +2476,7 @@ public class WebSeriesDetails extends AppCompatActivity implements EpisodeListAd
             jsonObjectRequest.put("caller", "mobile");
             jsonObjectRequest.put("searchtype", "episodecontentid");
             jsonObjectRequest.put("searchcontent", id);
-            jsonObjectRequest.put("quality", "320");
+            jsonObjectRequest.put("quality", strQuality);
 
 
             JsonObjectRequest movieDetailsRequest = new JsonObjectRequest(Request.Method.POST, AppConfig.baseurl +"/videoquality/fetchvideoquality",
@@ -2691,7 +2788,7 @@ public class WebSeriesDetails extends AppCompatActivity implements EpisodeListAd
     public void onItemClick(EpisodeList newEpisode) {
 
         titleTextView.setText(newEpisode.getEpisoade_Name());
-        loadStreamLinks(newEpisode.getId());
+        loadStreamLinks(newEpisode.getId(), strQuality);
 
     }
 }

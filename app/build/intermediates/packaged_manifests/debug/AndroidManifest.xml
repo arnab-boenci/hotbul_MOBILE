@@ -239,6 +239,12 @@
             android:exported="false"
             android:launchMode="singleTask"
             android:supportsPictureInPicture="true" />
+        <activity
+            android:name="com.dooo.android.ShortFilmDetails"
+            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:supportsPictureInPicture="true" />
         <activity android:name="com.dooo.android.LoginSignup" />
         <activity android:name="com.dooo.android.Home" />
         <activity

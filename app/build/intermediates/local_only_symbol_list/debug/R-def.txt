@@ -126,6 +126,7 @@ drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_message
 drawable ic_outline_play_circle_filled_24px
+drawable ic_outline_settings
 drawable ic_pause_circle_transparent
 drawable ic_pause_white
 drawable ic_play_arrow_white
@@ -739,6 +740,7 @@ id progressTextView
 id qualityButton
 id qualityImageView
 id qualityRelativeLayout
+id qualtyLinearLayout
 id radioPlayImage
 id rating
 id ratingLayout
@@ -959,6 +961,7 @@ layout activity_paytm_payment_gatway
 layout activity_player
 layout activity_privecy_policy
 layout activity_razorpay_payment_gatway
+layout activity_short_film_details
 layout activity_splash
 layout activity_subscription
 layout activity_subscription_details
@@ -999,9 +1002,11 @@ layout fragment_more
 layout fragment_movies
 layout fragment_music
 layout fragment_search
-layout fragment_shortfilm
+layout fragment_short_film
+layout fragment_shortfilm_1
 layout fragment_webseries
 layout genre_item
+layout hls_test
 layout initial_msg_dialog
 layout language_change_dialog
 layout liquid_pager_fragment_page_number
@@ -1018,6 +1023,7 @@ layout my_comment_item
 layout payment_dialog
 layout play_movie
 layout player_controlls
+layout quality_bottom_sheet_dialog
 layout report_dialog
 layout request_dialog
 layout reset_password

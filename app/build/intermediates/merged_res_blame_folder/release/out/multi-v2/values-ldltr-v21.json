@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.dooo.android.app-mergeReleaseResources-116:/values-ldltr-v21/values-ldltr-v21.xml",
+            "map": [
+                {
+                    "source": "/Users/arnabmandal/.gradle/caches/transforms-3/b96a74de9faebb672216871fc71e8467/transformed/appcompat-1.6.1/res/values-ldltr-v21/values-ldltr-v21.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "112",
+                        "endOffsets": "163"
+                    }
+                }
+            ]
+        }
+    ]
+}

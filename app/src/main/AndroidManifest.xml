@@ -134,6 +134,11 @@
             android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
             android:launchMode="singleTask"
             android:supportsPictureInPicture="true"/>
+        <activity android:name=".ShortFilmDetails"
+            android:exported="false"
+            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
+            android:launchMode="singleTask"
+            android:supportsPictureInPicture="true"/>
         <activity android:name=".LoginSignup" />
         <activity android:name=".Home" />
         <activity

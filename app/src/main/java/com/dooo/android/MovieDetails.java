@@ -44,6 +44,8 @@ import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.FrameLayout;
@@ -51,6 +53,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -130,6 +133,7 @@ import com.google.android.gms.ads.MobileAds;
 import com.google.android.gms.ads.interstitial.InterstitialAd;
 import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback;
 import com.google.android.gms.cast.framework.CastContext;
+import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
@@ -296,17 +300,37 @@ public class MovieDetails extends AppCompatActivity {
     int link_type = 0;//rootObject.get("link_type").getAsInt();
     String drm_uuid = "";//rootObject.get("drm_uuid").isJsonNull() ? "" : rootObject.get("drm_uuid").getAsString();
     String drm_license_uri = "";//rootObject.get("drm_license_uri").isJsonNull() ? "" : rootObject.get("drm_license_uri").getAsString();
+    RelativeLayout qualityRelativeLayout;
+    String strQuality = "480";
+    @Override
+    protected void onStop() {
+        super.onStop();
+//        if (isPlaying) {
+//            finish();
+//        }
+        if(isPlaying){
+            player.pause();
+            exoPause.setVisibility(GONE);
+            exoPlay.setVisibility(VISIBLE);
+        }
 
-
+    }
 
     @Override
-    public void onDestroy() {
+    protected void onDestroy() {
         super.onDestroy();
+        if (youTubePlayerView != null) {
+            youTubePlayerView.release();
+        }
+        player1.release();
+        if (player != null) {
+            player.stop();
+            player.setPlayWhenReady(false);
+        }
         if(customIntertialHandler != null) {
             customIntertialHandler.removeCallbacksAndMessages(null);
         }
     }
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -359,6 +383,7 @@ public class MovieDetails extends AppCompatActivity {
         weblockOriPortrait = findViewById(R.id.weblockOriPortrait);
         mainlayouthome = findViewById(R.id.main_layout_home);
         videoTileIdController = findViewById(R.id.videoTileIdController);
+        qualityRelativeLayout = findViewById(R.id.qualityRelativeLayout);
 
         getLifecycle().addObserver(youTubePlayerView);
         //new Player Update
@@ -533,6 +558,12 @@ public class MovieDetails extends AppCompatActivity {
                 }
             }
         });
+        qualityRelativeLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showBottomSheetDialog();
+            }
+        });
         aspectRatioIv.setOnClickListener(view -> {
             if (aspectClickCount == 0) {
                 simpleExoPlayerView.setResizeMode(AspectRatioFrameLayout.RESIZE_MODE_FILL);
@@ -588,7 +619,7 @@ public class MovieDetails extends AppCompatActivity {
                 if(type== 1) {
 
                     if (playPremium) {
-                        loadStreamLinks(id);
+                        loadStreamLinks(id, strQuality);
                         //playMovieTab(true);
                     } else {
                         HelperUtils helperUtils = new HelperUtils(MovieDetails.this);
@@ -596,15 +627,15 @@ public class MovieDetails extends AppCompatActivity {
                     }
 
                 } else {
-                    loadStreamLinks(id);
+                    loadStreamLinks(id, strQuality);
                     //playMovieTab(true);
                 }
             } else if(AppConfig.all_movies_type == 1) {
-                loadStreamLinks(id);
+                loadStreamLinks(id,strQuality);
                 //playMovieTab(true);
             } else if(AppConfig.all_movies_type == 2) {
                 if (playPremium) {
-                    loadStreamLinks(id);
+                    loadStreamLinks(id,strQuality);
                     //playMovieTab(true);
                 } else {
                     HelperUtils helperUtils = new HelperUtils(MovieDetails.this);
@@ -754,6 +785,63 @@ public class MovieDetails extends AppCompatActivity {
         setColorTheme(Color.parseColor(AppConfig.primeryThemeColor));
     }
 
+    private void showBottomSheetDialog() {
+
+        List<String> qualityNameList = new ArrayList<>();
+        List<String> qualityUrlList = new ArrayList<>();
+
+        if(!qualityNameList.isEmpty()){
+            qualityNameList.clear();
+        }
+        if (qualityUrlList.isEmpty()){
+            qualityUrlList.clear();
+        }
+        qualityNameList.add("Select Quality");
+        qualityNameList.add("480");
+        qualityNameList.add("720");
+        qualityNameList.add("1080");
+        qualityUrlList.add("720");
+        qualityUrlList.add("1080");
+        BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(this);
+        bottomSheetDialog.setContentView(R.layout.quality_bottom_sheet_dialog);
+        Spinner spin = bottomSheetDialog.findViewById(R.id.spinner);
+        ArrayAdapter aa = new ArrayAdapter(this,android.R.layout.simple_spinner_item,qualityNameList);
+        aa.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        //Setting the ArrayAdapter data on the Spinner
+        spin.setAdapter(aa);
+
+        spin.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id1) {
+
+                if(position != 0){
+                    currentPlayPostion = player.getCurrentPosition();
+                    Log.d("fsjgfssj", "onExtractionComplete: 1 "+currentPlayPostion);
+
+                    if (player.isPlaying()){
+                        player.release();
+                    }
+                    String quality = parent.getItemAtPosition(position).toString();
+                    strQuality = quality;
+                    loadStreamLinks(id,strQuality);
+                }
+
+                Log.d("clickQuality: ", "onItemSelected: "+qualityNameList.get(position));
+                Log.d("clickQuality: ", " player.getCurrentPosition(): "+ player.getCurrentPosition());
+                Log.d("clickQuality: ", " player.getCurrentTimeline(): "+ player.getCurrentTimeline());
+
+            }
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
+
+        bottomSheetDialog.show();
+    }
+
+
     public void showDescriptionLayout() {
         lPlay.setVisibility(GONE);
     }
@@ -766,7 +854,7 @@ public class MovieDetails extends AppCompatActivity {
     public void controlFullScreenPlayer() {
 
 //        currentPlayPostion = player.getCurrentPosition();
-//        Intent intent = new Intent(MovieDetails.this, com.dooo.android.Player.class);
+//        Intent intent = new Intent(WebSeriesDetails.this, com.dooo.android.Player.class);
 //        intent.putExtra("contentID", id1);
 //        intent.putExtra("SourceID", id1);
 //        intent.putExtra("Content_Type", "Movie");
@@ -789,7 +877,7 @@ public class MovieDetails extends AppCompatActivity {
             isFullScr = false;
             activeMovie = false;
             getWindow().clearFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
-           // setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+            // setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
             setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
             lPlay.getLayoutParams().height = getResources().getDimensionPixelSize(R.dimen.player_height);
 
@@ -801,7 +889,7 @@ public class MovieDetails extends AppCompatActivity {
 //                        RelativeLayout.LayoutParams.WRAP_CONTENT,
 //                        RelativeLayout.LayoutParams.WRAP_CONTENT
 //                );
-//                //params.setMargins(0, 0, 0, 0);
+            //params.setMargins(0, 0, 0, 0);
 //                //mainlayouthome.setLayoutParams(params);
 //            }
             // reset the orientation
@@ -820,13 +908,13 @@ public class MovieDetails extends AppCompatActivity {
             lPlay.getLayoutParams().height = RelativeLayout.LayoutParams.MATCH_PARENT;
             if (isVideo) {
 
-               // mainlayouthome.setLayoutParams(new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT, RelativeLayout.LayoutParams.MATCH_PARENT));
-               // lPlay.setLayoutParams(new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT, RelativeLayout.LayoutParams.MATCH_PARENT));
+                // mainlayouthome.setLayoutParams(new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT, RelativeLayout.LayoutParams.MATCH_PARENT));
+                // lPlay.setLayoutParams(new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT, RelativeLayout.LayoutParams.MATCH_PARENT));
                 lockOriPortrait.setVisibility(VISIBLE);
                 lockOriLandscape.setVisibility(GONE);
             }
 
-           // setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+            // setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
             simpleExoPlayerView.setResizeMode(AspectRatioFrameLayout.RESIZE_MODE_FILL);
             Log.d("fsffd", "onStart: 11");
 //            if (player != null) {
@@ -935,9 +1023,18 @@ public class MovieDetails extends AppCompatActivity {
       //  }
 
         switch (type) {
-            case "hls":
-                player1.setVisibility(VISIBLE);
-                playerDK(String.valueOf(uri), name, false);
+            case "hls_1":
+//                player1.setVisibility(VISIBLE);
+//                playerDK(String.valueOf(uri), name, false);
+//                mediaSource = mediaSource(uri);
+//                player.prepare(mediaSource, true, false);
+//
+//
+                MediaItem mediaItem = MediaItem.fromUri(uri);
+                player.setMediaItem(mediaItem);
+                player.prepare();
+                simpleExoPlayerView.setPlayer(player);
+
                 break;
             case "youtube":
                 youTubePlayerView.addYouTubePlayerListener(new AbstractYouTubePlayerListener() {
@@ -989,12 +1086,18 @@ public class MovieDetails extends AppCompatActivity {
         if (type.equals("vimeo") || type.equals("daily motion")) {
            // webisVideo = true;
             //openWebActivity(url);
+        }else if (type.equals("hls")){
+            MediaItem mediaItem = MediaItem.fromUri(uri);
+            player.setMediaItem(mediaItem);
+            player.prepare();
+            simpleExoPlayerView.setPlayer(player);
         }else {
             mediaSource = mediaSource(uri);
             player.prepare(mediaSource, true, false);
             simpleExoPlayerView.setPlayer(player);
 
         }
+
 
         player.setPlayWhenReady(true);
         player.seekTo(currentPlayPostion);
@@ -1874,7 +1977,7 @@ public class MovieDetails extends AppCompatActivity {
         playMovieTab.setVisibility(show ? View.VISIBLE : View.GONE);
     }
 
-    void loadStreamLinks(int id) {
+    void loadStreamLinks(int id, String strQuality) {
         loadingDialog.animate(true);
 
         RequestQueue queue = Volley.newRequestQueue(this);
@@ -1887,7 +1990,7 @@ public class MovieDetails extends AppCompatActivity {
             jsonObjectRequest.put("caller", "mobile");
             jsonObjectRequest.put("searchtype", "videocontentid");
             jsonObjectRequest.put("searchcontent", id);
-            jsonObjectRequest.put("quality", "320");
+            jsonObjectRequest.put("quality", strQuality);
 
 
             JsonObjectRequest movieDetailsRequest = new JsonObjectRequest(Request.Method.POST, AppConfig.baseurl +"/videoquality/fetchvideoquality",
@@ -1909,7 +2012,8 @@ public class MovieDetails extends AppCompatActivity {
                         quality = rootObject.get("quality").getAsString();
                         movieId = id;
                         url = rootObject.get("signedurl").getAsString();
-                        String type = "mp4"; //rootObject.getAsJsonObject("videoContent").getAsJsonObject("contentType").get("contenttypename").getAsString();
+                       // url = "https://hotbul.in-maa-1.linodeobjects.com/movies/Testing%20video%20-320/854x480/output_854x480.m3u8";
+                        String type = "m3u8"; //rootObject.getAsJsonObject("videoContent").getAsJsonObject("contentType").get("contenttypename").getAsString();
                         String status = rootObject.get("status").getAsString();
                         skipAvailable = 1;//rootObject.get("skip_available").getAsInt();
                         introStart = "";//rootObject.get("intro_start").getAsString();
@@ -1917,18 +2021,19 @@ public class MovieDetails extends AppCompatActivity {
                         link_type = 0;//rootObject.get("link_type").getAsInt();
                         drm_uuid = "";//rootObject.get("drm_uuid").isJsonNull() ? "" : rootObject.get("drm_uuid").getAsString();
                         drm_license_uri = "";//rootObject.get("drm_license_uri").isJsonNull() ? "" : rootObject.get("drm_license_uri").getAsString();
-
-                        //if (status == 1) {
-                        playMovieItemList.add(new PlayMovieItemIist(id1, movieName, size, quality, movieId, url, type, skipAvailable, introStart, introEnd, link_type, drm_uuid, drm_license_uri));
-                        // }
-
-
-                        PlayMovieItemListAdepter myadepter = new PlayMovieItemListAdepter(id, context, playMovieItemList, playPremium);
-                        playMovieItemRecylerview.setLayoutManager(new GridLayoutManager(context, 1));
-                        playMovieItemRecylerview.setAdapter(myadepter);
+                        String  fileextention = rootObject.get("fileextention").getAsString();
+                       // if (status == 1) {
+//                        playMovieItemList.add(new PlayMovieItemIist(id1, movieName, size, quality, movieId, url, type, skipAvailable, introStart, introEnd, link_type, drm_uuid, drm_license_uri));
+//                        // }
+//
+//
+//                        PlayMovieItemListAdepter myadepter = new PlayMovieItemListAdepter(id, context, playMovieItemList, playPremium);
+//                        playMovieItemRecylerview.setLayoutManager(new GridLayoutManager(context, 1));
+//                        playMovieItemRecylerview.setAdapter(myadepter);
+                        playContent(url, fileextention);
 
                     }
-                playMovieTab(true);
+               // playMovieTab(true);
             } else {
                 Snackbar snackbar = Snackbar.make(rootView, "No Stream Avaliable!", Snackbar.LENGTH_SHORT);
                 snackbar.setAction("Close", v -> snackbar.dismiss());
@@ -1952,6 +2057,26 @@ public class MovieDetails extends AppCompatActivity {
             e.printStackTrace();
         }
 
+
+    }
+
+    public void playContent(String contentUrl, String extention){
+        trailertype = extention;
+        mediaUrl = contentUrl;
+        // url = trailerUrl;
+        new Handler(Looper.getMainLooper()).postDelayed(() -> {
+            //  viewContPost(content_type, id);
+            new Handler(Looper.getMainLooper()).postDelayed(() -> {
+                // viewContPost(content_type, id);
+            }, 1000);
+
+            //  getUrlsListThisItem(id);
+
+        }, 2000);
+        lPlay.setVisibility(VISIBLE);
+        movieDetailsBack.setVisibility(GONE);
+        initVideoPlayer(mediaUrl, MovieDetails.this, trailertype);
+        FullSrceen.hideSystemUI(getWindow());
 
     }
 
@@ -2030,7 +2155,6 @@ public class MovieDetails extends AppCompatActivity {
                     } else {
                         Glide.with(MovieDetails.this)
                                 .load(banner)
-                                .apply(RequestOptions.bitmapTransform(new BlurTransformation(5, 3)))
                                 .placeholder(R.drawable.poster_placeholder)
                                 .into(movieDetailsBanner);
 
@@ -2312,19 +2436,7 @@ public class MovieDetails extends AppCompatActivity {
         } else {
             finish();
         }
-//        if (activeMovie) {
-//            if (player != null) {
-//                player.setPlayWhenReady(false);
-//                player.stop();
-//            }
-//            showDescriptionLayout();
-//            activeMovie = false;
-//        }else if (isFullscreen) {
-//            toggleFullscreen();
-//        }else {
-//            releasePlayer();
-//            super.onBackPressed();
-//        }
+
     }
     public void releasePlayer() {
         if (player != null) {
@@ -2346,11 +2458,6 @@ public class MovieDetails extends AppCompatActivity {
                     player.setPlayWhenReady(true);
                 }
         }
-
-       // super.onResume();
-
-       // playMovieTab(false);
-
         if(!AppConfig.allowVPN) {
             //check vpn connection
             helperUtils = new HelperUtils(MovieDetails.this);

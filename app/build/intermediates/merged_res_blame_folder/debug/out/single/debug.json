@@ -40,12 +40,12 @@
         "source": "/Users/arnabmandal/.gradle/daemon/8.2/com.dooo.android.app-main-120:/layout/movie_item_v2.xml"
     },
     {
-        "merged": "/Users/arnabmandal/.gradle/daemon/8.2/com.dooo.android.app-merged_res-118:/drawable_tab_layout_background.xml.flat",
-        "source": "/Users/arnabmandal/.gradle/daemon/8.2/com.dooo.android.app-main-120:/drawable/tab_layout_background.xml"
-    },
-    {
         "merged": "/Users/arnabmandal/.gradle/daemon/8.2/com.dooo.android.app-merged_res-118:/layout_report_dialog.xml.flat",
         "source": "/Users/arnabmandal/.gradle/daemon/8.2/com.dooo.android.app-main-120:/layout/report_dialog.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.2/com.dooo.android.app-merged_res-118:/drawable_tab_layout_background.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.2/com.dooo.android.app-main-120:/drawable/tab_layout_background.xml"
     },
     {
         "merged": "/Users/arnabmandal/.gradle/daemon/8.2/com.dooo.android.app-merged_res-118:/drawable_dbug_image.jpeg.flat",
@@ -200,6 +200,10 @@
         "source": "/Users/arnabmandal/.gradle/daemon/8.2/com.dooo.android.app-main-120:/drawable/comment_tag_bg.xml"
     },
     {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.2/com.dooo.android.app-merged_res-118:/layout_hls_test.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.2/com.dooo.android.app-main-120:/layout/hls_test.xml"
+    },
+    {
         "merged": "/Users/arnabmandal/.gradle/daemon/8.2/com.dooo.android.app-merged_res-118:/drawable_dooo_logo_no_bg.png.flat",
         "source": "/Users/arnabmandal/.gradle/daemon/8.2/com.dooo.android.app-main-120:/drawable/dooo_logo_no_bg.png"
     },
@@ -226,6 +230,10 @@
     {
         "merged": "/Users/arnabmandal/.gradle/daemon/8.2/com.dooo.android.app-merged_res-118:/raw_delete.json.flat",
         "source": "/Users/arnabmandal/.gradle/daemon/8.2/com.dooo.android.app-main-120:/raw/delete.json"
+    },
+    {
+        "merged": "com.dooo.android.app-merged_res-118:/layout_quality_bottom_sheet_dialog.xml.flat",
+        "source": "com.dooo.android.app-main-120:/layout/quality_bottom_sheet_dialog.xml"
     },
     {
         "merged": "/Users/arnabmandal/.gradle/daemon/8.2/com.dooo.android.app-merged_res-118:/font_baloo2_extrabold.ttf.flat",
@@ -540,6 +548,10 @@
         "source": "/Users/arnabmandal/.gradle/daemon/8.2/com.dooo.android.app-main-120:/layout/activity_movie_details.xml"
     },
     {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.2/com.dooo.android.app-merged_res-118:/layout_activity_short_film_details.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.2/com.dooo.android.app-main-120:/layout/activity_short_film_details.xml"
+    },
+    {
         "merged": "/Users/arnabmandal/.gradle/daemon/8.2/com.dooo.android.app-merged_res-118:/drawable-xxhdpi_ic_razorpay.png.flat",
         "source": "/Users/arnabmandal/.gradle/daemon/8.2/com.dooo.android.app-pngs-113:/drawable-xxhdpi/ic_razorpay.png"
     },
@@ -852,12 +864,12 @@
         "source": "/Users/arnabmandal/.gradle/daemon/8.2/com.dooo.android.app-main-120:/layout/activity_all_genre.xml"
     },
     {
-        "merged": "/Users/arnabmandal/.gradle/daemon/8.2/com.dooo.android.app-merged_res-118:/drawable_no_9.xml.flat",
-        "source": "/Users/arnabmandal/.gradle/daemon/8.2/com.dooo.android.app-main-120:/drawable/no_9.xml"
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.2/com.dooo.android.app-merged_res-118:/layout_fragment_short_film.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.2/com.dooo.android.app-main-120:/layout/fragment_short_film.xml"
     },
     {
-        "merged": "com.dooo.android.app-merged_res-118:/layout_fragment_home.xml.flat",
-        "source": "com.dooo.android.app-main-120:/layout/fragment_home.xml"
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.2/com.dooo.android.app-merged_res-118:/drawable_no_9.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.2/com.dooo.android.app-main-120:/drawable/no_9.xml"
     },
     {
         "merged": "/Users/arnabmandal/.gradle/daemon/8.2/com.dooo.android.app-merged_res-118:/drawable_ic_baseline_wb_sunny_24.xml.flat",
@@ -1312,10 +1324,6 @@
         "source": "/Users/arnabmandal/.gradle/daemon/8.2/com.dooo.android.app-main-120:/layout/activity_genre_details.xml"
     },
     {
-        "merged": "com.dooo.android.app-merged_res-118:/layout_fragment_shortfilm.xml.flat",
-        "source": "com.dooo.android.app-main-120:/layout/fragment_shortfilm.xml"
-    },
-    {
         "merged": "/Users/arnabmandal/.gradle/daemon/8.2/com.dooo.android.app-merged_res-118:/drawable_ic_launcher_background.xml.flat",
         "source": "/Users/arnabmandal/.gradle/daemon/8.2/com.dooo.android.app-main-120:/drawable/ic_launcher_background.xml"
     },
@@ -1346,6 +1354,10 @@
     {
         "merged": "/Users/arnabmandal/.gradle/daemon/8.2/com.dooo.android.app-merged_res-118:/drawable_tab_color_unselector_dark.xml.flat",
         "source": "/Users/arnabmandal/.gradle/daemon/8.2/com.dooo.android.app-main-120:/drawable/tab_color_unselector_dark.xml"
+    },
+    {
+        "merged": "/Users/arnabmandal/.gradle/daemon/8.2/com.dooo.android.app-merged_res-118:/layout_fragment_shortfilm_1.xml.flat",
+        "source": "/Users/arnabmandal/.gradle/daemon/8.2/com.dooo.android.app-main-120:/layout/fragment_shortfilm_1.xml"
     },
     {
         "merged": "/Users/arnabmandal/.gradle/daemon/8.2/com.dooo.android.app-merged_res-118:/layout_activity_upcoming.xml.flat",
@@ -1398,5 +1410,9 @@
     {
         "merged": "/Users/arnabmandal/.gradle/daemon/8.2/com.dooo.android.app-merged_res-118:/drawable_profile_rectangle.xml.flat",
         "source": "/Users/arnabmandal/.gradle/daemon/8.2/com.dooo.android.app-main-120:/drawable/profile_rectangle.xml"
+    },
+    {
+        "merged": "com.dooo.android.app-merged_res-118:/drawable_ic_outline_settings.xml.flat",
+        "source": "com.dooo.android.app-main-120:/drawable/ic_outline_settings.xml"
     }
 ]

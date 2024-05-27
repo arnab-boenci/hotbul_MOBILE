@@ -24,6 +24,8 @@ import android.widget.TextView;
 import androidx.cardview.widget.CardView;
 import androidx.core.widget.NestedScrollView;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
@@ -52,19 +54,21 @@ import com.dooo.android.LiveTv;
 import com.dooo.android.MoviesActivity;
 import com.dooo.android.MusicActivity;
 import com.dooo.android.R;
-import com.dooo.android.ShortFilmActivity;
+import com.dooo.android.WebSeriesActivity;
 import com.dooo.android.WebView;
 import com.dooo.android.adepter.ContinuePlayingListAdepter;
 import com.dooo.android.adepter.HouseOfHorrorListAdepter;
 import com.dooo.android.adepter.ImageSliderAdepter;
+import com.dooo.android.adepter.MovieListAdepter;
 import com.dooo.android.adepter.TrendingListAdepter;
 import com.dooo.android.adepter.WebSeriesListAdepter;
-import com.dooo.android.adepter.webSeriesOnlyForYouListAdepter;
+import com.dooo.android.adepter.moviesOnlyForYouListAdepter;
 import com.dooo.android.db.resume_content.ResumeContent;
 import com.dooo.android.db.resume_content.ResumeContentDatabase;
 import com.dooo.android.list.ContinuePlayingList;
 import com.dooo.android.list.HouseofHorrorList;
 import com.dooo.android.list.ImageSliderItem;
+import com.dooo.android.list.MovieList;
 import com.dooo.android.list.TrendingList;
 import com.dooo.android.list.WebSeriesList;
 import com.dooo.android.sharedpreferencesmanager.ConfigManager;
@@ -205,7 +209,7 @@ public class ShortFilmFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         context = container.getContext();
-        View layoutInflater = inflater.inflate(R.layout.fragment_shortfilm, container, false);
+        View layoutInflater = inflater.inflate(R.layout.fragment_short_film, container, false);
         bindViews(layoutInflater);
 
 
@@ -348,7 +352,7 @@ public class ShortFilmFragment extends Fragment {
         imageSliderType = "0";
         switch (imageSliderType) {
             case "0":
-                topMoviesImageSlider();
+                topShortFilmSlider();
                 break;
             case "1":
                 topWebSeriesImageSlider();
@@ -480,13 +484,35 @@ public class ShortFilmFragment extends Fragment {
         });
 
         bottom_floting_menu_movies.setOnClickListener(view->{
-            startActivity(new Intent(getActivity(), MoviesActivity.class));
+            //startActivity(new Intent(getActivity(), MoviesActivity.class));
+            MoviesFragment moviesFragment = new MoviesFragment();
+            FragmentManager fragmentManager = getParentFragmentManager();
+            FragmentTransaction transaction = fragmentManager.beginTransaction();
+            transaction.replace(R.id.mainFragment, moviesFragment);
+            transaction.addToBackStack(null);
+            transaction.commit();
         });
         bottom_floting_menu_web_series.setOnClickListener(view->{
-            startActivity(new Intent(getActivity(), ShortFilmActivity.class));
+            ShortFilmFragment shortFilmFragment = new ShortFilmFragment();
+            FragmentManager fragmentManager = getParentFragmentManager();
+            FragmentTransaction transaction = fragmentManager.beginTransaction();
+            transaction.replace(R.id.mainFragment, shortFilmFragment);
+            transaction.addToBackStack(null);
+            transaction.commit();
+//            getSupportFragmentManager()
+//                    .beginTransaction()
+//                    .replace(R.id.mainFragment, new HomeFragment())
+//                    .commit();
+            //startActivity(new Intent(getActivity(), ShortFilmActivity.class));
         });
         bottom_floting_menu_music.setOnClickListener(view->{
-            startActivity(new Intent(getActivity(), MusicActivity.class));
+            MusicFragment musicFragment = new MusicFragment();
+            FragmentManager fragmentManager = getParentFragmentManager();
+            FragmentTransaction transaction = fragmentManager.beginTransaction();
+            transaction.replace(R.id.mainFragment, musicFragment);
+            transaction.addToBackStack(null);
+            transaction.commit();
+            //startActivity(new Intent(getActivity(), MusicActivity.class));
         });
 
         setColorTheme(Color.parseColor(AppConfig.primeryThemeColor), layoutInflater);
@@ -653,7 +679,7 @@ public class ShortFilmFragment extends Fragment {
         queue.add(sr);
     }
 
-    void topMoviesImageSlider() {
+    void topShortFilmSlider() {
         movieImageSliderMaxVisible= 1;
         //if(movieImageSliderMaxVisible > 0) {
             RequestQueue queue = Volley.newRequestQueue(context);
@@ -772,14 +798,460 @@ public class ShortFilmFragment extends Fragment {
     void loadhomecontentlist() {
         RequestQueue queue = Volley.newRequestQueue(getActivity());
 
+
+        ///////////////////////////////////////////////
+//        StringRequest sr3 = new StringRequest(Request.Method.GET, AppConfig.url + "getRecentContentList/Movies", response -> {
+//            if (!response.equals("No Data Avaliable")) {
+//                recentMoviesLayout.setVisibility(View.VISIBLE);
+//
+//                JsonArray jsonArray = new Gson().fromJson(response, JsonArray.class);
+//                List<MovieList> recentlyAddedMovieList = new ArrayList<>();
+//                for (JsonElement r : jsonArray) {
+//                    JsonObject rootObject = r.getAsJsonObject();
+//                    int id = rootObject.get("id").getAsInt();
+//                    String name = rootObject.get("name").getAsString();
+//
+//                    String year = "";
+//                    if (!rootObject.get("release_date").getAsString().equals("")) {
+//                        year = helperUtils.getYearFromDate(rootObject.get("release_date").getAsString());
+//                    }
+//
+//                    String poster = rootObject.get("poster").getAsString();
+//                    int type = rootObject.get("type").getAsInt();
+//                    int status = rootObject.get("status").getAsInt();
+//
+//                    if (status == 1) {
+//                        recentlyAddedMovieList.add(new MovieList(id, type, name, year, poster));
+//                    }
+//                }
+//
+//                if (shuffleContents == 1) {
+//                    Collections.shuffle(recentlyAddedMovieList);
+//                }
+//
+//                MovieListAdepter myadepter = new MovieListAdepter(context, recentlyAddedMovieList);
+//                home_Recent_Movies_list_Recycler_View.setLayoutManager(new GridLayoutManager(context, 1, RecyclerView.HORIZONTAL, false));
+//                home_Recent_Movies_list_Recycler_View.setAdapter(myadepter);
+//
+//            } else {
+//                recentMoviesLayout.setVisibility(View.GONE);
+//                homeSwipeRefreshLayout.setRefreshing(false);
+//            }
+//        }, error -> {
+//            // Do nothing because There is No Error if error It will return 0
+//        }) {
+//            @Override
+//            public Map<String, String> getHeaders() throws AuthFailureError {
+//                Map<String, String> params = new HashMap<>();
+//                params.put("x-api-key", AppConfig.apiKey);
+//                return params;
+//            }
+//        };
+//        queue.add(sr3);
+
+
+//        StringRequest sr4 = new StringRequest(Request.Method.GET, AppConfig.url + "getRecentContentList/WebSeries", response -> {
+//            if (!response.equals("No Data Avaliable")) {
+//                recentWebSeriesLayout.setVisibility(View.VISIBLE);
+//
+//                JsonArray jsonArray = new Gson().fromJson(response, JsonArray.class);
+//                List<WebSeriesList> recentlyAddedWebSeriesList = new ArrayList<>();
+//                for (JsonElement r : jsonArray) {
+//                    JsonObject rootObject = r.getAsJsonObject();
+//                    int id = rootObject.get("id").getAsInt();
+//                    String name = rootObject.get("name").getAsString();
+//
+//                    String year = "";
+//                    if (!rootObject.get("release_date").getAsString().equals("")) {
+//                        year = helperUtils.getYearFromDate(rootObject.get("release_date").getAsString());
+//                    }
+//
+//                    String poster = rootObject.get("poster").getAsString();
+//                    int type = rootObject.get("type").getAsInt();
+//                    int status = rootObject.get("status").getAsInt();
+//
+//                    if (status == 1) {
+//                        recentlyAddedWebSeriesList.add(new WebSeriesList(id, type, name, year, poster));
+//                    }
+//                }
+//                if (shuffleContents == 1) {
+//                    Collections.shuffle(recentlyAddedWebSeriesList);
+//                }
+//
+//                WebSeriesListAdepter myadepter = new WebSeriesListAdepter(context, recentlyAddedWebSeriesList);
+//                home_Recent_Series_list_Recycler_View.setLayoutManager(new GridLayoutManager(context, 1, RecyclerView.HORIZONTAL, false));
+//                home_Recent_Series_list_Recycler_View.setAdapter(myadepter);
+//
+//                homeSwipeRefreshLayout.setRefreshing(false);
+//
+//            } else {
+//                recentWebSeriesLayout.setVisibility(View.GONE);
+//                homeSwipeRefreshLayout.setRefreshing(false);
+//            }
+//        }, error -> {
+//            // Do nothing because There is No Error if error It will return 0
+//        }) {
+//            @Override
+//            public Map<String, String> getHeaders() throws AuthFailureError {
+//                Map<String, String> params = new HashMap<>();
+//                params.put("x-api-key", AppConfig.apiKey);
+//                return params;
+//            }
+//        };
+//        queue.add(sr4);
+
+//        if(liveTvVisiableInHome == 1) {
+//            StringRequest sr5 = new StringRequest(Request.Method.GET, AppConfig.url + "getFeaturedLiveTV", response -> {
+//                if (!response.equals("No Data Avaliable")) {
+//                    liveTvLayout.setVisibility(View.VISIBLE);
+//                    JsonArray jsonArray = new Gson().fromJson(response, JsonArray.class);
+//                    List<LiveTvChannelList> liveTVChannelList = new ArrayList<>();
+//                    for (JsonElement r : jsonArray) {
+//                        JsonObject rootObject = r.getAsJsonObject();
+//                        int id = rootObject.get("id").getAsInt();
+//                        String name = rootObject.get("name").getAsString();
+//                        String banner = rootObject.get("banner").getAsString();
+//                        int type = rootObject.get("type").getAsInt();
+//                        int status = rootObject.get("status").getAsInt();
+//                        String streamType = rootObject.get("stream_type").getAsString();
+//                        String url = rootObject.get("url").getAsString();
+//                        int contentType = rootObject.get("content_type").getAsInt();
+//                        String drm_uuid = rootObject.get("drm_uuid").isJsonNull() ? "" : rootObject.get("drm_uuid").getAsString();
+//                        String drm_license_uri = rootObject.get("drm_license_uri").isJsonNull() ? "" : rootObject.get("drm_license_uri").getAsString();
+//
+//                        if (status == 1) {
+//                            liveTVChannelList.add(new LiveTvChannelList(id, name, banner, streamType, url, contentType, type, playPremium, drm_uuid, drm_license_uri));
+//                        }
+//                    }
+//
+//                    if (shuffleContents == 1) {
+//                        Collections.shuffle(liveTVChannelList);
+//                    }
+//
+//                    LiveTvChannelListAdepter myadepter = new LiveTvChannelListAdepter(context, liveTVChannelList);
+//                    homeLiveTVlistRecyclerView.setLayoutManager(new GridLayoutManager(context, 1, RecyclerView.HORIZONTAL, false));
+//                    homeLiveTVlistRecyclerView.setAdapter(myadepter);
+//
+//                } else {
+//                    liveTvLayout.setVisibility(View.GONE);
+//                    homeSwipeRefreshLayout.setRefreshing(false);
+//                }
+//            }, error -> {
+//                // Do nothing because There is No Error if error It will return 0
+//            }) {
+//                @Override
+//                public Map<String, String> getHeaders() throws AuthFailureError {
+//                    Map<String, String> params = new HashMap<>();
+//                    params.put("x-api-key", AppConfig.apiKey);
+//                    return params;
+//                }
+//            };
+//            queue.add(sr5);
+//        }
+
+
+//        List<LiveTvGenreList> liveTvGenreList = new ArrayList<>();
+//        StringRequest sr10 = new StringRequest(Request.Method.GET, AppConfig.url + "getLiveTvGenreList", response -> {
+//            if (!response.equals("No Data Avaliable")) {
+//                if (live_tv_genre_visible_in_home == 1) {
+//                    LivetvgenreLayout.setVisibility(View.VISIBLE);
+//                }
+//                JsonArray jsonArray = new Gson().fromJson(response, JsonArray.class);
+//                for (JsonElement r : jsonArray) {
+//                    JsonObject rootObject = r.getAsJsonObject();
+//                    int id = rootObject.get("id").getAsInt();
+//                    String name = rootObject.get("name").getAsString();
+//                    int status = rootObject.get("status").getAsInt();
+//
+//                    if (status == 1) {
+//                        liveTvGenreList.add(new LiveTvGenreList(id, name, status));
+//                    }
+//                }
+//
+//                LiveTvGenreListAdepter myadepter = new LiveTvGenreListAdepter(context, liveTvGenreList);
+//                live_tv_genre_list_Recycler_View.setLayoutManager(new GridLayoutManager(context, 1, RecyclerView.HORIZONTAL, false));
+//                live_tv_genre_list_Recycler_View.setAdapter(myadepter);
+//            } else {
+//                LivetvgenreLayout.setVisibility(View.GONE);
+//            }
+//        }, error -> {
+//            // Do nothing because There is No Error if error It will return 0
+//        }) {
+//            @Override
+//            public Map<String, String> getHeaders() throws AuthFailureError {
+//                Map<String, String> params = new HashMap<>();
+//                params.put("x-api-key", AppConfig.apiKey);
+//                return params;
+//            }
+//        };
+//        queue.add(sr10);
+
+//        List<GenreList> genreList = new ArrayList<>();
+//        StringRequest sr11 = new StringRequest(Request.Method.GET, AppConfig.url + "getFeaturedGenre", response -> {
+//            if (!response.equals("No Data Avaliable")) {
+//                if (genre_visible_in_home == 1) {
+//                    genreLayout.setVisibility(View.VISIBLE);
+//                }
+//                JsonArray jsonArray = new Gson().fromJson(response, JsonArray.class);
+//                for (JsonElement r : jsonArray) {
+//                    JsonObject rootObject = r.getAsJsonObject();
+//                    int id = rootObject.get("id").getAsInt();
+//                    String name = rootObject.get("name").getAsString();
+//                    String icon = rootObject.get("icon").getAsString();
+//                    String description = rootObject.get("description").getAsString();
+//                    int featured = rootObject.get("featured").getAsInt();
+//                    int status = rootObject.get("status").getAsInt();
+//
+//                    if (status == 1) {
+//                        genreList.add(new GenreList(id, name, icon, description, featured, status));
+//                    }
+//                }
+//
+//                GenreListAdepter myadepter = new GenreListAdepter(context, genreList);
+//                genre_list_Recycler_View.setLayoutManager(new GridLayoutManager(context, 1, RecyclerView.HORIZONTAL, false));
+//                genre_list_Recycler_View.setAdapter(myadepter);
+//            } else {
+//                genreLayout.setVisibility(View.GONE);
+//            }
+//        }, error -> {
+//            // Do nothing because There is No Error if error It will return 0
+//        }) {
+//            @Override
+//            public Map<String, String> getHeaders() throws AuthFailureError {
+//                Map<String, String> params = new HashMap<>();
+//                params.put("x-api-key", AppConfig.apiKey);
+//                return params;
+//            }
+//        };
+//        queue.add(sr11);
+
+
+//        //----------------------------------//
+//        String tempUserID = null;
+//        if (userID != 0) {
+//            tempUserID = String.valueOf(userID);
+//        } else {
+//            tempUserID = Settings.Secure.getString(context.getContentResolver(), Settings.Secure.ANDROID_ID);
+//        }
+//
+//        /////=======================////
+//        StringRequest sr6 = new StringRequest(Request.Method.GET, AppConfig.url + "beacauseYouWatched/Movies/" + tempUserID + "/10", response -> {
+//            if (!response.equals("No Data Avaliable")) {
+//
+//                bywMovieLayoutLinearLayout.setVisibility(View.VISIBLE);
+//                JsonArray jsonArray = new Gson().fromJson(response, JsonArray.class);
+//                List<MovieList> movieList = new ArrayList<>();
+//                for (JsonElement r : jsonArray) {
+//                    JsonObject rootObject = r.getAsJsonObject();
+//                    int id = rootObject.get("id").getAsInt();
+//                    String name = rootObject.get("name").getAsString();
+//
+//                    String year = "";
+//                    if (!rootObject.get("release_date").getAsString().equals("")) {
+//                        year = helperUtils.getYearFromDate(rootObject.get("release_date").getAsString());
+//                    }
+//
+//                    String poster = rootObject.get("poster").getAsString();
+//                    int type = rootObject.get("type").getAsInt();
+//                    int status = rootObject.get("status").getAsInt();
+//
+//                    if (status == 1) {
+//                        movieList.add(new MovieList(id, type, name, year, poster));
+//                    }
+//                }
+//
+//                Collections.shuffle(movieList);
+//
+//                moviesOnlyForYouListAdepter myadepter = new moviesOnlyForYouListAdepter(context, movieList);
+//                home_bywm_list_Recycler_View.setLayoutManager(new GridLayoutManager(context, 1, RecyclerView.HORIZONTAL, false));
+//                home_bywm_list_Recycler_View.setAdapter(myadepter);
+//
+//            } else {
+//                bywMovieLayoutLinearLayout.setVisibility(View.GONE);
+//                homeSwipeRefreshLayout.setRefreshing(false);
+//            }
+//        }, error -> {
+//            // Do nothing because There is No Error if error It will return 0
+//        }) {
+//            @Override
+//            public Map<String, String> getHeaders() throws AuthFailureError {
+//                Map<String, String> params = new HashMap<>();
+//                params.put("x-api-key", AppConfig.apiKey);
+//                return params;
+//            }
+//        };
+//        queue.add(sr6);
+
+//        StringRequest sr7 = new StringRequest(Request.Method.GET, AppConfig.url + "beacauseYouWatched/WebSeries/" + tempUserID + "/10", response -> {
+//            if (!response.equals("No Data Avaliable")) {
+//
+//                bywWebSeriesLayout.setVisibility(View.VISIBLE);
+//                JsonArray jsonArray = new Gson().fromJson(response, JsonArray.class);
+//                List<WebSeriesList> webSeriesList = new ArrayList<>();
+//                for (JsonElement r : jsonArray) {
+//                    JsonObject rootObject = r.getAsJsonObject();
+//                    int id = rootObject.get("id").getAsInt();
+//                    String name = rootObject.get("name").getAsString();
+//
+//                    String year = "";
+//                    if (!rootObject.get("release_date").getAsString().equals("")) {
+//                        year = helperUtils.getYearFromDate(rootObject.get("release_date").getAsString());
+//                    }
+//
+//                    String poster = rootObject.get("poster").getAsString();
+//                    int type = rootObject.get("type").getAsInt();
+//                    int status = rootObject.get("status").getAsInt();
+//
+//                    if (status == 1) {
+//                        webSeriesList.add(new WebSeriesList(id, type, name, year, poster));
+//                    }
+//                }
+//
+//                Collections.shuffle(webSeriesList);
+//
+//                webSeriesOnlyForYouListAdepter myadepter = new webSeriesOnlyForYouListAdepter(context, webSeriesList);
+//                home_bywws_list_Recycler_View.setLayoutManager(new GridLayoutManager(context, 1, RecyclerView.HORIZONTAL, false));
+//                home_bywws_list_Recycler_View.setAdapter(myadepter);
+//
+//                homeSwipeRefreshLayout.setRefreshing(false);
+//
+//            } else {
+//                bywWebSeriesLayout.setVisibility(View.GONE);
+//                homeSwipeRefreshLayout.setRefreshing(false);
+//            }
+//        }, error -> {
+//            // Do nothing because There is No Error if error It will return 0
+//        }) {
+//            @Override
+//            public Map<String, String> getHeaders() throws AuthFailureError {
+//                Map<String, String> params = new HashMap<>();
+//                params.put("x-api-key", AppConfig.apiKey);
+//                return params;
+//            }
+//        };
+//        queue.add(sr7);
+//
+
+//
+
+//
+
+//        StringRequest sr9 = new StringRequest(Request.Method.GET, AppConfig.url + "getMostWatched/WebSeries/10", response -> {
+//            if (!response.equals("No Data Avaliable")) {
+//
+//                popularWebSeriesLayout.setVisibility(View.VISIBLE);
+//                JsonArray jsonArray = new Gson().fromJson(response, JsonArray.class);
+//                List<WebSeriesList> webSeriesList = new ArrayList<>();
+//                for (JsonElement r : jsonArray) {
+//                    JsonObject rootObject = r.getAsJsonObject();
+//                    int id = rootObject.get("id").getAsInt();
+//                    String name = rootObject.get("name").getAsString();
+//
+//                    String year = "";
+//                    if (!rootObject.get("release_date").getAsString().equals("")) {
+//                        year = helperUtils.getYearFromDate(rootObject.get("release_date").getAsString());
+//                    }
+//
+//                    String poster = rootObject.get("poster").getAsString();
+//                    int type = rootObject.get("type").getAsInt();
+//                    int status = rootObject.get("status").getAsInt();
+//
+//                    if (status == 1) {
+//                        webSeriesList.add(new WebSeriesList(id, type, name, year, poster));
+//                    }
+//                }
+//
+//                Collections.shuffle(webSeriesList);
+//
+//                webSeriesOnlyForYouListAdepter myadepter = new webSeriesOnlyForYouListAdepter(context, webSeriesList);
+//                home_popularWebSeries_list_Recycler_View.setLayoutManager(new GridLayoutManager(context, 1, RecyclerView.HORIZONTAL, false));
+//                home_popularWebSeries_list_Recycler_View.setAdapter(myadepter);
+//
+//                homeSwipeRefreshLayout.setRefreshing(false);
+//
+//            } else {
+//                popularWebSeriesLayout.setVisibility(View.GONE);
+//                homeSwipeRefreshLayout.setRefreshing(false);
+//            }
+//        }, error -> {
+//            // Do nothing because There is No Error if error It will return 0
+//        }) {
+//            @Override
+//            public Map<String, String> getHeaders() throws AuthFailureError {
+//                Map<String, String> params = new HashMap<>();
+//                params.put("x-api-key", AppConfig.apiKey);
+//                return params;
+//            }
+//        };
+//        queue.add(sr9);
+
+
         JSONObject jsonObject = new JSONObject();
+
+
         try {
-            // Populate JSON object with provided data
             jsonObject.put("email", "admin@gmail.com");
             jsonObject.put("usermode", "admin");
             jsonObject.put("caller", "mobile");
+            jsonObject.put("searchtype", "recentlyadded");
+            jsonObject.put("searchcontent", "Short Film");
+            JsonObjectRequest recentlyContent = new JsonObjectRequest(Request.Method.POST, AppConfig.baseurl +"/videocontent/fetchvideocontent",
+                    jsonObject, response -> {
+                if (!response.equals("No Data Avaliable")) {
+                    recentMoviesLayout.setVisibility(View.VISIBLE);
+                    JsonObject jsonObjectResponse = new Gson().fromJson(response.toString(), JsonObject.class);
+                    if(jsonObjectResponse.get("status").getAsString().equalsIgnoreCase("Success")){
+                        JsonArray jsonArray = jsonObjectResponse.getAsJsonArray("resultList");
+                        List<MovieList> recentlyAddedMovieList = new ArrayList<>();
+                        for (JsonElement r : jsonArray) {
+                            JsonObject rootObject = r.getAsJsonObject();
+                            int id = rootObject.get("videocontentid").getAsInt();
+                            String name = rootObject.get("title").getAsString();
+                            String year = "";
+                            if (!rootObject.get("releasedate").getAsString().equals("")) {
+                                year = helperUtils.getYearFromDate(rootObject.get("releasedate").getAsString());
+                            }
+
+                            String banner = rootObject.get("posterimageurl").getAsString();
+                            int type = 2;
+                            recentlyAddedMovieList.add(new MovieList(id, type, name, year, banner));
+                        }
+
+                        Collections.shuffle(recentlyAddedMovieList);
+
+                        MovieListAdepter myadepter = new MovieListAdepter(context, recentlyAddedMovieList);
+                        home_Recent_Movies_list_Recycler_View.setLayoutManager(new GridLayoutManager(context, 1, RecyclerView.HORIZONTAL, false));
+                        home_Recent_Movies_list_Recycler_View.setAdapter(myadepter);
+                        shimmer_view_container.stopShimmer();
+                        shimmer_view_container.setVisibility(View.GONE);
+                        nestedScrollView.setVisibility(View.VISIBLE);
+                        homeSwipeRefreshLayout.setRefreshing(false);
+
+                    } else {
+                        recentMoviesLayout.setVisibility(View.GONE);
+                        homeSwipeRefreshLayout.setRefreshing(false);
+                    }
+                } else {
+                    recentMoviesLayout.setVisibility(View.GONE);
+                    homeSwipeRefreshLayout.setRefreshing(false);
+                }
+            }, error -> {
+                // Do nothing because There is No Error if error It will return 0
+            }) {
+                @Override
+                public Map<String, String> getHeaders() throws AuthFailureError {
+                    Map<String, String> params = new HashMap<>();
+                    //params.put("x-api-key", AppConfig.apiKey);
+                    return params;
+                }
+            };
+            queue.add(recentlyContent);
+
+            // Populate JSON object with provided data
+
             jsonObject.put("searchtype", "others");
             jsonObject.put("searchcontent", "trending");
+            jsonObject.put("typename", "Short Film");
 
 
             JsonObjectRequest trendingRequest = new JsonObjectRequest(Request.Method.POST, AppConfig.baseurl +"/videocontent/fetchvideocontent",
@@ -790,30 +1262,25 @@ public class ShortFilmFragment extends Fragment {
                     trendingLayout.setVisibility(View.VISIBLE);
                     JsonObject jsonObjectResponse = new Gson().fromJson(response.toString(), JsonObject.class);
                     if(jsonObjectResponse.get("status").getAsString().equalsIgnoreCase("Success")) {
-                        if (jsonObjectResponse.has("resultList")) {
-                            JsonArray jsonArray = jsonObjectResponse.getAsJsonArray("resultList");
-                            List<TrendingList> trendingList = new ArrayList<>();
-                            for (JsonElement r : jsonArray) {
-                                JsonObject rootObject = r.getAsJsonObject();
-                                int id = rootObject.get("videocontentid").getAsInt();
-                                String name = rootObject.get("title").getAsString();
-                                String banner = rootObject.get("posterimageurl").getAsString();
-                                int type = 0;
-                                String content_type = rootObject.getAsJsonObject("contentType").get("contenttypename").getAsString();
-                                imageSliderItems.add(new ImageSliderItem(banner, name, 0, id, ""));
+                        JsonArray jsonArray = jsonObjectResponse.getAsJsonArray("resultList");
+                        List<TrendingList> trendingList = new ArrayList<>();
+                        for (JsonElement r : jsonArray) {
+                            JsonObject rootObject = r.getAsJsonObject();
+                            int id = rootObject.get("videocontentid").getAsInt();
+                            String name = rootObject.get("title").getAsString();
+                            String banner = rootObject.get("posterimageurl").getAsString();
+                            int type = 0;
+                            String content_type = rootObject.getAsJsonObject("contentType").get("contenttypename").getAsString();
+                            //imageSliderItems.add(new ImageSliderItem(banner, name, 0, id, ""));
 
-                                trendingList.add(new TrendingList(id, type, content_type, banner));
-                            }
-
-                            TrendingListAdepter myadepter = new TrendingListAdepter(context, trendingList);
-                            home_trending_list_Recycler_View.setLayoutManager(new GridLayoutManager(context, 1, RecyclerView.HORIZONTAL, false));
-                            home_trending_list_Recycler_View.setAdapter(myadepter);
-
-                            homeSwipeRefreshLayout.setRefreshing(false);
-                        }else {
-                            trendingLayout.setVisibility(View.GONE);
-                            homeSwipeRefreshLayout.setRefreshing(false);
+                            trendingList.add(new TrendingList(id, type, content_type, banner));
                         }
+
+                        TrendingListAdepter myadepter = new TrendingListAdepter(context, trendingList);
+                        home_trending_list_Recycler_View.setLayoutManager(new GridLayoutManager(context, 1, RecyclerView.HORIZONTAL, false));
+                        home_trending_list_Recycler_View.setAdapter(myadepter);
+
+                        homeSwipeRefreshLayout.setRefreshing(false);
                     }else {
                         trendingLayout.setVisibility(View.GONE);
                         homeSwipeRefreshLayout.setRefreshing(false);
@@ -826,6 +1293,7 @@ public class ShortFilmFragment extends Fragment {
                 }
 
             }, error -> {
+                // Do nothing because There is No Error if error It will return 0
             }) {
                 @Override
                 public Map<String, String> getHeaders() throws AuthFailureError {
@@ -838,107 +1306,54 @@ public class ShortFilmFragment extends Fragment {
             queue.add(trendingRequest);
 
 
-            jsonObject.put("searchtype", "recentlyadded");
-            jsonObject.put("searchcontent", "Short Film");
-            JsonObjectRequest recentlyWebseriesContent = new JsonObjectRequest(Request.Method.POST, AppConfig.baseurl +"/videocontent/fetchvideocontent",
-                    jsonObject, response -> {
-                if (!response.equals("No Data Avaliable")) {
-                    recentWebSeriesLayout.setVisibility(View.VISIBLE);
-                    JsonObject jsonObjectResponse = new Gson().fromJson(response.toString(), JsonObject.class);
-                    if(jsonObjectResponse.get("status").getAsString().equalsIgnoreCase("Success")){
-                        if (jsonObjectResponse.has("resultList")) {
-                            JsonArray jsonArray = jsonObjectResponse.getAsJsonArray("resultList");
-                            List<WebSeriesList> recentlyAddedWebSeriesList = new ArrayList<>();
-                            for (JsonElement r : jsonArray) {
-                                JsonObject rootObject = r.getAsJsonObject();
-                                int id = rootObject.get("videocontentid").getAsInt();
-                                String name = rootObject.get("title").getAsString();
-                                String year = "";
-                                if (!rootObject.get("releasedate").getAsString().equals("")) {
-                                    year = helperUtils.getYearFromDate(rootObject.get("releasedate").getAsString());
-                                }
-
-                                String banner = rootObject.get("posterimageurl").getAsString();
-                                int type = 1;
-                                recentlyAddedWebSeriesList.add(new WebSeriesList(id, type, name, year, banner));
-                            }
-
-                            Collections.shuffle(recentlyAddedWebSeriesList);
-
-                            WebSeriesListAdepter myadepter = new WebSeriesListAdepter(context, recentlyAddedWebSeriesList);
-                            home_Recent_Series_list_Recycler_View.setLayoutManager(new GridLayoutManager(context, 1, RecyclerView.HORIZONTAL, false));
-                            home_Recent_Series_list_Recycler_View.setAdapter(myadepter);
-
-                            homeSwipeRefreshLayout.setRefreshing(false);
-                        }else {
-                            recentWebSeriesLayout.setVisibility(View.GONE);
-                            homeSwipeRefreshLayout.setRefreshing(false);
-                        }
-
-                    } else {
-                        recentWebSeriesLayout.setVisibility(View.GONE);
-                        homeSwipeRefreshLayout.setRefreshing(false);
-                    }
-                } else {
-                    recentWebSeriesLayout.setVisibility(View.GONE);
-                    homeSwipeRefreshLayout.setRefreshing(false);
-                }
-            }, error -> {
-                // Do nothing because There is No Error if error It will return 0
-            }) {
-                @Override
-                public Map<String, String> getHeaders() throws AuthFailureError {
-                    Map<String, String> params = new HashMap<>();
-                    //params.put("x-api-key", AppConfig.apiKey);
-                    return params;
-                }
-            };
-            queue.add(recentlyWebseriesContent);
-
             jsonObject.put("searchtype", "contenttype");
-            jsonObject.put("searchcontent", "Short Film");
-            JsonObjectRequest loveRequest = new JsonObjectRequest(Request.Method.POST, AppConfig.baseurl +"/videocontent/fetchvideocontent",
+            jsonObject.put("searchcontent", "Movie");
+            JsonObjectRequest movieRequest = new JsonObjectRequest(Request.Method.POST, AppConfig.baseurl +"/videocontent/fetchvideocontent",
                     jsonObject, response -> {
                 if (!response.equals("No Data Avaliable")) {
-                    homeWebSeriesLayout.setVisibility(View.VISIBLE);
+                    homeMovieLayout.setVisibility(View.VISIBLE);
 
                     JsonObject jsonObjectResponse = new Gson().fromJson(response.toString(), JsonObject.class);
                     if(jsonObjectResponse.get("status").getAsString().equalsIgnoreCase("Success")){
-                        if (jsonObjectResponse.has("resultList")) {
-                            JsonArray jsonArray = jsonObjectResponse.getAsJsonArray("resultList");
-                            if(!jsonArray.isEmpty()){
-                                List<WebSeriesList> webSeriesList = new ArrayList<>();
-                                for (JsonElement r : jsonArray) {
-                                    JsonObject rootObject = r.getAsJsonObject();
-                                    int id = rootObject.get("videocontentid").getAsInt();
-                                    String name = rootObject.get("title").getAsString();
-                                    String year = "";
-                                    if (!rootObject.get("releasedate").getAsString().equals("")) {
-                                        year = helperUtils.getYearFromDate(rootObject.get("releasedate").getAsString());
-                                    }
-                                    String banner = rootObject.get("posterimageurl").getAsString();
-                                    int type = 0;
-                                    webSeriesList.add(new WebSeriesList(id, type, name, year, banner));
-                                }
+                        JsonArray jsonArray = jsonObjectResponse.getAsJsonArray("resultList");
+                        List<MovieList> movieList = new ArrayList<>();
+                        for (JsonElement r : jsonArray) {
+                            JsonObject rootObject = r.getAsJsonObject();
+                            int id = rootObject.get("videocontentid").getAsInt();
+                            String name = rootObject.get("title").getAsString();
 
-                                WebSeriesListAdepter myadepter = new WebSeriesListAdepter(context, webSeriesList);
-                                webSeriesListRecycleview.setLayoutManager(new GridLayoutManager(context, 1, RecyclerView.HORIZONTAL, false));
-                                webSeriesListRecycleview.setAdapter(myadepter);
-                                homeSwipeRefreshLayout.setRefreshing(false);
+                            String year = "";
+                            if (!rootObject.get("releasedate").getAsString().equals("")) {
+                                year = helperUtils.getYearFromDate(rootObject.get("releasedate").getAsString());
                             }
 
-                        }else {
-                            homeWebSeriesLayout.setVisibility(View.GONE);
-                            homeSwipeRefreshLayout.setRefreshing(false);
+//                        String poster = rootObject.get("poster").getAsString();
+//                        int type = rootObject.get("type").getAsInt();
+//                        int status = rootObject.get("status").getAsInt();
+                            String banner = rootObject.get("posterimageurl").getAsString();
+                            int type = 2;
+                            // String content_type = rootObject.getAsJsonObject("contentType").get("contenttypename").getAsString();
+
+                            //if (status == 1) {
+                            movieList.add(new MovieList(id, type, name, year, banner));
+                            //}
                         }
-                    }else {
-                        homeWebSeriesLayout.setVisibility(View.GONE);
+
+                        //if (shuffleContents == 1) {
+                        //    Collections.shuffle(movieList);
+                       // }
+
+                        MovieListAdepter myadepter = new MovieListAdepter(context, movieList);
+                        movieListRecycleview.setLayoutManager(new GridLayoutManager(context, 1, RecyclerView.HORIZONTAL, false));
+                        movieListRecycleview.setAdapter(myadepter);
+                    }else{
+                        homeMovieLayout.setVisibility(View.GONE);
                         homeSwipeRefreshLayout.setRefreshing(false);
                     }
 
 
                 } else {
-                    homeWebSeriesLayout.setVisibility(View.GONE);
+                    homeMovieLayout.setVisibility(View.GONE);
                     homeSwipeRefreshLayout.setRefreshing(false);
                 }
             }, error -> {
@@ -947,59 +1362,113 @@ public class ShortFilmFragment extends Fragment {
                 @Override
                 public Map<String, String> getHeaders() throws AuthFailureError {
                     Map<String, String> params = new HashMap<>();
-                    //params.put("x-api-key", AppConfig.apiKey);
+                   // params.put("x-api-key", AppConfig.apiKey);
                     return params;
                 }
             };
-            queue.add(loveRequest);
+            queue.add(movieRequest);
 
+//            jsonObject.put("searchtype", "contenttype");
+//            jsonObject.put("searchcontent", "Web Series");
+//            JsonObjectRequest loveRequest = new JsonObjectRequest(Request.Method.POST, AppConfig.baseurl +"/videocontent/fetchvideocontent",
+//                    jsonObject, response -> {
+//                if (!response.equals("No Data Avaliable")) {
+//                    homeWebSeriesLayout.setVisibility(View.VISIBLE);
+//
+//                    JsonObject jsonObjectResponse = new Gson().fromJson(response.toString(), JsonObject.class);
+//                    if(jsonObjectResponse.get("status").getAsString().equalsIgnoreCase("Success")){
+//                        JsonArray jsonArray = jsonObjectResponse.getAsJsonArray("resultList");
+//                        List<WebSeriesList> webSeriesList = new ArrayList<>();
+//                        for (JsonElement r : jsonArray) {
+//                            JsonObject rootObject = r.getAsJsonObject();
+//                            int id = rootObject.get("videocontentid").getAsInt();
+//                            String name = rootObject.get("title").getAsString();
+//                            String year = "";
+//                            if (!rootObject.get("releasedate").getAsString().equals("")) {
+//                                year = helperUtils.getYearFromDate(rootObject.get("releasedate").getAsString());
+//                            }
+//
+//                            String banner = rootObject.get("posterimageurl").getAsString();
+//                            int type = 0;
+//                            //String content_type = rootObject.getAsJsonObject("contentType").get("contenttypename").getAsString();
+//
+//                            // if (status == 1) {
+//                            webSeriesList.add(new WebSeriesList(id, type, name, year, banner));
+//                            //  }
+//                        }
+//                       // if (shuffleContents == 1) {
+//                       ///     Collections.shuffle(webSeriesList);
+//                       // }
+//
+//                        WebSeriesListAdepter myadepter = new WebSeriesListAdepter(context, webSeriesList);
+//                        webSeriesListRecycleview.setLayoutManager(new GridLayoutManager(context, 1, RecyclerView.HORIZONTAL, false));
+//                        webSeriesListRecycleview.setAdapter(myadepter);
+//
+//                        //homeSwipeRefreshLayout.setRefreshing(false);
+//                    }else {
+//                        homeWebSeriesLayout.setVisibility(View.GONE);
+//                        homeSwipeRefreshLayout.setRefreshing(false);
+//                    }
+//
+//
+//                } else {
+//                    homeWebSeriesLayout.setVisibility(View.GONE);
+//                    homeSwipeRefreshLayout.setRefreshing(false);
+//                }
+//            }, error -> {
+//                // Do nothing because There is No Error if error It will return 0
+//            }) {
+//                @Override
+//                public Map<String, String> getHeaders() throws AuthFailureError {
+//                    Map<String, String> params = new HashMap<>();
+//                    //params.put("x-api-key", AppConfig.apiKey);
+//                    return params;
+//                }
+//            };
+//            queue.add(loveRequest);
 
             jsonObject.put("searchtype", "viewcount");
-            jsonObject.put("searchcontent", "Short Film");
-            JsonObjectRequest popularWebseries = new JsonObjectRequest(Request.Method.POST, AppConfig.baseurl +"/videocontent/fetchvideocontent",
+            jsonObject.put("searchcontent", "Movie");
+            JsonObjectRequest popularMovies = new JsonObjectRequest(Request.Method.POST, AppConfig.baseurl +"/videocontent/fetchvideocontent",
                     jsonObject, response -> {
                 if (!response.equals("No Data Avaliable")) {
-                    popularWebSeriesLayout.setVisibility(View.VISIBLE);
-                     JsonObject jsonObjectResponse = new Gson().fromJson(response.toString(), JsonObject.class);
+                    popularMoviesLayout.setVisibility(View.VISIBLE);
+                    JsonObject jsonObjectResponse = new Gson().fromJson(response.toString(), JsonObject.class);
                     if(jsonObjectResponse.get("status").getAsString().equalsIgnoreCase("Success")){
-                        if (jsonObjectResponse.has("resultList")) {
-                            JsonArray jsonArray = jsonObjectResponse.getAsJsonArray("resultList");
-                            List<WebSeriesList> webSeriesList = new ArrayList<>();
-                            for (JsonElement r : jsonArray) {
-                                JsonObject rootObject = r.getAsJsonObject();
-                                int id = rootObject.get("videocontentid").getAsInt();
-                                String name = rootObject.get("title").getAsString();
-                                String year = "";
-                                if (!rootObject.get("releasedate").getAsString().equals("")) {
-                                    year = helperUtils.getYearFromDate(rootObject.get("releasedate").getAsString());
-                                }
-
-                                String banner = rootObject.get("posterimageurl").getAsString();
-                                int type = 0;
-                                webSeriesList.add(new WebSeriesList(id, type, name, year, banner));
+                        JsonArray jsonArray = jsonObjectResponse.getAsJsonArray("resultList");
+                        List<MovieList> movieList = new ArrayList<>();
+                        for (JsonElement r : jsonArray) {
+                            JsonObject rootObject = r.getAsJsonObject();
+                            int id = rootObject.get("videocontentid").getAsInt();
+                            String name = rootObject.get("title").getAsString();
+                            String year = "";
+                            if (!rootObject.get("releasedate").getAsString().equals("")) {
+                                year = helperUtils.getYearFromDate(rootObject.get("releasedate").getAsString());
                             }
 
-                            Collections.shuffle(webSeriesList);
-
-                            webSeriesOnlyForYouListAdepter myadepter = new webSeriesOnlyForYouListAdepter(context, webSeriesList);
-                            home_popularWebSeries_list_Recycler_View.setLayoutManager(new GridLayoutManager(context, 1, RecyclerView.HORIZONTAL, false));
-                            home_popularWebSeries_list_Recycler_View.setAdapter(myadepter);
-
-                            homeSwipeRefreshLayout.setRefreshing(false);
-                            shimmer_view_container.stopShimmer();
-                            shimmer_view_container.setVisibility(View.GONE);
-                            nestedScrollView.setVisibility(View.VISIBLE);
-                        }else {
-                            popularWebSeriesLayout.setVisibility(View.GONE);
-                            homeSwipeRefreshLayout.setRefreshing(false);
+                            String banner = rootObject.get("posterimageurl").getAsString();
+                            int type = 2;
+                            movieList.add(new MovieList(id, type, name, year, banner));
                         }
 
-                    } else {
-                        popularWebSeriesLayout.setVisibility(View.GONE);
+                        Collections.shuffle(movieList);
+
+                        moviesOnlyForYouListAdepter myadepter = new moviesOnlyForYouListAdepter(context, movieList);
+                        home_popularMovies_list_Recycler_View.setLayoutManager(new GridLayoutManager(context, 1, RecyclerView.HORIZONTAL, false));
+                        home_popularMovies_list_Recycler_View.setAdapter(myadepter);
+
+                        homeSwipeRefreshLayout.setRefreshing(false);
+//                        shimmer_view_container.stopShimmer();
+//                        shimmer_view_container.setVisibility(View.GONE);
+//                        nestedScrollView.setVisibility(View.VISIBLE);
+                    }else {
+                        popularMoviesLayout.setVisibility(View.GONE);
                         homeSwipeRefreshLayout.setRefreshing(false);
                     }
+
+
                 } else {
-                    popularWebSeriesLayout.setVisibility(View.GONE);
+                    popularMoviesLayout.setVisibility(View.GONE);
                     homeSwipeRefreshLayout.setRefreshing(false);
                 }
             }, error -> {
@@ -1012,7 +1481,59 @@ public class ShortFilmFragment extends Fragment {
                     return params;
                 }
             };
-            queue.add(popularWebseries);
+            queue.add(popularMovies);
+
+//            jsonObject.put("searchtype", "viewcount");
+//            jsonObject.put("searchcontent", "Web Series");
+//            JsonObjectRequest popularWebseries = new JsonObjectRequest(Request.Method.POST, AppConfig.baseurl +"/videocontent/fetchvideocontent",
+//                    jsonObject, response -> {
+//                if (!response.equals("No Data Avaliable")) {
+//                    popularMoviesLayout.setVisibility(View.VISIBLE);
+//                     JsonObject jsonObjectResponse = new Gson().fromJson(response.toString(), JsonObject.class);
+//                    if(jsonObjectResponse.get("status").getAsString().equalsIgnoreCase("Success")){
+//                        JsonArray jsonArray = jsonObjectResponse.getAsJsonArray("resultList");
+//                        List<WebSeriesList> webSeriesList = new ArrayList<>();
+//                        for (JsonElement r : jsonArray) {
+//                            JsonObject rootObject = r.getAsJsonObject();
+//                            int id = rootObject.get("videocontentid").getAsInt();
+//                            String name = rootObject.get("title").getAsString();
+//                            String year = "";
+//                            if (!rootObject.get("releasedate").getAsString().equals("")) {
+//                                year = helperUtils.getYearFromDate(rootObject.get("releasedate").getAsString());
+//                            }
+//
+//                            String banner = rootObject.get("posterimageurl").getAsString();
+//                            int type = 0;
+//                                webSeriesList.add(new WebSeriesList(id, type, name, year, banner));
+//                        }
+//
+//                        Collections.shuffle(webSeriesList);
+//
+//                        webSeriesOnlyForYouListAdepter myadepter = new webSeriesOnlyForYouListAdepter(context, webSeriesList);
+//                        home_popularWebSeries_list_Recycler_View.setLayoutManager(new GridLayoutManager(context, 1, RecyclerView.HORIZONTAL, false));
+//                        home_popularWebSeries_list_Recycler_View.setAdapter(myadepter);
+//
+//                        homeSwipeRefreshLayout.setRefreshing(false);
+//
+//                    } else {
+//                        popularMoviesLayout.setVisibility(View.GONE);
+//                        homeSwipeRefreshLayout.setRefreshing(false);
+//                    }
+//                } else {
+//                    popularMoviesLayout.setVisibility(View.GONE);
+//                    homeSwipeRefreshLayout.setRefreshing(false);
+//                }
+//            }, error -> {
+//                // Do nothing because There is No Error if error It will return 0
+//            }) {
+//                @Override
+//                public Map<String, String> getHeaders() throws AuthFailureError {
+//                    Map<String, String> params = new HashMap<>();
+//                    //params.put("x-api-key", AppConfig.apiKey);
+//                    return params;
+//                }
+//            };
+//            queue.add(popularWebseries);
 
             jsonObject.put("searchtype", "categorytype");
             jsonObject.put("searchcontent", "Horror");
@@ -1022,37 +1543,32 @@ public class ShortFilmFragment extends Fragment {
                     houseOfHorrorLayout.setVisibility(View.VISIBLE);
                     JsonObject jsonObjectResponse = new Gson().fromJson(response.toString(), JsonObject.class);
                     if(jsonObjectResponse.get("status").getAsString().equalsIgnoreCase("Success")){
-                        if (jsonObjectResponse.has("resultList")) {
-                            JsonArray jsonArray = jsonObjectResponse.getAsJsonArray("resultList");
-                            List<HouseofHorrorList> houseofHorrorList = new ArrayList<>();
-                            for (JsonElement r : jsonArray) {
-                                JsonObject rootObject = r.getAsJsonObject();
-                                int id = rootObject.get("videocontentid").getAsInt();
-                                String name = rootObject.get("title").getAsString();
-                                String year = "";
-                                if (!rootObject.get("releasedate").getAsString().equals("")) {
-                                    year = helperUtils.getYearFromDate(rootObject.get("releasedate").getAsString());
-                                }
-
-                                String banner = rootObject.get("posterimageurl").getAsString();
-                                int type = 0;
-                                houseofHorrorList.add(new HouseofHorrorList(id, type, name, year, banner));
+                        JsonArray jsonArray = jsonObjectResponse.getAsJsonArray("resultList");
+                        List<HouseofHorrorList> houseofHorrorList = new ArrayList<>();
+                        for (JsonElement r : jsonArray) {
+                            JsonObject rootObject = r.getAsJsonObject();
+                            int id = rootObject.get("videocontentid").getAsInt();
+                            String name = rootObject.get("title").getAsString();
+                            String year = "";
+                            if (!rootObject.get("releasedate").getAsString().equals("")) {
+                                year = helperUtils.getYearFromDate(rootObject.get("releasedate").getAsString());
                             }
 
-                            Collections.shuffle(houseofHorrorList);
-
-                            HouseOfHorrorListAdepter myadepter = new HouseOfHorrorListAdepter(context, houseofHorrorList);
-                            house_of_horror_list_Recycler_View.setLayoutManager(new GridLayoutManager(context, 1, RecyclerView.HORIZONTAL, false));
-                            house_of_horror_list_Recycler_View.setAdapter(myadepter);
-
-                            homeSwipeRefreshLayout.setRefreshing(false);
-                            shimmer_view_container.stopShimmer();
-                            shimmer_view_container.setVisibility(View.GONE);
-                            nestedScrollView.setVisibility(View.VISIBLE);
-                        }else {
-                            houseOfHorrorLayout.setVisibility(View.GONE);
-                            homeSwipeRefreshLayout.setRefreshing(false);
+                            String banner = rootObject.get("posterimageurl").getAsString();
+                            int type = 2;
+                            houseofHorrorList.add(new HouseofHorrorList(id, type, name, year, banner));
                         }
+
+                        Collections.shuffle(houseofHorrorList);
+
+                        HouseOfHorrorListAdepter myadepter = new HouseOfHorrorListAdepter(context, houseofHorrorList);
+                        house_of_horror_list_Recycler_View.setLayoutManager(new GridLayoutManager(context, 1, RecyclerView.HORIZONTAL, false));
+                        house_of_horror_list_Recycler_View.setAdapter(myadepter);
+
+                        homeSwipeRefreshLayout.setRefreshing(false);
+                        shimmer_view_container.stopShimmer();
+                        shimmer_view_container.setVisibility(View.GONE);
+                        nestedScrollView.setVisibility(View.VISIBLE);
 
                     } else {
                         houseOfHorrorLayout.setVisibility(View.GONE);
@@ -1082,37 +1598,32 @@ public class ShortFilmFragment extends Fragment {
                     oldisgoldLayout.setVisibility(View.VISIBLE);
                     JsonObject jsonObjectResponse = new Gson().fromJson(response.toString(), JsonObject.class);
                     if(jsonObjectResponse.get("status").getAsString().equalsIgnoreCase("Success")){
-                        if (jsonObjectResponse.has("resultList")) {
-                            JsonArray jsonArray = jsonObjectResponse.getAsJsonArray("resultList");
-                            List<HouseofHorrorList> houseofHorrorList = new ArrayList<>();
-                            for (JsonElement r : jsonArray) {
-                                JsonObject rootObject = r.getAsJsonObject();
-                                int id = rootObject.get("videocontentid").getAsInt();
-                                String name = rootObject.get("title").getAsString();
-                                String year = "";
-                                if (!rootObject.get("releasedate").getAsString().equals("")) {
-                                    year = helperUtils.getYearFromDate(rootObject.get("releasedate").getAsString());
-                                }
-
-                                String banner = rootObject.get("posterimageurl").getAsString();
-                                int type = 0;
-                                houseofHorrorList.add(new HouseofHorrorList(id, type, name, year, banner));
+                        JsonArray jsonArray = jsonObjectResponse.getAsJsonArray("resultList");
+                        List<HouseofHorrorList> houseofHorrorList = new ArrayList<>();
+                        for (JsonElement r : jsonArray) {
+                            JsonObject rootObject = r.getAsJsonObject();
+                            int id = rootObject.get("videocontentid").getAsInt();
+                            String name = rootObject.get("title").getAsString();
+                            String year = "";
+                            if (!rootObject.get("releasedate").getAsString().equals("")) {
+                                year = helperUtils.getYearFromDate(rootObject.get("releasedate").getAsString());
                             }
 
-                            Collections.shuffle(houseofHorrorList);
-
-                            HouseOfHorrorListAdepter myadepter = new HouseOfHorrorListAdepter(context, houseofHorrorList);
-                            old_is_gold_list_Recycler_View.setLayoutManager(new GridLayoutManager(context, 1, RecyclerView.HORIZONTAL, false));
-                            old_is_gold_list_Recycler_View.setAdapter(myadepter);
-
-                            homeSwipeRefreshLayout.setRefreshing(false);
-                            shimmer_view_container.stopShimmer();
-                            shimmer_view_container.setVisibility(View.GONE);
-                            nestedScrollView.setVisibility(View.VISIBLE);
-                        }else {
-                            oldisgoldLayout.setVisibility(View.GONE);
-                            homeSwipeRefreshLayout.setRefreshing(false);
+                            String banner = rootObject.get("posterimageurl").getAsString();
+                            int type = 2;
+                            houseofHorrorList.add(new HouseofHorrorList(id, type, name, year, banner));
                         }
+
+                        Collections.shuffle(houseofHorrorList);
+
+                        HouseOfHorrorListAdepter myadepter = new HouseOfHorrorListAdepter(context, houseofHorrorList);
+                        old_is_gold_list_Recycler_View.setLayoutManager(new GridLayoutManager(context, 1, RecyclerView.HORIZONTAL, false));
+                        old_is_gold_list_Recycler_View.setAdapter(myadepter);
+
+                        homeSwipeRefreshLayout.setRefreshing(false);
+                        shimmer_view_container.stopShimmer();
+                        shimmer_view_container.setVisibility(View.GONE);
+                        nestedScrollView.setVisibility(View.VISIBLE);
 
                     } else {
                         oldisgoldLayout.setVisibility(View.GONE);
@@ -1134,6 +1645,64 @@ public class ShortFilmFragment extends Fragment {
             };
             queue.add(oldidgoldContent);
 
+//            jsonObject.put("searchtype", "contenttype");
+//            jsonObject.put("searchcontent", "Music");
+//            JsonObjectRequest musicRequest = new JsonObjectRequest(Request.Method.POST, AppConfig.baseurl +"/videocontent/fetchvideocontent",
+//                    jsonObject, response -> {
+//                if (!response.equals("No Data Avaliable")) {
+//                    musicLayout.setVisibility(View.VISIBLE);
+//
+//                    JsonObject jsonObjectResponse = new Gson().fromJson(response.toString(), JsonObject.class);
+//                    if(jsonObjectResponse.get("status").getAsString().equalsIgnoreCase("Success")){
+//                        JsonArray jsonArray = jsonObjectResponse.getAsJsonArray("resultList");
+//                        List<WebSeriesList> webSeriesList = new ArrayList<>();
+//                        for (JsonElement r : jsonArray) {
+//                            JsonObject rootObject = r.getAsJsonObject();
+//                            int id = rootObject.get("videocontentid").getAsInt();
+//                            String name = rootObject.get("title").getAsString();
+//                            String year = "";
+//                            if (!rootObject.get("releasedate").getAsString().equals("")) {
+//                                year = helperUtils.getYearFromDate(rootObject.get("releasedate").getAsString());
+//                            }
+//
+//                            String banner = rootObject.get("posterimageurl").getAsString();
+//                            int type = 0;
+//                            //String content_type = rootObject.getAsJsonObject("contentType").get("contenttypename").getAsString();
+//
+//                            // if (status == 1) {
+//                            webSeriesList.add(new WebSeriesList(id, type, name, year, banner));
+//                            //  }
+//                        }
+//                        // if (shuffleContents == 1) {
+//                        ///     Collections.shuffle(webSeriesList);
+//                        // }
+//
+//                        WebSeriesListAdepter myadepter = new WebSeriesListAdepter(context, webSeriesList);
+//                        music_list_Recycler_View.setLayoutManager(new GridLayoutManager(context, 1, RecyclerView.HORIZONTAL, false));
+//                        music_list_Recycler_View.setAdapter(myadepter);
+//
+//                        //homeSwipeRefreshLayout.setRefreshing(false);
+//                    }else {
+//                        musicLayout.setVisibility(View.GONE);
+//                        homeSwipeRefreshLayout.setRefreshing(false);
+//                    }
+//
+//
+//                } else {
+//                    musicLayout.setVisibility(View.GONE);
+//                    homeSwipeRefreshLayout.setRefreshing(false);
+//                }
+//            }, error -> {
+//                // Do nothing because There is No Error if error It will return 0
+//            }) {
+//                @Override
+//                public Map<String, String> getHeaders() throws AuthFailureError {
+//                    Map<String, String> params = new HashMap<>();
+//                    //params.put("x-api-key", AppConfig.apiKey);
+//                    return params;
+//                }
+//            };
+//            queue.add(musicRequest);
 
             jsonObject.put("searchtype", "contenttype");
             jsonObject.put("searchcontent", "18+");
@@ -1144,33 +1713,36 @@ public class ShortFilmFragment extends Fragment {
 
                     JsonObject jsonObjectResponse = new Gson().fromJson(response.toString(), JsonObject.class);
                     if(jsonObjectResponse.get("status").getAsString().equalsIgnoreCase("Success")){
-                        if (jsonObjectResponse.has("resultList")) {
-                            JsonArray jsonArray = jsonObjectResponse.getAsJsonArray("resultList");
-                            List<WebSeriesList> webSeriesList = new ArrayList<>();
-                            for (JsonElement r : jsonArray) {
-                                JsonObject rootObject = r.getAsJsonObject();
-                                int id = rootObject.get("videocontentid").getAsInt();
-                                String name = rootObject.get("title").getAsString();
-                                String year = "";
-                                if (!rootObject.get("releasedate").getAsString().equals("")) {
-                                    year = helperUtils.getYearFromDate(rootObject.get("releasedate").getAsString());
-                                }
-
-                                String banner = rootObject.get("posterimageurl").getAsString();
-                                int type = 0;
-                                webSeriesList.add(new WebSeriesList(id, type, name, year, banner));
+                        JsonArray jsonArray = jsonObjectResponse.getAsJsonArray("resultList");
+                        List<HouseofHorrorList> houseofHorrorList = new ArrayList<>();
+                        for (JsonElement r : jsonArray) {
+                            JsonObject rootObject = r.getAsJsonObject();
+                            int id = rootObject.get("videocontentid").getAsInt();
+                            String name = rootObject.get("title").getAsString();
+                            String year = "";
+                            if (!rootObject.get("releasedate").getAsString().equals("")) {
+                                year = helperUtils.getYearFromDate(rootObject.get("releasedate").getAsString());
                             }
-                            WebSeriesListAdepter myadepter = new WebSeriesListAdepter(context, webSeriesList);
-                            adult_list_Recycler_View.setLayoutManager(new GridLayoutManager(context, 1, RecyclerView.HORIZONTAL, false));
-                            adult_list_Recycler_View.setAdapter(myadepter);
-                            shimmer_view_container.stopShimmer();
-                            shimmer_view_container.setVisibility(View.GONE);
-                            nestedScrollView.setVisibility(View.VISIBLE);
-                            homeSwipeRefreshLayout.setRefreshing(false);
-                        }else {
-                            adultLayout.setVisibility(View.GONE);
-                            homeSwipeRefreshLayout.setRefreshing(false);
+
+                            String banner = rootObject.get("posterimageurl").getAsString();
+                            int type = 0;
+                            //String content_type = rootObject.getAsJsonObject("contentType").get("contenttypename").getAsString();
+
+                            // if (status == 1) {
+                            houseofHorrorList.add(new HouseofHorrorList(id, type, name, year, banner));
+                            //  }
                         }
+                        // if (shuffleContents == 1) {
+                        ///     Collections.shuffle(webSeriesList);
+                        // }
+
+                        HouseOfHorrorListAdepter myadepter = new HouseOfHorrorListAdepter(context, houseofHorrorList);
+                        adult_list_Recycler_View.setLayoutManager(new GridLayoutManager(context, 1, RecyclerView.HORIZONTAL, false));
+                        adult_list_Recycler_View.setAdapter(myadepter);
+                        shimmer_view_container.stopShimmer();
+                        shimmer_view_container.setVisibility(View.GONE);
+                        nestedScrollView.setVisibility(View.VISIBLE);
+                        //homeSwipeRefreshLayout.setRefreshing(false);
                     }else {
                         adultLayout.setVisibility(View.GONE);
                         homeSwipeRefreshLayout.setRefreshing(false);
@@ -1182,6 +1754,7 @@ public class ShortFilmFragment extends Fragment {
                     homeSwipeRefreshLayout.setRefreshing(false);
                 }
             }, error -> {
+                // Do nothing because There is No Error if error It will return 0
             }) {
                 @Override
                 public Map<String, String> getHeaders() throws AuthFailureError {
@@ -1192,9 +1765,156 @@ public class ShortFilmFragment extends Fragment {
             };
             queue.add(adultRequest);
 
+
+
+//            jsonObject.put("searchtype", "recentlyadded");
+//            jsonObject.put("searchcontent", "Web Series");
+//            JsonObjectRequest recentlyWebseriesContent = new JsonObjectRequest(Request.Method.POST, AppConfig.baseurl +"/videocontent/fetchvideocontent",
+//                    jsonObject, response -> {
+//                if (!response.equals("No Data Avaliable")) {
+//                    recentMoviesLayout.setVisibility(View.VISIBLE);
+//                    JsonObject jsonObjectResponse = new Gson().fromJson(response.toString(), JsonObject.class);
+//                    if(jsonObjectResponse.get("status").getAsString().equalsIgnoreCase("Success")){
+//                        JsonArray jsonArray = jsonObjectResponse.getAsJsonArray("resultList");
+//                        List<WebSeriesList> recentlyAddedWebSeriesList = new ArrayList<>();
+//                        for (JsonElement r : jsonArray) {
+//                            JsonObject rootObject = r.getAsJsonObject();
+//                            int id = rootObject.get("videocontentid").getAsInt();
+//                            String name = rootObject.get("title").getAsString();
+//                            String year = "";
+//                            if (!rootObject.get("releasedate").getAsString().equals("")) {
+//                                year = helperUtils.getYearFromDate(rootObject.get("releasedate").getAsString());
+//                            }
+//
+//                            String banner = rootObject.get("posterimageurl").getAsString();
+//                            int type = 1;
+//                            recentlyAddedWebSeriesList.add(new WebSeriesList(id, type, name, year, banner));
+//                        }
+//
+//                        Collections.shuffle(recentlyAddedWebSeriesList);
+//
+//                        WebSeriesListAdepter myadepter = new WebSeriesListAdepter(context, recentlyAddedWebSeriesList);
+//                        home_Recent_Series_list_Recycler_View.setLayoutManager(new GridLayoutManager(context, 1, RecyclerView.HORIZONTAL, false));
+//                        home_Recent_Series_list_Recycler_View.setAdapter(myadepter);
+//
+//                         homeSwipeRefreshLayout.setRefreshing(false);
+//
+//                    } else {
+//                        recentWebSeriesLayout.setVisibility(View.GONE);
+//                        homeSwipeRefreshLayout.setRefreshing(false);
+//                    }
+//                } else {
+//                    recentWebSeriesLayout.setVisibility(View.GONE);
+//                    homeSwipeRefreshLayout.setRefreshing(false);
+//                }
+//            }, error -> {
+//                // Do nothing because There is No Error if error It will return 0
+//            }) {
+//                @Override
+//                public Map<String, String> getHeaders() throws AuthFailureError {
+//                    Map<String, String> params = new HashMap<>();
+//                    //params.put("x-api-key", AppConfig.apiKey);
+//                    return params;
+//                }
+//            };
+//            queue.add(recentlyWebseriesContent);
+
         } catch (JSONException e) {
             e.printStackTrace();
         }
+
+//        StringRequest sr12 = new StringRequest(Request.Method.GET, AppConfig.url + "getTrending", response -> {
+//
+//            if (!response.equals("No Data Avaliable")) {
+//
+//                trendingLayout.setVisibility(View.VISIBLE);
+//                JsonArray jsonArray = new Gson().fromJson(response, JsonArray.class);
+//                List<TrendingList> trendingList = new ArrayList<>();
+//                for (JsonElement r : jsonArray) {
+//                    JsonObject rootObject = r.getAsJsonObject();
+//                    int id = rootObject.get("id").getAsInt();
+//                    String poster = rootObject.get("poster").getAsString();
+//                    int type = rootObject.get("type").getAsInt();
+//                    int content_type = rootObject.get("content_type").getAsInt();
+//
+//                    trendingList.add(new TrendingList(id, type, content_type, poster));
+//                }
+//
+//                TrendingListAdepter myadepter = new TrendingListAdepter(context, trendingList);
+//                home_trending_list_Recycler_View.setLayoutManager(new GridLayoutManager(context, 1, RecyclerView.HORIZONTAL, false));
+//                home_trending_list_Recycler_View.setAdapter(myadepter);
+//
+//                homeSwipeRefreshLayout.setRefreshing(false);
+//
+//            } else {
+//                trendingLayout.setVisibility(View.GONE);
+//                homeSwipeRefreshLayout.setRefreshing(false);
+//            }
+//        }, error -> {
+//            // Do nothing because There is No Error if error It will return 0
+//        }) {
+//            @Override
+//            public Map<String, String> getHeaders() throws AuthFailureError {
+//                Map<String, String> params = new HashMap<>();
+//                params.put("x-api-key", AppConfig.apiKey);
+//                return params;
+//            }
+//        };
+//        queue.add(sr12);
+
+
+//        StringRequest sr13 = new StringRequest(Request.Method.GET, AppConfig.url + "getMostSearched", response -> {
+//
+//            if (!response.equals("No Data Avaliable")) {
+//
+//                homeTopSearchedLayout.setVisibility(View.VISIBLE);
+//                JsonArray jsonArray = new Gson().fromJson(response, JsonArray.class);
+//                List<MostSearchedList> mostSearchedList = new ArrayList<>();
+//                for (JsonElement r : jsonArray) {
+//                    JsonObject rootObject = r.getAsJsonObject();
+//                    int id = rootObject.get("id").getAsInt();
+//                    String name = rootObject.get("name").getAsString();
+//
+//                    String year = "";
+//                    if (!rootObject.get("release_date").getAsString().equals("")) {
+//                        year = HelperUtils.getYearFromDate(rootObject.get("release_date").getAsString());
+//                    }
+//
+//                    String poster = rootObject.get("poster").getAsString();
+//                    int type = rootObject.get("type").getAsInt();
+//                    int status = rootObject.get("status").getAsInt();
+//                    int content_type = rootObject.get("content_type").getAsInt();
+//
+//                    if (status == 1) {
+//                        mostSearchedList.add(new MostSearchedList(id, type, name, year, poster, content_type));
+//                    }
+//                }
+//
+//                MostSearchedListAdepter myadepter = new MostSearchedListAdepter(context, mostSearchedList);
+//                home_top_searched_list_Recycler_View.setLayoutManager(new GridLayoutManager(context, 1, RecyclerView.HORIZONTAL, false));
+//                home_top_searched_list_Recycler_View.setAdapter(myadepter);
+//
+//                homeSwipeRefreshLayout.setRefreshing(false);
+//
+//            } else {
+//                homeTopSearchedLayout.setVisibility(View.GONE);
+//                homeSwipeRefreshLayout.setRefreshing(false);
+//            }
+//        }, error -> {
+//            // Do nothing because There is No Error if error It will return 0
+//        }) {
+//            @Override
+//            public Map<String, String> getHeaders() throws AuthFailureError {
+//                Map<String, String> params = new HashMap<>();
+//                params.put("x-api-key", AppConfig.apiKey);
+//                return params;
+//            }
+//        };
+//        queue.add(sr13);
+//
+
+
+
 
         ResumeContentDatabase db = ResumeContentDatabase.getDbInstance(context.getApplicationContext());
         List<ResumeContent> resumeContents = db.resumeContentDao().getResumeContents();

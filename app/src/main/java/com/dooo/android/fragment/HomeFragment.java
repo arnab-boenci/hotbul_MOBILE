@@ -34,6 +34,8 @@ import androidx.cardview.widget.CardView;
 import androidx.core.content.ContextCompat;
 import androidx.core.widget.NestedScrollView;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.mediarouter.app.MediaRouteButton;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -381,45 +383,12 @@ public class HomeFragment extends Fragment {
 
         imageSliderItems = new ArrayList<>();
         imageSliderType = "0";
-//        switch (imageSliderType) {
-//            case "0":
-//                topMoviesImageSlider();
-//                break;
-//            case "1":
-//                topWebSeriesImageSlider();
-//                break;
-//            case "2":
-//                customImageSlider();
-//                break;
-//            case "3":
-//                viewPager2.setVisibility(View.GONE);
-//                break;
-//            default:
-//                Log.d("Dooo", "Visiable");
-//        }
 
         viewPager2.setClipToPadding(true);
         viewPager2.setClipChildren(true);
         //viewPager2.setOffscreenPageLimit(3);
         viewPager2.getChildAt(0).setOverScrollMode(RecyclerView.OVER_SCROLL_NEVER);
 
-//        CompositePageTransformer compositePageTransformer = new CompositePageTransformer();
-//        compositePageTransformer.addTransformer((page, position) -> {
-//            page.setTranslationX(-position * page.getWidth());
-//
-//            if (position < -1) {
-//                page.setAlpha(0);
-//            } else if (position <= 1) {
-//                page.setAlpha(1);
-//                page.setScaleX(1 - Math.abs(position));
-//                page.setScaleY(1 - Math.abs(position));
-//                page.setPivotX(page.getWidth() / 2f);
-//                page.setPivotY(page.getHeight() / 2f);
-//                page.setTranslationZ(position < 0 ? 0 : -1);
-//            } else {
-//                page.setAlpha(0);
-//            }
-//        });
         CompositePageTransformer compositePageTransformer = new CompositePageTransformer();
         compositePageTransformer.addTransformer(new MarginPageTransformer(40));
         compositePageTransformer.addTransformer((page, position) -> {
@@ -515,13 +484,35 @@ public class HomeFragment extends Fragment {
         });
 
         bottom_floting_menu_movies.setOnClickListener(view->{
-            startActivity(new Intent(getActivity(), MoviesActivity.class));
+            //startActivity(new Intent(getActivity(), MoviesActivity.class));
+            MoviesFragment moviesFragment = new MoviesFragment();
+            FragmentManager fragmentManager = getParentFragmentManager();
+            FragmentTransaction transaction = fragmentManager.beginTransaction();
+            transaction.replace(R.id.mainFragment, moviesFragment);
+            transaction.addToBackStack(null);
+            transaction.commit();
         });
         bottom_floting_menu_web_series.setOnClickListener(view->{
-            startActivity(new Intent(getActivity(), ShortFilmActivity.class));
+            ShortFilmFragment shortFilmFragment = new ShortFilmFragment();
+            FragmentManager fragmentManager = getParentFragmentManager();
+            FragmentTransaction transaction = fragmentManager.beginTransaction();
+            transaction.replace(R.id.mainFragment, shortFilmFragment);
+            transaction.addToBackStack(null);
+            transaction.commit();
+//            getSupportFragmentManager()
+//                    .beginTransaction()
+//                    .replace(R.id.mainFragment, new HomeFragment())
+//                    .commit();
+            //startActivity(new Intent(getActivity(), ShortFilmActivity.class));
         });
         bottom_floting_menu_music.setOnClickListener(view->{
-            startActivity(new Intent(getActivity(), MusicActivity.class));
+            MusicFragment musicFragment = new MusicFragment();
+            FragmentManager fragmentManager = getParentFragmentManager();
+            FragmentTransaction transaction = fragmentManager.beginTransaction();
+            transaction.replace(R.id.mainFragment, musicFragment);
+            transaction.addToBackStack(null);
+            transaction.commit();
+            //startActivity(new Intent(getActivity(), MusicActivity.class));
         });
 
         setColorTheme(Color.parseColor(AppConfig.primeryThemeColor), layoutInflater);
@@ -650,44 +641,6 @@ public class HomeFragment extends Fragment {
         }
     }
 
-
-    void customImageSlider() {
-        RequestQueue queue = Volley.newRequestQueue(context);
-        StringRequest sr = new StringRequest(Request.Method.GET, AppConfig.url +"getCustomImageSlider", response -> {
-            if (!response.equals("No Data Avaliable")) {
-                JsonArray jsonArray = new Gson().fromJson(response, JsonArray.class);
-                for (JsonElement r : jsonArray) {
-                    JsonObject rootObject = r.getAsJsonObject();
-
-                    String title = rootObject.get("title").getAsString();
-                    String banner = rootObject.get("banner").getAsString();
-                    int contentType = rootObject.get("content_type").getAsInt();
-                    int contentId = rootObject.get("content_id").getAsInt();
-                    String url = rootObject.get("url").getAsString();
-                    int status = rootObject.get("status").getAsInt();
-
-                    if (status == 1) {
-                        imageSliderItems.add(new ImageSliderItem(banner, title, contentType, contentId, url));
-                    }
-                }
-                viewPager2.setAdapter(new ImageSliderAdepter(imageSliderItems, viewPager2));
-            } else {
-                viewPager2.setVisibility(View.GONE);
-            }
-        }, error -> {
-                // Do nothing because There is No Error if error It will return 0
-
-        }) {
-            @Override
-            public Map<String, String> getHeaders() throws AuthFailureError {
-                Map<String,String> params = new HashMap<>();
-                params.put("x-api-key", AppConfig.apiKey);
-                return params;
-            }
-        };
-        queue.add(sr);
-    }
-
     void topMoviesImageSlider() {
         movieImageSliderMaxVisible= 1;
         //if(movieImageSliderMaxVisible > 0) {
@@ -764,53 +717,7 @@ public class HomeFragment extends Fragment {
             } catch (JSONException e) {
                 e.printStackTrace();
             }
-//        } else {
-//            viewPager2.setVisibility(View.GONE);
-//        }
 
-    }
-
-    void topWebSeriesImageSlider() {
-        if(webseriesImageSliderMaxVisible > 0) {
-            RequestQueue queue = Volley.newRequestQueue(context);
-            StringRequest sr = new StringRequest(Request.Method.GET, AppConfig.url +"getWebSeriesImageSlider", response -> {
-                if(!response.equals("No Data Avaliable")) {
-                    JsonArray jsonArray = new Gson().fromJson(response, JsonArray.class);
-                    int i = 0;
-                    int maxVisible = webseriesImageSliderMaxVisible;
-                    for (JsonElement r : jsonArray) {
-                        if (i < maxVisible) {
-                            JsonObject rootObject = r.getAsJsonObject();
-                            int id = rootObject.get("id").getAsInt();
-                            String name = rootObject.get("name").getAsString();
-                            String banner = rootObject.get("poster").getAsString();
-                            int status = rootObject.get("status").getAsInt();
-
-                            if (status == 1) {
-                                imageSliderItems.add(new ImageSliderItem(banner, name, 1, id, ""));
-                            }
-                            i++;
-                        }
-                    }
-                    viewPager2.setVisibility(View.VISIBLE);
-                    viewPager2.setAdapter(new ImageSliderAdepter(imageSliderItems, viewPager2));
-                } else {
-                    viewPager2.setVisibility(View.GONE);
-                }
-            }, error -> {
-                // Do nothing because There is No Error if error It will return 0
-            }) {
-                @Override
-                public Map<String, String> getHeaders() throws AuthFailureError {
-                    Map<String,String> params = new HashMap<>();
-                    params.put("x-api-key", AppConfig.apiKey);
-                    return params;
-                }
-            };
-            queue.add(sr);
-        } else {
-            viewPager2.setVisibility(View.GONE);
-        }
     }
 
     private final Runnable sliderRunnable = new Runnable() {
@@ -826,400 +733,13 @@ public class HomeFragment extends Fragment {
 
         RequestQueue queue = Volley.newRequestQueue(getActivity());
 
-
-        ///////////////////////////////////////////////
-//        StringRequest sr3 = new StringRequest(Request.Method.GET, AppConfig.url + "getRecentContentList/Movies", response -> {
-//            if (!response.equals("No Data Avaliable")) {
-//                recentMoviesLayout.setVisibility(View.VISIBLE);
-//
-//                JsonArray jsonArray = new Gson().fromJson(response, JsonArray.class);
-//                List<MovieList> recentlyAddedMovieList = new ArrayList<>();
-//                for (JsonElement r : jsonArray) {
-//                    JsonObject rootObject = r.getAsJsonObject();
-//                    int id = rootObject.get("id").getAsInt();
-//                    String name = rootObject.get("name").getAsString();
-//
-//                    String year = "";
-//                    if (!rootObject.get("release_date").getAsString().equals("")) {
-//                        year = helperUtils.getYearFromDate(rootObject.get("release_date").getAsString());
-//                    }
-//
-//                    String poster = rootObject.get("poster").getAsString();
-//                    int type = rootObject.get("type").getAsInt();
-//                    int status = rootObject.get("status").getAsInt();
-//
-//                    if (status == 1) {
-//                        recentlyAddedMovieList.add(new MovieList(id, type, name, year, poster));
-//                    }
-//                }
-//
-//                if (shuffleContents == 1) {
-//                    Collections.shuffle(recentlyAddedMovieList);
-//                }
-//
-//                MovieListAdepter myadepter = new MovieListAdepter(context, recentlyAddedMovieList);
-//                home_Recent_Movies_list_Recycler_View.setLayoutManager(new GridLayoutManager(context, 1, RecyclerView.HORIZONTAL, false));
-//                home_Recent_Movies_list_Recycler_View.setAdapter(myadepter);
-//
-//            } else {
-//                recentMoviesLayout.setVisibility(View.GONE);
-//                homeSwipeRefreshLayout.setRefreshing(false);
-//            }
-//        }, error -> {
-//            // Do nothing because There is No Error if error It will return 0
-//        }) {
-//            @Override
-//            public Map<String, String> getHeaders() throws AuthFailureError {
-//                Map<String, String> params = new HashMap<>();
-//                params.put("x-api-key", AppConfig.apiKey);
-//                return params;
-//            }
-//        };
-//        queue.add(sr3);
-
-
-//        StringRequest sr4 = new StringRequest(Request.Method.GET, AppConfig.url + "getRecentContentList/WebSeries", response -> {
-//            if (!response.equals("No Data Avaliable")) {
-//                recentWebSeriesLayout.setVisibility(View.VISIBLE);
-//
-//                JsonArray jsonArray = new Gson().fromJson(response, JsonArray.class);
-//                List<WebSeriesList> recentlyAddedWebSeriesList = new ArrayList<>();
-//                for (JsonElement r : jsonArray) {
-//                    JsonObject rootObject = r.getAsJsonObject();
-//                    int id = rootObject.get("id").getAsInt();
-//                    String name = rootObject.get("name").getAsString();
-//
-//                    String year = "";
-//                    if (!rootObject.get("release_date").getAsString().equals("")) {
-//                        year = helperUtils.getYearFromDate(rootObject.get("release_date").getAsString());
-//                    }
-//
-//                    String poster = rootObject.get("poster").getAsString();
-//                    int type = rootObject.get("type").getAsInt();
-//                    int status = rootObject.get("status").getAsInt();
-//
-//                    if (status == 1) {
-//                        recentlyAddedWebSeriesList.add(new WebSeriesList(id, type, name, year, poster));
-//                    }
-//                }
-//                if (shuffleContents == 1) {
-//                    Collections.shuffle(recentlyAddedWebSeriesList);
-//                }
-//
-//                WebSeriesListAdepter myadepter = new WebSeriesListAdepter(context, recentlyAddedWebSeriesList);
-//                home_Recent_Series_list_Recycler_View.setLayoutManager(new GridLayoutManager(context, 1, RecyclerView.HORIZONTAL, false));
-//                home_Recent_Series_list_Recycler_View.setAdapter(myadepter);
-//
-//                homeSwipeRefreshLayout.setRefreshing(false);
-//
-//            } else {
-//                recentWebSeriesLayout.setVisibility(View.GONE);
-//                homeSwipeRefreshLayout.setRefreshing(false);
-//            }
-//        }, error -> {
-//            // Do nothing because There is No Error if error It will return 0
-//        }) {
-//            @Override
-//            public Map<String, String> getHeaders() throws AuthFailureError {
-//                Map<String, String> params = new HashMap<>();
-//                params.put("x-api-key", AppConfig.apiKey);
-//                return params;
-//            }
-//        };
-//        queue.add(sr4);
-
-//        if(liveTvVisiableInHome == 1) {
-//            StringRequest sr5 = new StringRequest(Request.Method.GET, AppConfig.url + "getFeaturedLiveTV", response -> {
-//                if (!response.equals("No Data Avaliable")) {
-//                    liveTvLayout.setVisibility(View.VISIBLE);
-//                    JsonArray jsonArray = new Gson().fromJson(response, JsonArray.class);
-//                    List<LiveTvChannelList> liveTVChannelList = new ArrayList<>();
-//                    for (JsonElement r : jsonArray) {
-//                        JsonObject rootObject = r.getAsJsonObject();
-//                        int id = rootObject.get("id").getAsInt();
-//                        String name = rootObject.get("name").getAsString();
-//                        String banner = rootObject.get("banner").getAsString();
-//                        int type = rootObject.get("type").getAsInt();
-//                        int status = rootObject.get("status").getAsInt();
-//                        String streamType = rootObject.get("stream_type").getAsString();
-//                        String url = rootObject.get("url").getAsString();
-//                        int contentType = rootObject.get("content_type").getAsInt();
-//                        String drm_uuid = rootObject.get("drm_uuid").isJsonNull() ? "" : rootObject.get("drm_uuid").getAsString();
-//                        String drm_license_uri = rootObject.get("drm_license_uri").isJsonNull() ? "" : rootObject.get("drm_license_uri").getAsString();
-//
-//                        if (status == 1) {
-//                            liveTVChannelList.add(new LiveTvChannelList(id, name, banner, streamType, url, contentType, type, playPremium, drm_uuid, drm_license_uri));
-//                        }
-//                    }
-//
-//                    if (shuffleContents == 1) {
-//                        Collections.shuffle(liveTVChannelList);
-//                    }
-//
-//                    LiveTvChannelListAdepter myadepter = new LiveTvChannelListAdepter(context, liveTVChannelList);
-//                    homeLiveTVlistRecyclerView.setLayoutManager(new GridLayoutManager(context, 1, RecyclerView.HORIZONTAL, false));
-//                    homeLiveTVlistRecyclerView.setAdapter(myadepter);
-//
-//                } else {
-//                    liveTvLayout.setVisibility(View.GONE);
-//                    homeSwipeRefreshLayout.setRefreshing(false);
-//                }
-//            }, error -> {
-//                // Do nothing because There is No Error if error It will return 0
-//            }) {
-//                @Override
-//                public Map<String, String> getHeaders() throws AuthFailureError {
-//                    Map<String, String> params = new HashMap<>();
-//                    params.put("x-api-key", AppConfig.apiKey);
-//                    return params;
-//                }
-//            };
-//            queue.add(sr5);
-//        }
-
-
-//        List<LiveTvGenreList> liveTvGenreList = new ArrayList<>();
-//        StringRequest sr10 = new StringRequest(Request.Method.GET, AppConfig.url + "getLiveTvGenreList", response -> {
-//            if (!response.equals("No Data Avaliable")) {
-//                if (live_tv_genre_visible_in_home == 1) {
-//                    LivetvgenreLayout.setVisibility(View.VISIBLE);
-//                }
-//                JsonArray jsonArray = new Gson().fromJson(response, JsonArray.class);
-//                for (JsonElement r : jsonArray) {
-//                    JsonObject rootObject = r.getAsJsonObject();
-//                    int id = rootObject.get("id").getAsInt();
-//                    String name = rootObject.get("name").getAsString();
-//                    int status = rootObject.get("status").getAsInt();
-//
-//                    if (status == 1) {
-//                        liveTvGenreList.add(new LiveTvGenreList(id, name, status));
-//                    }
-//                }
-//
-//                LiveTvGenreListAdepter myadepter = new LiveTvGenreListAdepter(context, liveTvGenreList);
-//                live_tv_genre_list_Recycler_View.setLayoutManager(new GridLayoutManager(context, 1, RecyclerView.HORIZONTAL, false));
-//                live_tv_genre_list_Recycler_View.setAdapter(myadepter);
-//            } else {
-//                LivetvgenreLayout.setVisibility(View.GONE);
-//            }
-//        }, error -> {
-//            // Do nothing because There is No Error if error It will return 0
-//        }) {
-//            @Override
-//            public Map<String, String> getHeaders() throws AuthFailureError {
-//                Map<String, String> params = new HashMap<>();
-//                params.put("x-api-key", AppConfig.apiKey);
-//                return params;
-//            }
-//        };
-//        queue.add(sr10);
-
-//        List<GenreList> genreList = new ArrayList<>();
-//        StringRequest sr11 = new StringRequest(Request.Method.GET, AppConfig.url + "getFeaturedGenre", response -> {
-//            if (!response.equals("No Data Avaliable")) {
-//                if (genre_visible_in_home == 1) {
-//                    genreLayout.setVisibility(View.VISIBLE);
-//                }
-//                JsonArray jsonArray = new Gson().fromJson(response, JsonArray.class);
-//                for (JsonElement r : jsonArray) {
-//                    JsonObject rootObject = r.getAsJsonObject();
-//                    int id = rootObject.get("id").getAsInt();
-//                    String name = rootObject.get("name").getAsString();
-//                    String icon = rootObject.get("icon").getAsString();
-//                    String description = rootObject.get("description").getAsString();
-//                    int featured = rootObject.get("featured").getAsInt();
-//                    int status = rootObject.get("status").getAsInt();
-//
-//                    if (status == 1) {
-//                        genreList.add(new GenreList(id, name, icon, description, featured, status));
-//                    }
-//                }
-//
-//                GenreListAdepter myadepter = new GenreListAdepter(context, genreList);
-//                genre_list_Recycler_View.setLayoutManager(new GridLayoutManager(context, 1, RecyclerView.HORIZONTAL, false));
-//                genre_list_Recycler_View.setAdapter(myadepter);
-//            } else {
-//                genreLayout.setVisibility(View.GONE);
-//            }
-//        }, error -> {
-//            // Do nothing because There is No Error if error It will return 0
-//        }) {
-//            @Override
-//            public Map<String, String> getHeaders() throws AuthFailureError {
-//                Map<String, String> params = new HashMap<>();
-//                params.put("x-api-key", AppConfig.apiKey);
-//                return params;
-//            }
-//        };
-//        queue.add(sr11);
-
-
-//        //----------------------------------//
-//        String tempUserID = null;
-//        if (userID != 0) {
-//            tempUserID = String.valueOf(userID);
-//        } else {
-//            tempUserID = Settings.Secure.getString(context.getContentResolver(), Settings.Secure.ANDROID_ID);
-//        }
-//
-//        /////=======================////
-//        StringRequest sr6 = new StringRequest(Request.Method.GET, AppConfig.url + "beacauseYouWatched/Movies/" + tempUserID + "/10", response -> {
-//            if (!response.equals("No Data Avaliable")) {
-//
-//                bywMovieLayoutLinearLayout.setVisibility(View.VISIBLE);
-//                JsonArray jsonArray = new Gson().fromJson(response, JsonArray.class);
-//                List<MovieList> movieList = new ArrayList<>();
-//                for (JsonElement r : jsonArray) {
-//                    JsonObject rootObject = r.getAsJsonObject();
-//                    int id = rootObject.get("id").getAsInt();
-//                    String name = rootObject.get("name").getAsString();
-//
-//                    String year = "";
-//                    if (!rootObject.get("release_date").getAsString().equals("")) {
-//                        year = helperUtils.getYearFromDate(rootObject.get("release_date").getAsString());
-//                    }
-//
-//                    String poster = rootObject.get("poster").getAsString();
-//                    int type = rootObject.get("type").getAsInt();
-//                    int status = rootObject.get("status").getAsInt();
-//
-//                    if (status == 1) {
-//                        movieList.add(new MovieList(id, type, name, year, poster));
-//                    }
-//                }
-//
-//                Collections.shuffle(movieList);
-//
-//                moviesOnlyForYouListAdepter myadepter = new moviesOnlyForYouListAdepter(context, movieList);
-//                home_bywm_list_Recycler_View.setLayoutManager(new GridLayoutManager(context, 1, RecyclerView.HORIZONTAL, false));
-//                home_bywm_list_Recycler_View.setAdapter(myadepter);
-//
-//            } else {
-//                bywMovieLayoutLinearLayout.setVisibility(View.GONE);
-//                homeSwipeRefreshLayout.setRefreshing(false);
-//            }
-//        }, error -> {
-//            // Do nothing because There is No Error if error It will return 0
-//        }) {
-//            @Override
-//            public Map<String, String> getHeaders() throws AuthFailureError {
-//                Map<String, String> params = new HashMap<>();
-//                params.put("x-api-key", AppConfig.apiKey);
-//                return params;
-//            }
-//        };
-//        queue.add(sr6);
-
-//        StringRequest sr7 = new StringRequest(Request.Method.GET, AppConfig.url + "beacauseYouWatched/WebSeries/" + tempUserID + "/10", response -> {
-//            if (!response.equals("No Data Avaliable")) {
-//
-//                bywWebSeriesLayout.setVisibility(View.VISIBLE);
-//                JsonArray jsonArray = new Gson().fromJson(response, JsonArray.class);
-//                List<WebSeriesList> webSeriesList = new ArrayList<>();
-//                for (JsonElement r : jsonArray) {
-//                    JsonObject rootObject = r.getAsJsonObject();
-//                    int id = rootObject.get("id").getAsInt();
-//                    String name = rootObject.get("name").getAsString();
-//
-//                    String year = "";
-//                    if (!rootObject.get("release_date").getAsString().equals("")) {
-//                        year = helperUtils.getYearFromDate(rootObject.get("release_date").getAsString());
-//                    }
-//
-//                    String poster = rootObject.get("poster").getAsString();
-//                    int type = rootObject.get("type").getAsInt();
-//                    int status = rootObject.get("status").getAsInt();
-//
-//                    if (status == 1) {
-//                        webSeriesList.add(new WebSeriesList(id, type, name, year, poster));
-//                    }
-//                }
-//
-//                Collections.shuffle(webSeriesList);
-//
-//                webSeriesOnlyForYouListAdepter myadepter = new webSeriesOnlyForYouListAdepter(context, webSeriesList);
-//                home_bywws_list_Recycler_View.setLayoutManager(new GridLayoutManager(context, 1, RecyclerView.HORIZONTAL, false));
-//                home_bywws_list_Recycler_View.setAdapter(myadepter);
-//
-//                homeSwipeRefreshLayout.setRefreshing(false);
-//
-//            } else {
-//                bywWebSeriesLayout.setVisibility(View.GONE);
-//                homeSwipeRefreshLayout.setRefreshing(false);
-//            }
-//        }, error -> {
-//            // Do nothing because There is No Error if error It will return 0
-//        }) {
-//            @Override
-//            public Map<String, String> getHeaders() throws AuthFailureError {
-//                Map<String, String> params = new HashMap<>();
-//                params.put("x-api-key", AppConfig.apiKey);
-//                return params;
-//            }
-//        };
-//        queue.add(sr7);
-//
-
-//
-
-//
-
-//        StringRequest sr9 = new StringRequest(Request.Method.GET, AppConfig.url + "getMostWatched/WebSeries/10", response -> {
-//            if (!response.equals("No Data Avaliable")) {
-//
-//                popularWebSeriesLayout.setVisibility(View.VISIBLE);
-//                JsonArray jsonArray = new Gson().fromJson(response, JsonArray.class);
-//                List<WebSeriesList> webSeriesList = new ArrayList<>();
-//                for (JsonElement r : jsonArray) {
-//                    JsonObject rootObject = r.getAsJsonObject();
-//                    int id = rootObject.get("id").getAsInt();
-//                    String name = rootObject.get("name").getAsString();
-//
-//                    String year = "";
-//                    if (!rootObject.get("release_date").getAsString().equals("")) {
-//                        year = helperUtils.getYearFromDate(rootObject.get("release_date").getAsString());
-//                    }
-//
-//                    String poster = rootObject.get("poster").getAsString();
-//                    int type = rootObject.get("type").getAsInt();
-//                    int status = rootObject.get("status").getAsInt();
-//
-//                    if (status == 1) {
-//                        webSeriesList.add(new WebSeriesList(id, type, name, year, poster));
-//                    }
-//                }
-//
-//                Collections.shuffle(webSeriesList);
-//
-//                webSeriesOnlyForYouListAdepter myadepter = new webSeriesOnlyForYouListAdepter(context, webSeriesList);
-//                home_popularWebSeries_list_Recycler_View.setLayoutManager(new GridLayoutManager(context, 1, RecyclerView.HORIZONTAL, false));
-//                home_popularWebSeries_list_Recycler_View.setAdapter(myadepter);
-//
-//                homeSwipeRefreshLayout.setRefreshing(false);
-//
-//            } else {
-//                popularWebSeriesLayout.setVisibility(View.GONE);
-//                homeSwipeRefreshLayout.setRefreshing(false);
-//            }
-//        }, error -> {
-//            // Do nothing because There is No Error if error It will return 0
-//        }) {
-//            @Override
-//            public Map<String, String> getHeaders() throws AuthFailureError {
-//                Map<String, String> params = new HashMap<>();
-//                params.put("x-api-key", AppConfig.apiKey);
-//                return params;
-//            }
-//        };
-//        queue.add(sr9);
-
         JSONObject jsonObject = new JSONObject();
         try {
             // Populate JSON object with provided data
             jsonObject.put("email", "admin@gmail.com");
             jsonObject.put("usermode", "admin");
             jsonObject.put("caller", "mobile");
-            jsonObject.put("searchtype", "others");
+            jsonObject.put("searchtype", "hometrending");
             jsonObject.put("searchcontent", "trending");
 
 
@@ -1850,98 +1370,6 @@ public class HomeFragment extends Fragment {
         } catch (JSONException e) {
             e.printStackTrace();
         }
-
-//        StringRequest sr12 = new StringRequest(Request.Method.GET, AppConfig.url + "getTrending", response -> {
-//
-//            if (!response.equals("No Data Avaliable")) {
-//
-//                trendingLayout.setVisibility(View.VISIBLE);
-//                JsonArray jsonArray = new Gson().fromJson(response, JsonArray.class);
-//                List<TrendingList> trendingList = new ArrayList<>();
-//                for (JsonElement r : jsonArray) {
-//                    JsonObject rootObject = r.getAsJsonObject();
-//                    int id = rootObject.get("id").getAsInt();
-//                    String poster = rootObject.get("poster").getAsString();
-//                    int type = rootObject.get("type").getAsInt();
-//                    int content_type = rootObject.get("content_type").getAsInt();
-//
-//                    trendingList.add(new TrendingList(id, type, content_type, poster));
-//                }
-//
-//                TrendingListAdepter myadepter = new TrendingListAdepter(context, trendingList);
-//                home_trending_list_Recycler_View.setLayoutManager(new GridLayoutManager(context, 1, RecyclerView.HORIZONTAL, false));
-//                home_trending_list_Recycler_View.setAdapter(myadepter);
-//
-//                homeSwipeRefreshLayout.setRefreshing(false);
-//
-//            } else {
-//                trendingLayout.setVisibility(View.GONE);
-//                homeSwipeRefreshLayout.setRefreshing(false);
-//            }
-//        }, error -> {
-//            // Do nothing because There is No Error if error It will return 0
-//        }) {
-//            @Override
-//            public Map<String, String> getHeaders() throws AuthFailureError {
-//                Map<String, String> params = new HashMap<>();
-//                params.put("x-api-key", AppConfig.apiKey);
-//                return params;
-//            }
-//        };
-//        queue.add(sr12);
-
-
-//        StringRequest sr13 = new StringRequest(Request.Method.GET, AppConfig.url + "getMostSearched", response -> {
-//
-//            if (!response.equals("No Data Avaliable")) {
-//
-//                homeTopSearchedLayout.setVisibility(View.VISIBLE);
-//                JsonArray jsonArray = new Gson().fromJson(response, JsonArray.class);
-//                List<MostSearchedList> mostSearchedList = new ArrayList<>();
-//                for (JsonElement r : jsonArray) {
-//                    JsonObject rootObject = r.getAsJsonObject();
-//                    int id = rootObject.get("id").getAsInt();
-//                    String name = rootObject.get("name").getAsString();
-//
-//                    String year = "";
-//                    if (!rootObject.get("release_date").getAsString().equals("")) {
-//                        year = HelperUtils.getYearFromDate(rootObject.get("release_date").getAsString());
-//                    }
-//
-//                    String poster = rootObject.get("poster").getAsString();
-//                    int type = rootObject.get("type").getAsInt();
-//                    int status = rootObject.get("status").getAsInt();
-//                    int content_type = rootObject.get("content_type").getAsInt();
-//
-//                    if (status == 1) {
-//                        mostSearchedList.add(new MostSearchedList(id, type, name, year, poster, content_type));
-//                    }
-//                }
-//
-//                MostSearchedListAdepter myadepter = new MostSearchedListAdepter(context, mostSearchedList);
-//                home_top_searched_list_Recycler_View.setLayoutManager(new GridLayoutManager(context, 1, RecyclerView.HORIZONTAL, false));
-//                home_top_searched_list_Recycler_View.setAdapter(myadepter);
-//
-//                homeSwipeRefreshLayout.setRefreshing(false);
-//
-//            } else {
-//                homeTopSearchedLayout.setVisibility(View.GONE);
-//                homeSwipeRefreshLayout.setRefreshing(false);
-//            }
-//        }, error -> {
-//            // Do nothing because There is No Error if error It will return 0
-//        }) {
-//            @Override
-//            public Map<String, String> getHeaders() throws AuthFailureError {
-//                Map<String, String> params = new HashMap<>();
-//                params.put("x-api-key", AppConfig.apiKey);
-//                return params;
-//            }
-//        };
-//        queue.add(sr13);
-//
-
-
 
 
         ResumeContentDatabase db = ResumeContentDatabase.getDbInstance(context.getApplicationContext());

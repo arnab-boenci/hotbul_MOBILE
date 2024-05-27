@@ -10,7 +10,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.dooo.android.fragment.ShortFilmFragment;
-import com.dooo.android.fragment.WebSeriesFragment;
+import com.dooo.android.fragment.ShortFilmFragment_1;
 
 public class ShortFilmActivity extends AppCompatActivity {
 

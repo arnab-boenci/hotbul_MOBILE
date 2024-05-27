@@ -24,6 +24,8 @@ import android.widget.TextView;
 import androidx.cardview.widget.CardView;
 import androidx.core.widget.NestedScrollView;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
@@ -49,7 +51,10 @@ import com.dooo.android.AllWebSeriesActivity;
 import com.dooo.android.AppConfig;
 import com.dooo.android.Home;
 import com.dooo.android.LiveTv;
+import com.dooo.android.MoviesActivity;
+import com.dooo.android.MusicActivity;
 import com.dooo.android.R;
+import com.dooo.android.ShortFilmActivity;
 import com.dooo.android.WebView;
 import com.dooo.android.adepter.ContinuePlayingListAdepter;
 import com.dooo.android.adepter.HouseOfHorrorListAdepter;
@@ -480,13 +485,35 @@ public class WebSeriesFragment extends Fragment {
         });
 
         bottom_floting_menu_movies.setOnClickListener(view->{
-            startActivity(new Intent(getActivity(), AllMoviesActivity.class));
+            //startActivity(new Intent(getActivity(), MoviesActivity.class));
+            MoviesFragment moviesFragment = new MoviesFragment();
+            FragmentManager fragmentManager = getParentFragmentManager();
+            FragmentTransaction transaction = fragmentManager.beginTransaction();
+            transaction.replace(R.id.mainFragment, moviesFragment);
+            transaction.addToBackStack(null);
+            transaction.commit();
         });
         bottom_floting_menu_web_series.setOnClickListener(view->{
-            startActivity(new Intent(getActivity(), AllWebSeriesActivity.class));
+            ShortFilmFragment shortFilmFragment = new ShortFilmFragment();
+            FragmentManager fragmentManager = getParentFragmentManager();
+            FragmentTransaction transaction = fragmentManager.beginTransaction();
+            transaction.replace(R.id.mainFragment, shortFilmFragment);
+            transaction.addToBackStack(null);
+            transaction.commit();
+//            getSupportFragmentManager()
+//                    .beginTransaction()
+//                    .replace(R.id.mainFragment, new HomeFragment())
+//                    .commit();
+            //startActivity(new Intent(getActivity(), ShortFilmActivity.class));
         });
         bottom_floting_menu_music.setOnClickListener(view->{
-            startActivity(new Intent(getActivity(), LiveTv.class));
+            MusicFragment musicFragment = new MusicFragment();
+            FragmentManager fragmentManager = getParentFragmentManager();
+            FragmentTransaction transaction = fragmentManager.beginTransaction();
+            transaction.replace(R.id.mainFragment, musicFragment);
+            transaction.addToBackStack(null);
+            transaction.commit();
+            //startActivity(new Intent(getActivity(), MusicActivity.class));
         });
 
         setColorTheme(Color.parseColor(AppConfig.primeryThemeColor), layoutInflater);
@@ -780,6 +807,7 @@ public class WebSeriesFragment extends Fragment {
             jsonObject.put("caller", "mobile");
             jsonObject.put("searchtype", "others");
             jsonObject.put("searchcontent", "trending");
+            jsonObject.put("typename", "Web Series");
 
 
             JsonObjectRequest trendingRequest = new JsonObjectRequest(Request.Method.POST, AppConfig.baseurl +"/videocontent/fetchvideocontent",
