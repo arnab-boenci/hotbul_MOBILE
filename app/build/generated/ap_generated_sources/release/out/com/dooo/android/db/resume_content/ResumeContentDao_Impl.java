@@ -1,4 +1,4 @@
-package com.dooo.android.db.resume_content;
+package com.boenci.android.db.resume_content;
 
 import android.database.Cursor;
 import androidx.room.EntityInsertionAdapter;

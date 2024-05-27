@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.dooo.android.app-mergeDebugResources-116:/values-v23/values-v23.xml",
+            "outputFile": "com.boenci.android.app-mergeDebugResources-116:/values-v23/values-v23.xml",
             "map": [
                 {
                     "source": "/Users/arnabmandal/.gradle/caches/transforms-3/c92ed927e68944cf0a2c7f9728e407b2/transformed/work-runtime-2.7.1/res/values-v23/values-v23.xml",

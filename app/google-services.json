@@ -1,15 +1,15 @@
 {
   "project_info": {
     "project_number": "719883516242",
-    "project_id": "dooo-4b9f0",
-    "storage_bucket": "dooo-4b9f0.appspot.com"
+    "project_id": "boenci-4b9f0",
+    "storage_bucket": "boenci-4b9f0.appspot.com"
   },
   "client": [
     {
       "client_info": {
         "mobilesdk_app_id": "1:719883516242:android:70b85227ead4d063d5628b",
         "android_client_info": {
-          "package_name": "com.dooo.android"
+          "package_name": "com.boenci.android"
         }
       },
       "oauth_client": [
@@ -17,7 +17,7 @@
           "client_id": "719883516242-2ius23k7d37m0cffhvn0gjibtm6r1gaf.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.dooo.android",
+            "package_name": "com.boenci.android",
             "certificate_hash": "df72a13125a4dcc55106ea73f6ec04225fb11c31"
           }
         },

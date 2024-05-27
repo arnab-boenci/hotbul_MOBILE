@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.dooo.android.app-mergeReleaseResources-116:/values-id/values-id.xml",
+            "outputFile": "com.boenci.android.app-mergeReleaseResources-116:/values-id/values-id.xml",
             "map": [
                 {
                     "source": "/Users/arnabmandal/.gradle/caches/transforms-3/0b1cb130a180a7f0f04bbb48c42eb3e6/transformed/jetified-facebook-common-11.1.0/res/values-id/values-id.xml",

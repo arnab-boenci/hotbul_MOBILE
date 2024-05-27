@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.dooo.android.app-mergeReleaseResources-116:/values-b+sr+Latn/values-b+sr+Latn.xml",
+            "outputFile": "com.boenci.android.app-mergeReleaseResources-116:/values-b+sr+Latn/values-b+sr+Latn.xml",
             "map": [
                 {
                     "source": "/Users/arnabmandal/.gradle/caches/transforms-3/050ed3bbb8ae5528ab131a8cc2a2a7aa/transformed/navigation-ui-2.3.5/res/values-b+sr+Latn/values-b+sr+Latn.xml",

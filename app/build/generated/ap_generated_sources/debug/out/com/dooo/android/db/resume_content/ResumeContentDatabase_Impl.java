@@ -1,4 +1,4 @@
-package com.dooo.android.db.resume_content;
+package com.boenci.android.db.resume_content;
 
 import androidx.annotation.NonNull;
 import androidx.room.DatabaseConfiguration;
@@ -100,7 +100,7 @@ public final class ResumeContentDatabase_Impl extends ResumeContentDatabase {
         final TableInfo _infoResumeContent = new TableInfo("ResumeContent", _columnsResumeContent, _foreignKeysResumeContent, _indicesResumeContent);
         final TableInfo _existingResumeContent = TableInfo.read(_db, "ResumeContent");
         if (! _infoResumeContent.equals(_existingResumeContent)) {
-          return new RoomOpenHelper.ValidationResult(false, "ResumeContent(com.dooo.android.db.resume_content.ResumeContent).\n"
+          return new RoomOpenHelper.ValidationResult(false, "ResumeContent(com.boenci.android.db.resume_content.ResumeContent).\n"
                   + " Expected:\n" + _infoResumeContent + "\n"
                   + " Found:\n" + _existingResumeContent);
         }

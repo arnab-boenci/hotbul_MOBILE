@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.dooo.android.app-mergeDebugResources-116:/values-ko/values-ko.xml",
+            "outputFile": "com.boenci.android.app-mergeDebugResources-116:/values-ko/values-ko.xml",
             "map": [
                 {
                     "source": "/Users/arnabmandal/.gradle/caches/transforms-3/6a82a670177e259590c529117ed10880/transformed/jetified-facebook-login-11.1.0/res/values-ko/values-ko.xml",

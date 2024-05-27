@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.dooo.android.app-mergeDebugResources-116:/values-ru/values-ru.xml",
+            "outputFile": "com.boenci.android.app-mergeDebugResources-116:/values-ru/values-ru.xml",
             "map": [
                 {
                     "source": "/Users/arnabmandal/.gradle/caches/transforms-3/4fbaf12ffb8787d401e63d1e59e5a891/transformed/jetified-DoubleTapPlayerView-1.0.4/res/values-ru/values-ru.xml",

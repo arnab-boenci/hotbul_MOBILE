@@ -1,4 +1,4 @@
-com.dooo.android
+com.boenci.android
 anim abc_fade_in
 anim abc_fade_out
 anim abc_grow_fade_in_from_bottom
@@ -4698,10 +4698,10 @@ drawable dkplayer_shape_play_bg
 drawable dkplayer_shape_standard_controller_top_bg
 drawable dkplayer_shape_stardard_controller_bottom_bg
 drawable dkplayer_shape_status_view_btn
-drawable dooo_logo_no_bg
-drawable dooo_logo_no_bg_1
-drawable dooo_logo_no_bg_red
-drawable dooo_no_bg_red_smooth
+drawable boenci_logo_no_bg
+drawable boenci_logo_no_bg_1
+drawable boenci_logo_no_bg_red
+drawable boenci_no_bg_red_smooth
 drawable dot_circle
 drawable dot_empty
 drawable dot_filled

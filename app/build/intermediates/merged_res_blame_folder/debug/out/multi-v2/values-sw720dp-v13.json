@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.dooo.android.app-mergeDebugResources-116:/values-sw720dp-v13/values-sw720dp-v13.xml",
+            "outputFile": "com.boenci.android.app-mergeDebugResources-116:/values-sw720dp-v13/values-sw720dp-v13.xml",
             "map": [
                 {
                     "source": "/Users/arnabmandal/.gradle/caches/transforms-3/b3858b093c5b3fb35122a1b616258f25/transformed/jetified-cardinalmobilesdk-2.2.7-2/res/values-sw720dp-v13/values-sw720dp-v13.xml",

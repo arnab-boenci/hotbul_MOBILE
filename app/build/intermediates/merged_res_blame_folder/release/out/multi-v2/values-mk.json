@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.dooo.android.app-mergeReleaseResources-116:/values-mk/values-mk.xml",
+            "outputFile": "com.boenci.android.app-mergeReleaseResources-116:/values-mk/values-mk.xml",
             "map": [
                 {
                     "source": "/Users/arnabmandal/.gradle/caches/transforms-3/16c3caf33ef34c976f05b562a4e755cc/transformed/jetified-firebase-messaging-21.0.1/res/values-mk/values.xml",

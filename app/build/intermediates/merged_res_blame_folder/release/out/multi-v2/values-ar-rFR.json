@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.dooo.android.app-mergeReleaseResources-116:/values-ar-rFR/values-ar-rFR.xml",
+            "outputFile": "com.boenci.android.app-mergeReleaseResources-116:/values-ar-rFR/values-ar-rFR.xml",
             "map": [
                 {
                     "source": "/Users/arnabmandal/.gradle/caches/transforms-3/a358268273919d61630914130a86e182/transformed/jetified-android-sdk-1.1.0/res/values-ar-rFR/values-ar-rFR.xml",

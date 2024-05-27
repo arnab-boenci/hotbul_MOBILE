@@ -3681,7 +3681,7 @@
     <string name="google_api_key" translatable="false">AIzaSyDyHncylq--c5RMW9TFeVV13I5t0kvQ7fM</string>
     <string name="google_app_id" translatable="false">1:719883516242:android:70b85227ead4d063d5628b</string>
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDyHncylq--c5RMW9TFeVV13I5t0kvQ7fM</string>
-    <string name="google_storage_bucket" translatable="false">dooo-4b9f0.appspot.com</string>
+    <string name="google_storage_bucket" translatable="false">boenci-4b9f0.appspot.com</string>
     <string name="grant_permission">Grant permission</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="hide">Hide</string>
@@ -4418,7 +4418,7 @@
     <string name="preferred_options">Please select your preferred option</string>
     <string name="proceed">Proceed</string>
     <string name="processing">Processing</string>
-    <string name="project_id" translatable="false">dooo-4b9f0</string>
+    <string name="project_id" translatable="false">boenci-4b9f0</string>
     <string name="ps_image">PS Image</string>
     <string name="push_notification_message">
         <![CDATA[

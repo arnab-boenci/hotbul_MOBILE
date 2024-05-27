@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.dooo.android.app-mergeDebugResources-116:/values-watch-v20/values-watch-v20.xml",
+            "outputFile": "com.boenci.android.app-mergeDebugResources-116:/values-watch-v20/values-watch-v20.xml",
             "map": [
                 {
                     "source": "/Users/arnabmandal/.gradle/caches/transforms-3/d284ffe78d876bdaaf7397b299f50ace/transformed/appcompat-1.6.1/res/values-watch-v20/values-watch-v20.xml",

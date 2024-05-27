@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.dooo.android.app-mergeDebugResources-116:/values-en-rSE/values-en-rSE.xml",
+            "outputFile": "com.boenci.android.app-mergeDebugResources-116:/values-en-rSE/values-en-rSE.xml",
             "map": [
                 {
                     "source": "/Users/arnabmandal/.gradle/caches/transforms-3/448a74ca46327363cda3f6558639ef8a/transformed/jetified-auth-sdk-thirdParty-1.1.0/res/values-en-rSE/values-en-rSE.xml",

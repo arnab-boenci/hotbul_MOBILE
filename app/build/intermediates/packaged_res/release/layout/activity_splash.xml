@@ -21,7 +21,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/dooo_logo_no_bg" />
+            app:srcCompat="@drawable/boenci_logo_no_bg" />
 
         <TextView
             android:id="@+id/textView"

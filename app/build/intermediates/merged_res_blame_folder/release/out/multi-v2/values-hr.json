@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.dooo.android.app-mergeReleaseResources-116:/values-hr/values-hr.xml",
+            "outputFile": "com.boenci.android.app-mergeReleaseResources-116:/values-hr/values-hr.xml",
             "map": [
                 {
                     "source": "/Users/arnabmandal/.gradle/caches/transforms-3/06cbc477ebe56515166dec339a70d41a/transformed/biometric-1.2.0-alpha03/res/values-hr/values-hr.xml",

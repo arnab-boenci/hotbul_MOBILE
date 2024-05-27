@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.dooo.android.app-mergeDebugResources-116:/values-or/values-or.xml",
+            "outputFile": "com.boenci.android.app-mergeDebugResources-116:/values-or/values-or.xml",
             "map": [
                 {
                     "source": "/Users/arnabmandal/.gradle/caches/transforms-3/46ca4ac5b5c681c6a906484022c9fe37/transformed/biometric-1.2.0-alpha03/res/values-or/values-or.xml",

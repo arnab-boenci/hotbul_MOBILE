@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace 'com.dooo.liquid_swipe'
+    namespace 'com.boenci.liquid_swipe'
     compileSdk 33
 
     defaultConfig {

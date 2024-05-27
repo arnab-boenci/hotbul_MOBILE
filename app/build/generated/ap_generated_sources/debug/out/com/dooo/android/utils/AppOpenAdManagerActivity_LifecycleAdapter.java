@@ -1,4 +1,4 @@
-package com.dooo.android.utils;
+package com.boenci.android.utils;
 
 import androidx.lifecycle.GeneratedAdapter;
 import androidx.lifecycle.Lifecycle;

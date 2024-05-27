@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.dooo.android.app-mergeReleaseResources-116:/values-bn/values-bn.xml",
+            "outputFile": "com.boenci.android.app-mergeReleaseResources-116:/values-bn/values-bn.xml",
             "map": [
                 {
                     "source": "/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/res/values-bn/strings.xml",

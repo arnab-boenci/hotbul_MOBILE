@@ -4697,10 +4697,10 @@ int drawable dkplayer_shape_play_bg 0x7f080244
 int drawable dkplayer_shape_standard_controller_top_bg 0x7f080245
 int drawable dkplayer_shape_stardard_controller_bottom_bg 0x7f080246
 int drawable dkplayer_shape_status_view_btn 0x7f080247
-int drawable dooo_logo_no_bg 0x7f080248
-int drawable dooo_logo_no_bg_1 0x7f080249
-int drawable dooo_logo_no_bg_red 0x7f08024a
-int drawable dooo_no_bg_red_smooth 0x7f08024b
+int drawable boenci_logo_no_bg 0x7f080248
+int drawable boenci_logo_no_bg_1 0x7f080249
+int drawable boenci_logo_no_bg_red 0x7f08024a
+int drawable boenci_no_bg_red_smooth 0x7f08024b
 int drawable dot_circle 0x7f08024c
 int drawable dot_empty 0x7f08024d
 int drawable dot_filled 0x7f08024e

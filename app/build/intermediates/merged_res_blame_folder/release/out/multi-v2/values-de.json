@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.dooo.android.app-mergeReleaseResources-116:/values-de/values-de.xml",
+            "outputFile": "com.boenci.android.app-mergeReleaseResources-116:/values-de/values-de.xml",
             "map": [
                 {
                     "source": "/Users/arnabmandal/.gradle/caches/transforms-3/b187faf407b30ea3fdc94ef3ac190418/transformed/jetified-applovin-sdk-12.4.3/res/values-de/values-de.xml",

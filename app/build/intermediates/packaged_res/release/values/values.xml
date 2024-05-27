@@ -96,10 +96,10 @@
     <string name="google_api_key" translatable="false">AIzaSyDyHncylq--c5RMW9TFeVV13I5t0kvQ7fM</string>
     <string name="google_app_id" translatable="false">1:719883516242:android:70b85227ead4d063d5628b</string>
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDyHncylq--c5RMW9TFeVV13I5t0kvQ7fM</string>
-    <string name="google_storage_bucket" translatable="false">dooo-4b9f0.appspot.com</string>
+    <string name="google_storage_bucket" translatable="false">boenci-4b9f0.appspot.com</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="percent_progress" translatable="false">%1$d%%</string>
-    <string name="project_id" translatable="false">dooo-4b9f0</string>
+    <string name="project_id" translatable="false">boenci-4b9f0</string>
     <string name="share_app_text">Hey, Download This App To Watch Latest Movies and WebSeries! Download Here: [YOUR_URL_HERE]</string>
     <string name="startapp_app_id" translatable="false">209411604</string>
     <string name="track_selection_title">Change Track</string>

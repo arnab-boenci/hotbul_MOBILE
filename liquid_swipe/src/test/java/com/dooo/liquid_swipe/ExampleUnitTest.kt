@@ -1,4 +1,4 @@
-package com.dooo.liquid_swipe
+package com.boenci.liquid_swipe
 
 import org.junit.Test
 

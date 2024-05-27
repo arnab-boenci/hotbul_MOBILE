@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.dooo.android.app-mergeDebugResources-116:/values-v21/values-v21.xml",
+            "outputFile": "com.boenci.android.app-mergeDebugResources-116:/values-v21/values-v21.xml",
             "map": [
                 {
                     "source": "/Users/arnabmandal/.gradle/caches/transforms-3/0fb84ec7e9d5d02dd806ae3792217844/transformed/jetified-MaterialDialog-2.2.2/res/values-v21/values-v21.xml",

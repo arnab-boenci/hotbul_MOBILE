@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.dooo.android.app-mergeDebugResources-116:/values-iw/values-iw.xml",
+            "outputFile": "com.boenci.android.app-mergeDebugResources-116:/values-iw/values-iw.xml",
             "map": [
                 {
                     "source": "/Users/arnabmandal/.gradle/caches/transforms-3/3c6d242eee68241c9376203211415a44/transformed/jetified-exoplayer-core-2.19.1/res/values-iw/values-iw.xml",

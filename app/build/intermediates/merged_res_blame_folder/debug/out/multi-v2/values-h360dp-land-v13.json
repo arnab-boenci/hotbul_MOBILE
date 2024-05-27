@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.dooo.android.app-mergeDebugResources-116:/values-h360dp-land-v13/values-h360dp-land-v13.xml",
+            "outputFile": "com.boenci.android.app-mergeDebugResources-116:/values-h360dp-land-v13/values-h360dp-land-v13.xml",
             "map": [
                 {
                     "source": "/Users/arnabmandal/.gradle/caches/transforms-3/2b0916e3a228359a90db21751a4fab04/transformed/material-1.9.0/res/values-h360dp-land-v13/values-h360dp-land-v13.xml",

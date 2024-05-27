@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.dooo.android.app-mergeDebugResources-116:/values-ne/values-ne.xml",
+            "outputFile": "com.boenci.android.app-mergeDebugResources-116:/values-ne/values-ne.xml",
             "map": [
                 {
                     "source": "/Users/arnabmandal/.gradle/caches/transforms-3/62add7be8a042644513ea28a7e82bbed/transformed/jetified-play-services-cast-framework-21.3.0/res/values-ne/values.xml",

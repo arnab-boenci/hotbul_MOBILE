@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.dooo.android.app-mergeDebugResources-116:/values/values.xml",
+            "outputFile": "com.boenci.android.app-mergeDebugResources-116:/values/values.xml",
             "map": [
                 {
                     "source": "/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/res/values/colors.xml",

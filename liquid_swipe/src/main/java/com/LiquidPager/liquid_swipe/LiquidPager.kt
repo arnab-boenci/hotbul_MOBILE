@@ -11,7 +11,7 @@ import androidx.annotation.Px
 import androidx.core.view.drawToBitmap
 import androidx.viewpager.widget.PagerAdapter
 import androidx.viewpager.widget.ViewPager
-import com.dooo.liquid_swipe.R
+import com.boenci.liquid_swipe.R
 import com.LiquidPager.liquid_swipe.animation.Direction.LEFT
 import com.LiquidPager.liquid_swipe.animation.LeftEdgeController
 import com.LiquidPager.liquid_swipe.animation.RightEdgeController

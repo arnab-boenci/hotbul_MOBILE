@@ -1,6 +1,6 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-3    package="com.dooo.android"
+3    package="com.boenci.android"
 4    android:versionCode="1"
 5    android:versionName="1.0.0" >
 6
@@ -179,12 +179,12 @@
 92-->[unity-ads.aar] /Users/arnabmandal/.gradle/caches/transforms-3/22b9c317c702158059a256fb42643107/transformed/jetified-unity-ads/AndroidManifest.xml:11:22-76
 93    <permission
 93-->[com.onesignal:OneSignal:4.8.4] /Users/arnabmandal/.gradle/caches/transforms-3/95f4dbb5ad54082d61585de156e56b86/transformed/jetified-OneSignal-4.8.4/AndroidManifest.xml:7:5-9:47
-94        android:name="com.dooo.android.permission.C2D_MESSAGE"
+94        android:name="com.boenci.android.permission.C2D_MESSAGE"
 94-->[com.onesignal:OneSignal:4.8.4] /Users/arnabmandal/.gradle/caches/transforms-3/95f4dbb5ad54082d61585de156e56b86/transformed/jetified-OneSignal-4.8.4/AndroidManifest.xml:8:9-63
 95        android:protectionLevel="signature" />
 95-->[com.onesignal:OneSignal:4.8.4] /Users/arnabmandal/.gradle/caches/transforms-3/95f4dbb5ad54082d61585de156e56b86/transformed/jetified-OneSignal-4.8.4/AndroidManifest.xml:9:9-44
 96
-97    <uses-permission android:name="com.dooo.android.permission.C2D_MESSAGE" /> <!-- c2dm RECEIVE are basic requirements for push messages through Google's FCM -->
+97    <uses-permission android:name="com.boenci.android.permission.C2D_MESSAGE" /> <!-- c2dm RECEIVE are basic requirements for push messages through Google's FCM -->
 97-->[com.onesignal:OneSignal:4.8.4] /Users/arnabmandal/.gradle/caches/transforms-3/95f4dbb5ad54082d61585de156e56b86/transformed/jetified-OneSignal-4.8.4/AndroidManifest.xml:11:5-79
 97-->[com.onesignal:OneSignal:4.8.4] /Users/arnabmandal/.gradle/caches/transforms-3/95f4dbb5ad54082d61585de156e56b86/transformed/jetified-OneSignal-4.8.4/AndroidManifest.xml:11:22-76
 98    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" /> <!-- START: ShortcutBadger -->
@@ -261,18 +261,18 @@
 124
 125    <permission
 125-->[androidx.core:core:1.10.1] /Users/arnabmandal/.gradle/caches/transforms-3/87e481e718628b13b2c9fdcea8d3fcaa/transformed/core-1.10.1/AndroidManifest.xml:22:5-24:47
-126        android:name="com.dooo.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+126        android:name="com.boenci.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
 126-->[androidx.core:core:1.10.1] /Users/arnabmandal/.gradle/caches/transforms-3/87e481e718628b13b2c9fdcea8d3fcaa/transformed/core-1.10.1/AndroidManifest.xml:23:9-81
 127        android:protectionLevel="signature" />
 127-->[androidx.core:core:1.10.1] /Users/arnabmandal/.gradle/caches/transforms-3/87e481e718628b13b2c9fdcea8d3fcaa/transformed/core-1.10.1/AndroidManifest.xml:24:9-44
 128
-129    <uses-permission android:name="com.dooo.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+129    <uses-permission android:name="com.boenci.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
 129-->[androidx.core:core:1.10.1] /Users/arnabmandal/.gradle/caches/transforms-3/87e481e718628b13b2c9fdcea8d3fcaa/transformed/core-1.10.1/AndroidManifest.xml:26:5-97
 129-->[androidx.core:core:1.10.1] /Users/arnabmandal/.gradle/caches/transforms-3/87e481e718628b13b2c9fdcea8d3fcaa/transformed/core-1.10.1/AndroidManifest.xml:26:22-94
 130
 131    <application
 131-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:33:5-209:19
-132        android:name="com.dooo.android.utils.AppOpenAdManagerActivity"
+132        android:name="com.boenci.android.utils.AppOpenAdManagerActivity"
 132-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:34:9-55
 133        android:allowBackup="true"
 133-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:35:9-35
@@ -299,49 +299,49 @@
 145-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:43:9-44
 146        <activity
 146-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:44:9-46:40
-147            android:name="com.dooo.android.video_player"
+147            android:name="com.boenci.android.video_player"
 147-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:45:13-41
 148            android:exported="false" />
 148-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:46:13-37
 149        <activity
 149-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:47:9-49:40
-150            android:name="com.dooo.android.AllWebSeriesActivity"
+150            android:name="com.boenci.android.AllWebSeriesActivity"
 150-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:48:13-49
 151            android:exported="false" />
 151-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:49:13-37
 152        <activity
 152-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:50:9-52:40
-153            android:name="com.dooo.android.MoviesActivity"
+153            android:name="com.boenci.android.MoviesActivity"
 153-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:51:13-43
 154            android:exported="false" />
 154-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:52:13-37
 155        <activity
 155-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:53:9-55:39
-156            android:name="com.dooo.android.WebSeriesActivity"
+156            android:name="com.boenci.android.WebSeriesActivity"
 156-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:54:13-46
 157            android:exported="false" />
 157-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:55:13-37
 158        <activity
 158-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:56:9-58:39
-159            android:name="com.dooo.android.ShortFilmActivity"
+159            android:name="com.boenci.android.ShortFilmActivity"
 159-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:57:13-46
 160            android:exported="false" />
 160-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:58:13-37
 161        <activity
 161-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:59:9-61:40
-162            android:name="com.dooo.android.MusicActivity"
+162            android:name="com.boenci.android.MusicActivity"
 162-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:60:13-42
 163            android:exported="false" />
 163-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:61:13-37
 164        <activity
 164-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:62:9-64:40
-165            android:name="com.dooo.android.AllMoviesActivity"
+165            android:name="com.boenci.android.AllMoviesActivity"
 165-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:63:13-46
 166            android:exported="false" />
 166-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:64:13-37
 167        <activity
 167-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:65:9-67:94
-168            android:name="com.dooo.android.ContentInCategory"
+168            android:name="com.boenci.android.ContentInCategory"
 168-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:66:38-71
 169            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
 169-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:67:13-91
@@ -349,37 +349,37 @@
 170-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:66:13-37
 171        <activity
 171-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:68:9-70:40
-172            android:name="com.dooo.android.AllMoviesWithActorActivity"
+172            android:name="com.boenci.android.AllMoviesWithActorActivity"
 172-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:69:13-55
 173            android:exported="false" />
 173-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:70:13-37
 174        <activity
 174-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:71:9-73:40
-175            android:name="com.dooo.android.CustomPaymentActivity"
+175            android:name="com.boenci.android.CustomPaymentActivity"
 175-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:72:13-50
 176            android:exported="false" />
 176-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:73:13-37
 177        <activity
 177-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:74:9-76:40
-178            android:name="com.dooo.android.UpcomingActivity"
+178            android:name="com.boenci.android.UpcomingActivity"
 178-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:75:13-45
 179            android:exported="false" />
 179-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:76:13-37
 180        <activity
 180-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:77:9-79:40
-181            android:name="com.dooo.android.LiveTvGenreDetailsActivity"
+181            android:name="com.boenci.android.LiveTvGenreDetailsActivity"
 181-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:78:13-55
 182            android:exported="false" />
 182-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:79:13-37
 183        <activity
 183-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:80:9-82:40
-184            android:name="com.dooo.android.FlutterwavePaymentGatway"
+184            android:name="com.boenci.android.FlutterwavePaymentGatway"
 184-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:81:13-53
 185            android:exported="false" />
 185-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:82:13-37
 186        <activity
 186-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:83:9-89:20
-187            android:name="com.dooo.android.PaytmPaymentGatway"
+187            android:name="com.boenci.android.PaytmPaymentGatway"
 187-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:84:13-47
 188            android:exported="false" >
 188-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:85:13-37
@@ -392,82 +392,82 @@
 192        </activity>
 193        <activity
 193-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:90:9-92:40
-194            android:name="com.dooo.android.UPI"
+194            android:name="com.boenci.android.UPI"
 194-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:91:13-32
 195            android:exported="false" />
 195-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:92:13-37
 196        <activity
 196-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:93:9-95:40
-197            android:name="com.dooo.android.PaypalPaymentGatway"
+197            android:name="com.boenci.android.PaypalPaymentGatway"
 197-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:94:13-48
 198            android:exported="false" />
 198-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:95:13-37
 199        <activity
 199-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:96:9-98:40
-200            android:name="com.dooo.android.Razorpay_Payment_gatway"
+200            android:name="com.boenci.android.Razorpay_Payment_gatway"
 200-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:97:13-52
 201            android:exported="false" />
 201-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:98:13-37
 202        <activity
 202-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:99:9-101:39
-203            android:name="com.dooo.android.LiveTVSearch"
+203            android:name="com.boenci.android.LiveTVSearch"
 203-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:100:13-41
 204            android:exported="true" />
 204-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:101:13-36
-205        <activity android:name="com.dooo.android.GenreDetails" />
+205        <activity android:name="com.boenci.android.GenreDetails" />
 205-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:102:9-50
 205-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:102:19-47
-206        <activity android:name="com.dooo.android.AllGenre" />
+206        <activity android:name="com.boenci.android.AllGenre" />
 206-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:103:9-46
 206-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:103:19-43
-207        <activity android:name="com.dooo.android.Downloads" />
+207        <activity android:name="com.boenci.android.Downloads" />
 207-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:104:9-47
 207-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:104:19-44
-208        <activity android:name="com.dooo.android.PrivecyPolicy" />
+208        <activity android:name="com.boenci.android.PrivecyPolicy" />
 208-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:105:9-51
 208-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:105:19-48
-209        <activity android:name="com.dooo.android.TermsAndConditions" />
+209        <activity android:name="com.boenci.android.TermsAndConditions" />
 209-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:106:9-56
 209-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:106:19-53
 210        <activity
 210-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:107:9-109:77
-211            android:name="com.dooo.android.YoutubeLivePlayer"
+211            android:name="com.boenci.android.YoutubeLivePlayer"
 211-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:108:13-46
 212            android:configChanges="keyboardHidden|orientation|screenSize" />
 212-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:109:13-74
-213        <activity android:name="com.dooo.android.InAppUpdate" />
+213        <activity android:name="com.boenci.android.InAppUpdate" />
 213-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:110:9-49
 213-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:110:19-46
-214        <activity android:name="com.dooo.android.LiveTv" />
+214        <activity android:name="com.boenci.android.LiveTv" />
 214-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:111:9-44
 214-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:111:19-41
 215        <activity
 215-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:112:9-114:77
-216            android:name="com.dooo.android.EmbedPlayer"
+216            android:name="com.boenci.android.EmbedPlayer"
 216-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:113:13-40
 217            android:configChanges="keyboardHidden|orientation|screenSize" />
 217-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:114:13-74
 218        <activity
 218-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:115:9-117:77
-219            android:name="com.dooo.android.Player"
+219            android:name="com.boenci.android.Player"
 219-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:116:13-35
 220            android:configChanges="keyboardHidden|orientation|screenSize" />
 220-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:117:13-74
-221        <activity android:name="com.dooo.android.SubscriptionDetails" />
+221        <activity android:name="com.boenci.android.SubscriptionDetails" />
 221-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:118:9-57
 221-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:118:19-54
-222        <activity android:name="com.dooo.android.SubscriptionList" />
+222        <activity android:name="com.boenci.android.SubscriptionList" />
 222-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:119:9-54
 222-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:119:19-51
-223        <activity android:name="com.dooo.android.Subscription" />
+223        <activity android:name="com.boenci.android.Subscription" />
 223-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:120:9-50
 223-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:120:19-47
-224        <activity android:name="com.dooo.android.Favorites" />
+224        <activity android:name="com.boenci.android.Favorites" />
 224-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:121:9-47
 224-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:121:19-44
 225        <activity
 225-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:122:9-126:54
-226            android:name="com.dooo.android.WebSeriesDetails"
+226            android:name="com.boenci.android.WebSeriesDetails"
 226-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:122:19-51
 227            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
 227-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:124:13-91
@@ -477,21 +477,21 @@
 229-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:125:13-44
 230            android:supportsPictureInPicture="true" />
 230-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:126:13-52
-231        <activity android:name="com.dooo.android.Maintenance" />
+231        <activity android:name="com.boenci.android.Maintenance" />
 231-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:127:9-49
 231-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:127:19-46
-232        <activity android:name="com.dooo.android.WebView" />
+232        <activity android:name="com.boenci.android.WebView" />
 232-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:128:9-45
 232-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:128:19-42
 233        <activity
 233-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:129:9-131:77
-234            android:name="com.dooo.android.TrailerPlayer"
+234            android:name="com.boenci.android.TrailerPlayer"
 234-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:130:13-42
 235            android:configChanges="keyboardHidden|orientation|screenSize" />
 235-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:131:13-74
 236        <activity
 236-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:132:9-136:54
-237            android:name="com.dooo.android.MovieDetails"
+237            android:name="com.boenci.android.MovieDetails"
 237-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:132:19-47
 238            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
 238-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:134:13-91
@@ -503,7 +503,7 @@
 241-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:136:13-52
 242        <activity
 242-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:137:9-141:54
-243            android:name="com.dooo.android.ShortFilmDetails"
+243            android:name="com.boenci.android.ShortFilmDetails"
 243-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:137:19-51
 244            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
 244-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:139:13-91
@@ -513,15 +513,15 @@
 246-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:140:13-44
 247            android:supportsPictureInPicture="true" />
 247-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:141:13-52
-248        <activity android:name="com.dooo.android.LoginSignup" />
+248        <activity android:name="com.boenci.android.LoginSignup" />
 248-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:142:9-49
 248-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:142:19-46
-249        <activity android:name="com.dooo.android.Home" />
+249        <activity android:name="com.boenci.android.Home" />
 249-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:143:9-42
 249-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:143:19-39
 250        <activity
 250-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:144:9-152:20
-251            android:name="com.dooo.android.Splash"
+251            android:name="com.boenci.android.Splash"
 251-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:145:13-35
 252            android:exported="true" >
 252-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:146:13-36
@@ -565,7 +565,7 @@
 273        <provider
 274            android:name="androidx.core.content.FileProvider"
 274-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:168:13-62
-275            android:authorities="com.dooo.android.provider"
+275            android:authorities="com.boenci.android.provider"
 275-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:169:13-60
 276            android:exported="false"
 276-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:170:13-37
@@ -717,7 +717,7 @@
 353-->[mediationsdk-7.2.3.aar] /Users/arnabmandal/.gradle/caches/transforms-3/875a9dd861ad0c123ac30db0f2045c20/transformed/jetified-mediationsdk-7.2.3/AndroidManifest.xml:30:9-32:82
 354            android:name="com.ironsource.lifecycle.IronsourceLifecycleProvider"
 354-->[mediationsdk-7.2.3.aar] /Users/arnabmandal/.gradle/caches/transforms-3/875a9dd861ad0c123ac30db0f2045c20/transformed/jetified-mediationsdk-7.2.3/AndroidManifest.xml:31:13-80
-355            android:authorities="com.dooo.android.IronsourceLifecycleProvider" />
+355            android:authorities="com.boenci.android.IronsourceLifecycleProvider" />
 355-->[mediationsdk-7.2.3.aar] /Users/arnabmandal/.gradle/caches/transforms-3/875a9dd861ad0c123ac30db0f2045c20/transformed/jetified-mediationsdk-7.2.3/AndroidManifest.xml:32:13-79
 356
 357        <activity
@@ -755,7 +755,7 @@
 372-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:204:17-206:47
 373                    android:host="paypalxo"
 373-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:205:21-42
-374                    android:scheme="com.dooo.android" />
+374                    android:scheme="com.boenci.android" />
 374-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:206:21-44
 375
 376                <action android:name="android.intent.action.VIEW" />
@@ -800,7 +800,7 @@
 394-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:204:17-206:47
 395                    android:host="paypalpay"
 395-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:205:21-42
-396                    android:scheme="com.dooo.android" />
+396                    android:scheme="com.boenci.android" />
 396-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:206:21-44
 397            </intent-filter>
 398        </activity>
@@ -920,7 +920,7 @@
 456-->[com.onesignal:OneSignal:4.8.4] /Users/arnabmandal/.gradle/caches/transforms-3/95f4dbb5ad54082d61585de156e56b86/transformed/jetified-OneSignal-4.8.4/AndroidManifest.xml:57:17-81
 456-->[com.onesignal:OneSignal:4.8.4] /Users/arnabmandal/.gradle/caches/transforms-3/95f4dbb5ad54082d61585de156e56b86/transformed/jetified-OneSignal-4.8.4/AndroidManifest.xml:57:25-78
 457
-458                <category android:name="com.dooo.android" />
+458                <category android:name="com.boenci.android" />
 458-->[com.onesignal:OneSignal:4.8.4] /Users/arnabmandal/.gradle/caches/transforms-3/95f4dbb5ad54082d61585de156e56b86/transformed/jetified-OneSignal-4.8.4/AndroidManifest.xml:59:17-61
 458-->[com.onesignal:OneSignal:4.8.4] /Users/arnabmandal/.gradle/caches/transforms-3/95f4dbb5ad54082d61585de156e56b86/transformed/jetified-OneSignal-4.8.4/AndroidManifest.xml:59:27-58
 459            </intent-filter>
@@ -1107,7 +1107,7 @@
 555
 556                <data
 556-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:204:17-206:47
-557                    android:host="cct.com.dooo.android"
+557                    android:host="cct.com.boenci.android"
 557-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:205:21-42
 558                    android:scheme="fbconnect" />
 558-->/Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:206:21-44
@@ -1311,7 +1311,7 @@
 665-->[com.facebook.android:audience-network-sdk:6.12.0] /Users/arnabmandal/.gradle/caches/transforms-3/f8782ac34fb70a8367887b1c771241f5/transformed/jetified-audience-network-sdk-6.12.0/AndroidManifest.xml:26:9-29:40
 666            android:name="com.facebook.ads.AudienceNetworkContentProvider"
 666-->[com.facebook.android:audience-network-sdk:6.12.0] /Users/arnabmandal/.gradle/caches/transforms-3/f8782ac34fb70a8367887b1c771241f5/transformed/jetified-audience-network-sdk-6.12.0/AndroidManifest.xml:27:13-75
-667            android:authorities="com.dooo.android.AudienceNetworkContentProvider"
+667            android:authorities="com.boenci.android.AudienceNetworkContentProvider"
 667-->[com.facebook.android:audience-network-sdk:6.12.0] /Users/arnabmandal/.gradle/caches/transforms-3/f8782ac34fb70a8367887b1c771241f5/transformed/jetified-audience-network-sdk-6.12.0/AndroidManifest.xml:28:13-82
 668            android:exported="false" />
 668-->[com.facebook.android:audience-network-sdk:6.12.0] /Users/arnabmandal/.gradle/caches/transforms-3/f8782ac34fb70a8367887b1c771241f5/transformed/jetified-audience-network-sdk-6.12.0/AndroidManifest.xml:29:13-37
@@ -1319,7 +1319,7 @@
 669-->[com.applovin:applovin-sdk:12.5.0] /Users/arnabmandal/.gradle/caches/transforms-3/da67f61b34ffc8522d207ce40362b598/transformed/jetified-applovin-sdk-12.5.0/AndroidManifest.xml:25:9-29:39
 670            android:name="com.applovin.sdk.AppLovinInitProvider"
 670-->[com.applovin:applovin-sdk:12.5.0] /Users/arnabmandal/.gradle/caches/transforms-3/da67f61b34ffc8522d207ce40362b598/transformed/jetified-applovin-sdk-12.5.0/AndroidManifest.xml:26:13-65
-671            android:authorities="com.dooo.android.applovininitprovider"
+671            android:authorities="com.boenci.android.applovininitprovider"
 671-->[com.applovin:applovin-sdk:12.5.0] /Users/arnabmandal/.gradle/caches/transforms-3/da67f61b34ffc8522d207ce40362b598/transformed/jetified-applovin-sdk-12.5.0/AndroidManifest.xml:27:13-72
 672            android:exported="false"
 672-->[com.applovin:applovin-sdk:12.5.0] /Users/arnabmandal/.gradle/caches/transforms-3/da67f61b34ffc8522d207ce40362b598/transformed/jetified-applovin-sdk-12.5.0/AndroidManifest.xml:28:13-37
@@ -1543,7 +1543,7 @@
 783-->[com.google.android.gms:play-services-ads-lite:22.2.0] /Users/arnabmandal/.gradle/caches/transforms-3/491fbc32d4b65ea51f4daadc6941fd0f/transformed/jetified-play-services-ads-lite-22.2.0/AndroidManifest.xml:60:9-65:43
 784            android:name="com.google.android.gms.ads.MobileAdsInitProvider"
 784-->[com.google.android.gms:play-services-ads-lite:22.2.0] /Users/arnabmandal/.gradle/caches/transforms-3/491fbc32d4b65ea51f4daadc6941fd0f/transformed/jetified-play-services-ads-lite-22.2.0/AndroidManifest.xml:61:13-76
-785            android:authorities="com.dooo.android.mobileadsinitprovider"
+785            android:authorities="com.boenci.android.mobileadsinitprovider"
 785-->[com.google.android.gms:play-services-ads-lite:22.2.0] /Users/arnabmandal/.gradle/caches/transforms-3/491fbc32d4b65ea51f4daadc6941fd0f/transformed/jetified-play-services-ads-lite-22.2.0/AndroidManifest.xml:62:13-73
 786            android:exported="false"
 786-->[com.google.android.gms:play-services-ads-lite:22.2.0] /Users/arnabmandal/.gradle/caches/transforms-3/491fbc32d4b65ea51f4daadc6941fd0f/transformed/jetified-play-services-ads-lite-22.2.0/AndroidManifest.xml:63:13-37
@@ -1608,7 +1608,7 @@
 820-->[com.google.firebase:firebase-common:20.2.0] /Users/arnabmandal/.gradle/caches/transforms-3/93a1b36df95060c529eeeb9867b72e9a/transformed/jetified-firebase-common-20.2.0/AndroidManifest.xml:25:9-30:39
 821            android:name="com.google.firebase.provider.FirebaseInitProvider"
 821-->[com.google.firebase:firebase-common:20.2.0] /Users/arnabmandal/.gradle/caches/transforms-3/93a1b36df95060c529eeeb9867b72e9a/transformed/jetified-firebase-common-20.2.0/AndroidManifest.xml:26:13-77
-822            android:authorities="com.dooo.android.firebaseinitprovider"
+822            android:authorities="com.boenci.android.firebaseinitprovider"
 822-->[com.google.firebase:firebase-common:20.2.0] /Users/arnabmandal/.gradle/caches/transforms-3/93a1b36df95060c529eeeb9867b72e9a/transformed/jetified-firebase-common-20.2.0/AndroidManifest.xml:27:13-72
 823            android:directBootAware="true"
 823-->[com.google.firebase:firebase-common:20.2.0] /Users/arnabmandal/.gradle/caches/transforms-3/93a1b36df95060c529eeeb9867b72e9a/transformed/jetified-firebase-common-20.2.0/AndroidManifest.xml:28:13-43
@@ -1651,7 +1651,7 @@
 847-->[com.facebook.android:facebook-core:11.1.0] /Users/arnabmandal/.gradle/caches/transforms-3/674aad77b5fe329bb2a3daf133d4c5fe/transformed/jetified-facebook-core-11.1.0/AndroidManifest.xml:39:9-42:40
 848            android:name="com.facebook.internal.FacebookInitProvider"
 848-->[com.facebook.android:facebook-core:11.1.0] /Users/arnabmandal/.gradle/caches/transforms-3/674aad77b5fe329bb2a3daf133d4c5fe/transformed/jetified-facebook-core-11.1.0/AndroidManifest.xml:40:13-70
-849            android:authorities="com.dooo.android.FacebookInitProvider"
+849            android:authorities="com.boenci.android.FacebookInitProvider"
 849-->[com.facebook.android:facebook-core:11.1.0] /Users/arnabmandal/.gradle/caches/transforms-3/674aad77b5fe329bb2a3daf133d4c5fe/transformed/jetified-facebook-core-11.1.0/AndroidManifest.xml:41:13-72
 850            android:exported="false" />
 850-->[com.facebook.android:facebook-core:11.1.0] /Users/arnabmandal/.gradle/caches/transforms-3/674aad77b5fe329bb2a3daf133d4c5fe/transformed/jetified-facebook-core-11.1.0/AndroidManifest.xml:42:13-37
@@ -1674,7 +1674,7 @@
 860-->[com.squareup.picasso:picasso:2.71828] /Users/arnabmandal/.gradle/caches/transforms-3/e305ba4a203fb36a30ef561d16c6013a/transformed/jetified-picasso-2.71828/AndroidManifest.xml:8:9-11:40
 861            android:name="com.squareup.picasso.PicassoProvider"
 861-->[com.squareup.picasso:picasso:2.71828] /Users/arnabmandal/.gradle/caches/transforms-3/e305ba4a203fb36a30ef561d16c6013a/transformed/jetified-picasso-2.71828/AndroidManifest.xml:9:13-64
-862            android:authorities="com.dooo.android.com.squareup.picasso"
+862            android:authorities="com.boenci.android.com.squareup.picasso"
 862-->[com.squareup.picasso:picasso:2.71828] /Users/arnabmandal/.gradle/caches/transforms-3/e305ba4a203fb36a30ef561d16c6013a/transformed/jetified-picasso-2.71828/AndroidManifest.xml:10:13-72
 863            android:exported="false" />
 863-->[com.squareup.picasso:picasso:2.71828] /Users/arnabmandal/.gradle/caches/transforms-3/e305ba4a203fb36a30ef561d16c6013a/transformed/jetified-picasso-2.71828/AndroidManifest.xml:11:13-37
@@ -1682,7 +1682,7 @@
 864-->[androidx.emoji2:emoji2:1.2.0] /Users/arnabmandal/.gradle/caches/transforms-3/f5d4743563d17dd7e42e11b363f27943/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
 865            android:name="androidx.startup.InitializationProvider"
 865-->[androidx.emoji2:emoji2:1.2.0] /Users/arnabmandal/.gradle/caches/transforms-3/f5d4743563d17dd7e42e11b363f27943/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:25:13-67
-866            android:authorities="com.dooo.android.androidx-startup"
+866            android:authorities="com.boenci.android.androidx-startup"
 866-->[androidx.emoji2:emoji2:1.2.0] /Users/arnabmandal/.gradle/caches/transforms-3/f5d4743563d17dd7e42e11b363f27943/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:26:13-68
 867            android:exported="false" >
 867-->[androidx.emoji2:emoji2:1.2.0] /Users/arnabmandal/.gradle/caches/transforms-3/f5d4743563d17dd7e42e11b363f27943/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:27:13-37
@@ -1890,7 +1890,7 @@
 971-->[com.startapp:inapp-sdk:4.10.5] /Users/arnabmandal/.gradle/caches/transforms-3/6375a6cc632e78d4aa6196156be0e2b3/transformed/jetified-inapp-sdk-4.10.5/AndroidManifest.xml:23:9-26:40
 972            android:name="com.startapp.sdk.adsbase.StartAppInitProvider"
 972-->[com.startapp:inapp-sdk:4.10.5] /Users/arnabmandal/.gradle/caches/transforms-3/6375a6cc632e78d4aa6196156be0e2b3/transformed/jetified-inapp-sdk-4.10.5/AndroidManifest.xml:24:13-73
-973            android:authorities="com.dooo.android.startappinitprovider"
+973            android:authorities="com.boenci.android.startappinitprovider"
 973-->[com.startapp:inapp-sdk:4.10.5] /Users/arnabmandal/.gradle/caches/transforms-3/6375a6cc632e78d4aa6196156be0e2b3/transformed/jetified-inapp-sdk-4.10.5/AndroidManifest.xml:25:13-72
 974            android:exported="false" />
 974-->[com.startapp:inapp-sdk:4.10.5] /Users/arnabmandal/.gradle/caches/transforms-3/6375a6cc632e78d4aa6196156be0e2b3/transformed/jetified-inapp-sdk-4.10.5/AndroidManifest.xml:26:13-37
@@ -1984,7 +1984,7 @@
 1022-->[org.jfrog.cardinalcommerce.gradle:cardinalmobilesdk:2.2.7-2] /Users/arnabmandal/.gradle/caches/transforms-3/b3858b093c5b3fb35122a1b616258f25/transformed/jetified-cardinalmobilesdk-2.2.7-2/AndroidManifest.xml:17:9-21:39
 1023            android:name="com.cardinalcommerce.a.setShadowLayer"
 1023-->[org.jfrog.cardinalcommerce.gradle:cardinalmobilesdk:2.2.7-2] /Users/arnabmandal/.gradle/caches/transforms-3/b3858b093c5b3fb35122a1b616258f25/transformed/jetified-cardinalmobilesdk-2.2.7-2/AndroidManifest.xml:18:13-65
-1024            android:authorities="com.dooo.android.CCInitProvider"
+1024            android:authorities="com.boenci.android.CCInitProvider"
 1024-->[org.jfrog.cardinalcommerce.gradle:cardinalmobilesdk:2.2.7-2] /Users/arnabmandal/.gradle/caches/transforms-3/b3858b093c5b3fb35122a1b616258f25/transformed/jetified-cardinalmobilesdk-2.2.7-2/AndroidManifest.xml:19:13-66
 1025            android:enabled="true"
 1025-->[org.jfrog.cardinalcommerce.gradle:cardinalmobilesdk:2.2.7-2] /Users/arnabmandal/.gradle/caches/transforms-3/b3858b093c5b3fb35122a1b616258f25/transformed/jetified-cardinalmobilesdk-2.2.7-2/AndroidManifest.xml:20:13-35

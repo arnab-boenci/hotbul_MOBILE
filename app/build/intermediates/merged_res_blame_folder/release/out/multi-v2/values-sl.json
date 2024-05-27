@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.dooo.android.app-mergeReleaseResources-116:/values-sl/values-sl.xml",
+            "outputFile": "com.boenci.android.app-mergeReleaseResources-116:/values-sl/values-sl.xml",
             "map": [
                 {
                     "source": "/Users/arnabmandal/.gradle/caches/transforms-3/3f3e02815f213269be43b7de969b846e/transformed/jetified-play-services-basement-18.2.0/res/values-sl/values.xml",

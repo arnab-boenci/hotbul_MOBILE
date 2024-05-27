@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.dooo.android.app-mergeReleaseResources-116:/values-uk/values-uk.xml",
+            "outputFile": "com.boenci.android.app-mergeReleaseResources-116:/values-uk/values-uk.xml",
             "map": [
                 {
                     "source": "/Users/arnabmandal/.gradle/caches/transforms-3/fb85f6ebf66270487808ca5e77a52fd1/transformed/jetified-exoplayer-core-2.19.1/res/values-uk/values-uk.xml",

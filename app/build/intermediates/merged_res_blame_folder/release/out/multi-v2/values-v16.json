@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.dooo.android.app-mergeReleaseResources-116:/values-v16/values-v16.xml",
+            "outputFile": "com.boenci.android.app-mergeReleaseResources-116:/values-v16/values-v16.xml",
             "map": [
                 {
                     "source": "/Users/arnabmandal/.gradle/caches/transforms-3/90613057ad5badc4c4005eb9a2564754/transformed/core-1.10.1/res/values-v16/values-v16.xml",
