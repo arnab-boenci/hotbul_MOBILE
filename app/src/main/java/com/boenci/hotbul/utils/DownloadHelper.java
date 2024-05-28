@@ -14,7 +14,7 @@ import androidx.annotation.NonNull;
 import androidx.core.content.FileProvider;
 
 import com.boenci.hotbul.Downloads;
-import com.boenci.hotbul.R;
+import com.boenci.android.R;
 import com.google.android.exoplayer2.util.Util;
 import com.google.android.material.snackbar.Snackbar;
 import com.tonyodev.fetch2.Fetch;

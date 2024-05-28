@@ -21,6 +21,8 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.boenci.android.BuildConfig;
+import com.boenci.android.R;
 import com.boenci.hotbul.adepter.UpdateListAdepter;
 import com.boenci.hotbul.list.UpdateList;
 

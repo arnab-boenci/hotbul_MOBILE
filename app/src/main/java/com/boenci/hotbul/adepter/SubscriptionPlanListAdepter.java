@@ -15,7 +15,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 
 import com.bumptech.glide.request.RequestOptions;
-import com.boenci.hotbul.R;
+import com.boenci.android.R;
 import com.boenci.hotbul.SubscriptionDetails;
 import com.boenci.hotbul.list.SubscriptionPlanList;
 import com.boenci.hotbul.utils.HelperUtils;

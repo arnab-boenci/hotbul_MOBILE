@@ -6,7 +6,7 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.view.Window;
 
-import com.boenci.hotbul.R;
+import com.boenci.android.R;
 
 public class LoadingDialog {
     Context context;

@@ -45,7 +45,7 @@ import com.boenci.hotbul.Home;
 import com.boenci.hotbul.LoginSignup;
 import com.boenci.hotbul.MovieDetails;
 import com.boenci.hotbul.PrivecyPolicy;
-import com.boenci.hotbul.R;
+import com.boenci.android.R;
 import com.boenci.hotbul.Splash;
 import com.boenci.hotbul.Subscription;
 import com.boenci.hotbul.TermsAndConditions;

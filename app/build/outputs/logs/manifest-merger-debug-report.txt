@@ -1,27 +1,27 @@
 -- Merging decision tree log ---
 provider#androidx.core.content.FileProvider
-INJECTED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:167:9-175:20
+INJECTED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:167:9-175:20
 	android:grantUriPermissions
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:171:13-47
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:171:13-47
 	android:authorities
-		INJECTED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:169:13-60
+		INJECTED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:169:13-60
 	android:exported
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:170:13-37
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:170:13-37
 	android:name
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:168:13-62
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:168:13-62
 manifest
-ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:2:1-211:12
-INJECTED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:2:1-211:12
-INJECTED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:2:1-211:12
-INJECTED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:2:1-211:12
+ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:2:1-211:12
+INJECTED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:2:1-211:12
+INJECTED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:2:1-211:12
+INJECTED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:2:1-211:12
 MERGED from [unity-ads.aar] /Users/arnabmandal/.gradle/caches/transforms-3/22b9c317c702158059a256fb42643107/transformed/jetified-unity-ads/AndroidManifest.xml:2:1-36:12
 MERGED from [DoooStream.aar] /Users/arnabmandal/.gradle/caches/transforms-3/ceebc4f35fbdd9998062b336f538271f/transformed/jetified-DoooStream/AndroidManifest.xml:2:1-9:12
 MERGED from [mediationsdk-7.2.3.aar] /Users/arnabmandal/.gradle/caches/transforms-3/875a9dd861ad0c123ac30db0f2045c20/transformed/jetified-mediationsdk-7.2.3/AndroidManifest.xml:2:1-35:12
 MERGED from [extension-ffmpeg.aar] /Users/arnabmandal/.gradle/caches/transforms-3/239dc6a14b321ae0be303f8eaa28ab55/transformed/jetified-extension-ffmpeg/AndroidManifest.xml:17:1-24:12
 MERGED from [com.github.mukeshsolanki.Android-Tamper-Detector:tamperdetector-no-op:1.0.0] /Users/arnabmandal/.gradle/caches/transforms-3/23eb14bde87c089bcd48f5b72d02556a/transformed/jetified-tamperdetector-no-op-1.0.0/AndroidManifest.xml:2:1-9:12
 MERGED from [com.paypal.checkout:android-sdk:1.1.0] /Users/arnabmandal/.gradle/caches/transforms-3/0daea764dd53000f4cd9d8a11a86d8e5/transformed/jetified-android-sdk-1.1.0/AndroidManifest.xml:2:1-70:12
-MERGED from [:liquid_swipe] /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/liquid_swipe/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:liquid_swipe] /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/liquid_swipe/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [dev.shreyaspatil.MaterialDialog:MaterialDialog:2.2.2] /Users/arnabmandal/.gradle/caches/transforms-3/0fb84ec7e9d5d02dd806ae3792217844/transformed/jetified-MaterialDialog-2.2.2/AndroidManifest.xml:2:1-11:12
 MERGED from [org.imaginativeworld.oopsnointernet:oopsnointernet:2.0.0] /Users/arnabmandal/.gradle/caches/transforms-3/dbcee91a8b39d49078f3bdae9472077c/transformed/jetified-oopsnointernet-2.0.0/AndroidManifest.xml:2:1-14:12
 MERGED from [com.github.flutterwave.rave-android:rave_android:2.1.39] /Users/arnabmandal/.gradle/caches/transforms-3/4a2e7c9edfcba9fd164d6ccaf9897a7e/transformed/jetified-rave_android-2.1.39/AndroidManifest.xml:2:1-25:12
@@ -31,7 +31,7 @@ MERGED from [com.paypal.android.platform:auth-sdk-thirdParty:1.1.0] /Users/arnab
 MERGED from [androidx.navigation:navigation-ui-ktx:2.3.5] /Users/arnabmandal/.gradle/caches/transforms-3/e15dd7a98ee2f2ca1c610c81e7074d5f/transformed/navigation-ui-ktx-2.3.5/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.navigation:navigation-ui:2.3.5] /Users/arnabmandal/.gradle/caches/transforms-3/a07421535df08ff8c7189e2308a1a37c/transformed/navigation-ui-2.3.5/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.material:material:1.9.0] /Users/arnabmandal/.gradle/caches/transforms-3/2b0916e3a228359a90db21751a4fab04/transformed/material-1.9.0/AndroidManifest.xml:17:1-26:12
-MERGED from [:nativetemplates] /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/nativetemplates/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-10:12
+MERGED from [:nativetemplates] /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/nativetemplates/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-10:12
 MERGED from [com.github.vkay94:DoubleTapPlayerView:1.0.4] /Users/arnabmandal/.gradle/caches/transforms-3/4fbaf12ffb8787d401e63d1e59e5a891/transformed/jetified-DoubleTapPlayerView-1.0.4/AndroidManifest.xml:2:1-9:12
 MERGED from [com.paytm.appinvokesdk:appinvokesdk:1.6.11] /Users/arnabmandal/.gradle/caches/transforms-3/749cdf2369e4f1d0e0cdbceeb63cbd22/transformed/jetified-appinvokesdk-1.6.11/AndroidManifest.xml:2:1-39:12
 MERGED from [com.paytm.easypay:easypay-appinvoke:1.7.4] /Users/arnabmandal/.gradle/caches/transforms-3/4bc809c9513f4b427d5c25344c626a0d/transformed/jetified-easypay-appinvoke-1.7.4/AndroidManifest.xml:2:1-27:12
@@ -244,23 +244,23 @@ MERGED from [com.google.android.play:core-common:2.0.3] /Users/arnabmandal/.grad
 MERGED from [com.scottyab:aescrypt:0.0.1] /Users/arnabmandal/.gradle/caches/transforms-3/880c83a68c2f4efd38abd4fa1caa176e/transformed/jetified-aescrypt-0.0.1/AndroidManifest.xml:2:1-12:12
 MERGED from [com.android.installreferrer:installreferrer:1.0] /Users/arnabmandal/.gradle/caches/transforms-3/3fc94b1506ce3333bd4540d03500d9d9/transformed/jetified-installreferrer-1.0/AndroidManifest.xml:2:1-13:12
 	package
-		INJECTED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml
 	xmlns:tools
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:3:5-51
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:3:5-51
 	android:versionCode
-		INJECTED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:2:11-69
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:2:11-69
 uses-permission#android.permission.READ_PRIVILEGED_PHONE_STATE
-ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:5:5-7:47
+ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:5:5-7:47
 	tools:ignore
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:7:9-44
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:7:9-44
 	android:name
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:6:9-70
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:6:9-70
 uses-permission#android.permission.INTERNET
-ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:8:5-67
+ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:8:5-67
 MERGED from [unity-ads.aar] /Users/arnabmandal/.gradle/caches/transforms-3/22b9c317c702158059a256fb42643107/transformed/jetified-unity-ads/AndroidManifest.xml:10:5-67
 MERGED from [unity-ads.aar] /Users/arnabmandal/.gradle/caches/transforms-3/22b9c317c702158059a256fb42643107/transformed/jetified-unity-ads/AndroidManifest.xml:10:5-67
 MERGED from [DoooStream.aar] /Users/arnabmandal/.gradle/caches/transforms-3/ceebc4f35fbdd9998062b336f538271f/transformed/jetified-DoooStream/AndroidManifest.xml:7:5-67
@@ -326,23 +326,23 @@ MERGED from [com.amplitude:android-sdk:2.32.2] /Users/arnabmandal/.gradle/caches
 MERGED from [org.jfrog.cardinalcommerce.gradle:cardinalmobilesdk:2.2.7-2] /Users/arnabmandal/.gradle/caches/transforms-3/b3858b093c5b3fb35122a1b616258f25/transformed/jetified-cardinalmobilesdk-2.2.7-2/AndroidManifest.xml:12:5-67
 MERGED from [org.jfrog.cardinalcommerce.gradle:cardinalmobilesdk:2.2.7-2] /Users/arnabmandal/.gradle/caches/transforms-3/b3858b093c5b3fb35122a1b616258f25/transformed/jetified-cardinalmobilesdk-2.2.7-2/AndroidManifest.xml:12:5-67
 	android:name
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:8:22-64
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:8:22-64
 uses-permission#android.permission.FOREGROUND_SERVICE
-ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:9:5-77
+ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:9:5-77
 MERGED from [com.google.android.gms:play-services-cast-framework:21.3.0] /Users/arnabmandal/.gradle/caches/transforms-3/62add7be8a042644513ea28a7e82bbed/transformed/jetified-play-services-cast-framework-21.3.0/AndroidManifest.xml:12:5-77
 MERGED from [com.google.android.gms:play-services-cast-framework:21.3.0] /Users/arnabmandal/.gradle/caches/transforms-3/62add7be8a042644513ea28a7e82bbed/transformed/jetified-play-services-cast-framework-21.3.0/AndroidManifest.xml:12:5-77
 MERGED from [androidx.work:work-runtime:2.7.1] /Users/arnabmandal/.gradle/caches/transforms-3/c92ed927e68944cf0a2c7f9728e407b2/transformed/work-runtime-2.7.1/AndroidManifest.xml:28:5-77
 MERGED from [androidx.work:work-runtime:2.7.1] /Users/arnabmandal/.gradle/caches/transforms-3/c92ed927e68944cf0a2c7f9728e407b2/transformed/work-runtime-2.7.1/AndroidManifest.xml:28:5-77
 	android:name
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:9:22-74
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:9:22-74
 uses-permission#android.permission.READ_PHONE_STATE
-ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:10:5-75
+ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:10:5-75
 MERGED from [com.paytm.easypay:easypay-appinvoke:1.7.4] /Users/arnabmandal/.gradle/caches/transforms-3/4bc809c9513f4b427d5c25344c626a0d/transformed/jetified-easypay-appinvoke-1.7.4/AndroidManifest.xml:10:5-75
 MERGED from [com.paytm.easypay:easypay-appinvoke:1.7.4] /Users/arnabmandal/.gradle/caches/transforms-3/4bc809c9513f4b427d5c25344c626a0d/transformed/jetified-easypay-appinvoke-1.7.4/AndroidManifest.xml:10:5-75
 	android:name
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:10:22-72
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:10:22-72
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:11:5-79
+ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:11:5-79
 MERGED from [unity-ads.aar] /Users/arnabmandal/.gradle/caches/transforms-3/22b9c317c702158059a256fb42643107/transformed/jetified-unity-ads/AndroidManifest.xml:9:5-79
 MERGED from [unity-ads.aar] /Users/arnabmandal/.gradle/caches/transforms-3/22b9c317c702158059a256fb42643107/transformed/jetified-unity-ads/AndroidManifest.xml:9:5-79
 MERGED from [mediationsdk-7.2.3.aar] /Users/arnabmandal/.gradle/caches/transforms-3/875a9dd861ad0c123ac30db0f2045c20/transformed/jetified-mediationsdk-7.2.3/AndroidManifest.xml:12:5-79
@@ -408,9 +408,9 @@ MERGED from [xyz.doikki.android.dkplayer:dkplayer-java:3.3.7] /Users/arnabmandal
 MERGED from [androidx.tonyodev.fetch2core:xfetch2core:3.1.6] /Users/arnabmandal/.gradle/caches/transforms-3/8309dfdfaaffd36e4389211c88571465/transformed/jetified-xfetch2core-3.1.6/AndroidManifest.xml:12:5-79
 MERGED from [androidx.tonyodev.fetch2core:xfetch2core:3.1.6] /Users/arnabmandal/.gradle/caches/transforms-3/8309dfdfaaffd36e4389211c88571465/transformed/jetified-xfetch2core-3.1.6/AndroidManifest.xml:12:5-79
 	android:name
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:11:22-76
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:11:22-76
 uses-permission#android.permission.WAKE_LOCK
-ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:12:5-68
+ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:12:5-68
 MERGED from [com.paytm.easypay:easypay-appinvoke:1.7.4] /Users/arnabmandal/.gradle/caches/transforms-3/4bc809c9513f4b427d5c25344c626a0d/transformed/jetified-easypay-appinvoke-1.7.4/AndroidManifest.xml:11:5-68
 MERGED from [com.paytm.easypay:easypay-appinvoke:1.7.4] /Users/arnabmandal/.gradle/caches/transforms-3/4bc809c9513f4b427d5c25344c626a0d/transformed/jetified-easypay-appinvoke-1.7.4/AndroidManifest.xml:11:5-68
 MERGED from [com.onesignal:OneSignal:4.8.4] /Users/arnabmandal/.gradle/caches/transforms-3/95f4dbb5ad54082d61585de156e56b86/transformed/jetified-OneSignal-4.8.4/AndroidManifest.xml:19:5-68
@@ -430,22 +430,22 @@ MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.1.1] /U
 MERGED from [androidx.work:work-runtime:2.7.1] /Users/arnabmandal/.gradle/caches/transforms-3/c92ed927e68944cf0a2c7f9728e407b2/transformed/work-runtime-2.7.1/AndroidManifest.xml:25:5-68
 MERGED from [androidx.work:work-runtime:2.7.1] /Users/arnabmandal/.gradle/caches/transforms-3/c92ed927e68944cf0a2c7f9728e407b2/transformed/work-runtime-2.7.1/AndroidManifest.xml:25:5-68
 	android:name
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:12:22-65
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:12:22-65
 uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
-ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:13:5-81
+ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:13:5-81
 MERGED from [com.onesignal:OneSignal:4.8.4] /Users/arnabmandal/.gradle/caches/transforms-3/95f4dbb5ad54082d61585de156e56b86/transformed/jetified-OneSignal-4.8.4/AndroidManifest.xml:30:5-81
 MERGED from [com.onesignal:OneSignal:4.8.4] /Users/arnabmandal/.gradle/caches/transforms-3/95f4dbb5ad54082d61585de156e56b86/transformed/jetified-OneSignal-4.8.4/AndroidManifest.xml:30:5-81
 REJECTED from [com.google.android.gms:play-services-ads-lite:22.2.0] /Users/arnabmandal/.gradle/caches/transforms-3/491fbc32d4b65ea51f4daadc6941fd0f/transformed/jetified-play-services-ads-lite-22.2.0/AndroidManifest.xml:27:5-29:31
 REJECTED from [androidx.work:work-runtime:2.7.1] /Users/arnabmandal/.gradle/caches/transforms-3/c92ed927e68944cf0a2c7f9728e407b2/transformed/work-runtime-2.7.1/AndroidManifest.xml:27:5-81
 REJECTED from [com.startapp:inapp-sdk:4.10.5] /Users/arnabmandal/.gradle/caches/transforms-3/6375a6cc632e78d4aa6196156be0e2b3/transformed/jetified-inapp-sdk-4.10.5/AndroidManifest.xml:12:5-81
 	android:name
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:13:22-78
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:13:22-78
 uses-permission#android.permission.BLUETOOTH
-ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:14:5-68
+ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:14:5-68
 	android:name
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:14:22-65
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:14:22-65
 uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:15:5-76
+ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:15:5-76
 MERGED from [com.applovin:applovin-sdk:12.5.0] /Users/arnabmandal/.gradle/caches/transforms-3/da67f61b34ffc8522d207ce40362b598/transformed/jetified-applovin-sdk-12.5.0/AndroidManifest.xml:22:5-76
 MERGED from [com.applovin:applovin-sdk:12.5.0] /Users/arnabmandal/.gradle/caches/transforms-3/da67f61b34ffc8522d207ce40362b598/transformed/jetified-applovin-sdk-12.5.0/AndroidManifest.xml:22:5-76
 MERGED from [androidx.tonyodev.fetch2:xfetch2:3.1.6] /Users/arnabmandal/.gradle/caches/transforms-3/cc4f2d0f38c3ffa9becc4ddb840f62ce/transformed/jetified-xfetch2-3.1.6/AndroidManifest.xml:12:5-76
@@ -455,41 +455,41 @@ MERGED from [com.startapp:inapp-sdk:4.10.5] /Users/arnabmandal/.gradle/caches/tr
 MERGED from [androidx.tonyodev.fetch2core:xfetch2core:3.1.6] /Users/arnabmandal/.gradle/caches/transforms-3/8309dfdfaaffd36e4389211c88571465/transformed/jetified-xfetch2core-3.1.6/AndroidManifest.xml:11:5-76
 MERGED from [androidx.tonyodev.fetch2core:xfetch2core:3.1.6] /Users/arnabmandal/.gradle/caches/transforms-3/8309dfdfaaffd36e4389211c88571465/transformed/jetified-xfetch2core-3.1.6/AndroidManifest.xml:11:5-76
 	android:name
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:15:22-73
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:15:22-73
 uses-permission#android.permission.REQUEST_INSTALL_PACKAGES
-ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:16:5-83
+ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:16:5-83
 	android:name
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:16:22-80
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:16:22-80
 uses-permission#android.permission.VIBRATE
-ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:17:5-66
+ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:17:5-66
 MERGED from [com.onesignal:OneSignal:4.8.4] /Users/arnabmandal/.gradle/caches/transforms-3/95f4dbb5ad54082d61585de156e56b86/transformed/jetified-OneSignal-4.8.4/AndroidManifest.xml:24:5-66
 MERGED from [com.onesignal:OneSignal:4.8.4] /Users/arnabmandal/.gradle/caches/transforms-3/95f4dbb5ad54082d61585de156e56b86/transformed/jetified-OneSignal-4.8.4/AndroidManifest.xml:24:5-66
 	android:name
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:17:22-63
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:17:22-63
 uses-permission#android.permission.POST_NOTIFICATIONS
-ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:18:5-77
+ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:18:5-77
 MERGED from [com.onesignal:OneSignal:4.8.4] /Users/arnabmandal/.gradle/caches/transforms-3/95f4dbb5ad54082d61585de156e56b86/transformed/jetified-OneSignal-4.8.4/AndroidManifest.xml:16:5-77
 MERGED from [com.onesignal:OneSignal:4.8.4] /Users/arnabmandal/.gradle/caches/transforms-3/95f4dbb5ad54082d61585de156e56b86/transformed/jetified-OneSignal-4.8.4/AndroidManifest.xml:16:5-77
 	android:name
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:18:22-74
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:18:22-74
 uses-permission#android.permission.READ_MEDIA_*
-ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:19:5-71
+ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:19:5-71
 	android:name
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:19:22-68
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:19:22-68
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:20:5-22:38
+ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:20:5-22:38
 	android:maxSdkVersion
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:22:9-35
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:22:9-35
 	android:name
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:21:9-64
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:21:9-64
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:23:5-25:40
+ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:23:5-25:40
 	tools:ignore
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:25:9-37
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:25:9-37
 	android:name
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:24:9-65
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:24:9-65
 queries
-ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:27:5-31:15
+ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:27:5-31:15
 MERGED from [com.paypal.android:PayPalPartnerAuth:1.8.1] /Users/arnabmandal/.gradle/caches/transforms-3/ffda4d8fbb1a1e51062a60ddb9873022/transformed/jetified-PayPalPartnerAuth-1.8.1/AndroidManifest.xml:17:5-25:15
 MERGED from [com.paypal.android:PayPalPartnerAuth:1.8.1] /Users/arnabmandal/.gradle/caches/transforms-3/ffda4d8fbb1a1e51062a60ddb9873022/transformed/jetified-PayPalPartnerAuth-1.8.1/AndroidManifest.xml:17:5-25:15
 MERGED from [com.paytm.appinvokesdk:appinvokesdk:1.6.11] /Users/arnabmandal/.gradle/caches/transforms-3/749cdf2369e4f1d0e0cdbceeb63cbd22/transformed/jetified-appinvokesdk-1.6.11/AndroidManifest.xml:9:5-20:15
@@ -509,14 +509,14 @@ MERGED from [com.adcolony:sdk:4.8.0] /Users/arnabmandal/.gradle/caches/transform
 MERGED from [com.startapp:inapp-sdk:4.10.5] /Users/arnabmandal/.gradle/caches/transforms-3/6375a6cc632e78d4aa6196156be0e2b3/transformed/jetified-inapp-sdk-4.10.5/AndroidManifest.xml:16:5-20:15
 MERGED from [com.startapp:inapp-sdk:4.10.5] /Users/arnabmandal/.gradle/caches/transforms-3/6375a6cc632e78d4aa6196156be0e2b3/transformed/jetified-inapp-sdk-4.10.5/AndroidManifest.xml:16:5-20:15
 intent#action:name:com.google.android.youtube.api.service.START
-ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:28:9-30:18
+ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:28:9-30:18
 action#com.google.android.youtube.api.service.START
-ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:29:13-83
+ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:29:13-83
 	android:name
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:29:21-80
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:29:21-80
 application
-ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:33:5-209:19
-INJECTED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:33:5-209:19
+ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:33:5-209:19
+INJECTED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:33:5-209:19
 MERGED from [unity-ads.aar] /Users/arnabmandal/.gradle/caches/transforms-3/22b9c317c702158059a256fb42643107/transformed/jetified-unity-ads/AndroidManifest.xml:13:5-34:19
 MERGED from [unity-ads.aar] /Users/arnabmandal/.gradle/caches/transforms-3/22b9c317c702158059a256fb42643107/transformed/jetified-unity-ads/AndroidManifest.xml:13:5-34:19
 MERGED from [mediationsdk-7.2.3.aar] /Users/arnabmandal/.gradle/caches/transforms-3/875a9dd861ad0c123ac30db0f2045c20/transformed/jetified-mediationsdk-7.2.3/AndroidManifest.xml:14:5-33:19
@@ -533,8 +533,8 @@ MERGED from [com.paypal.android.platform:auth-sdk-thirdParty:1.1.0] /Users/arnab
 MERGED from [com.paypal.android.platform:auth-sdk-thirdParty:1.1.0] /Users/arnabmandal/.gradle/caches/transforms-3/448a74ca46327363cda3f6558639ef8a/transformed/jetified-auth-sdk-thirdParty-1.1.0/AndroidManifest.xml:7:5-8:19
 MERGED from [com.google.android.material:material:1.9.0] /Users/arnabmandal/.gradle/caches/transforms-3/2b0916e3a228359a90db21751a4fab04/transformed/material-1.9.0/AndroidManifest.xml:24:5-20
 MERGED from [com.google.android.material:material:1.9.0] /Users/arnabmandal/.gradle/caches/transforms-3/2b0916e3a228359a90db21751a4fab04/transformed/material-1.9.0/AndroidManifest.xml:24:5-20
-MERGED from [:nativetemplates] /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/nativetemplates/build/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-8:19
-MERGED from [:nativetemplates] /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/nativetemplates/build/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-8:19
+MERGED from [:nativetemplates] /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/nativetemplates/build/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-8:19
+MERGED from [:nativetemplates] /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/nativetemplates/build/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-8:19
 MERGED from [com.paytm.appinvokesdk:appinvokesdk:1.6.11] /Users/arnabmandal/.gradle/caches/transforms-3/749cdf2369e4f1d0e0cdbceeb63cbd22/transformed/jetified-appinvokesdk-1.6.11/AndroidManifest.xml:22:5-37:19
 MERGED from [com.paytm.appinvokesdk:appinvokesdk:1.6.11] /Users/arnabmandal/.gradle/caches/transforms-3/749cdf2369e4f1d0e0cdbceeb63cbd22/transformed/jetified-appinvokesdk-1.6.11/AndroidManifest.xml:22:5-37:19
 MERGED from [com.paytm.easypay:easypay-appinvoke:1.7.4] /Users/arnabmandal/.gradle/caches/transforms-3/4bc809c9513f4b427d5c25344c626a0d/transformed/jetified-easypay-appinvoke-1.7.4/AndroidManifest.xml:13:5-25:19
@@ -696,375 +696,375 @@ MERGED from [com.scottyab:aescrypt:0.0.1] /Users/arnabmandal/.gradle/caches/tran
 MERGED from [com.android.installreferrer:installreferrer:1.0] /Users/arnabmandal/.gradle/caches/transforms-3/3fc94b1506ce3333bd4540d03500d9d9/transformed/jetified-installreferrer-1.0/AndroidManifest.xml:11:5-20
 MERGED from [com.android.installreferrer:installreferrer:1.0] /Users/arnabmandal/.gradle/caches/transforms-3/3fc94b1506ce3333bd4540d03500d9d9/transformed/jetified-installreferrer-1.0/AndroidManifest.xml:11:5-20
 	android:extractNativeLibs
-		INJECTED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml
 	android:requestLegacyExternalStorage
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:39:9-52
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:39:9-52
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.10.1] /Users/arnabmandal/.gradle/caches/transforms-3/87e481e718628b13b2c9fdcea8d3fcaa/transformed/core-1.10.1/AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:41:9-35
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:41:9-35
 	android:label
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:38:9-41
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:38:9-41
 	android:hardwareAccelerated
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:36:9-43
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:36:9-43
 	android:roundIcon
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:40:9-48
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:40:9-48
 	android:icon
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:37:9-43
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:37:9-43
 	android:allowBackup
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:35:9-35
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:35:9-35
 	android:theme
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:42:9-42
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:42:9-42
 	android:usesCleartextTraffic
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:43:9-44
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:43:9-44
 	android:name
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:34:9-55
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:34:9-55
 activity#com.boenci.android.video_player
-ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:44:9-46:40
+ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:44:9-46:40
 	android:exported
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:46:13-37
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:46:13-37
 	android:name
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:45:13-41
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:45:13-41
 activity#com.boenci.android.AllWebSeriesActivity
-ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:47:9-49:40
+ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:47:9-49:40
 	android:exported
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:49:13-37
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:49:13-37
 	android:name
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:48:13-49
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:48:13-49
 activity#com.boenci.android.MoviesActivity
-ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:50:9-52:40
+ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:50:9-52:40
 	android:exported
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:52:13-37
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:52:13-37
 	android:name
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:51:13-43
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:51:13-43
 activity#com.boenci.android.WebSeriesActivity
-ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:53:9-55:39
+ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:53:9-55:39
 	android:exported
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:55:13-37
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:55:13-37
 	android:name
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:54:13-46
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:54:13-46
 activity#com.boenci.android.ShortFilmActivity
-ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:56:9-58:39
+ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:56:9-58:39
 	android:exported
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:58:13-37
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:58:13-37
 	android:name
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:57:13-46
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:57:13-46
 activity#com.boenci.android.MusicActivity
-ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:59:9-61:40
+ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:59:9-61:40
 	android:exported
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:61:13-37
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:61:13-37
 	android:name
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:60:13-42
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:60:13-42
 activity#com.boenci.android.AllMoviesActivity
-ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:62:9-64:40
+ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:62:9-64:40
 	android:exported
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:64:13-37
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:64:13-37
 	android:name
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:63:13-46
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:63:13-46
 activity#com.boenci.android.ContentInCategory
-ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:65:9-67:94
+ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:65:9-67:94
 	android:exported
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:66:13-37
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:66:13-37
 	android:configChanges
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:67:13-91
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:67:13-91
 	android:name
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:66:38-71
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:66:38-71
 activity#com.boenci.android.AllMoviesWithActorActivity
-ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:68:9-70:40
+ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:68:9-70:40
 	android:exported
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:70:13-37
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:70:13-37
 	android:name
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:69:13-55
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:69:13-55
 activity#com.boenci.android.CustomPaymentActivity
-ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:71:9-73:40
+ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:71:9-73:40
 	android:exported
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:73:13-37
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:73:13-37
 	android:name
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:72:13-50
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:72:13-50
 activity#com.boenci.android.UpcomingActivity
-ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:74:9-76:40
+ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:74:9-76:40
 	android:exported
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:76:13-37
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:76:13-37
 	android:name
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:75:13-45
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:75:13-45
 activity#com.boenci.android.LiveTvGenreDetailsActivity
-ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:77:9-79:40
+ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:77:9-79:40
 	android:exported
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:79:13-37
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:79:13-37
 	android:name
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:78:13-55
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:78:13-55
 activity#com.boenci.android.FlutterwavePaymentGatway
-ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:80:9-82:40
+ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:80:9-82:40
 	android:exported
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:82:13-37
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:82:13-37
 	android:name
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:81:13-53
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:81:13-53
 activity#com.boenci.android.PaytmPaymentGatway
-ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:83:9-89:20
+ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:83:9-89:20
 	android:exported
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:85:13-37
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:85:13-37
 	android:name
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:84:13-47
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:84:13-47
 meta-data#android.app.lib_name
-ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:86:13-88:36
+ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:86:13-88:36
 	android:value
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:88:17-33
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:88:17-33
 	android:name
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:87:17-52
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:87:17-52
 activity#com.boenci.android.UPI
-ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:90:9-92:40
+ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:90:9-92:40
 	android:exported
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:92:13-37
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:92:13-37
 	android:name
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:91:13-32
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:91:13-32
 activity#com.boenci.android.PaypalPaymentGatway
-ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:93:9-95:40
+ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:93:9-95:40
 	android:exported
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:95:13-37
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:95:13-37
 	android:name
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:94:13-48
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:94:13-48
 activity#com.boenci.android.Razorpay_Payment_gatway
-ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:96:9-98:40
+ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:96:9-98:40
 	android:exported
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:98:13-37
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:98:13-37
 	android:name
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:97:13-52
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:97:13-52
 activity#com.boenci.android.LiveTVSearch
-ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:99:9-101:39
+ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:99:9-101:39
 	android:exported
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:101:13-36
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:101:13-36
 	android:name
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:100:13-41
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:100:13-41
 activity#com.boenci.android.GenreDetails
-ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:102:9-50
+ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:102:9-50
 	android:name
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:102:19-47
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:102:19-47
 activity#com.boenci.android.AllGenre
-ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:103:9-46
+ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:103:9-46
 	android:name
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:103:19-43
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:103:19-43
 activity#com.boenci.android.Downloads
-ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:104:9-47
+ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:104:9-47
 	android:name
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:104:19-44
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:104:19-44
 activity#com.boenci.android.PrivecyPolicy
-ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:105:9-51
+ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:105:9-51
 	android:name
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:105:19-48
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:105:19-48
 activity#com.boenci.android.TermsAndConditions
-ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:106:9-56
+ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:106:9-56
 	android:name
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:106:19-53
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:106:19-53
 activity#com.boenci.android.YoutubeLivePlayer
-ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:107:9-109:77
+ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:107:9-109:77
 	android:configChanges
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:109:13-74
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:109:13-74
 	android:name
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:108:13-46
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:108:13-46
 activity#com.boenci.android.InAppUpdate
-ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:110:9-49
+ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:110:9-49
 	android:name
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:110:19-46
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:110:19-46
 activity#com.boenci.android.LiveTv
-ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:111:9-44
+ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:111:9-44
 	android:name
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:111:19-41
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:111:19-41
 activity#com.boenci.android.EmbedPlayer
-ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:112:9-114:77
+ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:112:9-114:77
 	android:configChanges
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:114:13-74
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:114:13-74
 	android:name
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:113:13-40
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:113:13-40
 activity#com.boenci.android.Player
-ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:115:9-117:77
+ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:115:9-117:77
 	android:configChanges
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:117:13-74
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:117:13-74
 	android:name
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:116:13-35
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:116:13-35
 activity#com.boenci.android.SubscriptionDetails
-ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:118:9-57
+ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:118:9-57
 	android:name
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:118:19-54
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:118:19-54
 activity#com.boenci.android.SubscriptionList
-ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:119:9-54
+ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:119:9-54
 	android:name
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:119:19-51
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:119:19-51
 activity#com.boenci.android.Subscription
-ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:120:9-50
+ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:120:9-50
 	android:name
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:120:19-47
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:120:19-47
 activity#com.boenci.android.Favorites
-ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:121:9-47
+ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:121:9-47
 	android:name
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:121:19-44
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:121:19-44
 activity#com.boenci.android.WebSeriesDetails
-ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:122:9-126:54
+ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:122:9-126:54
 	android:launchMode
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:125:13-44
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:125:13-44
 	android:exported
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:123:13-37
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:123:13-37
 	android:supportsPictureInPicture
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:126:13-52
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:126:13-52
 	android:configChanges
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:124:13-91
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:124:13-91
 	android:name
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:122:19-51
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:122:19-51
 activity#com.boenci.android.Maintenance
-ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:127:9-49
+ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:127:9-49
 	android:name
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:127:19-46
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:127:19-46
 activity#com.boenci.android.WebView
-ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:128:9-45
+ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:128:9-45
 	android:name
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:128:19-42
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:128:19-42
 activity#com.boenci.android.TrailerPlayer
-ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:129:9-131:77
+ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:129:9-131:77
 	android:configChanges
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:131:13-74
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:131:13-74
 	android:name
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:130:13-42
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:130:13-42
 activity#com.boenci.android.MovieDetails
-ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:132:9-136:54
+ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:132:9-136:54
 	android:launchMode
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:135:13-44
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:135:13-44
 	android:exported
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:133:13-37
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:133:13-37
 	android:supportsPictureInPicture
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:136:13-52
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:136:13-52
 	android:configChanges
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:134:13-91
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:134:13-91
 	android:name
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:132:19-47
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:132:19-47
 activity#com.boenci.android.ShortFilmDetails
-ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:137:9-141:54
+ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:137:9-141:54
 	android:launchMode
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:140:13-44
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:140:13-44
 	android:exported
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:138:13-37
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:138:13-37
 	android:supportsPictureInPicture
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:141:13-52
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:141:13-52
 	android:configChanges
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:139:13-91
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:139:13-91
 	android:name
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:137:19-51
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:137:19-51
 activity#com.boenci.android.LoginSignup
-ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:142:9-49
+ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:142:9-49
 	android:name
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:142:19-46
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:142:19-46
 activity#com.boenci.android.Home
-ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:143:9-42
+ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:143:9-42
 	android:name
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:143:19-39
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:143:19-39
 activity#com.boenci.android.Splash
-ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:144:9-152:20
+ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:144:9-152:20
 	android:exported
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:146:13-36
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:146:13-36
 	android:name
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:145:13-35
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:145:13-35
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:147:13-151:29
+ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:147:13-151:29
 action#android.intent.action.MAIN
-ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:148:17-69
+ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:148:17-69
 	android:name
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:148:25-66
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:148:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:150:17-77
+ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:150:17-77
 	android:name
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:150:27-74
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:150:27-74
 meta-data#com.google.android.gms.ads.APPLICATION_ID
-ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:154:9-156:60
+ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:154:9-156:60
 	android:value
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:156:13-57
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:156:13-57
 	android:name
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:155:13-69
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:155:13-69
 meta-data#com.startapp.sdk.APPLICATION_ID
-ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:157:9-159:55
+ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:157:9-159:55
 	android:value
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:159:13-52
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:159:13-52
 	android:name
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:158:13-59
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:158:13-59
 meta-data#com.facebook.sdk.ApplicationId
-ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:160:9-162:55
+ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:160:9-162:55
 	android:value
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:162:13-52
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:162:13-52
 	android:name
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:161:13-58
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:161:13-58
 meta-data#applovin.sdk.key
-ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:163:9-165:56
+ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:163:9-165:56
 	android:value
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:165:13-53
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:165:13-53
 	android:name
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:164:13-44
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:164:13-44
 activity#com.adcolony.sdk.AdColonyInterstitialActivity
-ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:177:9-181:80
+ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:177:9-181:80
 MERGED from [com.adcolony:sdk:4.8.0] /Users/arnabmandal/.gradle/caches/transforms-3/2a3f085ca52b008c8455d605c49ebed6/transformed/jetified-sdk-4.8.0/AndroidManifest.xml:23:9-26:50
 MERGED from [com.adcolony:sdk:4.8.0] /Users/arnabmandal/.gradle/caches/transforms-3/2a3f085ca52b008c8455d605c49ebed6/transformed/jetified-sdk-4.8.0/AndroidManifest.xml:23:9-26:50
 	android:hardwareAccelerated
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:180:13-47
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:180:13-47
 	android:configChanges
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:179:13-74
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:179:13-74
 	android:theme
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:181:13-77
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:181:13-77
 	android:name
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:178:13-73
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:178:13-73
 activity#com.adcolony.sdk.AdColonyAdViewActivity
-ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:182:9-186:80
+ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:182:9-186:80
 MERGED from [com.adcolony:sdk:4.8.0] /Users/arnabmandal/.gradle/caches/transforms-3/2a3f085ca52b008c8455d605c49ebed6/transformed/jetified-sdk-4.8.0/AndroidManifest.xml:27:9-30:50
 MERGED from [com.adcolony:sdk:4.8.0] /Users/arnabmandal/.gradle/caches/transforms-3/2a3f085ca52b008c8455d605c49ebed6/transformed/jetified-sdk-4.8.0/AndroidManifest.xml:27:9-30:50
 	android:hardwareAccelerated
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:185:13-47
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:185:13-47
 	android:configChanges
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:184:13-74
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:184:13-74
 	android:theme
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:186:13-77
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:186:13-77
 	android:name
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:183:13-67
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:183:13-67
 receiver#com.razorpay.RzpTokenReceiver
-ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:188:9-194:20
+ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:188:9-194:20
 MERGED from [com.razorpay:checkout:1.6.29] /Users/arnabmandal/.gradle/caches/transforms-3/e48be8e97eec1f158946bb66023dbe90/transformed/jetified-checkout-1.6.29/AndroidManifest.xml:44:9-51:20
 MERGED from [com.razorpay:checkout:1.6.29] /Users/arnabmandal/.gradle/caches/transforms-3/e48be8e97eec1f158946bb66023dbe90/transformed/jetified-checkout-1.6.29/AndroidManifest.xml:44:9-51:20
 	android:exported
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:190:13-36
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:190:13-36
 	tools:ignore
 		ADDED from [com.razorpay:checkout:1.6.29] /Users/arnabmandal/.gradle/caches/transforms-3/e48be8e97eec1f158946bb66023dbe90/transformed/jetified-checkout-1.6.29/AndroidManifest.xml:47:13-44
 	android:name
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:189:13-57
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:189:13-57
 intent-filter#action:name:rzp.device_token.share
-ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:191:13-193:29
+ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:191:13-193:29
 action#rzp.device_token.share
-ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:192:17-65
+ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:192:17-65
 	android:name
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:192:25-62
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:192:25-62
 activity#com.razorpay.CheckoutActivity
-ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:196:9-208:20
+ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:196:9-208:20
 MERGED from [com.razorpay:checkout:1.6.29] /Users/arnabmandal/.gradle/caches/transforms-3/e48be8e97eec1f158946bb66023dbe90/transformed/jetified-checkout-1.6.29/AndroidManifest.xml:53:9-61:20
 MERGED from [com.razorpay:checkout:1.6.29] /Users/arnabmandal/.gradle/caches/transforms-3/e48be8e97eec1f158946bb66023dbe90/transformed/jetified-checkout-1.6.29/AndroidManifest.xml:53:9-61:20
 	android:exported
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:199:13-36
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:199:13-36
 	android:configChanges
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:198:13-83
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:198:13-83
 	android:theme
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:200:13-49
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:200:13-49
 	android:name
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:197:13-57
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:197:13-57
 intent-filter#action:name:android.intent.action.MAIN+data:host:rzp.io+data:scheme:io.rzp
-ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:201:13-207:29
+ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:201:13-207:29
 data
-ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:204:17-206:47
+ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:204:17-206:47
 	android:host
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:205:21-42
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:205:21-42
 	android:scheme
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:206:21-44
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:206:21-44
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:172:13-174:58
+ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:172:13-174:58
 	android:resource
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:174:17-55
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:174:17-55
 	android:name
-		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml:173:17-67
+		ADDED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml:173:17-67
 uses-sdk
-INJECTED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml
-INJECTED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml
+INJECTED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml
+INJECTED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml
 MERGED from [unity-ads.aar] /Users/arnabmandal/.gradle/caches/transforms-3/22b9c317c702158059a256fb42643107/transformed/jetified-unity-ads/AndroidManifest.xml:5:5-7:41
 MERGED from [unity-ads.aar] /Users/arnabmandal/.gradle/caches/transforms-3/22b9c317c702158059a256fb42643107/transformed/jetified-unity-ads/AndroidManifest.xml:5:5-7:41
 MERGED from [DoooStream.aar] /Users/arnabmandal/.gradle/caches/transforms-3/ceebc4f35fbdd9998062b336f538271f/transformed/jetified-DoooStream/AndroidManifest.xml:5:5-44
@@ -1077,8 +1077,8 @@ MERGED from [com.github.mukeshsolanki.Android-Tamper-Detector:tamperdetector-no-
 MERGED from [com.github.mukeshsolanki.Android-Tamper-Detector:tamperdetector-no-op:1.0.0] /Users/arnabmandal/.gradle/caches/transforms-3/23eb14bde87c089bcd48f5b72d02556a/transformed/jetified-tamperdetector-no-op-1.0.0/AndroidManifest.xml:5:5-7:41
 MERGED from [com.paypal.checkout:android-sdk:1.1.0] /Users/arnabmandal/.gradle/caches/transforms-3/0daea764dd53000f4cd9d8a11a86d8e5/transformed/jetified-android-sdk-1.1.0/AndroidManifest.xml:6:5-9:79
 MERGED from [com.paypal.checkout:android-sdk:1.1.0] /Users/arnabmandal/.gradle/caches/transforms-3/0daea764dd53000f4cd9d8a11a86d8e5/transformed/jetified-android-sdk-1.1.0/AndroidManifest.xml:6:5-9:79
-MERGED from [:liquid_swipe] /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/liquid_swipe/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:liquid_swipe] /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/liquid_swipe/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:liquid_swipe] /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/liquid_swipe/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:liquid_swipe] /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/liquid_swipe/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [dev.shreyaspatil.MaterialDialog:MaterialDialog:2.2.2] /Users/arnabmandal/.gradle/caches/transforms-3/0fb84ec7e9d5d02dd806ae3792217844/transformed/jetified-MaterialDialog-2.2.2/AndroidManifest.xml:7:5-9:41
 MERGED from [dev.shreyaspatil.MaterialDialog:MaterialDialog:2.2.2] /Users/arnabmandal/.gradle/caches/transforms-3/0fb84ec7e9d5d02dd806ae3792217844/transformed/jetified-MaterialDialog-2.2.2/AndroidManifest.xml:7:5-9:41
 MERGED from [org.imaginativeworld.oopsnointernet:oopsnointernet:2.0.0] /Users/arnabmandal/.gradle/caches/transforms-3/dbcee91a8b39d49078f3bdae9472077c/transformed/jetified-oopsnointernet-2.0.0/AndroidManifest.xml:7:5-9:41
@@ -1097,8 +1097,8 @@ MERGED from [androidx.navigation:navigation-ui:2.3.5] /Users/arnabmandal/.gradle
 MERGED from [androidx.navigation:navigation-ui:2.3.5] /Users/arnabmandal/.gradle/caches/transforms-3/a07421535df08ff8c7189e2308a1a37c/transformed/navigation-ui-2.3.5/AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.android.material:material:1.9.0] /Users/arnabmandal/.gradle/caches/transforms-3/2b0916e3a228359a90db21751a4fab04/transformed/material-1.9.0/AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.android.material:material:1.9.0] /Users/arnabmandal/.gradle/caches/transforms-3/2b0916e3a228359a90db21751a4fab04/transformed/material-1.9.0/AndroidManifest.xml:20:5-22:41
-MERGED from [:nativetemplates] /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/nativetemplates/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:nativetemplates] /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/nativetemplates/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:nativetemplates] /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/nativetemplates/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:nativetemplates] /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/nativetemplates/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [com.github.vkay94:DoubleTapPlayerView:1.0.4] /Users/arnabmandal/.gradle/caches/transforms-3/4fbaf12ffb8787d401e63d1e59e5a891/transformed/jetified-DoubleTapPlayerView-1.0.4/AndroidManifest.xml:5:5-7:41
 MERGED from [com.github.vkay94:DoubleTapPlayerView:1.0.4] /Users/arnabmandal/.gradle/caches/transforms-3/4fbaf12ffb8787d401e63d1e59e5a891/transformed/jetified-DoubleTapPlayerView-1.0.4/AndroidManifest.xml:5:5-7:41
 MERGED from [com.paytm.appinvokesdk:appinvokesdk:1.6.11] /Users/arnabmandal/.gradle/caches/transforms-3/749cdf2369e4f1d0e0cdbceeb63cbd22/transformed/jetified-appinvokesdk-1.6.11/AndroidManifest.xml:5:5-44
@@ -1524,9 +1524,9 @@ MERGED from [com.android.installreferrer:installreferrer:1.0] /Users/arnabmandal
 	tools:overrideLibrary
 		ADDED from [com.paypal.checkout:android-sdk:1.1.0] /Users/arnabmandal/.gradle/caches/transforms-3/0daea764dd53000f4cd9d8a11a86d8e5/transformed/jetified-android-sdk-1.1.0/AndroidManifest.xml:9:9-76
 	android:targetSdkVersion
-		INJECTED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/AndroidManifest.xml
 uses-permission#com.google.android.gms.permission.AD_ID
 ADDED from [unity-ads.aar] /Users/arnabmandal/.gradle/caches/transforms-3/22b9c317c702158059a256fb42643107/transformed/jetified-unity-ads/AndroidManifest.xml:11:5-79
 MERGED from [com.facebook.android:audience-network-sdk:6.12.0] /Users/arnabmandal/.gradle/caches/transforms-3/f8782ac34fb70a8367887b1c771241f5/transformed/jetified-audience-network-sdk-6.12.0/AndroidManifest.xml:17:5-79

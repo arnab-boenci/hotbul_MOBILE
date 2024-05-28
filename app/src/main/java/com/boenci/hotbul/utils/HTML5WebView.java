@@ -25,7 +25,7 @@ import android.widget.RelativeLayout;
 
 import androidx.core.content.ContextCompat;
 
-import com.boenci.hotbul.R;
+import com.boenci.android.R;
 
 
 public class HTML5WebView extends WebView {

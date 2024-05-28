@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.text.Spannable;
 import android.widget.TextView;
 
+import com.boenci.android.R;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 

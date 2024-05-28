@@ -22,7 +22,7 @@ import com.boenci.hotbul.WebSeriesDetails;
 import com.google.android.material.button.MaterialButton;
 import com.makeramen.roundedimageview.RoundedImageView;
 
-import com.boenci.hotbul.R;
+import com.boenci.android.R;
 import com.boenci.hotbul.list.ImageSliderItem;
 
 import java.util.List;

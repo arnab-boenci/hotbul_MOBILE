@@ -51,7 +51,7 @@ import com.boenci.hotbul.Home;
 import com.boenci.hotbul.LiveTv;
 import com.boenci.hotbul.MoviesActivity;
 import com.boenci.hotbul.MusicActivity;
-import com.boenci.hotbul.R;
+import com.boenci.android.R;
 import com.boenci.hotbul.ShortFilmActivity;
 import com.boenci.hotbul.WebView;
 import com.boenci.hotbul.adepter.ContinuePlayingListAdepter;

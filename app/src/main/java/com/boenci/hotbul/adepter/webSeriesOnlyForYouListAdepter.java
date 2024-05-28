@@ -12,9 +12,9 @@ import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.boenci.android.R;
 import com.bumptech.glide.Glide;
 import com.boenci.hotbul.AppConfig;
-import com.boenci.hotbul.R;
 import com.boenci.hotbul.WebSeriesDetails;
 import com.boenci.hotbul.list.WebSeriesList;
 

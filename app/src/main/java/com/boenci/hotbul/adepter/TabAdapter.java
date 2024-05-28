@@ -5,7 +5,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentStatePagerAdapter;
 
-
+import com.boenci.android.R;
 import com.boenci.hotbul.model.AllSeason;
 
 import java.util.List;

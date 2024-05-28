@@ -38,6 +38,7 @@ import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.boenci.android.R;
 import com.boenci.hotbul.adepter.SearchListAdepter;
 import com.boenci.hotbul.list.SearchList;
 import com.boenci.hotbul.utils.GenericKeyEvent;
@@ -106,7 +107,7 @@ public class LoginSignup extends AppCompatActivity {
         Window window = this.getWindow();
         window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
         window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-        window.setStatusBarColor(ContextCompat.getColor(this,R.color.login_signup_TitleBar_BG));
+        window.setStatusBarColor(ContextCompat.getColor(this, R.color.login_signup_TitleBar_BG));
 
         setContentView(R.layout.activity_login_signup);
 

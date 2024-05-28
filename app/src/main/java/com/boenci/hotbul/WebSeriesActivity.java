@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import com.boenci.android.R;
 import com.boenci.hotbul.fragment.MoviesFragment;
 import com.boenci.hotbul.fragment.WebSeriesFragment;
 

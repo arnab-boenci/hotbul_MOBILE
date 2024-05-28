@@ -16,7 +16,7 @@ import com.bumptech.glide.Glide;
 import com.boenci.hotbul.AppConfig;
 import com.boenci.hotbul.Home;
 import com.boenci.hotbul.MovieDetails;
-import com.boenci.hotbul.R;
+import com.boenci.android.R;
 import com.boenci.hotbul.list.MovieList;
 
 import java.util.List;

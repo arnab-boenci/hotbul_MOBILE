@@ -28,7 +28,7 @@ import com.android.volley.toolbox.Volley;
 import com.boenci.hotbul.AllMoviesActivity;
 import com.boenci.hotbul.AppConfig;
 import com.boenci.hotbul.Home;
-import com.boenci.hotbul.R;
+import com.boenci.android.R;
 import com.boenci.hotbul.adepter.AllMovieListAdepter;
 import com.boenci.hotbul.list.MovieList;
 import com.boenci.hotbul.sharedpreferencesmanager.ConfigManager;

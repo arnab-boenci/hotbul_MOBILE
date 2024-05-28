@@ -1,4 +1,4 @@
 include ':app'
-rootProject.name = "Dooo"
+rootProject.name = "hotbul"
 include ':nativetemplates'
 include ':liquid_swipe'

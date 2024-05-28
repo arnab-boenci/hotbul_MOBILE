@@ -26,6 +26,7 @@ import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.boenci.android.R;
 import com.boenci.hotbul.fragment.AllMoviesFragment;
 import com.boenci.hotbul.fragment.AllWebseriesFragment;
 import com.boenci.hotbul.fragment.HomeFragment;
@@ -71,7 +72,7 @@ public class Home extends AppCompatActivity implements NavigationBarView.OnItemS
         Window window = this.getWindow();
         window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
         window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-        window.setStatusBarColor(ContextCompat.getColor(this,R.color.Home_TitleBar_BG));
+        window.setStatusBarColor(ContextCompat.getColor(this, R.color.Home_TitleBar_BG));
 
         Drawable unwrappedDrawable = AppCompatResources.getDrawable(this, R.drawable.comment_tag_bg);
         Drawable wrappedDrawable = DrawableCompat.wrap(unwrappedDrawable);

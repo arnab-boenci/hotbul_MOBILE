@@ -13,6 +13,7 @@ import android.webkit.WebResourceRequest;
 import android.webkit.WebResourceResponse;
 import android.webkit.WebViewClient;
 
+import com.boenci.android.R;
 import com.boenci.hotbul.utils.HelperUtils;
 
 import org.imaginativeworld.oopsnointernet.callbacks.ConnectionCallback;
@@ -58,7 +59,7 @@ public class EmbedPlayer extends AppCompatActivity {
         Window window = this.getWindow();
         window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
         window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-        window.setStatusBarColor(ContextCompat.getColor(this,R.color.black));
+        window.setStatusBarColor(ContextCompat.getColor(this, R.color.black));
 
         setContentView(R.layout.activity_embed_player);
 

@@ -29,6 +29,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.airbnb.lottie.LottieAnimationView;
+import com.boenci.android.R;
 import com.boenci.hotbul.adepter.DownloadListAdepter;
 import com.boenci.hotbul.listener.ActionListener;
 import com.boenci.hotbul.utils.HelperUtils;

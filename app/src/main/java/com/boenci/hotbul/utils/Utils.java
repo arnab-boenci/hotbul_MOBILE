@@ -7,7 +7,7 @@ import android.util.Base64;
 import android.util.Log;
 import android.webkit.MimeTypeMap;
 
-import com.boenci.hotbul.R;
+import com.boenci.android.R;
 
 import java.io.File;
 import java.io.UnsupportedEncodingException;

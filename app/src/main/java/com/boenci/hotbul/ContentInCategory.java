@@ -73,6 +73,7 @@ import com.applovin.mediation.MaxError;
 import com.applovin.mediation.ads.MaxAdView;
 import com.applovin.mediation.ads.MaxInterstitialAd;
 import com.applovin.sdk.AppLovinSdk;
+import com.boenci.android.R;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
 import com.cj.videoprogressview.LightProgressView;
@@ -213,7 +214,7 @@ public class ContentInCategory extends AppCompatActivity {
         Window window = this.getWindow();
         window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
         window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-        window.setStatusBarColor(ContextCompat.getColor(this,R.color.Home_TitleBar_BG));
+        window.setStatusBarColor(ContextCompat.getColor(this, R.color.Home_TitleBar_BG));
 
         Drawable unwrappedDrawable = AppCompatResources.getDrawable(this, R.drawable.comment_tag_bg);
         Drawable wrappedDrawable = DrawableCompat.wrap(unwrappedDrawable);

@@ -110,14 +110,14 @@ com.boenci.android.app-jetified-emoji2-1.2.0-108 /Users/arnabmandal/.gradle/cach
 com.boenci.android.app-jetified-lifecycle-livedata-ktx-2.4.0-109 /Users/arnabmandal/.gradle/caches/transforms-3/f8d97dc413d18d104f51c37c8f2c0700/transformed/jetified-lifecycle-livedata-ktx-2.4.0/res
 com.boenci.android.app-lifecycle-livedata-2.4.0-110 /Users/arnabmandal/.gradle/caches/transforms-3/fcaca9abb7f595f870520d836ecb378c/transformed/lifecycle-livedata-2.4.0/res
 com.boenci.android.app-jetified-PayPalPartnerAuth-1.8.1-111 /Users/arnabmandal/.gradle/caches/transforms-3/ffda4d8fbb1a1e51062a60ddb9873022/transformed/jetified-PayPalPartnerAuth-1.8.1/res
-com.boenci.android.app-res-112 /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/build/generated/crashlytics/res/debug
-com.boenci.android.app-pngs-113 /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/build/generated/res/pngs/debug
-com.boenci.android.app-res-114 /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/build/generated/res/processDebugGoogleServices
-com.boenci.android.app-resValues-115 /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/build/generated/res/resValues/debug
-com.boenci.android.app-packageDebugResources-116 /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/build/intermediates/incremental/debug/packageDebugResources/merged.dir
-com.boenci.android.app-packageDebugResources-117 /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/build/intermediates/incremental/debug/packageDebugResources/stripped.dir
-com.boenci.android.app-merged_res-118 /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/build/intermediates/merged_res/debug
-com.boenci.android.app-debug-119 /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/debug/res
-com.boenci.android.app-main-120 /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/app/src/main/res
-com.boenci.android.app-packaged_res-121 /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/liquid_swipe/build/intermediates/packaged_res/debug
-com.boenci.android.app-packaged_res-122 /Users/arnabmandal/Documents/GITHUB_HOTBUL/hotbul_MOBILE/nativetemplates/build/intermediates/packaged_res/debug
+com.boenci.android.app-res-112 /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/build/generated/crashlytics/res/debug
+com.boenci.android.app-pngs-113 /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/build/generated/res/pngs/debug
+com.boenci.android.app-res-114 /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/build/generated/res/processDebugGoogleServices
+com.boenci.android.app-resValues-115 /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/build/generated/res/resValues/debug
+com.boenci.android.app-packageDebugResources-116 /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/build/intermediates/incremental/debug/packageDebugResources/merged.dir
+com.boenci.android.app-packageDebugResources-117 /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/build/intermediates/incremental/debug/packageDebugResources/stripped.dir
+com.boenci.android.app-merged_res-118 /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/build/intermediates/merged_res/debug
+com.boenci.android.app-debug-119 /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/debug/res
+com.boenci.android.app-main-120 /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/app/src/main/res
+com.boenci.android.app-packaged_res-121 /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/liquid_swipe/build/intermediates/packaged_res/debug
+com.boenci.android.app-packaged_res-122 /Users/arnabmandal/Documents/GITHUB_HOTBUL/27th may/hotbul_MOBILE/nativetemplates/build/intermediates/packaged_res/debug

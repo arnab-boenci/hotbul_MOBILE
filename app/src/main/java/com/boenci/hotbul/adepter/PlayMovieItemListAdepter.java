@@ -21,7 +21,7 @@ import com.boenci.hotbul.WebSeriesDetails;
 import com.boenci.hotbul.list.PlayMovieItemIist;
 import com.boenci.hotbul.EmbedPlayer;
 import com.boenci.hotbul.Player;
-import com.boenci.hotbul.R;
+import com.boenci.android.R;
 import com.boenci.hotbul.utils.HelperUtils;
 
 import java.util.List;

@@ -30,6 +30,7 @@ import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.boenci.android.R;
 import com.boenci.hotbul.adepter.SubscriptionPlanListAdepter;
 import com.boenci.hotbul.list.SubscriptionPlanList;
 import com.boenci.hotbul.utils.HelperUtils;
@@ -74,7 +75,7 @@ public class SubscriptionList extends AppCompatActivity {
         Window window = this.getWindow();
         window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
         window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-        window.setStatusBarColor(ContextCompat.getColor(this,R.color.Home_TitleBar_BG));
+        window.setStatusBarColor(ContextCompat.getColor(this, R.color.Home_TitleBar_BG));
 
         loadData();
 

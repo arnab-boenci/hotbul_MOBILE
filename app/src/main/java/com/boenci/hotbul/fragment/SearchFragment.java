@@ -35,7 +35,7 @@ import com.boenci.hotbul.AllMoviesActivity;
 import com.boenci.hotbul.AllWebSeriesActivity;
 import com.boenci.hotbul.AppConfig;
 import com.boenci.hotbul.ContentInCategory;
-import com.boenci.hotbul.R;
+import com.boenci.android.R;
 import com.boenci.hotbul.adepter.ImageSliderAdepter;
 import com.boenci.hotbul.adepter.PopularSearchListAdepter;
 import com.boenci.hotbul.adepter.SearchListAdepter;

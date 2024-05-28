@@ -16,6 +16,7 @@ import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.boenci.android.R;
 import com.boenci.hotbul.adepter.AllGenreListAdepter;
 import com.boenci.hotbul.adepter.GenreListAdepter;
 import com.boenci.hotbul.list.GenreList;

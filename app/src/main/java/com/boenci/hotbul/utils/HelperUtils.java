@@ -33,7 +33,7 @@ import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.boenci.hotbul.AppConfig;
 import com.boenci.hotbul.LoginSignup;
-import com.boenci.hotbul.R;
+import com.boenci.android.R;
 import com.boenci.hotbul.Splash;
 import com.boenci.hotbul.Subscription;
 import com.google.android.material.bottomsheet.BottomSheetDialog;

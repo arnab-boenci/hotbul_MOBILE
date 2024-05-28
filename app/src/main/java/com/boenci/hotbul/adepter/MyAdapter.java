@@ -15,7 +15,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
-import com.boenci.hotbul.R;
+import com.boenci.android.R;
 import com.boenci.hotbul.WebSeriesDetails;
 import com.boenci.hotbul.model.AllSeason;
 

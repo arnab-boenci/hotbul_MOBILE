@@ -21,6 +21,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
 import com.android.volley.VolleyError;
+import com.boenci.android.R;
 import com.boenci.hotbul.list.YTStreamList;
 import com.boenci.hotbul.utils.HelperUtils;
 import com.boenci.hotbul.utils.Yts;
@@ -90,7 +91,7 @@ public class TrailerPlayer extends AppCompatActivity {
         Window window = this.getWindow();
         window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
         window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-        window.setStatusBarColor(ContextCompat.getColor(this,R.color.black));
+        window.setStatusBarColor(ContextCompat.getColor(this, R.color.black));
 
         setContentView(R.layout.activity_trailer_player);
 

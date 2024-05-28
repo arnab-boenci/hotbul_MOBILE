@@ -14,7 +14,7 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.boenci.hotbul.R;
+import com.boenci.android.R;
 import com.boenci.hotbul.model.AllSeason;
 
 import java.util.ArrayList;

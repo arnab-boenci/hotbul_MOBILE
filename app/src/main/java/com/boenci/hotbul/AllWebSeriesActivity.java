@@ -19,6 +19,7 @@ import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.boenci.android.R;
 import com.boenci.hotbul.adepter.AllWebSeriesListAdepter;
 import com.boenci.hotbul.fragment.AllWebseriesFragment;
 import com.boenci.hotbul.list.WebSeriesList;

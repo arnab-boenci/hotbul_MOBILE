@@ -10,7 +10,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.boenci.hotbul.R;
+import com.boenci.android.R;
 import com.boenci.hotbul.list.CommentList;
 import com.boenci.hotbul.list.EpisodeList;
 

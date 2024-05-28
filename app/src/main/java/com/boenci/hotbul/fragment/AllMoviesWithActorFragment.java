@@ -25,7 +25,7 @@ import com.android.volley.Response;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.boenci.hotbul.AppConfig;
-import com.boenci.hotbul.R;
+import com.boenci.android.R;
 import com.boenci.hotbul.adepter.AllMovieListAdepter;
 import com.boenci.hotbul.list.MovieList;
 import com.boenci.hotbul.sharedpreferencesmanager.ConfigManager;

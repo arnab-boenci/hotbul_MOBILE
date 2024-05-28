@@ -28,7 +28,7 @@ import com.android.volley.toolbox.Volley;
 import com.boenci.hotbul.AllWebSeriesActivity;
 import com.boenci.hotbul.AppConfig;
 import com.boenci.hotbul.Home;
-import com.boenci.hotbul.R;
+import com.boenci.android.R;
 import com.boenci.hotbul.adepter.AllWebSeriesListAdepter;
 import com.boenci.hotbul.list.WebSeriesList;
 import com.boenci.hotbul.sharedpreferencesmanager.ConfigManager;

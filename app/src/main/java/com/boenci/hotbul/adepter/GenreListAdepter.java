@@ -16,7 +16,7 @@ import com.bumptech.glide.Glide;
 import com.boenci.hotbul.AllGenre;
 import com.boenci.hotbul.AppConfig;
 import com.boenci.hotbul.GenreDetails;
-import com.boenci.hotbul.R;
+import com.boenci.android.R;
 import com.boenci.hotbul.list.GenreList;
 import com.makeramen.roundedimageview.RoundedImageView;
 

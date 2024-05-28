@@ -12,6 +12,7 @@ import android.view.WindowManager;
 import android.webkit.WebChromeClient;
 import android.webkit.WebViewClient;
 
+import com.boenci.android.R;
 import com.boenci.hotbul.utils.HelperUtils;
 
 import org.imaginativeworld.oopsnointernet.callbacks.ConnectionCallback;

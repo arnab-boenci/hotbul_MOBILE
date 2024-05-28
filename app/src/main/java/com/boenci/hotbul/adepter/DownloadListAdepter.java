@@ -18,7 +18,7 @@ import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.boenci.hotbul.Player;
-import com.boenci.hotbul.R;
+import com.boenci.android.R;
 import com.boenci.hotbul.listener.ActionListener;
 import com.boenci.hotbul.utils.DownloadHelper;
 import com.tonyodev.fetch2.Download;

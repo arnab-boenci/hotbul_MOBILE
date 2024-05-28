@@ -23,7 +23,7 @@ import com.boenci.hotbul.AppConfig;
 import com.boenci.hotbul.Home;
 import com.boenci.hotbul.LiveTv;
 import com.boenci.hotbul.Player;
-import com.boenci.hotbul.R;
+import com.boenci.android.R;
 import com.boenci.hotbul.EmbedPlayer;
 import com.boenci.hotbul.YoutubeLivePlayer;
 import com.boenci.hotbul.list.LiveTvChannelList;

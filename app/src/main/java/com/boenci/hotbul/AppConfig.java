@@ -1,5 +1,7 @@
 package com.boenci.hotbul;
 
+import com.boenci.android.R;
+
 public class AppConfig {
     //<!--DO NOT EDIT THESE DETAILS THESE WILL BE ASSIGNED FROM FIREBASE-->//
     public static String rawUrl;

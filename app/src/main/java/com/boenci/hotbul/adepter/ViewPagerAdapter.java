@@ -10,7 +10,7 @@ import androidx.viewpager2.adapter.FragmentStateAdapter;
 
 import com.boenci.hotbul.model.AllSeason;
 import android.content.Context;
-
+import com.boenci.android.R;
 import java.util.ArrayList;
 import java.util.List;
 

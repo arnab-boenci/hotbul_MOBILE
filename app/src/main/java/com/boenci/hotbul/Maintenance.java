@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 
+import com.boenci.android.R;
 import com.boenci.hotbul.utils.HelperUtils;
 
 import org.imaginativeworld.oopsnointernet.callbacks.ConnectionCallback;
